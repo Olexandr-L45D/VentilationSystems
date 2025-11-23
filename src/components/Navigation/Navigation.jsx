@@ -24,7 +24,7 @@ export const Navigation = () => {
       </div>
       <div className={css.title}>
         <Link to="/">
-          <p className={css.iconLogo}>ITALVENT</p>
+          <p className={css.iconLogo}>ItalVent</p>
         </Link>
       </div>
       <section className={css.card}>
