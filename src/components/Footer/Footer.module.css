@@ -1,7 +1,7 @@
 .container {
   position: fixed;
-  /* Фіксує контейнер у верхній частині */
-  top: 0;
+  /* Фіксує контейнер в нижній частині */
+  bottom: 0;
   /* Відступ від верхнього краю екрана */
   left: 0;
   /* Вирівнювання по лівому краю */
@@ -11,11 +11,11 @@
   /* Забезпечує, що шапка буде зверху інших елементів */
   border-bottom: 1px solid #f2f4f7;
   padding: 24px 64px;
-  background-color: #f7f7f7;
+  background-color: #7c86f7;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
+  height: 40px;
   /* height: 72px; */
   width: 1440px;
   /* Забезпечує повну ширину */
@@ -43,16 +43,7 @@
   border-radius: 2px;
   background-image: url("../../images/miniLogo.png");
 }
-.imgLogo {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: rgb(17, 93, 5);
-  font-size: 1.2em;
-  font-weight: 600;
-  line-height: 2;
-}
+
 .title {
   height: 100%;
   padding: 0px;
@@ -70,15 +61,32 @@
 }
 
 .iconLogo {
-  /* margin-top: 10px;
-  width: 170px;
-  height: 22px; */
-  color: rgb(76, 8, 192);
+  color: rgb(49, 10, 117);
   font-size: 1.2em;
   font-weight: 600;
   line-height: 2;
 }
 
+.titleText {
+  width: 300px;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 .nav {
   height: 16px;
   display: flex;

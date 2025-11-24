@@ -2,6 +2,8 @@
   "navigation": {
     "home": "Home",
     "catalog": "Catalog",
+    "factory": "Factory",
+    "contacts": "Contacts",
     "send": "Send",
     "search": "Search",
     "Load": "Load More",

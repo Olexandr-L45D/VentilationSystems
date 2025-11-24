@@ -24,7 +24,7 @@ export const Navigation = () => {
       </div>
       <div className={css.title}>
         <Link to="/">
-          <p className={css.iconLogo}>ItalVent</p>
+          <p className={css.iconLogo}>ITALVENT</p>
         </Link>
       </div>
       <section className={css.card}>
@@ -32,8 +32,14 @@ export const Navigation = () => {
           <NavLink to="/" className={newLinkClass}>
             {t("navigation.home")}
           </NavLink>
+          <NavLink to="/factory" className={newLinkClass}>
+            {t("navigation.factory")}
+          </NavLink>
           <NavLink to="/catalog" className={newLinkClass}>
             {t("navigation.catalog")}
+          </NavLink>
+          <NavLink to="/contacts" className={newLinkClass}>
+            {t("navigation.contacts")}
           </NavLink>
         </nav>
       </section>

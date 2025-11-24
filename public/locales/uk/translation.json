@@ -2,6 +2,8 @@
   "navigation": {
     "home": "Головна",
     "catalog": "Каталог",
+    "factory": "Завод",
+    "contacts": "Контакти",
     "send": "Відправити",
     "search": "Шукати",
     "Load": "Додати ще",
