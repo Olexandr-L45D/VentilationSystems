@@ -1,19 +1,11 @@
 import { useState } from "react";
-// import { Link } from "react-router-dom";
-// import clsx from "clsx";
 import { IoLogoInstagram } from "react-icons/io5";
-// import { MdEmail } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import css from "./FeedbackMenu.module.css";
-// import FeedbackForm from "../FeedbackForm/FeedbackForm";
 
 const FeedbackMenu = () => {
   const [openModal, setOpenModal] = useState(false);
-  // const [showForm, setShowForm] = useState(false);
 
-  // const newLinkClass = ({ isActive }) => {
-  //   return clsx(css.link, isActive && css.active);
-  // };
   return (
     <>
       {/* Кнопка відкриття модалки */}
@@ -21,13 +13,11 @@ const FeedbackMenu = () => {
         Відгукнутись
       </div>
 
-      {/* Модалка */}
       {openModal && (
         <div
           className={css.feedbackModalOverlay}
           onClick={() => {
             setOpenModal(false);
-            // setShowForm(false);
           }}
         >
           <div
@@ -39,7 +29,8 @@ const FeedbackMenu = () => {
             <div className={css.modalButtons}>
               {/* Instagram */}
               <a
-                href="https://instagram.com/your_company"
+                href="https://instagram.com/alex970076"
+                // href="https://instagram.com/alex970076?igshid=YmMyMTA2M2Y="
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
@@ -57,38 +48,12 @@ const FeedbackMenu = () => {
                 <FaTelegramPlane className={css.icon} />
                 Telegram
               </a>
-
-              {/* <button className={css.modalBtn} type="button">
-                <Link to="/feedbackEmail">
-                  <MdEmail className={css.icon} />
-                  <p className={css.iconText}>Email</p>
-                </Link>
-              </button> */}
-              {/* <button
-                className={css.modalBtn}
-                type="button"
-                onClick={e => {
-                  e.stopPropagation(); // <-- ключова зміна
-                  setShowForm(!showForm);
-                }}
-              >
-                <MdEmail className={css.icon} />
-                Email
-              </button> */}
             </div>
-            {/* 
-            {showForm && (
-              <div className={css.formWrapper}>
-                <FeedbackForm />
-              </div>
-            )} */}
 
-            {/* Закрити модалку */}
             <button
               className={css.modalClose}
               onClick={() => {
                 setOpenModal(false);
-                // setShowForm(false);
               }}
             >
               Закрити

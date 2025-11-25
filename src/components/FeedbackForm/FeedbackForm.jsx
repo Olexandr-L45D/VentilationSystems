@@ -22,10 +22,14 @@ export default function FeedbackForm() {
 
     try {
       await emailjs.send(
-        // process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-        // process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-        formData
-        // process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setSuccess(true);
@@ -80,3 +84,5 @@ export default function FeedbackForm() {
     </div>
   );
 }
+
+// as string,
