@@ -16,6 +16,8 @@ const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 import { Layout } from "../Layout/Layout";
 
+const FeedbackForm = lazy(() => import("../FeedbackForm/FeedbackForm"));
+
 export default function App() {
   return (
     <Layout>
@@ -23,6 +25,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<TruckPageFilters />} />
+          <Route path="/feedbackEmail" element={<FeedbackForm />} />
           <Route path="/catalog/:id" element={<TruckDetalsPage />}>
             <Route path="features" element={<TruckFeatures />} />
             {/* <Route path="reviews" element={<TruckReviews />} /> */}

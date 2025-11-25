@@ -2,6 +2,8 @@ import { Link, NavLink } from "react-router-dom";
 import clsx from "clsx";
 import css from "./Footer.module.css";
 import { AiFillPhone } from "react-icons/ai";
+import FeedbackMenu from "../FeedbackMenu/FeedbackMenu";
+import { MdEmail } from "react-icons/md";
 // import { useTranslation } from "react-i18next";
 
 const newLinkClass = ({ isActive }) => {
@@ -35,9 +37,17 @@ export const Footer = () => {
             {/* {t("navigation.home")} */}
             <p>Умови</p>
           </NavLink>
-          <NavLink to="/email" className={newLinkClass}>
+          <NavLink to="/" className={newLinkClass}>
             {/* {t("navigation.factory")} */}
-            <p>Написати</p>
+            {/* <p>Написати на телеграм та інстаграм</p> */}
+            <FeedbackMenu />
+          </NavLink>
+          <NavLink to="/feedbackEmail" className={newLinkClass}>
+            {/* {t("navigation.home")} */}
+            <p className={css.navEmail}>
+              <MdEmail className={css.icon} />
+              Написати
+            </p>
           </NavLink>
         </nav>
       </section>

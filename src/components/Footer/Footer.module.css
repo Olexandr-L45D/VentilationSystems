@@ -175,3 +175,14 @@ a:focus {
   font-weight: bold;
   border-color: #d84343;
 }
+
+.navEmail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  margin: 0px;
+  padding: 0px;
+}
