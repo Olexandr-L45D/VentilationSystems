@@ -3,13 +3,13 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllTruck } from "../../redux/campers/operations";
 import { selectPage } from "../../redux/campers/selectors";
-import AllTruckList from "../../components/AllTruckList/AllTruckList";
 import Loader from "../../components/Loader/Loader";
 import SearchBoxFiltr from "../../components/SearchBoxFiltr/SearchBoxFiltr";
 import { selectFilters } from "../../redux/filters/selectors";
 import { useSearchParams } from "react-router-dom";
 // import ButtonLoadMore from "../../components/ButtonLoadMore/ButtonLoadMore";
 import { setChangeFilter } from "../../redux/filters/slice";
+import AllVentList from "../../components/AllVentList/AllVentList";
 
 export default function TruckPageFilters() {
   const dispatch = useDispatch();
@@ -42,7 +42,7 @@ export default function TruckPageFilters() {
     }
   }, [params, filteres, dispatch, setParams]);
 
-  // Завантаження вантажівок версія - яка працює наразі
+  // Завантаження товарів версія - яка працює наразі
   useEffect(() => {
     if (page === 1) {
       dispatch(fetchAllTruck({ page }));
@@ -52,7 +52,7 @@ export default function TruckPageFilters() {
   return (
     <div className={css.cartAll}>
       <SearchBoxFiltr />
-      {isLoading ? <Loader /> : <AllTruckList />}
+      {isLoading ? <Loader /> : <AllVentList />}
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import sprite from "../../images/sprite.svg";
-import css from "./AllTruckList.module.css";
+import css from "./AllVentList.module.css";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { selectFilteredByCategory } from "../../redux/filters/selectors";
@@ -10,7 +10,7 @@ import { FcSupport } from "react-icons/fc";
 import { FcSoundRecordingCopyright } from "react-icons/fc";
 import { FcElectroDevices } from "react-icons/fc";
 
-export default function AllTruckList() {
+export default function AllVentList() {
   const { t } = useTranslation();
   // Використовуємо мемоізований селектор а саме Селектор фільтрації вантажівок за локацією
   const trucks = useSelector(selectFilteredByCategory);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoLogoInstagram } from "react-icons/io5";
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaTelegramPlane, FaViber } from "react-icons/fa";
 import css from "./FeedbackMenu.module.css";
 
 const FeedbackMenu = () => {
@@ -29,7 +29,7 @@ const FeedbackMenu = () => {
             <div className={css.modalButtons}>
               {/* Instagram */}
               <a
-                href="https://instagram.com/alex970076"
+                href="https://instagram.com/alex970076" // ← вставити НІК ЗАМОВНИКА
                 // href="https://instagram.com/alex970076?igshid=YmMyMTA2M2Y="
                 target="_blank"
                 rel="noopener noreferrer"
@@ -40,13 +40,21 @@ const FeedbackMenu = () => {
               </a>
               {/* Telegram */}
               <a
-                href="https://t.me/OlexandrDnUkrTelegram"
+                href="https://t.me/OlexandrDnUkrTelegram" // ← вставити НІК ЗАМОВНИКА
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
               >
                 <FaTelegramPlane className={css.icon} />
                 Telegram
+              </a>
+              {/* Viber */}
+              <a
+                href="viber://chat?number=%2B380631705885" // ← вставити номер ЗАМОВНИКА
+                className={css.modalBtn}
+              >
+                <FaViber className={css.icon} />
+                Viber
               </a>
             </div>
 
