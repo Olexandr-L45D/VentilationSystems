@@ -5,8 +5,8 @@ const TruckFeatures = lazy(() => import("../TruckFeatures/TruckFeatures"));
 // const TruckReviews = lazy(() => import("../TruckReviews/TruckReviews"));
 const HomePage = lazy(() => import("../../pages/HomePage/HomePage"));
 
-const TruckPageFilters = lazy(() =>
-  import("../../pages/TruckPageFilters/TruckPageFilters")
+const VentPageFilters = lazy(() =>
+  import("../../pages/VentPageFilters/VentPageFilters")
 );
 
 const TruckDetalsPage = lazy(() =>
@@ -24,7 +24,7 @@ export default function App() {
       <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/catalog" element={<TruckPageFilters />} />
+          <Route path="/catalog" element={<VentPageFilters />} />
           <Route path="/feedbackEmail" element={<FeedbackForm />} />
           <Route path="/catalog/:id" element={<TruckDetalsPage />}>
             <Route path="features" element={<TruckFeatures />} />

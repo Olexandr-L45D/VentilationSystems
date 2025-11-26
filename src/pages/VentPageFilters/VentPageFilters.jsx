@@ -1,4 +1,4 @@
-import css from "./TruckPageFilters.module.css";
+import css from "./VentPageFilters.module.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllTruck } from "../../redux/campers/operations";
@@ -11,7 +11,7 @@ import { useSearchParams } from "react-router-dom";
 import { setChangeFilter } from "../../redux/filters/slice";
 import AllVentList from "../../components/AllVentList/AllVentList";
 
-export default function TruckPageFilters() {
+export default function VentPageFilters() {
   const dispatch = useDispatch();
   const isLoading = useSelector(state => state.campers.loading);
   const filteres = useSelector(selectFilters);
