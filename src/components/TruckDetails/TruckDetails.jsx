@@ -8,6 +8,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { useTranslation } from "react-i18next";
+import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
 
 const TruckDetails = ({ id }) => {
   const dispatch = useDispatch();
@@ -126,6 +127,12 @@ const TruckDetails = ({ id }) => {
                   <NavLink className={css.linkGo} to="/catalog">
                     {t("navigation.go_Catalog")}
                   </NavLink>
+                </button>
+              </li>
+              <li className={css.textLink}>
+                <button className={css.buttonIcon}>
+                  {/* <GoArrowLeft className={css.icons} /> */}
+                  <PdfActions />
                 </button>
               </li>
             </ul>

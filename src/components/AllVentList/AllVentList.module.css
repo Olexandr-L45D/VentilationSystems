@@ -328,3 +328,30 @@
   font-size: 14px;
   color: #333;
 }
+.containerButtons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-image: url("/public/pdfs/mnItalvent_1.pdf"); */
+  /* background-image: url("../../images/OLddesignHome.png"); */
+}
+
+.buttonIconBlok {
+  margin-bottom: -100px;
+  margin-left: 20px;
+}
+.buttonIcon {
+  width: 180px;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  /* border-radius: 40%; */
+}

@@ -9,6 +9,7 @@ import { FcInTransit } from "react-icons/fc";
 import { FcSupport } from "react-icons/fc";
 import { FcSoundRecordingCopyright } from "react-icons/fc";
 import { FcElectroDevices } from "react-icons/fc";
+import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
 
 export default function AllVentList() {
   const { t } = useTranslation();
@@ -114,12 +115,25 @@ export default function AllVentList() {
                     <strong>Weight :&nbsp; </strong> {truck.weight}
                   </li>
                 </ul>
-
-                <button className={css.buttonIconShowe}>
-                  <NavLink className={css.btnShowe} to={`/catalog/${truck.id}`}>
-                    {t("navigation.show_more")}
-                  </NavLink>
-                </button>
+                <div className={css.containerButtons}>
+                  <button className={css.buttonIconShowe}>
+                    <NavLink
+                      className={css.btnShowe}
+                      to={`/catalog/${truck.id}`}
+                    >
+                      {t("navigation.show_more")}
+                    </NavLink>
+                  </button>
+                  <div className={css.buttonIconBlok}>
+                    <button className={css.buttonIcon}>
+                      {/* <GoArrowLeft className={css.icons} /> */}
+                      <PdfActions
+                        viewUrl="/pdfs/mnItalvent_1.pdf"
+                        downloadUrl="/pdfs/mnItalvent_1.pdf"
+                      />
+                    </button>
+                  </div>
+                </div>
               </section>
             </article>
           </li>
