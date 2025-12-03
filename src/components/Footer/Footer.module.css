@@ -186,3 +186,21 @@ a:focus {
   margin: 0px;
   padding: 0px;
 }
+
+.buttonIconBlok {
+  margin: 10;
+  padding: 10;
+  /* margin-bottom: -100px;
+  margin-left: 20px; */
+}
+.buttonIcon {
+  width: 180px;
+  height: 40px;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  /* border-radius: 40%; */
+}

@@ -4,6 +4,8 @@ import css from "./Footer.module.css";
 import { AiFillPhone } from "react-icons/ai";
 import FeedbackMenu from "../FeedbackMenu/FeedbackMenu";
 import { MdEmail } from "react-icons/md";
+// import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
+import PdfActionsCondition from "../ConditionsMenu/ConditionsMenu";
 // import { useTranslation } from "react-i18next";
 
 const newLinkClass = ({ isActive }) => {
@@ -31,11 +33,26 @@ export const Footer = () => {
         </p>
         {/* <p>piva 02947610248</p> */}
       </div>
+      <div className={css.buttonIconBlok}>
+        <div className={css.buttonIcon}>
+          {/* <GoArrowLeft className={css.icons} /> */}
+          {/* <p>Умови співпраці</p> */}
+          <PdfActionsCondition
+            viewUrl="/pdfs/mnItalvent_1.pdf"
+            viewUrlDelivery="/pdfs/mnItalvent_1.pdf"
+            downloadUrl="/pdfs/mnItalvent_1.pdf"
+          />
+        </div>
+      </div>
       <section className={css.card}>
         <nav className={css.nav}>
-          <NavLink to="/conditions" className={newLinkClass}>
+          <NavLink className={newLinkClass}>
             {/* {t("navigation.home")} */}
-            <p>Умови</p>
+            {/* <p>У?</p> */}
+            {/* <PdfActions
+              viewUrl="/pdfs/mnItalvent_1.pdf"
+              downloadUrl="/pdfs/mnItalvent_1.pdf"
+            /> */}
           </NavLink>
           <NavLink to="/" className={newLinkClass}>
             {/* {t("navigation.factory")} */}

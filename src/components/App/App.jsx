@@ -15,6 +15,12 @@ const TruckDetalsPage = lazy(() =>
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 import { Layout } from "../Layout/Layout";
+const ContactsPage = lazy(() =>
+  import("../../pages/ContactsPage/ContactsPage")
+);
+const AboutFactoryPage = lazy(() =>
+  import("../../pages/AboutFactoryPage/AboutFactoryPage")
+);
 
 const FeedbackForm = lazy(() => import("../FeedbackForm/FeedbackForm"));
 
@@ -25,6 +31,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<VentPageFilters />} />
+          <Route path="/factory" element={<AboutFactoryPage />} />
+          <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/feedbackEmail" element={<FeedbackForm />} />
           <Route path="/catalog/:id" element={<TruckDetalsPage />}>
             <Route path="features" element={<TruckFeatures />} />
@@ -36,3 +44,5 @@ export default function App() {
     </Layout>
   );
 }
+
+// ContactsPage
