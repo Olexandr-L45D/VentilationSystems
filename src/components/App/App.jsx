@@ -15,6 +15,7 @@ const TruckDetalsPage = lazy(() =>
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 import { Layout } from "../Layout/Layout";
+import { CartProvider } from "../CartProvider";
 const ContactsPage = lazy(() =>
   import("../../pages/ContactsPage/ContactsPage")
 );
@@ -26,23 +27,23 @@ const FeedbackForm = lazy(() => import("../FeedbackForm/FeedbackForm"));
 
 export default function App() {
   return (
-    <Layout>
-      <Suspense fallback={null}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/catalog" element={<VentPageFilters />} />
-          <Route path="/factory" element={<AboutFactoryPage />} />
-          <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/feedbackEmail" element={<FeedbackForm />} />
-          <Route path="/catalog/:id" element={<TruckDetalsPage />}>
-            <Route path="features" element={<TruckFeatures />} />
-            {/* <Route path="reviews" element={<TruckReviews />} /> */}
-          </Route>
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </Suspense>
-    </Layout>
+    <CartProvider>
+      <Layout>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/catalog" element={<VentPageFilters />} />
+            <Route path="/factory" element={<AboutFactoryPage />} />
+            <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/feedbackEmail" element={<FeedbackForm />} />
+            <Route path="/catalog/:id" element={<TruckDetalsPage />}>
+              <Route path="features" element={<TruckFeatures />} />
+              {/* <Route path="reviews" element={<TruckReviews />} /> */}
+            </Route>
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
+      </Layout>
+    </CartProvider>
   );
 }
-
-// ContactsPage

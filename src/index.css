@@ -8,6 +8,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@import "leaflet/dist/leaflet.css";
 
 a {
   font-weight: 500;
@@ -71,6 +72,7 @@ button:focus-visible {
   }
 }
 
-ul,li {
+ul,
+li {
   list-style: none;
 }

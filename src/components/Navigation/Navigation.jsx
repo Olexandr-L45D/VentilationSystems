@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import clsx from "clsx";
 import css from "./Navigation.module.css";
 import { useTranslation } from "react-i18next";
+import CartIconHeder from "../CartIconHeder/CartIconHeder";
 
 const newLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
@@ -33,7 +34,8 @@ export const Navigation = () => {
             {t("navigation.home")}
           </NavLink>
           <NavLink to="/factory" className={newLinkClass}>
-            {t("navigation.factory")}
+            MANUFACTURER
+            {/* {t("navigation.factory")} */}
           </NavLink>
           <NavLink to="/catalog" className={newLinkClass}>
             {t("navigation.catalog")}
@@ -56,6 +58,9 @@ export const Navigation = () => {
         >
           UA
         </button>
+      </div>
+      <div>
+        <CartIconHeder />
       </div>
     </section>
   );

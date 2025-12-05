@@ -1,0 +1,59 @@
+/* ContactMapModal.module.css */
+.openBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  background: #0e1cb9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 200px) and (max-width: 1020px) {
+  .overlay {
+    max-width: 1000px;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal {
+  width: 90%;
+  height: 90%;
+  background: white;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #000a;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 500;
+}
+
+.mapBox {
+  width: 100%;
+  height: 100%;
+}

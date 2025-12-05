@@ -1,6 +1,7 @@
-/* ContactsPage */
+/* ContactsPage.module.css */
 .container {
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +9,7 @@
 }
 .card {
   width: 100%;
+  height: auto;
   display: flex;
   margin-top: 70px;
   padding: 0;

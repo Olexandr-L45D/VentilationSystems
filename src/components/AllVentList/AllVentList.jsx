@@ -10,8 +10,11 @@ import { FcSupport } from "react-icons/fc";
 import { FcSoundRecordingCopyright } from "react-icons/fc";
 import { FcElectroDevices } from "react-icons/fc";
 import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
+import { CartContext } from "../CartProvider";
+import { useContext } from "react";
 
 export default function AllVentList() {
+  const { addToCart } = useContext(CartContext);
   const { t } = useTranslation();
   // Використовуємо мемоізований селектор а саме Селектор фільтрації вантажівок за локацією
   const trucks = useSelector(selectFilteredByCategory);
@@ -132,6 +135,24 @@ export default function AllVentList() {
                         downloadUrl="/pdfs/mnItalvent_1.pdf"
                       />
                     </button>
+                  </div>
+                  {/* Кнопка додати товар до корзини */}
+                  <div className={css.buttonIconBlok}>
+                    <a style={{ textDecoration: "none" }}>
+                      <button
+                        onClick={() => addToCart(truck)} // <<< Головне — викликати з стрілкою метод addToCart(продукт) щоб додати до корзини
+                        style={{
+                          width: "100%",
+                          padding: "8px",
+                          border: "none",
+                          borderRadius: "4px",
+                          background: "#aed308ff",
+                          cursor: "pointer",
+                        }}
+                      >
+                        Додати до корзини
+                      </button>
+                    </a>
                   </div>
                 </div>
               </section>
