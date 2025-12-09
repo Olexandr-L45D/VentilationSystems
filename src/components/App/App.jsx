@@ -16,6 +16,7 @@ const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 import { Layout } from "../Layout/Layout";
 import { CartProvider } from "../CartProvider";
+
 const ContactsPage = lazy(() =>
   import("../../pages/ContactsPage/ContactsPage")
 );
@@ -24,6 +25,12 @@ const AboutFactoryPage = lazy(() =>
 );
 
 const FeedbackForm = lazy(() => import("../FeedbackForm/FeedbackForm"));
+// const FeedbackFormPhone = lazy(() =>
+//   import("../FeedbackFormPhone/FeedbackFormPhone")
+// );
+const FeedbackModalPhone = lazy(() =>
+  import("../FeedbackModalPhone/FeedbackModalPhone")
+);
 
 export default function App() {
   return (
@@ -36,6 +43,7 @@ export default function App() {
             <Route path="/factory" element={<AboutFactoryPage />} />
             <Route path="/contacts" element={<ContactsPage />} />
             <Route path="/feedbackEmail" element={<FeedbackForm />} />
+            <Route path="/feedbackPhone" element={<FeedbackModalPhone />} />
             <Route path="/catalog/:id" element={<TruckDetalsPage />}>
               <Route path="features" element={<TruckFeatures />} />
               {/* <Route path="reviews" element={<TruckReviews />} /> */}

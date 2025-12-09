@@ -3,6 +3,7 @@ import clsx from "clsx";
 import css from "./Navigation.module.css";
 import { useTranslation } from "react-i18next";
 import CartIconHeder from "../CartIconHeder/CartIconHeder";
+import { AiFillPhone } from "react-icons/ai";
 
 const newLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
@@ -59,6 +60,13 @@ export const Navigation = () => {
           UA
         </button>
       </div>
+      <NavLink to="/feedbackPhone" className={newLinkClass}>
+        {/* {t("navigation.feedbackPhone")} */}
+        <p className={css.iconPhone}>
+          <AiFillPhone className={css.iconPhon} />
+          Зворотній дзвінок
+        </p>
+      </NavLink>
       <div>
         <CartIconHeder />
       </div>

@@ -167,3 +167,12 @@ a:focus {
   font-weight: bold;
   border-color: #d84343;
 }
+.iconPhone {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
