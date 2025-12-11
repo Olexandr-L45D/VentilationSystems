@@ -1,6 +1,8 @@
 /* CartIconHeder */
 .activeButton {
   /* padding: 2px; */
+  width: 100px;
+  height: 60px;
   margin: 0px;
   display: flex;
   flex-direction: row;

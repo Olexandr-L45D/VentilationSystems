@@ -2,6 +2,8 @@ import { useState } from "react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
 import css from "./FeedbackMenu.module.css";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const FeedbackMenu = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -56,6 +58,27 @@ const FeedbackMenu = () => {
                 <FaViber className={css.icon} />
                 Viber
               </a>
+              {/* ✔ WhatsApp */}
+              <a
+                href="https://wa.me/380631705885" // ← номер БЕЗ +
+                target="_blank"
+                rel="noopener noreferrer"
+                className={css.modalBtn}
+              >
+                <FaWhatsapp className={css.icon} />
+                WhatsApp
+              </a>
+
+              {/* ✔ LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/ВАШ_ПРОФІЛЬ" // ← вставити лінк
+                target="_blank"
+                rel="noopener noreferrer"
+                className={css.modalBtn}
+              >
+                <FaLinkedin className={css.icon} />
+                LinkedIn
+              </a>
             </div>
 
             <button
@@ -74,85 +97,3 @@ const FeedbackMenu = () => {
 };
 
 export default FeedbackMenu;
-
-// import { useState } from "react";
-// import { IoLogoInstagram } from "react-icons/io5";
-// import { MdEmail } from "react-icons/md";
-// import { FaTelegramPlane } from "react-icons/fa";
-// import css from "./FeedbackMenu.module.css";
-// import FeedbackForm from "../FeedbackForm/FeedbackForm";
-
-// const FeedbackMenu = () => {
-//   const [open, setOpen] = useState(false);
-//   const [openForm, setOpenForm] = useState(true);
-
-//   return (
-//     <>
-//       {/* Кнопка відкриття */}
-//       <div className={css.feedbackEntryBtn} onClick={() => setOpen(true)}>
-//         Написати нам
-//       </div>
-
-//       {/* Модалка */}
-//       {open && (
-//         <div
-//           className={css.feedbackModalOverlay}
-//           onClick={() => setOpen(false)}
-//         >
-//           <div className={css.feedbackModal} onClick={e => e.stopPropagation()}>
-//             <h2 className={css.modalTitle}>Зв’язатися з нами</h2>
-
-//             <div className={css.modalButtons}>
-//               <a
-//                 href="https://instagram.com/your_company"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className={css.modalBtn}
-//               >
-//                 <IoLogoInstagram className={css.icon} />
-//                 Instagram
-//               </a>
-
-//               {/* <a
-//                 href="mailto:litvinenko1978aleks@gmail.com"
-//                 className={css.modalBtn}
-//               >
-//                 <MdEmail className={css.icon} />
-//                 Email
-//               </a> */}
-
-//               <a
-//                 href="https://t.me/OlexandrDnUkrTelegram"
-//                 target="_blank"
-//                 rel="noopener noreferrer"
-//                 className={css.modalBtn}
-//               >
-//                 <FaTelegramPlane className={css.icon} />
-//                 Telegram
-//               </a>
-//               <MdEmail className={css.iconEm} />
-//               {openForm && (
-//                 <div>
-//                   {/* <MdEmail className={css.icon} /> */}
-//                   <FeedbackForm />
-//                   <button
-//                     className={css.modalClose}
-//                     onClick={() => setOpenForm(true)}
-//                   >
-//                     {/* Закрити */}
-//                   </button>
-//                 </div>
-//               )}
-//             </div>
-
-//             <button className={css.modalClose} onClick={() => setOpen(false)}>
-//               Закрити
-//             </button>
-//           </div>
-//         </div>
-//       )}
-//     </>
-//   );
-// };
-
-// export default FeedbackMenu;
