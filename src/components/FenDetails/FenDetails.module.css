@@ -1,0 +1,56 @@
+/* FenDetails */
+.container {
+  width: 1440px;
+  height: auto;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.cartContainer {
+  margin-top: 48px;
+  width: 1312px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.buttonIcon {
+  width: 200px;
+  height: 30px;
+  padding: 2px;
+  margin: 2px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.icons {
+  width: 50px;
+  height: 25px;
+  padding: 0px;
+  margin: 0px;
+  color: rgb(255, 0, 34);
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  align-items: right;
+}
+.itemText {
+  margin: 1px;
+  padding: 1px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--gray);
+}

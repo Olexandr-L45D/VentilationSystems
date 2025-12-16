@@ -120,10 +120,7 @@ export default function AllVentList() {
                 </ul>
                 <div className={css.containerButtons}>
                   <button className={css.buttonIconShowe}>
-                    <NavLink
-                      className={css.btnShowe}
-                      to={`/catalog/${truck.id}`}
-                    >
+                    <NavLink className={css.btnShowe} to={`/fen/${truck.id}`}>
                       {t("navigation.show_more")}
                     </NavLink>
                   </button>
