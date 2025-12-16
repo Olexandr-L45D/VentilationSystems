@@ -7,9 +7,10 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { selectFilters } from "../../redux/filters/selectors";
 import { FiSearch } from "react-icons/fi";
+import { useTranslation } from "react-i18next";
 
 export default function SearchBoxFiltr() {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const filters = useSelector(selectFilters);
   const [params, setParams] = useSearchParams();
@@ -60,7 +61,8 @@ export default function SearchBoxFiltr() {
               type="submit"
               disabled={isSubmitting}
             >
-              FIND
+              {/* FIND */}
+              {t("navigation.find")}
             </button>
 
             <ErrorMessage name="category" component="p" className={css.error} />

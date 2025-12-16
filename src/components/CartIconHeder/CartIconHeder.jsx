@@ -3,10 +3,12 @@ import { useState, useContext } from "react";
 import { CartContext } from "../CartProvider";
 import css from "./CartIconHeder.module.css";
 import { BiSolidCartAlt, BiTrash } from "react-icons/bi";
+import { useTranslation } from "react-i18next";
 
 const CartIconHeder = () => {
   const [open, setOpen] = useState(false);
   const { cart, removeFromCart, clearCart } = useContext(CartContext);
+  const { t } = useTranslation();
 
   const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
   const totalPrice = cart.reduce(
@@ -33,17 +35,24 @@ const CartIconHeder = () => {
 
             {/* Вміст корзини — БЕЗ ЗМІН */}
             <section className={css.hedBlock}>
-              <h2 className={css.bascetTitle}>КОРЗИНА 🛒</h2>
+              <h2 className={css.bascetTitle}>
+                {/* КОРЗИНА */}
+                {t("navigation.basket")}
+                🛒
+              </h2>
 
               <button onClick={clearCart} className={css.clearBtn}>
-                Очистити
+                {/* Очистити */}
+                {t("navigation.cleanUpbasket")}
               </button>
             </section>
 
             <ul className={css.list}>
               {cart.map(item => (
                 <li key={item.id} className={css.itemBlock}>
-                  {item.name} — {item.qty} шт
+                  {item.name} — {item.qty}
+                  {/* шт */}
+                  {t("navigation.basketPiece")}
                   <span>{item.price} €</span>
                   <button
                     onClick={() => removeFromCart(item.id)}
@@ -55,7 +64,10 @@ const CartIconHeder = () => {
               ))}
             </ul>
 
-            <h3 className={css.totalBascet}>Total cost: € {totalPrice}</h3>
+            <h3 className={css.totalBascet}>
+              {/* Total Cost */}
+              {t("navigation.totalCostBasket")}: € {totalPrice}
+            </h3>
           </div>
         </div>
       )}
@@ -112,7 +124,7 @@ export default CartIconHeder;
 //           </div>
 
 //           <span className={css.iconCount}>{totalCount}</span>
-//           {/* <span className={css.iconCount}> € {totaPrice}</span> */}
+//           {/* <span className={css.iconCount}> € {totalPrice}</span> */}
 //         </div>
 //       </button>
 

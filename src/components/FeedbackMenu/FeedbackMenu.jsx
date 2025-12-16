@@ -4,15 +4,18 @@ import { FaTelegramPlane, FaViber } from "react-icons/fa";
 import css from "./FeedbackMenu.module.css";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const FeedbackMenu = () => {
   const [openModal, setOpenModal] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
       {/* Кнопка відкриття модалки */}
       <div className={css.feedbackEntryBtn} onClick={() => setOpenModal(true)}>
-        Відгукнутись
+        {/* Відгукнутись */}
+        {t("footernav.footerResp")}
       </div>
 
       {openModal && (
@@ -26,7 +29,10 @@ const FeedbackMenu = () => {
             className={css.feedbackModal}
             onClick={e => e.stopPropagation()} // Не закривати при кліку всередині модалки
           >
-            <h2 className={css.modalTitle}>Зв’язатися з нами</h2>
+            <h2 className={css.modalTitle}>
+              {/* Зв’язатися з нами */}
+              {t("footernav.footCallUs")}
+            </h2>
 
             <div className={css.modalButtons}>
               {/* Instagram */}
@@ -87,7 +93,8 @@ const FeedbackMenu = () => {
                 setOpenModal(false);
               }}
             >
-              Закрити
+              {/* Закрити */}
+              {t("footernav.footFeedbClose")}
             </button>
           </div>
         </div>

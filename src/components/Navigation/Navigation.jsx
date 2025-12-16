@@ -35,8 +35,8 @@ export const Navigation = () => {
             {t("navigation.home")}
           </NavLink>
           <NavLink to="/factory" className={newLinkClass}>
-            MANUFACTURER
-            {/* {t("navigation.factory")} */}
+            {/* Виробництво */}
+            {t("navigation.factory")}
           </NavLink>
           <NavLink to="/catalog" className={newLinkClass}>
             {t("navigation.catalog")}
@@ -55,16 +55,23 @@ export const Navigation = () => {
         </button>
         <button
           className={css.activeButton}
+          onClick={() => changeLanguage("it")}
+        >
+          IT
+        </button>
+        {/* <button
+          className={css.activeButton}
           onClick={() => changeLanguage("uk")}
         >
           UA
-        </button>
+        </button> */}
       </div>
       <NavLink to="/feedbackPhone" className={newLinkClass}>
         {/* {t("navigation.feedbackPhone")} */}
         <p className={css.iconPhone}>
           <AiFillPhone className={css.iconPhon} />
-          Зворотній дзвінок
+          {/* Зворотній дзвінок */}
+          {t("navigation.callback")}
         </p>
       </NavLink>
       <div>

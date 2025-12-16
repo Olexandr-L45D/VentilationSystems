@@ -1,10 +1,12 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import css from "./FeedbackForm.module.css";
+import { useTranslation } from "react-i18next";
 
 export default function FeedbackForm() {
   const [sending, setSending] = useState(false);
   const [success, setSuccess] = useState(false);
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -44,7 +46,10 @@ export default function FeedbackForm() {
   return (
     <div className={css.background}>
       <form className={css.form} onSubmit={handleSubmit}>
-        <h2 className={css.title}>Напишіть листа </h2>
+        <h2 className={css.title}>
+          {/* Напишіть листа */}
+          {t("footernav.footerWriWr")}
+        </h2>
 
         <input
           className={css.input}
@@ -76,13 +81,17 @@ export default function FeedbackForm() {
         />
 
         <button className={css.button} type="submit" disabled={sending}>
-          {sending ? "Sending…" : "Надіслати"}
+          {sending ? "Sending…" : "Send"}
+          {/* {sending ? "Sending…" : '{t("footernav.footerWriSend")}'} */}
         </button>
 
-        {success && <p className={css.success}>Ваш лист надіслано ❤️</p>}
+        {success && (
+          <p className={css.success}>
+            {/* Ваш лист надіслано ! */}
+            {t("footernav.footerWriLetter")}
+          </p>
+        )}
       </form>
     </div>
   );
 }
-
-// as string,

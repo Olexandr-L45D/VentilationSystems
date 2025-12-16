@@ -6,17 +6,15 @@ import FeedbackMenu from "../FeedbackMenu/FeedbackMenu";
 import { MdEmail } from "react-icons/md";
 // import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
 import PdfActionsCondition from "../ConditionsMenu/ConditionsMenu";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const newLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
 };
 
 export const Footer = () => {
-  // const { t, ready } = useTranslation();
-  // if (!ready) {
-  //   return <div>Loading translations...</div>;
-  // }
+  const { t } = useTranslation();
+
   return (
     <section className={css.container}>
       <div className={css.title}>
@@ -60,10 +58,10 @@ export const Footer = () => {
             <FeedbackMenu />
           </NavLink>
           <NavLink to="/feedbackEmail" className={newLinkClass}>
-            {/* {t("navigation.home")} */}
             <p className={css.navEmail}>
               <MdEmail className={css.icon} />
-              Написати
+              {/* Написати */}
+              {t("footernav.footerWri")}
             </p>
           </NavLink>
         </nav>

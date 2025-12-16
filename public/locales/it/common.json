@@ -1,0 +1,65 @@
+{
+  "navigation": {
+    "home": "Casa",
+    "catalog": "Catalogare",
+    "factory": "Fabbrica",
+    "contacts": "Contatti",
+    "callback": "Richiamare",
+    "basket": "CESTO",
+    "basketPiece": "pezzo",
+    "totalCostBasket": "Costo totale",
+    "cleanUpbasket": "Ripulire",
+    "find": "TROVARE",
+    "send": "Inviare",
+    "search": "Ricerca",
+    "Load": "Carica altro",
+    "show_more": "Mostra di più",
+    "searchTitle": "Si prega di trovare la palude per categoria",
+    "titleHome": "Estrattori e sistemi di ventilazione",
+    "titleWelcom": "Nel nostro catalogo troverai le migliori soluzioni tecnologiche",
+    "View": "Visualizza ora",
+    "example": "Esempio di categoria: assiale",
+    "features": "Caratteristiche",
+    "reviews": "Recensioni",
+    "go_Catalog": "Vai al catalogo",
+    "bokTitleFm": "Prenota ora il tuo camper",
+    "bokTitleFmText": "Rimani connesso!Siamo sempre pronti ad aiutarti.",
+    "titleVeh": "Dettagli del veicolo",
+    "form": "Modulo",
+    "lenght": "Lunghezza",
+    "width": "Larghezza",
+    "height": "Altezza",
+    "tank": "Cisterna",
+    "consum": "Consumo"
+  },
+  "register": {
+    "titleRegistr": "Modulo di registrazione"
+  },
+  "login": {
+    "titleLogin": "MODULO DI ACCESSO"
+  },
+  "auth": {
+    "welcome": "Benvenuta",
+    "username": "Nome utente",
+    "password": "Password",
+    "submit": "Invia",
+    "logout": "Esci",
+    "btnLog": "Login"
+  },
+  "loader": {
+    "shortTextMessage": "Il testo deve essere più lungo di 3 caratteri"
+  },
+  "footernav": {
+    "footerWri": "Scrivere",
+    "footerResp": "Rispondere",
+    "footCallUs": "Contattaci",
+    "footFeedbClose": "vicina",
+    "footerTerms": "Termini di cooperazione",
+    "footerView": "Visualizza il PDF dell'accordo",
+    "footerViewDel": "Visualizza il PDF delle condizioni di consegna",
+    "footerViewDown": "Scarica il PDF dell'accordo",
+    "footerWriWr": "Scrivi una lettera",
+    "footerWriLetter": "La tua lettera è stata inviata!",
+    "footerWriSend": "Inviare"
+  }
+}

@@ -1,22 +1,52 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import HttpApi from "i18next-http-backend";
+import HttpBackend from "i18next-http-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 i18n
-  .use(HttpApi) // Використовуємо бекенд для завантаження перекладів
+  .use(HttpBackend)
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en", // Мова за замовчуванням
-    debug: true,
-    interpolation: {
-      escapeValue: false, // React автоматично екранує значення
-    },
+    fallbackLng: "en",
+    supportedLngs: ["en", "it"],
+    debug: false,
+
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json", // Шлях до файлів перекладу
+      loadPath: "/locales/{{lng}}/common.json",
+    },
+
+    interpolation: {
+      escapeValue: false,
+    },
+
+    react: {
+      useSuspense: true,
     },
   });
 
 export default i18n;
+
+// oldes file
+// import i18n from "i18next";
+// import { initReactI18next } from "react-i18next";
+// import HttpApi from "i18next-http-backend";
+
+// i18n
+//   .use(HttpApi) // Використовуємо бекенд для завантаження перекладів
+//   .use(initReactI18next)
+//   .init({
+//     fallbackLng: "en", // Мова за замовчуванням
+//     debug: true,
+//     interpolation: {
+//       escapeValue: false, // React автоматично екранує значення
+//     },
+//     backend: {
+//       loadPath: "/locales/{{lng}}/translation.json", // Шлях до файлів перекладу
+//     },
+//   });
+
+// export default i18n;
 
 // import i18n from "i18next";
 // import { initReactI18next } from "react-i18next";

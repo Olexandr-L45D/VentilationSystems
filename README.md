@@ -10,6 +10,18 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
   uses [SWC](https://swc.rs/) for Fast Refresh
 
+# стуркутра папок та фалів проекту
+
+VentilationSystems/ ├── public/ ├── src/ ├── scripts/ 👈 СТВОРИ ├── package.json
+
 # стуркутра фалів для скачування юзеру собі на компютер
 
 /public /pdfs turbomax-9000.pdf industrial-vent-500.pdf axial-pro-300.pdf
+
+<!-- added lenguage translate -->
+
+public/locales/ ├── en/ │ └── common.json ← SOURCE OF TRUTH ├── it/ │ └──
+common.json ← AUTO-GENERATED
+
+<!-- if wont translate in the tarminal up start: npm run translate:it
+ -->

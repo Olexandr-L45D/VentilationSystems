@@ -35,9 +35,7 @@
 }
 .iconReact {
   width: 70px;
-  height: 65px;
-  /* padding: 5px; */
-  /* margin: 5px; */
+  height: 60px;
   margin-left: -5px;
   color: hsl(63, 93%, 49%);
 }

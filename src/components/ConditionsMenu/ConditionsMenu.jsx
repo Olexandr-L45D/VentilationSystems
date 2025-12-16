@@ -1,10 +1,11 @@
 // ConditionsMenu
 // ButtonExportPdf
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
   const [open, setOpen] = useState(false);
-
+  const { t } = useTranslation();
   const toggleMenu = () => {
     setOpen(!open);
   };
@@ -25,7 +26,8 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
           minWidth: "220px",
         }}
       >
-        Умови співпраці
+        {/* Умови співпраці */}
+        {t("footernav.footerTerms")}
       </button>
 
       {/* ВИПАДАЮЧЕ МЕНЮ */}
@@ -63,7 +65,8 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
                 marginBottom: "8px",
               }}
             >
-              📄 Переглянути Договір PDF
+              {/* 📄 Переглянути Договір PDF */}
+              {t("footernav.footerView")}
             </button>
           </a>
           {/* Кнопка перегляду умов доставки */}
@@ -84,7 +87,9 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
                 marginBottom: "8px",
               }}
             >
-              📄 Переглянути умови доставки PDF
+              📄
+              {/* Переглянути умови доставки PDF */}
+              {t("footernav.footerViewDel")}
             </button>
           </a>
 
@@ -100,7 +105,9 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
                 cursor: "pointer",
               }}
             >
-              ⬇️ Завантажити Договір PDF
+              ⬇️
+              {/* Завантажити Договір PDF */}
+              {t("footernav.footerViewDown")}
             </button>
           </a>
         </div>
