@@ -11,11 +11,12 @@
   /* Забезпечує, що шапка буде зверху інших елементів */
   border-bottom: 1px solid #f2f4f7;
   padding: 24px 64px;
-  background-color: #7c86f7;
+  background-color: #222222;
+  background-image: url("../../images/FooterBlend.png");
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 349px;
   /* height: 72px; */
   width: 1440px;
   /* Забезпечує повну ширину */
@@ -23,9 +24,11 @@
   /* Додає тінь для кращої видимості */
 }
 
-.card {
-  width: 100%;
+.cardLink {
+  width: 160px;
+  height: 130px;
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -43,7 +46,16 @@
   border-radius: 2px;
   background-image: url("../../images/miniLogo.png");
 }
+.titleBlok {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 2px;
 
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1;
+}
 .title {
   height: 100%;
   padding: 0px;
@@ -78,11 +90,64 @@
   justify-content: center;
   align-items: center;
 }
-.text {
+.imgLogo {
+  width: 121;
+  height: 87px;
+  opacity: 1;
+  top: 69px;
+  left: 82px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+.cardTextBl {
+  width: 241px;
+  height: 167px;
   padding: 0px;
   margin: 0px;
   display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.textLogo {
+  padding: 5px;
+  margin: 0px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
   flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  padding: 2px;
+  margin: 5px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.navLink {
+  height: 16px;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -100,18 +165,44 @@
   margin: 0;
 }
 
-.link {
-  padding: 8px 10px;
-  margin: 20px;
+.linkSecond {
+  padding: 2px;
+  margin: 2px;
   border-radius: 4px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
 }
-
+.link {
+  padding: 8px 10px;
+  margin: 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+.iconBlocFooter {
+  padding: 2px;
+  margin: 2px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
 a:hover {
   color: #d84343;
 }
@@ -203,4 +294,11 @@ a:focus {
   text-align: center;
   align-items: center;
   /* border-radius: 40%; */
+}
+.icon {
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  color: #ffffff;
 }

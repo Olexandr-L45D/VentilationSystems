@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchAllTruck } from "../../redux/campers/operations";
 import { selectPage } from "../../redux/campers/selectors";
 import Loader from "../../components/Loader/Loader";
-import SearchBoxFiltr from "../../components/SearchBoxFiltr/SearchBoxFiltr";
+// import SearchBoxFiltr from "../../components/SearchBoxFiltr/SearchBoxFiltr";
 import { selectFilters } from "../../redux/filters/selectors";
 import { useSearchParams } from "react-router-dom";
 // import ButtonLoadMore from "../../components/ButtonLoadMore/ButtonLoadMore";
@@ -51,7 +51,7 @@ export default function VentPageFilters() {
 
   return (
     <div className={css.cartAll}>
-      <SearchBoxFiltr />
+      {/* <SearchBoxFiltr /> */}
       {isLoading ? <Loader /> : <AllVentList />}
     </div>
   );
