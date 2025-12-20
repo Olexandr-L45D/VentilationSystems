@@ -1,8 +1,5 @@
 .container {
-  position: fixed;
-  /* Фіксує контейнер в нижній частині */
   bottom: 0;
-  /* Відступ від верхнього краю екрана */
   left: 0;
   /* Вирівнювання по лівому краю */
   right: 0;
@@ -12,7 +9,7 @@
   border-bottom: 1px solid #f2f4f7;
   padding: 24px 64px;
   background-color: #222222;
-  background-image: url("../../images/FooterBlend.png");
+  background-image: url("src/images/FooterBlend.png");
   display: flex;
   justify-content: center;
   align-items: center;

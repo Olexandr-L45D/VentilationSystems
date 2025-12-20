@@ -25,3 +25,11 @@ common.json ← AUTO-GENERATED
 
 <!-- if wont translate in the tarminal up start: npm run translate:it
  -->
+<!-- Якщо не білдиться видаляю кеш -->
+<!-- # видаляємо кеші
+rm -rf node_modules
+rm -rf dist
+rm -rf .vite -->
+<!-- потім новий інсталл = npm install-->
+<!-- потім перевірка = npm audit fix
+ -->
