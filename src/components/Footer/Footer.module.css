@@ -1,11 +1,11 @@
 .container {
   bottom: 0;
   left: 0;
-  /* Вирівнювання по лівому краю */
+
   right: 0;
-  /* Вирівнювання по правому краю */
+
   z-index: 1000;
-  /* Забезпечує, що шапка буде зверху інших елементів */
+
   border-bottom: 1px solid #f2f4f7;
   padding: 24px 64px;
   background-color: #222222;
@@ -14,11 +14,8 @@
   justify-content: center;
   align-items: center;
   height: 349px;
-  /* height: 72px; */
   width: 1440px;
-  /* Забезпечує повну ширину */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  /* Додає тінь для кращої видимості */
 }
 
 .cardLink {
@@ -42,7 +39,6 @@
   padding: 0px;
   margin: 0px;
   border-radius: 2px;
-  background-image: url("../../images/miniLogo.png");
 }
 .titleBlok {
   padding: 0px;
@@ -261,30 +257,6 @@ a:focus {
   color: #0e0d0d;
 }
 
-/* Зміна кольору при наведенні */
-.languageSwitcher button:hover {
-  background-color: white;
-  border-color: white;
-  color: white;
-}
-
-/* Активна кнопка (вибрана мова) */
-.activeButton {
-  color: #0e0d0d;
-  font-weight: bold;
-  border-color: white;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.activeButton:hover,
-.activeButton:focus {
-  color: #d84343 !important;
-  font-weight: bold;
-  border-color: #d84343;
-}
-
 .navEmail {
   display: flex;
   flex-direction: row;
@@ -304,7 +276,6 @@ a:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* gap: 5px; */
 }
 .buttonIcon {
   width: 180px;
@@ -316,7 +287,6 @@ a:focus {
   flex-direction: row;
   text-align: center;
   align-items: center;
-  /* border-radius: 40%; */
 }
 .iconb {
   width: 30px;

@@ -8,7 +8,6 @@
   margin-right: 108px;
 
   z-index: 1000;
-  /* background-image: url("../../images/blendBakground.png"); */
   background-image: url("src/images/blendBakground.png");
   background-repeat: no-repeat, no-repeat;
   background-size: cover;
