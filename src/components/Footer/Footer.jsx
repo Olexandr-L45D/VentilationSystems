@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 // import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
 import PdfActionsCondition from "../ConditionsMenu/ConditionsMenu";
 import { useTranslation } from "react-i18next";
-import FooterLogo from "../../assets/images/FooterLogo.png";
+import FooterLogo from "../../assets/images/footerlogo.png";
 import footerBg from "../../assets/images/FooterBlend.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
