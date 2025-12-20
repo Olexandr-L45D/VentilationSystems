@@ -30,6 +30,11 @@
   align-items: center;
 }
 
+.liIcon {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+}
 .titleImg {
   display: flex;
   text-align: center;

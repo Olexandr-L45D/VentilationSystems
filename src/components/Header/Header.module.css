@@ -135,3 +135,16 @@ a:focus {
   align-items: center;
   gap: 10px;
 }
+.titleImg {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 80px;
+  background-repeat: no-repeat;
+  padding: 2px;
+  margin: 2px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+}

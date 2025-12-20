@@ -18,12 +18,10 @@ export const Navigation = () => {
       <section className={css.card}>
         <nav className={css.nav}>
           <div className={css.iconBlok}>
-            <img
-              // src="public/images/IconButtonCatalog.png"
-              src={IconButtonCatalog}
-              alt=""
-              className={css.imgLogo}
-            />
+            <div
+              className={css.liIcon}
+              style={{ backgroundImage: `url(${IconButtonCatalog})` }}
+            ></div>
             <NavLink to="/catalog" className={newLinkClass}>
               {t("navigation.catalog")}
             </NavLink>
@@ -48,3 +46,10 @@ export const Navigation = () => {
     </section>
   );
 };
+
+//  <img
+//    // src="public/images/IconButtonCatalog.png"
+//    src={IconButtonCatalog}
+//    alt=""
+//    className={css.imgLogo}
+//  />;
