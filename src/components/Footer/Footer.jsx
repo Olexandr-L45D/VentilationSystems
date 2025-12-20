@@ -30,11 +30,8 @@ export const Footer = () => {
       style={{ backgroundImage: `url(${footerBg})` }}
     >
       <div className={css.titleText}>
-        <div
-          className={css.titleImg}
-          style={{ backgroundImage: `url(${FooterLogo})` }}
-        >
-          {/* <img src={FooterLogo} alt="" className={css.imgLogo} /> */}
+        <div className={css.titleImg}>
+          <img src={FooterLogo} alt="" className={css.imgLogo} />
         </div>
         <p className={css.textLogo}>
           Energy-efficient solutions with high performance, quiet operation, and

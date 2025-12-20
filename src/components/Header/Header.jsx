@@ -23,10 +23,9 @@ export const Header = () => {
   }
   return (
     <section className={css.container}>
-      <div
-        className={css.titleImg}
-        style={{ backgroundImage: `url(${LogoVent})` }}
-      ></div>
+      <div className={css.titleImg}>
+        <img src={LogoVent} alt="" className={css.imgLogo} />
+      </div>
 
       <SearchBoxFiltr />
       <div className={css.languageSwitcher}>
@@ -55,9 +54,3 @@ export const Header = () => {
     </section>
   );
 };
-
-{
-  /* <div className={css.titleImg}>
-  <img src={LogoVent} alt="" className={css.imgLogo} />
-</div>; */
-}
