@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 // import CartIconHeder from "../CartIconHeder/CartIconHeder";
 import { AiFillPhone } from "react-icons/ai";
 import SearchBoxFiltr from "../SearchBoxFiltr/SearchBoxFiltr";
-import LogoVent from "../../assets/images/LogoVent.png";
+// import LogoVent from "../../assets/images/LogoVent.png";
 
 const newLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <section className={css.container}>
       <div className={css.titleImg}>
-        <img src={LogoVent} alt="" className={css.imgLogo} />
+        <img src="public/images/LogoVent.png" alt="" className={css.imgLogo} />
       </div>
 
       <SearchBoxFiltr />
