@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import css from "./Navigation.module.css";
 import { useTranslation } from "react-i18next";
-import IconButtonCatalog from "/src/assets/images/IconButtonCatalog.png";
+import IconButtonCatalog from "../../assets/images/IconButtonCatalog.png";
 
 const newLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);

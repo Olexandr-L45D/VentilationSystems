@@ -7,7 +7,8 @@ import { MdEmail } from "react-icons/md";
 // import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
 import PdfActionsCondition from "../ConditionsMenu/ConditionsMenu";
 import { useTranslation } from "react-i18next";
-import LogoVent from "/src/assets/images/FooterLogo.png";
+import LogoVent from "../../assets/images/FooterLogo.png";
+import footerBg from "../../assets/images/FooterBlend.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -24,7 +25,10 @@ export const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <section className={css.container}>
+    <section
+      className={css.container}
+      style={{ backgroundImage: `url(${footerBg})` }}
+    >
       <div className={css.titleText}>
         <div className={css.titleImg}>
           <img src={LogoVent} alt="" className={css.imgLogo} />
