@@ -1,6 +1,6 @@
 /* Кнопка у футері */
 .feedbackEntryBtn {
-  background: linear-gradient(135deg, #f7f5f7, #816ee1);
+  background: linear-gradient(135deg, #f7f5f7, #a6a6a8);
   padding: 8px 16px;
   border-radius: 10px;
   color: #fff;
@@ -21,7 +21,7 @@
 .feedbackModalOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
   max-width: 380px;
   padding: 25px;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.6);
   animation: slideUp 0.35s ease;
   text-align: center;
 }
@@ -63,7 +63,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: #5a4c7d;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.25s ease;
@@ -135,7 +135,7 @@
   justify-content: center;
   text-align: center;
   gap: 10px;
-  color: #5a4c7d;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.25s ease;
@@ -157,7 +157,7 @@
   margin: 20px;
   border-radius: 4px;
   text-decoration: none;
-  color: black;
+  color: #fff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;

@@ -16,9 +16,9 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
       <button
         onClick={toggleMenu}
         style={{
-          padding: "12px 20px",
-          background: "#0070f3",
-          color: "#fff",
+          padding: "8px 8px",
+          background: "rgba(255, 255, 255, 0.6);",
+          color: "#100e0eff",
           border: "none",
           borderRadius: "20px",
           cursor: "pointer",

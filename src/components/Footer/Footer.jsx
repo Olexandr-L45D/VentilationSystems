@@ -39,16 +39,15 @@ export const Footer = () => {
         <h2 className={css.titleBlok}>Navigation</h2>
 
         <NavLink to="/" className={newLinkClassSecond}>
-          {/* {t("navigation.home")} */}
-          <p>About Us</p>
+          {t("navigation.about")}
         </NavLink>
 
         <NavLink to="/catalog" className={newLinkClassSecond}>
-          {t("navigation.catalog")}
+          {t("navigation.catalogFo")}
         </NavLink>
 
         <NavLink to="/contacts" className={newLinkClassSecond}>
-          {t("navigation.contacts")}
+          {t("navigation.contactsFo")}
         </NavLink>
       </section>
 
@@ -57,61 +56,61 @@ export const Footer = () => {
 
         <div className={css.titleText}>
           <p className={css.text}>
-            <AiFillPhone /> +3904451716513
+            <AiFillPhone className={css.iconb} /> +3904451716513
           </p>
           <p className={css.text}>
-            <MdEmail className={css.icon} /> lyubov@blackicon.it
+            <MdEmail className={css.iconb} /> lyubov@blackicon.it
           </p>
           <p className={css.text}>Via Santa Maria, nr 84</p>
           <p className={css.text}>36030-Sarcedo-Vcenza-Italia</p>
         </div>
       </section>
+      <section className={css.rightSection}>
+        <section className={css.cardTextBl}>
+          <h2 className={css.titleBlokRi}>
+            <FeedbackMenu />
+          </h2>
 
-      <div className={css.buttonIconBlok}>
-        <div className={css.buttonIcon}>
-          {/* <GoArrowLeft className={css.icons} /> */}
-          {/* <p>Умови співпраці</p> */}
-          <PdfActionsCondition
-            viewUrl="/pdfs/mnItalvent_1.pdf"
-            viewUrlDelivery="/pdfs/mnItalvent_1.pdf"
-            downloadUrl="/pdfs/mnItalvent_1.pdf"
-          />
-        </div>
-      </div>
-
-      <section className={css.cardTextBl}>
-        <h2 className={css.titleBlok}>
-          <FeedbackMenu />
-        </h2>
-
-        <div className={css.iconBlocFooter}>
-          <p className={css.text}>
-            <FaLinkedin className={css.icon} />
-          </p>
-          <p className={css.text}>
-            <IoLogoInstagram className={css.icon} />
-          </p>
-          <p className={css.text}>
-            <FaTelegramPlane className={css.icon} />
-          </p>
-          <p className={css.text}>
-            <FaViber className={css.icon} />
-          </p>
-          <p className={css.text}>
-            <FaWhatsapp className={css.icon} />
-          </p>
-        </div>
-      </section>
-      <section className={css.card}>
-        <nav className={css.nav}>
-          <NavLink to="/feedbackEmail" className={newLinkClass}>
-            <p className={css.navEmail}>
-              <MdEmail className={css.icon} />
-              {/* Написати */}
-              {t("footernav.footerWri")}
+          <div className={css.iconBlocFooter}>
+            <p className={css.text}>
+              <FaLinkedin className={css.icon} />
             </p>
-          </NavLink>
-        </nav>
+            <p className={css.text}>
+              <IoLogoInstagram className={css.icon} />
+            </p>
+            <p className={css.text}>
+              <FaTelegramPlane className={css.icon} />
+            </p>
+            <p className={css.text}>
+              <FaViber className={css.icon} />
+            </p>
+            <p className={css.text}>
+              <FaWhatsapp className={css.icon} />
+            </p>
+          </div>
+        </section>
+        <section className={css.buttonIconBlok}>
+          <div className={css.buttonIcon}>
+            {/* модалка умови співпраці */}
+            <PdfActionsCondition
+              viewUrl="/pdfs/mnItalvent_1.pdf"
+              viewUrlDelivery="/pdfs/mnItalvent_1.pdf"
+              downloadUrl="/pdfs/mnItalvent_1.pdf"
+            />
+          </div>
+          {/* модалка написати відгук на месенджери */}
+          <section className={css.card}>
+            <nav className={css.nav}>
+              <NavLink to="/feedbackEmail" className={newLinkClass}>
+                <p className={css.navEmail}>
+                  <MdEmail className={css.icon} />
+                  {/* Написати */}
+                  {t("footernav.footerWri")}
+                </p>
+              </NavLink>
+            </nav>
+          </section>
+        </section>
       </section>
     </section>
   );

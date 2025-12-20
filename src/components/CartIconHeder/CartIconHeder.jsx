@@ -1,81 +1,81 @@
-// CartIconHeder
-import { useState, useContext } from "react";
-import { CartContext } from "../CartProvider";
-import css from "./CartIconHeder.module.css";
-import { BiSolidCartAlt, BiTrash } from "react-icons/bi";
-import { useTranslation } from "react-i18next";
+// // CartIconHeder
+// import { useState, useContext } from "react";
+// import { CartContext } from "../CartProvider";
+// import css from "./CartIconHeder.module.css";
+// import { BiSolidCartAlt, BiTrash } from "react-icons/bi";
+// import { useTranslation } from "react-i18next";
 
-const CartIconHeder = () => {
-  const [open, setOpen] = useState(false);
-  const { cart, removeFromCart, clearCart } = useContext(CartContext);
-  const { t } = useTranslation();
+// const CartIconHeder = () => {
+//   const [open, setOpen] = useState(false);
+//   const { cart, removeFromCart, clearCart } = useContext(CartContext);
+//   const { t } = useTranslation();
 
-  const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
-  const totalPrice = cart.reduce(
-    (sum, item) => sum + (Number(item.price) || 0) * item.qty,
-    0
-  );
+//   const totalCount = cart.reduce((sum, item) => sum + item.qty, 0);
+//   const totalPrice = cart.reduce(
+//     (sum, item) => sum + (Number(item.price) || 0) * item.qty,
+//     0
+//   );
 
-  return (
-    <>
-      {/* КНОПКА КОРЗИНИ */}
-      <button onClick={() => setOpen(true)} className={css.activeButton}>
-        <BiSolidCartAlt className={css.iconReact} />
-        <span className={css.iconCount}>{totalCount}</span>
-      </button>
+//   return (
+//     <>
+//       {/* КНОПКА КОРЗИНИ */}
+//       <button onClick={() => setOpen(true)} className={css.activeButton}>
+//         <BiSolidCartAlt className={css.iconReact} />
+//         <span className={css.iconCount}>{totalCount}</span>
+//       </button>
 
-      {/* ✅ МОДАЛКА */}
-      {open && (
-        <div className={css.overlay}>
-          <div className={css.modal}>
-            {/* ✕ Закриття */}
-            <button className={css.closeBtn} onClick={() => setOpen(false)}>
-              ✕
-            </button>
+//       {/* ✅ МОДАЛКА */}
+//       {open && (
+//         <div className={css.overlay}>
+//           <div className={css.modal}>
+//             {/* ✕ Закриття */}
+//             <button className={css.closeBtn} onClick={() => setOpen(false)}>
+//               ✕
+//             </button>
 
-            {/* Вміст корзини — БЕЗ ЗМІН */}
-            <section className={css.hedBlock}>
-              <h2 className={css.bascetTitle}>
-                {/* КОРЗИНА */}
-                {t("navigation.basket")}
-                🛒
-              </h2>
+//             {/* Вміст корзини — БЕЗ ЗМІН */}
+//             <section className={css.hedBlock}>
+//               <h2 className={css.bascetTitle}>
+//                 {/* КОРЗИНА */}
+//                 {t("navigation.basket")}
+//                 🛒
+//               </h2>
 
-              <button onClick={clearCart} className={css.clearBtn}>
-                {/* Очистити */}
-                {t("navigation.cleanUpbasket")}
-              </button>
-            </section>
+//               <button onClick={clearCart} className={css.clearBtn}>
+//                 {/* Очистити */}
+//                 {t("navigation.cleanUpbasket")}
+//               </button>
+//             </section>
 
-            <ul className={css.list}>
-              {cart.map(item => (
-                <li key={item.id} className={css.itemBlock}>
-                  {item.name} — {item.qty}
-                  {/* шт */}
-                  {t("navigation.basketPiece")}
-                  <span>{item.price} €</span>
-                  <button
-                    onClick={() => removeFromCart(item.id)}
-                    className={css.itemButton}
-                  >
-                    <BiTrash />
-                  </button>
-                </li>
-              ))}
-            </ul>
+//             <ul className={css.list}>
+//               {cart.map(item => (
+//                 <li key={item.id} className={css.itemBlock}>
+//                   {item.name} — {item.qty}
+//                   {/* шт */}
+//                   {t("navigation.basketPiece")}
+//                   <span>{item.price} €</span>
+//                   <button
+//                     onClick={() => removeFromCart(item.id)}
+//                     className={css.itemButton}
+//                   >
+//                     <BiTrash />
+//                   </button>
+//                 </li>
+//               ))}
+//             </ul>
 
-            <h3 className={css.totalBascet}>
-              {/* Total Cost */}
-              {t("navigation.totalCostBasket")}: € {totalPrice}
-            </h3>
-          </div>
-        </div>
-      )}
-    </>
-  );
-};
+//             <h3 className={css.totalBascet}>
+//               {/* Total Cost */}
+//               {t("navigation.totalCostBasket")}: € {totalPrice}
+//             </h3>
+//           </div>
+//         </div>
+//       )}
+//     </>
+//   );
+// };
 
-export default CartIconHeder;
+// export default CartIconHeder;
 
 // import { useState } from "react";
 // import { useContext } from "react";

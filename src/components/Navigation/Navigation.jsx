@@ -23,11 +23,12 @@ export const Navigation = () => {
               {t("navigation.catalog")}
             </NavLink>
           </div>
-          {/* <NavLink to="/catalog" className={newLinkClass}>
-            {t("navigation.catalog")}
-          </NavLink> */}
+
           <NavLink to="/" className={newLinkClass}>
             {t("navigation.home")}
+          </NavLink>
+          <NavLink to="/" className={newLinkClass}>
+            {t("navigation.delivery")}
           </NavLink>
           <NavLink to="/factory" className={newLinkClass}>
             {/* Виробництво */}
