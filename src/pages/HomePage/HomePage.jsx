@@ -8,7 +8,7 @@ export default function HomePage() {
     return <div>Loading translations...</div>;
   }
   return (
-    <div className={css.background}>
+    <section className={css.background}>
       <section className={css.card}>
         <h1 className={css.cartTitle}>{t("navigation.titleHome")}</h1>
         <h3 className={css.cartText}>{t("navigation.titleWelcom")}</h3>
@@ -22,6 +22,6 @@ export default function HomePage() {
           </Link>
         </section>
       </section>
-    </div>
+    </section>
   );
 }

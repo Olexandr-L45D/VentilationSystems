@@ -1,49 +1,62 @@
-/* ContactsPage.module.css */
+/* AboutUsPage */
+
+.background {
+  /* min-height: calc(100vh - 56px); */
+  /* overflow: hidden; */
+  background-image: url("../../images/aboutUsPage.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%, 280px 210px;
+  width: 1440px;
+  height: 652px;
+}
 .container {
-  width: 100%;
+  padding: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 140px;
   height: auto;
+  /* top: 150; */
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .card {
-  width: 100%;
-  height: auto;
   display: flex;
-  margin-top: 70px;
-  padding: 0;
+  margin: 0px;
+  margin-top: 300px;
+
+  /* margin-left: 64px; */
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
 }
 .cartTitle {
   padding: 2px;
   margin: 2px;
-  color: #121212;
+  color: #fff;
   font-size: 2em;
   font-weight: 900;
   line-height: 2;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: start;
+  align-items: left;
+  text-align: left;
 }
 
 .cartText {
   padding: 2px;
   margin: 2px;
-  color: #0b0b0b;
+  color: #fff;
   font-size: 1em;
   font-weight: 700;
   line-height: 1;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: start;
+  align-items: left;
+  text-align: left;
 }
 
 .cartBtn {
@@ -61,14 +74,6 @@
   padding: 0px;
 }
 
-.background {
-  /* min-height: calc(100vh - 56px);
-  overflow: hidden; */
-  /* background-image: url("../../images/OLddesignHome.png"); */
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 280px 210px;
-}
-
 .buttonViews {
   width: 166px;
   height: 56px;
@@ -83,14 +88,14 @@
 }
 
 .btnVie {
-  width: 166px;
-  height: 56px;
+  width: 207px;
+  height: 59px;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e44848;
+  background-color: #222222;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 40px;
+  border-radius: 20px;
   color: #fff;
 }

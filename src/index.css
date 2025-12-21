@@ -1,5 +1,10 @@
 @import "leaflet/dist/leaflet.css";
-/* import "leaflet/dist/leaflet.css"; */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -22,14 +27,6 @@ a:hover {
   color: #080808;
 }
 
-body {
-  color: #080808;
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
 header {
   border: 0px solid rgba(250, 245, 245, 0.1);
 }
@@ -51,7 +48,7 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: #86878b;
 }
 
 button:focus,
@@ -66,7 +63,7 @@ button:focus-visible {
   }
 
   a:hover {
-    color: #747bff;
+    color: #58585b;
   }
 
   button {

@@ -1,14 +1,20 @@
-.background {
-  /* min-height: calc(100vh - 56px); */
-  overflow: hidden;
-  background-image: url("../../images/OLddesignHome.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 280px 210px;
+.formContainer {
+  /* margin-top: 10px; */
+  width: 340px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  /* Жовта вертикальна смуга зліва — як у макеті */
+  border-left: 2px solid #fbb007;
+  padding-left: 10px; /* відступ, щоб форма не "липла" до смуги */
 }
 
 .form {
-  width: 100%;
-  max-width: 420px;
+  /* width: 100%; */
+  max-width: 339px;
+  max-height: 353px;
   margin: 0 auto;
   padding: 10px;
   background: #ffffff;
@@ -16,6 +22,8 @@
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
   gap: 10px;
   z-index: 1000;
 }
@@ -26,12 +34,14 @@
   text-align: center;
   color: #3a3a3a;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .input {
-  width: 100%;
+  max-width: 292px;
+  height: 46px;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   border: 1px solid #d8d8d8;
   background: #fafafa;
   transition: 0.2s ease;
@@ -45,30 +55,14 @@
   box-shadow: 0 0 0 3px rgba(184, 184, 255, 0.25);
 }
 
-.textarea {
-  width: 100%;
-  min-height: 120px;
-  padding: 5px 10px;
-  border-radius: 10px;
-  border: 1px solid #d8d8d8;
-  background: #fafafa;
-  transition: 0.2s ease;
-  font-size: 15px;
-  resize: vertical;
-}
-
-.textarea:focus {
-  border-color: #b8b8ff;
-  background: #ffffff;
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(184, 184, 255, 0.25);
-}
-
 .button {
-  padding: 8px 12px;
+  margin-left: 20px;
+  max-width: 193px;
+  padding: 8px;
   border: none;
-  border-radius: 10px;
-  background: #7d7dff;
+  border-radius: 20px;
+  background: #fbb00780;
+
   color: white;
   font-size: 16px;
   font-weight: 600;
@@ -77,7 +71,7 @@
 }
 
 .button:hover:not(:disabled) {
-  background: #6a6afb;
+  background: #e3c78380;
 }
 
 .button:disabled {

@@ -2,23 +2,21 @@
   position: fixed;
 
   z-index: 1000;
-  margin-top: 55px;
+  margin-top: 80px;
+  margin-left: 60px;
+  margin-right: 60px;
   background-color: #222222;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* width: 1440px; */
-  /* Забезпечує повну ширину */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  /* Додає тінь для кращої видимості */
   width: 1298px;
   height: 59px;
 
   opacity: 1;
   top: 121;
-  left: 71px;
+
   border-radius: 20px;
 }
 

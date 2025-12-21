@@ -1,6 +1,9 @@
 .cartAll {
-  width: 1440px;
+  /* position: static !important; */
+  width: 100%;
   height: auto;
+  min-height: 100%;
+  overflow: visible;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -8,6 +11,11 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* overflow-x: hidden; */
-  /* фіксує сторінку і блокує горизонтальний скрол (вліво/вправо) */
+  /* background-image: url("../../images/catalogdesctop.png"); */
 }
+/* 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */

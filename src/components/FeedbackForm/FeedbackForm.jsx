@@ -44,7 +44,7 @@ export default function FeedbackForm() {
   };
 
   return (
-    <div className={css.background}>
+    <section className={css.formContainer}>
       <form className={css.form} onSubmit={handleSubmit}>
         <h2 className={css.title}>
           {/* Напишіть листа */}
@@ -55,7 +55,7 @@ export default function FeedbackForm() {
           className={css.input}
           type="text"
           name="name"
-          placeholder="Ваше імʼя"
+          placeholder="name"
           value={formData.name}
           onChange={handleChange}
           required
@@ -65,7 +65,7 @@ export default function FeedbackForm() {
           className={css.input}
           type="email"
           name="email"
-          placeholder="Ваш Email"
+          placeholder=" Email"
           value={formData.email}
           onChange={handleChange}
           required
@@ -74,15 +74,14 @@ export default function FeedbackForm() {
         <textarea
           className={css.textarea}
           name="message"
-          placeholder="Ваше повідомлення"
+          placeholder="message"
           value={formData.message}
           onChange={handleChange}
           required
         />
 
         <button className={css.button} type="submit" disabled={sending}>
-          {sending ? "Sending…" : "Send"}
-          {/* {sending ? "Sending…" : '{t("footernav.footerWriSend")}'} */}
+          {sending ? "Sending…" : t("footernav.footerWriSend")}
         </button>
 
         {success && (
@@ -92,6 +91,6 @@ export default function FeedbackForm() {
           </p>
         )}
       </form>
-    </div>
+    </section>
   );
 }

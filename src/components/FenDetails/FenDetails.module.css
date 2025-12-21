@@ -1,6 +1,7 @@
 /* FenDetails */
 .container {
-  width: 1440px;
+  /* width: 1440px; */
+  width: 100%;
   height: auto;
   margin: 10px;
   padding: 10px;

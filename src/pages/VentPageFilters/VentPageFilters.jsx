@@ -9,7 +9,9 @@ import { selectFilters } from "../../redux/filters/selectors";
 import { useSearchParams } from "react-router-dom";
 // import ButtonLoadMore from "../../components/ButtonLoadMore/ButtonLoadMore";
 import { setChangeFilter } from "../../redux/filters/slice";
-import AllVentList from "../../components/AllVentList/AllVentList";
+// import AllVentList from "../../components/AllVentList/AllVentList";
+import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
+import CatalogGallary from "../../components/CatalogGallary/CatalogGallary";
 
 export default function VentPageFilters() {
   const dispatch = useDispatch();
@@ -50,9 +52,11 @@ export default function VentPageFilters() {
   }, [dispatch, page, filteres]);
 
   return (
-    <div className={css.cartAll}>
+    <section className={css.cartAll}>
       {/* <SearchBoxFiltr /> */}
-      {isLoading ? <Loader /> : <AllVentList />}
-    </div>
+      {/* {isLoading ? <Loader /> : <AllVentList />} */}
+      {isLoading ? <Loader /> : <CatalogGallary />}
+      <ScrollToTopButton />
+    </section>
   );
 }

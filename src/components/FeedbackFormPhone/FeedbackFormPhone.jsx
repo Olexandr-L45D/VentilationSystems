@@ -1,15 +1,15 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import css from "./FeedbackFormPhone.module.css";
+import { useTranslation } from "react-i18next";
 
 export default function FeedbackFormPhone() {
+  const { t } = useTranslation();
   const [sending, setSending] = useState(false);
   const [success, setSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
-    message: "",
   });
 
   const handleChange = e => {
@@ -27,15 +27,13 @@ export default function FeedbackFormPhone() {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: formData.name,
-          email: formData.email,
           phone: formData.phone,
-          message: formData.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
 
       setSuccess(true);
-      setFormData({ name: "", email: "", phone: "", message: "" });
+      setFormData({ name: "", phone: "" });
     } catch (err) {
       console.error("Email send error:", err);
     } finally {
@@ -44,26 +42,16 @@ export default function FeedbackFormPhone() {
   };
 
   return (
-    <div className={css.background}>
+    <section className={css.formContainer}>
       <form className={css.form} onSubmit={handleSubmit}>
-        <h2 className={css.title}>Замовте зворотній дзвінок </h2>
+        <h2 className={css.title}>{t("navigation.feedbackTitle")} </h2>
 
         <input
           className={css.input}
           type="text"
           name="name"
-          placeholder="Ваше імʼя"
+          placeholder="name"
           value={formData.name}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          className={css.input}
-          type="email"
-          name="email"
-          placeholder="Ваш Email"
-          value={formData.email}
           onChange={handleChange}
           required
         />
@@ -71,34 +59,20 @@ export default function FeedbackFormPhone() {
           className={css.input}
           type="tel"
           name="phone"
-          placeholder="Ваш phone"
+          placeholder=" phone"
           value={formData.phone}
           onChange={handleChange}
           required
         />
 
-        <textarea
-          className={css.textarea}
-          name="message"
-          placeholder="Вкажіть коротко яка категорія товарів вас цікавить та стисло основні вимоги до обладнання"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-
         <button className={css.button} type="submit" disabled={sending}>
-          {sending ? "Sending…" : "Надіслати"}
+          {sending ? "Sending…" : t("navigation.feedbackSend")}
         </button>
 
         {success && (
-          <p className={css.success}>
-            Вітаємо зворотній звязок в обробці. З вами звяжуться протягом 2
-            годин
-          </p>
+          <p className={css.success}>{t("footernav.footerWriLetter")}</p>
         )}
       </form>
-    </div>
+    </section>
   );
 }
-
-// as string,

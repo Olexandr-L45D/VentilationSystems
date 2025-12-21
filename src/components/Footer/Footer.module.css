@@ -1,21 +1,28 @@
+/*  "./Footer.module.css"; */
+.footer {
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* max-width: 1400px; */
+  width: 100%;
+  align-items: flex-start;
+}
+
 .container {
-  bottom: 0;
-  left: 0;
-
-  right: 0;
-
-  z-index: 1000;
-
-  border-bottom: 1px solid #f2f4f7;
+  width: 100%;
+  min-height: 349px;
   padding: 24px 64px;
+
   background-color: #222222;
-  /* background-image: url("src/images/FooterBlend.png"); */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 349px;
-  width: 1440px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: auto;
+  z-index: 10;
+  /* border-top: 1px solid #f2f4f7; */
 }
 
 .cardLink {
@@ -239,26 +246,6 @@ a:focus {
   color: #d84343;
 }
 
-.languageSwitcher {
-  display: flex;
-  gap: 10px;
-  padding: 1px;
-  padding-right: 30px;
-  margin: 1px;
-  margin-right: 170px;
-  margin-left: auto;
-}
-
-.languageSwitcher button {
-  padding: 5px 10px;
-  background: none;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  color: #0e0d0d;
-}
-
 .navEmail {
   display: flex;
   flex-direction: row;
@@ -303,6 +290,5 @@ a:focus {
   height: 30px;
   padding: 0px;
   margin: 0px;
-
   color: #ffffff;
 }

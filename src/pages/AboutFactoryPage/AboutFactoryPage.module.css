@@ -60,8 +60,6 @@
 }
 
 .background {
-  min-height: calc(100vh - 56px);
-  overflow: hidden;
   /* background-image: url("../../images/OLddesignHome.png"); */
   background-repeat: no-repeat, no-repeat;
   background-size: 100%, 280px 210px;

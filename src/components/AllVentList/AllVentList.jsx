@@ -22,7 +22,7 @@ export default function AllVentList() {
     return <div>No Ventilation available</div>; // Відобразіть це, якщо дані ще не завантажені
   }
   return (
-    <div className={css.containerList}>
+    <section className={css.containerList}>
       <ul className={css.list}>
         {trucks.map(truck => (
           <li key={truck.id} className={css.cartItem}>
@@ -157,7 +157,7 @@ export default function AllVentList() {
           </li>
         ))}
       </ul>
-    </div>
+    </section>
   );
 }
 //

@@ -1,6 +1,7 @@
 {
   "navigation": {
-    "home": "about us",
+    "home": "home",
+    "aboutnav": "about us",
     "about": "About us",
     "catalog": "catalog",
     "catalogFo": "Catalog",
@@ -34,7 +35,9 @@
     "width": "Width",
     "height": "Height",
     "tank": "weiht",
-    "consum": "Consumption"
+    "consum": "Consumption",
+    "feedbackTitle": "Feedback form",
+    "feedbackSend": "order a call"
   },
   "register": {
     "titleRegistr": "RegistrationForm"

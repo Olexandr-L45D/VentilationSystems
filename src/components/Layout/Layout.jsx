@@ -9,12 +9,15 @@ import Bakground from "../../assets/images/blendBakground.png";
 export const Layout = ({ children }) => {
   return (
     <div
-      className={css.container}
+      className={css.layout}
       style={{ backgroundImage: `url(${Bakground})` }}
     >
       <Header />
       <Navigation />
-      <Suspense fallback={null}>{children}</Suspense>
+      <main className={css.main}>
+        <Suspense fallback={null}>{children}</Suspense>
+      </main>
+      {/* <Suspense fallback={null}>{children}</Suspense> */}
       <Footer />
     </div>
   );

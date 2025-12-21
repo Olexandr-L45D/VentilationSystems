@@ -1,5 +1,8 @@
+/* AllVentList.module.css */
 .containerList {
-  width: 888px;
+  position: static !important;
+  /* width: 888px; */
+  width: 1000px;
   height: auto;
   margin: 0px;
   padding: 0px;
@@ -9,8 +12,10 @@
 }
 
 .list {
-  width: 880px;
-  height: 368px;
+  width: 1000px;
+  /* width: 880px; */
+  /* height: 368px; */
+  height: auto;
   margin: 1px;
   margin-left: 10px;
   padding: 1px;
@@ -70,7 +75,8 @@
 
 .cartContainer {
   width: 888px;
-  height: 368px;
+  /* height: 368px; */
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -336,12 +342,10 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background-image: url("/public/pdfs/mnItalvent_1.pdf"); */
-  /* background-image: url("../../images/OLddesignHome.png"); */
 }
 
 .buttonIconBlok {
-  margin-bottom: -100px;
+  margin-bottom: 0px;
   margin-left: 20px;
 }
 .buttonIcon {
