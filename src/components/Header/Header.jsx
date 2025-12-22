@@ -22,13 +22,13 @@ export const Header = () => {
     return <div>Loading translations...</div>;
   }
   return (
-    <section className={css.container}>
-      <div className={css.titleImg}>
+    <header className={css.container}>
+      <figure className={css.titleImg}>
         <img src={LogoVent} alt="" className={css.imgLogo} />
-      </div>
+      </figure>
 
       <SearchBoxFiltr />
-      <div className={css.languageSwitcher}>
+      <article className={css.languageSwitcher}>
         <button
           className={css.activeButton}
           onClick={() => changeLanguage("en")}
@@ -41,7 +41,7 @@ export const Header = () => {
         >
           IT
         </button>
-      </div>
+      </article>
       <NavLink to="/feedbackPhone" className={newLinkClass}>
         {/* {t("navigation.feedbackPhone")} */}
         <p className={css.iconPhone}>
@@ -51,6 +51,6 @@ export const Header = () => {
         </p>
       </NavLink>
       <div>{/* <CartIconHeder /> */}</div>
-    </section>
+    </header>
   );
 };

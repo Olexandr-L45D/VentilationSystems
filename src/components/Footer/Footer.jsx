@@ -8,6 +8,7 @@ import { MdEmail } from "react-icons/md";
 import PdfActionsCondition from "../ConditionsMenu/ConditionsMenu";
 import { useTranslation } from "react-i18next";
 import FooterLogo from "../../assets/images/Footerlogo.png";
+// EllipseLeft;
 import footerBg from "../../assets/images/FooterBlend.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
@@ -31,16 +32,16 @@ export const Footer = () => {
         style={{ backgroundImage: `url(${footerBg})` }}
       >
         <div className={css.titleText}>
-          <div className={css.titleImg}>
+          <figure className={css.titleImg}>
             <img src={FooterLogo} alt="" className={css.imgLogo} />
-          </div>
+          </figure>
           <p className={css.textLogo}>
             Energy-efficient solutions with high performance, quiet operation,
             and guaranteed safety.
           </p>
         </div>
 
-        <section className={css.cardLink}>
+        <nav className={css.cardLink}>
           <h2 className={css.titleBlok}>Navigation</h2>
 
           <NavLink to="/aboutus" className={newLinkClassSecond}>
@@ -54,21 +55,26 @@ export const Footer = () => {
           <NavLink to="/contacts" className={newLinkClassSecond}>
             {t("navigation.contactsFo")}
           </NavLink>
-        </section>
+        </nav>
 
         <section className={css.cardTextBl}>
           <h2 className={css.titleBlok}>Contact information</h2>
 
-          <div className={css.titleText}>
-            <p className={css.text}>
+          <ul className={css.titleText}>
+            <li className={css.text}>
               <AiFillPhone className={css.iconb} /> +3904451716513
-            </p>
-            <p className={css.text}>
+            </li>
+            <li className={css.text}>
               <MdEmail className={css.iconb} /> lyubov@blackicon.it
-            </p>
-            <p className={css.text}>Via Santa Maria, nr 84</p>
-            <p className={css.text}>36030-Sarcedo-Vcenza-Italia</p>
-          </div>
+              <a className={css.text} href="mailto:info@example.com">
+                {/* info@example.com */}
+              </a>
+            </li>
+
+            <li className={css.text}>Via Santa Maria, nr 84</li>
+            <li className={css.text}>36030-Sarcedo-Vcenza-Italia</li>
+            <li className={css.text}>© 2025 Назва компанії</li>
+          </ul>
         </section>
         <section className={css.rightSection}>
           <section className={css.cardTextBl}>
@@ -76,24 +82,25 @@ export const Footer = () => {
               <FeedbackMenu />
             </h2>
 
-            <div className={css.iconBlocFooter}>
-              <p className={css.text}>
+            <ul className={css.iconBlocFooter}>
+              <li className={css.text}>
                 <FaLinkedin className={css.icon} />
-              </p>
-              <p className={css.text}>
+              </li>
+              <li className={css.text}>
                 <IoLogoInstagram className={css.icon} />
-              </p>
-              <p className={css.text}>
+              </li>
+              <li className={css.text}>
                 <FaTelegramPlane className={css.icon} />
-              </p>
-              <p className={css.text}>
+              </li>
+              <li className={css.text}>
                 <FaViber className={css.icon} />
-              </p>
-              <p className={css.text}>
+              </li>
+              <li className={css.text}>
                 <FaWhatsapp className={css.icon} />
-              </p>
-            </div>
+              </li>
+            </ul>
           </section>
+
           <section className={css.buttonIconBlok}>
             <div className={css.buttonIcon}>
               {/* модалка умови співпраці */}
