@@ -13,30 +13,73 @@ const FenDetails = () => {
 
   const fen = items.find(item => String(item.id) === id);
 
-  if (!fen) return <p>Товар не знайдено</p>;
+  if (!fen) return <p>Not product avilable</p>;
 
   return (
-    <div className={css.container}>
-      <h1>{fen.name}</h1>
-      <p className={css.itemText}>Price: {fen.price} €</p>
-      <p className={css.itemText}>Price Vat: {fen.price_VAT} €</p>
-      <p className={css.itemText}>{fen.category}</p>
-      <p className={css.itemText}>{fen.subcategory}</p>
-      <p className={css.itemText}>{fen.subcategory_2}</p>
-      <p className={css.itemText}>{fen.productivity}</p>
-      <p className={css.itemText}>{fen.power_kw}</p>
-      <p className={css.itemText}>{fen.width}</p>
-      <p className={css.itemText}>{fen.height}</p>
-      <p className={css.itemText}>{fen.weight}</p>
-      <p className={css.itemText}>{fen.material}</p>
+    <section className={css.containerList}>
+      <h1 className={css.titles}>{fen.name}</h1>
+      <section key={fen.id} className={css.cartItem}>
+        {/* <h1 className={css.titles}>{fen.name}</h1> */}
+        <figure className={css.imgCard}>
+          <img className={css.images} src={fen.photo} alt={fen.name} />
+        </figure>
+
+        <section className={css.cartContainer}>
+          <ul className={css.cartComent}>
+            <li className={css.descrip}>
+              <strong>Fan type :&nbsp; </strong> {fen.fen_type}
+            </li>
+            <li className={css.descrip}>
+              <strong>Aplication :&nbsp; </strong> {fen.aplication}
+            </li>
+            <li className={css.descrip}>
+              <strong>Airflow capacity :&nbsp; </strong> {fen.airflow_cap}
+            </li>
+            <li className={css.descrip}>
+              <strong>Maximum pressure :&nbsp; </strong> {fen.max_pressure}
+            </li>
+            <li className={css.descrip}>
+              <strong>Motor power :&nbsp; </strong> {fen.power_kw}
+            </li>
+            <li className={css.descrip}>
+              <strong>Nois level :&nbsp; </strong> {fen.nois_level}
+            </li>
+            <li className={css.descrip}>
+              <strong>Impeller material :&nbsp; </strong> {fen.material}
+            </li>
+
+            <li className={css.descrip}>
+              <strong>Operation temperature :&nbsp; </strong>
+              {fen.temperature}
+            </li>
+            <li className={css.descrip}>
+              <strong>Weight :&nbsp; </strong> {fen.weight}
+            </li>
+            <li className={css.descrip}>
+              <strong>Rotation direction :&nbsp; </strong>{" "}
+              {fen.rotation_direction}
+            </li>
+          </ul>
+        </section>
+      </section>
+
       <button className={css.buttonIcon}>
         <GoArrowLeft className={css.icons} />
         <NavLink className={css.linkGo} to="/catalog">
           {t("navigation.go_Catalog")}
         </NavLink>
       </button>
-    </div>
+    </section>
   );
 };
 
 export default FenDetails;
+
+{
+  /* <li className={css.featuresItem}>
+  <strong>Motor type :&nbsp; </strong>
+  <strong>
+    {fen.motor_type.charAt(0).toUpperCase() + fen.motor_type.slice(1)}
+  </strong>
+</li>; */
+}
