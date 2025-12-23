@@ -35,6 +35,14 @@ const FeedbackMenu = () => {
             </h2>
 
             <div className={css.modalButtons}>
+              {/* Viber */}
+              <a
+                href="viber://chat?number=%2B380631705885" // ← вставити номер ЗАМОВНИКА
+                className={css.modalBtn}
+              >
+                <FaViber className={css.icon} />
+                Viber
+              </a>
               {/* Instagram */}
               <a
                 href="https://instagram.com/alex970076" // ← вставити НІК ЗАМОВНИКА
@@ -56,14 +64,7 @@ const FeedbackMenu = () => {
                 <FaTelegramPlane className={css.icon} />
                 Telegram
               </a>
-              {/* Viber */}
-              <a
-                href="viber://chat?number=%2B380631705885" // ← вставити номер ЗАМОВНИКА
-                className={css.modalBtn}
-              >
-                <FaViber className={css.icon} />
-                Viber
-              </a>
+
               {/* ✔ WhatsApp */}
               <a
                 href="https://wa.me/380631705885" // ← номер БЕЗ +

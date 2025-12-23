@@ -20,6 +20,7 @@
 /* Оверлей */
 .feedbackModalOverlay {
   position: fixed;
+  /* top: 180; */
   inset: 0;
   background: rgba(255, 255, 255, 0.6);
   display: flex;
@@ -31,10 +32,11 @@
 
 /* Вікно модалки */
 .feedbackModal {
+  margin-top: 140px;
   background: #fff;
   width: 90%;
-  max-width: 380px;
-  padding: 25px;
+  max-width: 360px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.6);
   animation: slideUp 0.35s ease;
@@ -52,6 +54,7 @@
 .modalButtons {
   display: grid;
   gap: 12px;
+  color: #222222;
 }
 
 .modalBtn {
@@ -63,7 +66,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #222222;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.25s ease;
@@ -77,6 +80,7 @@
 /* Іконка */
 .icon {
   font-size: 22px;
+  color: #222222;
 }
 .iconEm {
   display: flex;
@@ -135,7 +139,7 @@
   justify-content: center;
   text-align: center;
   gap: 10px;
-  color: rgba(255, 255, 255, 0.6);
+  color: #222222;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.25s ease;
