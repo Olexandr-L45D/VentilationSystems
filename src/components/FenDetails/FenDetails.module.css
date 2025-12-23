@@ -13,6 +13,31 @@
   align-items: center;
   gap: 10px;
 }
+.containerSecind {
+  width: 1440px;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+.moreDescrip {
+  width: 1400px;
+  height: auto;
+  margin: 2px;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  justify-content: start;
+  text-align: center;
+  align-items: center;
+  gap: 5px;
+}
 .titles {
   font-weight: 800;
   font-size: 32px;
@@ -142,6 +167,28 @@
   line-height: 1.5;
   color: #555;
 }
+.titleDescr {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0f0e0e;
+}
+.schemeTitle {
+  margin: 5px;
+  padding: 1px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131212;
+}
 
 .textTitles {
   margin: 5px;
@@ -182,7 +229,7 @@
 
 .descrip {
   width: 630px;
-  height: 30px;
+  height: 40px;
   display: flex;
   justify-content: start;
   font-family: Montserrat;

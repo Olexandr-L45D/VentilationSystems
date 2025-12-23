@@ -22,35 +22,37 @@ export const Header = () => {
     return <div>Loading translations...</div>;
   }
   return (
-    <header className={css.container}>
-      <figure className={css.titleImg}>
-        <img src={LogoVent} alt="" className={css.imgLogo} />
-      </figure>
+    <section className={css.container}>
+      <header className={css.header}>
+        <figure className={css.titleImg}>
+          <img src={LogoVent} alt="" className={css.imgLogo} />
+        </figure>
 
-      <SearchBoxFiltr />
-      <article className={css.languageSwitcher}>
-        <button
-          className={css.activeButton}
-          onClick={() => changeLanguage("en")}
-        >
-          EN
-        </button>
-        <button
-          className={css.activeButton}
-          onClick={() => changeLanguage("it")}
-        >
-          IT
-        </button>
-      </article>
-      <NavLink to="/feedbackPhone" className={newLinkClass}>
-        {/* {t("navigation.feedbackPhone")} */}
-        <p className={css.iconPhone}>
-          <AiFillPhone className={css.iconPhon} />
-          {/* Зворотній дзвінок */}
-          {t("navigation.callback")}
-        </p>
-      </NavLink>
-      <div>{/* <CartIconHeder /> */}</div>
-    </header>
+        <SearchBoxFiltr />
+        <article className={css.languageSwitcher}>
+          <button
+            className={css.activeButton}
+            onClick={() => changeLanguage("en")}
+          >
+            EN
+          </button>
+          <button
+            className={css.activeButton}
+            onClick={() => changeLanguage("it")}
+          >
+            IT
+          </button>
+        </article>
+        <NavLink to="/feedbackPhone" className={newLinkClass}>
+          {/* {t("navigation.feedbackPhone")} */}
+          <p className={css.iconPhone}>
+            <AiFillPhone className={css.iconPhon} />
+            {/* Зворотній дзвінок */}
+            {t("navigation.callback")}
+          </p>
+        </NavLink>
+        <div>{/* <CartIconHeder /> */}</div>
+      </header>
+    </section>
   );
 };
