@@ -8,7 +8,7 @@ export default function ScrollToTopButton() {
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 600) {
+      if (window.scrollY > 800) {
         setVisible(true);
       } else {
         setVisible(false);

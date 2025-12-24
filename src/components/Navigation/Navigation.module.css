@@ -3,14 +3,14 @@
 
   z-index: 1000;
   margin-top: 80px;
-  margin-left: 60px;
+  margin-left: 40px;
   margin-right: 60px;
   background-color: #222222;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
+  text-align: center;
   width: 1298px;
   height: 59px;
 
