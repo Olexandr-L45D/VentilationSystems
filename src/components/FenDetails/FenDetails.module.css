@@ -421,13 +421,27 @@
 }
 .buttonIcon {
   width: 200px;
-  height: 30px;
+  height: 40px;
   padding: 2px;
   margin: 2px;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
+  border-radius: 20px;
+  background: #fbb007;
+  color: black;
+}
+
+.buttonIcon:hover,
+.buttonIcon:focus {
+  /* color: #0f0707; */
+  background: linear-gradient(
+    180.68deg,
+    #fbb007 0.58%,
+    #fbd581 23.39%,
+    #fafafa 99.42%
+  );
 }
 .icons {
   width: 50px;

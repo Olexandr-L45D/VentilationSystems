@@ -91,9 +91,9 @@
   padding: 15px;
   border: none;
   border-radius: 20px;
-  background: #fbb00780;
+  background: #fbb007;
 
-  color: white;
+  color: black;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
@@ -103,7 +103,32 @@
 .btnShowe:hover,
 .btnShowe:focus {
   color: #0f0707;
+  background: linear-gradient(
+    180.68deg,
+    #fbb007 0.58%,
+    #fbd581 23.39%,
+    #fafafa 99.42%
+  );
 }
+/* .button:hover {
+  background: var(--ghost-white, #fafafa);
+  border: 2px solid;
+
+  border-color: linear-gradient(
+    267.82deg,
+    rgba(251, 176, 7, 0.5) 35.01%,
+    rgba(0, 0, 0, 0.5) 79.1%
+  );
+}
+.button:focus {
+  background: var(--ghost-white, #fafafa);
+  border: 2px solid;
+  border-color: linear-gradient(
+    267.82deg,
+    rgba(251, 176, 7, 0.5) 35.01%,
+    rgba(0, 0, 0, 0.5) 79.1%
+  );
+} */
 
 .images {
   width: 270px !important;

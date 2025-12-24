@@ -153,6 +153,20 @@
   border-radius: 20px;
   color: #fff;
 }
+.btnVie:hover {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
+}
+.btnVie:focus {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
+}
 .imgCard {
   /* margin-top: 10px; */
   width: 400px !important;
