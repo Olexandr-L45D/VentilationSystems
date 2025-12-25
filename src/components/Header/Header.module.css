@@ -26,12 +26,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  /* left: 0;
+  right: 0; */
   margin-left: 100px;
   margin-right: 100px;
 
@@ -56,6 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .card {
