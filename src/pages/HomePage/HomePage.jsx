@@ -7,6 +7,8 @@ import cardRight from "../../assets/images/cardRight.png";
 import VectorHomeCenter from "../../assets/images/VectorHomeCenter.png";
 import Advantages from "../../assets/images/Advantages.png";
 import aboutUsPage from "../../assets/images/aboutUsPage.png";
+// import startHomePage from "../../assets/images/startHomePage.png";
+// startHomePage
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 // aboutUsPage
 export default function HomePage() {
@@ -19,8 +21,11 @@ export default function HomePage() {
       <section className={css.container}>
         <section className={css.background}>
           <section className={css.card}>
-            <h1 className={css.cartTitle}>{t("navigation.titleHome")}</h1>
-            <h2 className={css.cartText}>{t("navigation.titleWelcom")}</h2>
+            {/* <figure className={css.cardTopImages}>
+              <img className={css.bigImages} src={startHomePage} alt="img" />
+            </figure> */}
+            {/* <h1 className={css.cartTitle}>{t("navigation.titleHome")}</h1>
+            <h2 className={css.cartText}>{t("navigation.titleWelcom")}</h2> */}
             <section className={css.cartBtn}>
               <Link to="/catalog">
                 <div className={css.buttonViews}>
