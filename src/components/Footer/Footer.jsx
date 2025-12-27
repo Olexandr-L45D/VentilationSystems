@@ -35,14 +35,11 @@ export const Footer = () => {
           <figure className={css.titleImg}>
             <img src={FooterLogo} alt="" className={css.imgLogo} />
           </figure>
-          <p className={css.textLogo}>
-            Energy-efficient solutions with high performance, quiet operation,
-            and guaranteed safety.
-          </p>
+          <p className={css.textLogo}>{t("navigation.textLogoFooter")}</p>
         </div>
 
         <nav className={css.cardLink}>
-          <h2 className={css.titleBlok}>Navigation</h2>
+          <h2 className={css.titleBlok}>{t("navigation.navigatTitle")}</h2>
 
           <NavLink to="/aboutus" className={newLinkClassSecond}>
             {t("navigation.about")}
@@ -58,7 +55,7 @@ export const Footer = () => {
         </nav>
 
         <section className={css.cardTextBl}>
-          <h2 className={css.titleBlok}>Contact information</h2>
+          <h2 className={css.titleBlok}>{t("navigation.contactTitle")}</h2>
 
           <ul className={css.titleText}>
             <li className={css.text}>
@@ -73,7 +70,7 @@ export const Footer = () => {
 
             <li className={css.text}>Via Santa Maria, nr 84</li>
             <li className={css.text}>36030-Sarcedo-Vcenza-Italia</li>
-            <li className={css.text}>© 2025 Назва компанії</li>
+            <li className={css.text}>© 2025 Назва компанії?</li>
           </ul>
         </section>
         <section className={css.rightSection}>

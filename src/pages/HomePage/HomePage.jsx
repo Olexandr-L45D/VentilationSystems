@@ -39,7 +39,10 @@ export default function HomePage() {
         </section>
         <section className={css.container}>
           <div className={css.titleBlock}>
-            <h2 className={css.cartTitleText}>Best sellers</h2>
+            <h2 className={css.cartTitleText}>
+              {/* Best sellers */}
+              {t("navigation.bestSel")}
+            </h2>
           </div>
 
           <ul className={css.ulCard}>
@@ -65,7 +68,10 @@ export default function HomePage() {
         </figure>
         <section className={css.container}>
           <div className={css.titleBlock}>
-            <h2 className={css.cartTitleText}>Advantages</h2>
+            <h2 className={css.cartTitleText}>
+              {/* Advantages */}
+              {t("navigation.advantages")}
+            </h2>
           </div>
 
           <figure className={css.cardBigImages}>
@@ -74,7 +80,10 @@ export default function HomePage() {
         </section>
         <section className={css.container}>
           <div className={css.titleBlock}>
-            <h2 className={css.cartTitleText}>About us</h2>
+            <h2 className={css.cartTitleText}>
+              {/* About us */}
+              {t("navigation.aboutUs")}
+            </h2>
           </div>
 
           <figure className={css.cardBigImages}>
@@ -83,14 +92,18 @@ export default function HomePage() {
         </section>
         <section className={css.container}>
           <div className={css.titleBlock}>
-            <h2 className={css.cartTitleText}>Producer</h2>
+            <h2 className={css.cartTitleText}>
+              {/* Producer */}
+              {t("navigation.producer")}
+            </h2>
           </div>
 
           <figure className={css.cardProducer}>
             <p className={css.cardProdText}>
-              Black Icon Srl (Italy) — Italian manufacturer of industrial
+              {/* Black Icon Srl (Italy) — Italian manufacturer of industrial
               ventilation and drying systems. In-house engineering development
-              and full-cycle production.
+              and full-cycle production. */}
+              {t("navigation.cardProdText")}
             </p>
           </figure>
         </section>
@@ -99,6 +112,3 @@ export default function HomePage() {
     </>
   );
 }
-
-// Advantages;
-// VectorHomeCenter

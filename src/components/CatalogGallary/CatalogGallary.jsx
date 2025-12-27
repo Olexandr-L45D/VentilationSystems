@@ -18,11 +18,11 @@ export default function CatalogGallary() {
     <container className={css.containerCatalog}>
       <section className={css.containerLeftBlock}>
         <div className={css.titleLeftBlock}>
-          <h2 className={css.titleLeft}>Parameters</h2>
+          <h2 className={css.titleLeft}>{t("catalog.parameters")}</h2>
         </div>
         <ol className={css.listBlLeft}>
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Fan Model (series)</h3>
+            <h3 className={css.itemTitle}>{t("catalog.fan_Model")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>BMN202</p>
@@ -58,43 +58,7 @@ export default function CatalogGallary() {
           </ul>
 
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Fan Model (series)</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN202</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN252</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN302</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN402</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN502</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN554</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN602</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN604</p>
-            </li>
-          </ul>
-
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Motor Power, kW</h3>
+            <h3 className={css.itemTitle}>{t("catalog.motorPower")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>009</p>
@@ -122,7 +86,7 @@ export default function CatalogGallary() {
           </ul>
 
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Number of Motor Poles</h3>
+            <h3 className={css.itemTitle}>{t("catalog.motorPoles")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>2 poles</p>
@@ -134,7 +98,7 @@ export default function CatalogGallary() {
           </ul>
 
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Airflow Capacity, m³/h</h3>
+            <h3 className={css.itemTitle}>{t("catalog.airflow")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>Up to 300</p>
@@ -158,7 +122,7 @@ export default function CatalogGallary() {
           </ul>
 
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Motor Power, kW</h3>
+            <h3 className={css.itemTitle}>{t("catalog.powerPa")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>Up to 300 Pa</p>
@@ -182,7 +146,7 @@ export default function CatalogGallary() {
           </ul>
 
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Noise Level, dB(A)</h3>
+            <h3 className={css.itemTitle}>{t("catalog.noiseLevel")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>50–60 dB</p>
@@ -201,7 +165,7 @@ export default function CatalogGallary() {
             </li>
           </ul>
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Rotation Direction</h3>
+            <h3 className={css.itemTitle}>{t("catalog.rotationDirection")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>Clockwise (CW)</p>
@@ -212,7 +176,7 @@ export default function CatalogGallary() {
             </li>
           </ul>
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Overall Diameter</h3>
+            <h3 className={css.itemTitle}>{t("catalog.overallDiameter")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>Ø 60–110 mm</p>
@@ -231,7 +195,7 @@ export default function CatalogGallary() {
             </li>
           </ul>
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Fan Weight, kg</h3>
+            <h3 className={css.itemTitle}>{t("catalog.fanWeight")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>Up to 5 kg</p>
@@ -250,7 +214,7 @@ export default function CatalogGallary() {
             </li>
           </ul>
           <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>Fan Type</h3>
+            <h3 className={css.itemTitle}>{t("catalog.fanType")}</h3>
             <li className={css.itemSelect}>
               <p className={css.itemIcons}></p>
               <p className={css.itemText}>Radial</p>
@@ -274,7 +238,8 @@ export default function CatalogGallary() {
                 <img src={CentrifStainless} alt="" className={css.imgLogo} />
               </figure>
               <p className={css.textImg}>
-                Industrial centrifugal fan stainless steel
+                {/* Industrial centrifugal fan stainless steel */}
+                {t("catalog.fanTypeSteel")}
               </p>
             </li>
             <li className={css.imagesBlock}>
@@ -282,14 +247,18 @@ export default function CatalogGallary() {
                 <img src={CentrifCarbon} alt="" className={css.imgLogo} />
               </figure>
               <p className={css.textImg}>
-                Industrial centrifugal fan carbon steel
+                {/* Industrial centrifugal fan carbon steel */}
+                {t("catalog.fanTypeCarbon")}
               </p>
             </li>
             <li className={css.imagesBlock}>
               <figure className={css.titleImg}>
                 <img src={AxialFan} alt="" className={css.imgLogo} />
               </figure>
-              <p className={css.textImg}>Axial fan</p>
+              <p className={css.textImg}>
+                {/* Axial fan */}
+                {t("catalog.fanTypeAxial")}
+              </p>
             </li>
           </ul>
         </section>

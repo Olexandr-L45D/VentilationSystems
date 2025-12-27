@@ -15,7 +15,9 @@
 /* ===== Modal ===== */
 .modal {
   width: 95%;
-  max-width: 420px;
+  max-width: 670px;
+  height: 600px;
+  /* max-height: 800px; */
   background: white;
   border-radius: 16px;
   position: relative;
@@ -61,7 +63,8 @@
 @media screen and (min-width: 679px) and (max-width: 1020px) {
   .modal {
     width: 95%;
-    max-width: 500px;
+    max-width: 600px;
+    /* max-height: 700px; */
     background: white;
     border-radius: 16px;
     position: relative;

@@ -37,7 +37,15 @@
     "tank": "weiht",
     "consum": "Consumption",
     "feedbackTitle": "Feedback form",
-    "feedbackSend": "order a call"
+    "feedbackSend": "order a call",
+    "navigatTitle": "Navigation",
+    "contactTitle": "Contact information",
+    "bestSel": "Best sellers",
+    "advantages": "Advantages",
+    "aboutUs": "About us",
+    "producer": "Producer",
+    "cardProdText": "Black Icon Srl (Italy) — Italian manufacturer of industrial ventilation and drying systems. In-house engineering development and full-cycle production.",
+    "textLogoFooter": "Energy-efficient solutions with high performance, quiet operation, and guaranteed safety."
   },
   "register": {
     "titleRegistr": "RegistrationForm"
@@ -67,6 +75,38 @@
     "footerViewDown": "Download Agreement PDF",
     "footerWriWr": "Write a letter",
     "footerWriLetter": "Your letter has been sent!",
-    "footerWriSend": "Send"
+    "footerWriSend": "Send",
+    "totaltextForm": "Our customers share their impressions of the quality of our ventilation systems and service. We are grateful for every review — ithelps us become even better."
+  },
+  "catalog": {
+    "parameters": "Parameters",
+    "fan_Model": "Fan Model (series)",
+    "motorPower": "Motor Power, kW",
+    "motorPoles": "Number of Motor Poles",
+    "airflow": "Airflow Capacity, m³/h",
+    "powerPa": "Motor Power, Pa",
+    "noiseLevel": "Noise Level, dB(A)",
+    "rotationDirection": "Rotation Direction",
+    "overallDiameter": "Overall Diameter",
+    "fanWeight": "Fan Weight, kg",
+    "fanType": "Fan Type",
+    "fanTypeSteel": "Industrial centrifugal fan stainless steel",
+    "fanTypeCarbon": "Industrial centrifugal fan carbon steel",
+    "fanTypeAxial": "Axial fan",
+    "description": "Description",
+    "scheme": "Scheme",
+    "table": "Table",
+    "type": "Fan type:",
+    "apli": "Aplication:",
+    "airflo": "Airflow Capacity",
+    "max": "Maximum pressure",
+    "motorPow": "Motor power",
+    "nois": "Nois level",
+    "temperat": "Operation temperature",
+    "weight": "Weight",
+    "rotation": "Rotation direction",
+    "impelle": "Impeller material",
+    "power": "Motor ",
+    "noiseLeve": "Noise "
   }
 }

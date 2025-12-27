@@ -46,6 +46,7 @@ export default function FeedbackForm() {
   return (
     <section className={css.formContainer}>
       <form className={css.form} onSubmit={handleSubmit}>
+        <p className={css.totaltext}>{t("footernav.totaltextForm")}</p>
         <h2 className={css.title}>
           {/* Напишіть листа */}
           {t("footernav.footerWriWr")}
@@ -55,7 +56,7 @@ export default function FeedbackForm() {
           className={css.input}
           type="text"
           name="name"
-          placeholder="name"
+          placeholder="Name"
           value={formData.name}
           onChange={handleChange}
           required
@@ -74,7 +75,7 @@ export default function FeedbackForm() {
         <textarea
           className={css.textarea}
           name="message"
-          placeholder="message"
+          placeholder="Your feedback or message"
           value={formData.message}
           onChange={handleChange}
           required

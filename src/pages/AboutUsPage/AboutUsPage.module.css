@@ -22,6 +22,25 @@
   align-items: center;
   text-align: center;
 }
+.sectionVideo {
+  width: 90%;
+  height: 90%;
+  padding: 10px;
+  margin: 10px;
+}
+.videoOverlay {
+  position: fixed;
+  inset: 0;
+  background: black;
+  z-index: 9999;
+}
+
+.video {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
 .card {
   display: flex;
   margin: 0px;

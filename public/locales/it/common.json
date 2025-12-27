@@ -1,6 +1,7 @@
 {
   "navigation": {
-    "home": "chi siamo",
+    "home": "casa",
+    "aboutnav": "chi siamo",
     "about": "Chi siamo",
     "catalog": "catalogare",
     "catalogFo": "Catalogare",
@@ -17,11 +18,11 @@
     "send": "Inviare",
     "search": "Ricerca",
     "Load": "Carica altro",
-    "show_more": "Mostra di più",
+    "show_more": "Saperne di più",
     "searchTitle": "Si prega di trovare la palude per categoria",
-    "titleHome": "Estrattori e sistemi di ventilazione",
-    "titleWelcom": "Nel nostro catalogo troverai le migliori soluzioni tecnologiche",
-    "View": "Visualizza ora",
+    "titleHome": "Sistemi di ventilazione premium per la tua azienda",
+    "titleWelcom": "Soluzioni ad alta efficienza energetica che combinano prestazioni elevate, funzionamento silenzioso e sicurezza garantita",
+    "View": "Guarda di più",
     "example": "Esempio di categoria: assiale",
     "features": "Caratteristiche",
     "reviews": "Recensioni",
@@ -34,7 +35,17 @@
     "width": "Larghezza",
     "height": "Altezza",
     "tank": "consacra",
-    "consum": "Consumo"
+    "consum": "Consumo",
+    "feedbackTitle": "Modulo di feedback",
+    "feedbackSend": "ordinare una chiamata",
+    "navigatTitle": "Navigazione",
+    "contactTitle": "Informazioni sui contatti",
+    "bestSel": "I più venduti",
+    "advantages": "Vantaggi",
+    "aboutUs": "Chi siamo",
+    "producer": "Produttrice",
+    "cardProdText": "Black Icon Srl (Italia) — Produttore italiano di sistemi di ventilazione e essiccazione industriale.Sviluppo ingegneristico interno e produzione a ciclo completo.",
+    "textLogoFooter": "Soluzioni ad alta efficienza energetica con prestazioni elevate, funzionamento silenzioso e sicurezza garantita."
   },
   "register": {
     "titleRegistr": "Modulo di registrazione"
@@ -64,6 +75,38 @@
     "footerViewDown": "Scarica il PDF dell'accordo",
     "footerWriWr": "Scrivi una lettera",
     "footerWriLetter": "La tua lettera è stata inviata!",
-    "footerWriSend": "Inviare"
+    "footerWriSend": "Inviare",
+    "totaltextForm": "I nostri clienti condividono le loro impressioni sulla qualità dei nostri sistemi di ventilazione e del nostro servizio.Siamo grati per ogni recensione: ci aiuta a migliorare ancora."
+  },
+  "catalog": {
+    "parameters": "Parametri",
+    "fan_Model": "Modello ventilatore (serie)",
+    "motorPower": "Potenza motore, kW",
+    "motorPoles": "Numero di poli del motore",
+    "airflow": "Capacità del flusso d'aria, m³/h",
+    "powerPa": "Potenza motore, Pa",
+    "noiseLevel": "Livello di rumore, dB(A)",
+    "rotationDirection": "Direzione di rotazione",
+    "overallDiameter": "Diametro complessivo",
+    "fanWeight": "Peso ventola, kg",
+    "fanType": "Tipo di ventola",
+    "fanTypeSteel": "Ventilatore centrifugo industriale in acciaio inox",
+    "fanTypeCarbon": "Ventilatore centrifugo industriale in acciaio al carbonio",
+    "fanTypeAxial": "Ventilatore assiale",
+    "description": "Descrizione",
+    "scheme": "Schema",
+    "table": "Tavolo",
+    "type": "Tipo di ventola:",
+    "apli": "Applicazione:",
+    "airflo": "Capacità del flusso d'aria",
+    "max": "Pressione massima",
+    "motorPow": "Potenza del motore",
+    "nois": "Livello di rumore",
+    "temperat": "Temperatura di funzionamento",
+    "weight": "Peso",
+    "rotation": "Direzione di rotazione",
+    "impelle": "Materiale della girante",
+    "power": "Motrice",
+    "noiseLeve": "Rumore"
   }
 }
