@@ -132,7 +132,7 @@ left: 38px; */
   padding: 0px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   text-align: center;
   gap: 10px;

@@ -26,14 +26,25 @@ export default function HomePage() {
             </figure> */}
             {/* <h1 className={css.cartTitle}>{t("navigation.titleHome")}</h1>
             <h2 className={css.cartText}>{t("navigation.titleWelcom")}</h2> */}
-            <section className={css.cartBtn}>
-              <Link to="/catalog">
-                <div className={css.buttonViews}>
-                  <button className={css.btnVie} type="submit">
-                    {t("navigation.View")}
-                  </button>
-                </div>
-              </Link>
+            <section className={css.containerButtons}>
+              <section className={css.cartBtn}>
+                <Link to="/catalog">
+                  <div className={css.buttonViews}>
+                    <button className={css.btnVie} type="submit">
+                      {t("navigation.View")}
+                    </button>
+                  </div>
+                </Link>
+              </section>
+              <section className={css.cartBtnSecond}>
+                <Link to="/feedbackPhone">
+                  <div className={css.buttonViewsSecond}>
+                    <button className={css.btnVieSecond} type="submit">
+                      {t("navigation.orderCallback")}
+                    </button>
+                  </div>
+                </Link>
+              </section>
             </section>
           </section>
         </section>

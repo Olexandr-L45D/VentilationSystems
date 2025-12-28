@@ -73,16 +73,6 @@
   text-align: left;
 }
 
-.cartBtn {
-  padding: 2px;
-  margin: 2px;
-  margin-top: 305px;
-  margin-right: 1050px;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  z-index: 500;
-}
 .cartIcon {
   width: 80px;
   height: 80px;
@@ -135,21 +125,57 @@
   align-items: center;
   text-align: center;
 }
+.containerButtons {
+  padding: 1px;
+  margin: 1px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .cartBtn {
-  padding: 2px;
-  margin: 2px;
-  margin-top: 305px;
-  margin-right: 950px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 315px;
+  margin-right: 80px;
+  margin-left: 30px;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  z-index: 500;
+}
+
+.cartBtnSecond {
+  padding: 0px;
+  margin: 0px;
+  margin-top: 315px;
+  margin-right: 750px;
   font-size: 1em;
   font-weight: 700;
   line-height: 1;
   z-index: 500;
 }
 .buttonViews {
-  width: 266px;
+  width: 220px;
   height: 58px;
   padding: 0px;
-  margin: 10px;
+  /* margin: 10px; */
+  margin-left: 5px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  border-radius: 40px;
+  z-index: 500;
+}
+.buttonViewsSecond {
+  width: 215px;
+  height: 58px;
+  padding: 0px;
+  /* margin: 10px; */
   margin-left: 5px;
   display: flex;
   flex-direction: row;
@@ -160,9 +186,8 @@
 }
 
 .btnVie {
-  width: 207px;
+  width: 220px;
   height: 59px;
-  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +195,13 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   color: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
 }
 .btnVie:hover {
   background: linear-gradient(
@@ -185,6 +217,41 @@
     rgba(0, 0, 0, 0.5) 97.7%
   );
 }
+
+.btnVieSecond {
+  width: 215px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--orange, #fbb007);
+  /* background-color: #222222; */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  color: #fff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.btnVieSecond:hover {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
+}
+.btnVieSecond:focus {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
+}
+
 .imgCard {
   /* margin-top: 10px; */
   width: 400px !important;
