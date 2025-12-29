@@ -12,6 +12,7 @@ const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 import { Layout } from "../Layout/Layout";
 import { CartProvider } from "../CartProvider";
+import DeliveryPage from "../../pages/DeliveryPage/DeliveryPage";
 
 const ContactsPage = lazy(() =>
   import("../../pages/ContactsPage/ContactsPage")
@@ -40,6 +41,7 @@ export default function App() {
             <Route path="/catalog" element={<VentPageFilters />} />
             <Route path="/factory" element={<AboutFactoryPage />} />
             <Route path="/contacts" element={<ContactsPage />} />
+            <Route path="/delivery" element={<DeliveryPage />} />
             <Route path="/feedbackEmail" element={<FeedbackEmailModal />} />
             <Route path="/feedbackPhone" element={<FeedbackModalPhone />} />
             <Route path="/fen/:id" element={<FenDetails />} />
@@ -52,6 +54,7 @@ export default function App() {
   );
 }
 
+// DeliveryPage
 // const TruckFeatures = lazy(() => import("../TruckFeatures/TruckFeatures"));
 // const TruckReviews = lazy(() => import("../TruckReviews/TruckReviews"));
 // const TruckDetalsPage = lazy(() =>

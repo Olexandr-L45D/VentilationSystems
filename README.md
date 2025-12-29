@@ -255,3 +255,20 @@ globals.css │ └── index.tsx
     setIsOpen(false);
     navigate("/"); // ⬅️ ПЕРЕХІД НА HOME
   }; -->
+
+  <!-- в налаштуваннях шаблону EmailJS 👍
+Потрібно додати поле телефону в самому email-template.
+
+Що саме треба зробити в EmailJS
+1️⃣ Зайди в EmailJS Dashboard
+
+👉 https://dashboard.emailjs.com/
+
+2️⃣ Відкрий Email Templates
+
+Email Templates → обери свій template
+(той, ID якого = VITE_EMAILJS_TEMPLATE_ID)
+
+3️⃣ Відредагуй тіло листа (Email Content)
+
+У полі Email Body або Content додай змінну телефону: -->

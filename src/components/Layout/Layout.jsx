@@ -17,7 +17,6 @@ export const Layout = ({ children }) => {
       <main className={css.main}>
         <Suspense fallback={null}>{children}</Suspense>
       </main>
-      {/* <Suspense fallback={null}>{children}</Suspense> */}
       <Footer />
     </div>
   );
