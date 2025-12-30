@@ -49,7 +49,9 @@
     "cardPayText": "Payment by bank transfer (cashless payment) for individuals and legal entities.",
     "deliveryTitle": "Delivery",
     "cardDelText": "EXW Black Icon Srl - Via Santa Maria, nr 84, 36030 – Sarcedo – Vcenza – Italia",
-
+    "notFound": "404 - Not Found Page",
+    "pleseUse": "Plese use this link to go Home",
+    "backButton": "Back to home",
     "cardProdText": "Black Icon Srl (Italy) — Italian manufacturer of industrial ventilation and drying systems. In-house engineering development and full-cycle production.",
     "textLogoFooter": "Energy-efficient solutions with high performance, quiet operation, and guaranteed safety."
   },

@@ -9,354 +9,443 @@
   /* align-items: center;
   text-align: center; */
 }
-.containerSecond {
-  width: 1260px;
-  height: 550px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.ulCard {
-  margin-left: 50px;
-  width: 1260px;
-  height: 550px;
-  gap: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.li {
-  padding: 2px;
-  margin: 2px;
-  width: 400px;
-  height: 550px;
-  opacity: 1;
-  /* border: 1px solid #222222; */
-}
-.card {
-  display: flex;
-  margin: 0px;
-  margin-top: 180px;
-  height: 300px;
-  /* margin-left: 64px; */
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-}
-.cartTitle {
-  padding: 2px;
-  margin: 2px;
-  color: #fff;
-  font-size: 2em;
-  font-weight: 900;
-  line-height: 2;
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-}
 
-.cartText {
-  padding: 2px;
-  margin: 2px;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-}
+@media (min-width: 220px) and (max-width: 479px) {
+} /*малі мобільні та ретина екрани*/
+@media (min-width: 480px) and (max-width: 767px) {
+} /* великі мобільні */
+@media (min-width: 768px) and (max-width: 991px) {
+} /* малі планшети */
 
-.cartIcon {
-  width: 80px;
-  height: 80px;
-  margin: 5px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .container {
+    margin-top: 80px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+    /* align-items: center;
+  text-align: center; */
+  }
+  .cardProducer {
+    width: 90%;
+    height: 149px;
+    margin: 30px;
+    margin-top: 50px;
+    margin-left: 60px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cardProdText {
+    width: 80%;
+    height: 117px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: var(--orange-50, #fbb00780);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    /* text-align: center; */
+  }
+  .cartTitleText {
+    padding: 2px;
+    margin: 2px;
+    margin-left: 10px;
+    font-family: Montserrat Alternates;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    /* text-align: center; */
 
-.background {
-  /* width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+  }
+} /* планшети */
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+    /* align-items: center;
+  text-align: center; */
+  }
+  .containerSecond {
+    width: 1260px;
+    height: 550px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .ulCard {
+    margin-left: 50px;
+    width: 1260px;
+    height: 550px;
+    gap: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .li {
+    padding: 2px;
+    margin: 2px;
+    width: 400px;
+    height: 550px;
+    opacity: 1;
+    /* border: 1px solid #222222; */
+  }
+  .card {
+    display: flex;
+    margin: 0px;
+    margin-top: 180px;
+    height: 300px;
+    /* margin-left: 64px; */
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+  }
+  .cartTitle {
+    padding: 2px;
+    margin: 2px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 2;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+  }
+
+  .cartText {
+    padding: 2px;
+    margin: 2px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+  }
+
+  .cartIcon {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+  .background {
+    /* width: 100%;
   height: 100%; */
-  width: 1440px;
-  height: 667px;
-  margin-top: 60px;
-  /* background-image: url("../../images/homrectangle.png"); */
-  background: url("../../images/homrectangle.png") center center no-repeat,
-    url("../../assets/images/startHomePage.png") center center no-repeat;
-  background-size: contain; /* фон підлаштується під розмір блоку */
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 1440px 667px;
-}
-.cartTitleText {
-  padding: 2px;
-  margin: 2px;
-  font-family: Montserrat Alternates;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  /* text-align: center; */
+    width: 1440px;
+    height: 667px;
+    margin-top: 60px;
+    /* background-image: url("../../images/homrectangle.png"); */
+    background: url("../../images/homrectangle.png") center center no-repeat,
+      url("../../assets/images/startHomePage.png") center center no-repeat;
+    background-size: contain; /* фон підлаштується під розмір блоку */
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 1440px 667px;
+  }
+  .cartTitleText {
+    padding: 2px;
+    margin: 2px;
+    font-family: Montserrat Alternates;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    /* text-align: center; */
 
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-}
-.titleBlock {
-  margin-top: 180px;
-  margin-left: 64px;
-  margin-bottom: 50px;
-  display: block;
-  width: 260px;
-  height: 66px;
-  /* Жовта вертикальна смуга зліва — як у макеті */
-  border-left: 3px solid #fbb007;
-  padding-left: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.titleBlockSecond {
-  margin-top: 80px;
-  margin-left: 64px;
-  margin-bottom: 50px;
-  display: block;
-  width: 260px;
-  height: 66px;
-  /* Жовта вертикальна смуга зліва — як у макеті */
-  border-left: 3px solid #fbb007;
-  padding-left: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.containerButtons {
-  padding: 1px;
-  margin: 1px;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.cartBtn {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 315px;
-  margin-right: 80px;
-  margin-left: 30px;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  z-index: 500;
-}
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+  }
+  .titleBlock {
+    margin-top: 180px;
+    margin-left: 64px;
+    margin-bottom: 50px;
+    display: block;
+    width: 260px;
+    height: 66px;
+    /* Жовта вертикальна смуга зліва — як у макеті */
+    border-left: 3px solid #fbb007;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .titleBlockSecond {
+    margin-top: 80px;
+    margin-left: 64px;
+    margin-bottom: 50px;
+    display: block;
+    width: 260px;
+    height: 66px;
+    /* Жовта вертикальна смуга зліва — як у макеті */
+    border-left: 3px solid #fbb007;
+    padding-left: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .containerButtons {
+    padding: 1px;
+    margin: 1px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cartBtn {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 315px;
+    margin-right: 80px;
+    margin-left: 30px;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 500;
+  }
 
-.cartBtnSecond {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 315px;
-  margin-right: 750px;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  z-index: 500;
-}
-.buttonViews {
-  width: 220px;
-  height: 58px;
-  padding: 0px;
-  /* margin: 10px; */
-  margin-left: 5px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  border-radius: 40px;
-  z-index: 500;
-}
-.buttonViewsSecond {
-  width: 215px;
-  height: 58px;
-  padding: 0px;
-  /* margin: 10px; */
-  margin-left: 5px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  border-radius: 40px;
-  z-index: 500;
-}
+  .cartBtnSecond {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 315px;
+    margin-right: 750px;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 500;
+  }
+  .buttonViews {
+    width: 220px;
+    height: 58px;
+    padding: 0px;
+    /* margin: 10px; */
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    z-index: 500;
+  }
+  .buttonViewsSecond {
+    width: 215px;
+    height: 58px;
+    padding: 0px;
+    /* margin: 10px; */
+    margin-left: 5px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    z-index: 500;
+  }
 
-.btnVie {
-  width: 220px;
-  height: 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #222222;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  color: #fff;
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-.btnVie:hover {
-  background: linear-gradient(
-    268.5deg,
-    rgba(251, 176, 7, 0.5) 2.63%,
-    rgba(0, 0, 0, 0.5) 97.7%
-  );
-}
-.btnVie:focus {
-  background: linear-gradient(
-    268.5deg,
-    rgba(251, 176, 7, 0.5) 2.63%,
-    rgba(0, 0, 0, 0.5) 97.7%
-  );
-}
+  .btnVie {
+    width: 220px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .btnVie:hover {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
+  }
+  .btnVie:focus {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
+  }
 
-.btnVieSecond {
-  width: 215px;
-  height: 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--orange, #fbb007);
-  /* background-color: #222222; */
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  color: #fff;
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-.btnVieSecond:hover {
-  background: linear-gradient(
-    268.5deg,
-    rgba(251, 176, 7, 0.5) 2.63%,
-    rgba(0, 0, 0, 0.5) 97.7%
-  );
-}
-.btnVieSecond:focus {
-  background: linear-gradient(
-    268.5deg,
-    rgba(251, 176, 7, 0.5) 2.63%,
-    rgba(0, 0, 0, 0.5) 97.7%
-  );
-}
+  .btnVieSecond {
+    width: 215px;
+    height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--orange, #fbb007);
+    /* background-color: #222222; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    color: #fff;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .btnVieSecond:hover {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
+  }
+  .btnVieSecond:focus {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
+  }
 
-.imgCard {
-  /* margin-top: 10px; */
-  width: 400px !important;
-  height: 550px !important;
-  padding: 1px;
-  margin-left: 10px;
-}
-.images {
-  opacity: 1;
-  width: 400px !important;
-  height: 550px !important;
-  /* width: 753px !important;
+  .imgCard {
+    /* margin-top: 10px; */
+    width: 400px !important;
+    height: 550px !important;
+    padding: 1px;
+    margin-left: 10px;
+  }
+  .images {
+    opacity: 1;
+    width: 400px !important;
+    height: 550px !important;
+    /* width: 753px !important;
   height: 606px !important; */
-  display: block !important;
-  background-color: rgb(176, 182, 182);
-  padding: 2px;
-  margin: 2px;
-  /* margin-top: 10px; */
-  margin-left: 10px;
-  padding-left: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-}
-.cardImagesFigure {
-  width: 1440px;
-  height: 217px;
-  margin: 0px;
-  margin-top: 60px;
-  padding: 0px;
-}
-.imagFigure {
-  display: block;
-  width: 1440px;
-  height: 217px;
-  margin: 5px;
-}
-.cardTopImages {
-  width: 1440px;
-  height: 667px;
-  margin: 0px;
-  margin-top: -110px;
-  margin-bottom: 100px;
-  padding: 0px;
-}
-.cardBigImages {
-  width: 1440px;
-  height: 623px;
-  margin: 0px;
-  padding: 0px;
-}
-.bigImages {
-  display: block;
-  width: 1440px;
-  height: 623px;
-  margin: 5px;
-}
-.cardProducer {
-  width: 1312px;
-  height: 149px;
-  margin: 30px;
-  margin-left: 60px;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.cardProdText {
-  width: 1242px;
-  height: 117px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 35px;
-  margin-right: 35px;
-  padding-left: 35px;
-  padding-right: 35px;
-  background: var(--orange-50, #fbb00780);
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  border-radius: 20px;
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: start;
-  align-items: center;
-  text-align: left;
-  /* text-align: center; */
-}
+    display: block !important;
+    background-color: rgb(176, 182, 182);
+    padding: 2px;
+    margin: 2px;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    padding-left: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  .cardImagesFigure {
+    width: 1440px;
+    height: 217px;
+    margin: 0px;
+    margin-top: 60px;
+    padding: 0px;
+  }
+  .imagFigure {
+    display: block;
+    width: 1440px;
+    height: 217px;
+    margin: 5px;
+  }
+  .cardTopImages {
+    width: 1440px;
+    height: 667px;
+    margin: 0px;
+    margin-top: -110px;
+    margin-bottom: 100px;
+    padding: 0px;
+  }
+  .cardBigImages {
+    width: 1440px;
+    height: 623px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .bigImages {
+    display: block;
+    width: 1440px;
+    height: 623px;
+    margin: 5px;
+  }
+  .cardProducer {
+    width: 1312px;
+    height: 149px;
+    margin: 30px;
+    margin-left: 60px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .cardProdText {
+    width: 1242px;
+    height: 117px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 35px;
+    margin-right: 35px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: var(--orange-50, #fbb00780);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    border-radius: 20px;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: start;
+    align-items: center;
+    text-align: left;
+    /* text-align: center; */
+  }
+} /* десктопи */
