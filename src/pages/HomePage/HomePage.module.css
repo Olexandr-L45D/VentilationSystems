@@ -1,249 +1,99 @@
+/* =========================================================
+   HomePage.module.css
+   Best Practices | Mobile-first | Fluid Layout
+   ========================================================= */
+
+/* === ОСНОВНИЙ КОНТЕЙНЕР СТОРІНКИ === */
 .container {
   width: 100%;
-  height: auto;
+  max-width: 1440px;
+  margin-inline: auto;
+
+  padding-inline: clamp(12px, 4vw, 32px);
+  padding-block: clamp(24px, 6vw, 64px);
+
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-  /* align-items: center;
-  text-align: center; */
+  gap: clamp(40px, 6vw, 80px);
 }
-.containerSecond {
-  width: 1260px;
-  height: 550px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.ulCard {
-  margin-left: 50px;
-  width: 1260px;
-  height: 550px;
-  gap: 30px;
+
+/* === HERO / BACKGROUND === */
+.background {
+  width: 100%;
+  min-height: clamp(420px, 60vw, 680px);
+
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  text-align: center;
+
+  background: url("../../images/homrectangle.png") center / contain no-repeat,
+    url("../../assets/images/startHomePage.png") center / cover no-repeat;
+
+  border-radius: 24px;
 }
-.li {
-  padding: 2px;
-  margin: 2px;
-  width: 400px;
-  height: 550px;
-  opacity: 1;
-  /* border: 1px solid #222222; */
-}
+
+/* === HERO CARD === */
 .card {
   display: flex;
-  margin: 0px;
-  margin-top: 180px;
-  height: 300px;
-  /* margin-left: 64px; */
   flex-direction: column;
-  justify-content: start;
   align-items: center;
-  text-align: center;
-}
-.cartTitle {
-  padding: 2px;
-  margin: 2px;
-  color: #fff;
-  font-size: 2em;
-  font-weight: 900;
-  line-height: 2;
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
+  gap: 24px;
+
+  margin-top: clamp(80px, 12vw, 180px);
 }
 
-.cartText {
-  padding: 2px;
-  margin: 2px;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-}
-
-.cartIcon {
-  width: 80px;
-  height: 80px;
-  margin: 5px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
-.background {
-  /* width: 100%;
-  height: 100%; */
-  width: 1440px;
-  height: 667px;
-  margin-top: 60px;
-  /* background-image: url("../../images/homrectangle.png"); */
-  background: url("../../images/homrectangle.png") center center no-repeat,
-    url("../../assets/images/startHomePage.png") center center no-repeat;
-  background-size: contain; /* фон підлаштується під розмір блоку */
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 1440px 667px;
-}
-.cartTitleText {
-  padding: 2px;
-  margin: 2px;
-  font-family: Montserrat Alternates;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  /* text-align: center; */
-
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-}
-.titleBlock {
-  margin-top: 80px;
-  margin-left: 64px;
-  margin-bottom: 50px;
-  display: block;
-  width: 260px;
-  height: 66px;
-  /* Жовта вертикальна смуга зліва — як у макеті */
-  border-left: 3px solid #fbb007;
-  padding-left: 10px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+/* === BUTTONS === */
 .containerButtons {
-  padding: 1px;
-  margin: 1px;
-  width: 100%;
-  height: auto;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+
   justify-content: center;
   align-items: center;
-  text-align: center;
-}
-.cartBtn {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 315px;
-  margin-right: 80px;
-  margin-left: 30px;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  z-index: 500;
 }
 
-.cartBtnSecond {
-  padding: 0px;
-  margin: 0px;
-  margin-top: 315px;
-  margin-right: 750px;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  z-index: 500;
-}
-.buttonViews {
-  width: 220px;
-  height: 58px;
-  padding: 0px;
-  /* margin: 10px; */
-  margin-left: 5px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  border-radius: 40px;
-  z-index: 500;
-}
+.buttonViews,
 .buttonViewsSecond {
-  width: 215px;
+  width: clamp(180px, 40vw, 220px);
   height: 58px;
-  padding: 0px;
-  /* margin: 10px; */
-  margin-left: 5px;
+
   display: flex;
-  flex-direction: row;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-  border-radius: 40px;
-  z-index: 500;
+}
+
+.btnVie,
+.btnVieSecond {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 500;
+
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .btnVie {
-  width: 220px;
-  height: 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #222222;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  background-color: #222;
   color: #fff;
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-.btnVie:hover {
-  background: linear-gradient(
-    268.5deg,
-    rgba(251, 176, 7, 0.5) 2.63%,
-    rgba(0, 0, 0, 0.5) 97.7%
-  );
-}
-.btnVie:focus {
-  background: linear-gradient(
-    268.5deg,
-    rgba(251, 176, 7, 0.5) 2.63%,
-    rgba(0, 0, 0, 0.5) 97.7%
-  );
 }
 
 .btnVieSecond {
-  width: 215px;
-  height: 59px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--orange, #fbb007);
-  /* background-color: #222222; */
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+  background-color: #fbb007;
   color: #fff;
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
 }
-.btnVieSecond:hover {
-  background: linear-gradient(
-    268.5deg,
-    rgba(251, 176, 7, 0.5) 2.63%,
-    rgba(0, 0, 0, 0.5) 97.7%
-  );
-}
+
+.btnVie:hover,
+.btnVie:focus,
+.btnVieSecond:hover,
 .btnVieSecond:focus {
   background: linear-gradient(
     268.5deg,
@@ -252,96 +102,88 @@
   );
 }
 
-.imgCard {
-  /* margin-top: 10px; */
-  width: 400px !important;
-  height: 550px !important;
-  padding: 1px;
-  margin-left: 10px;
+/* === SECTION TITLES === */
+.titleBlock {
+  align-self: flex-start;
+
+  border-left: 3px solid #fbb007;
+  padding-left: 12px;
+
+  margin-bottom: 32px;
 }
+
+.cartTitleText {
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* === BEST SELLERS GRID === */
+.ulCard {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.imgCard,
 .images {
-  opacity: 1;
-  width: 400px !important;
-  height: 550px !important;
-  /* width: 753px !important;
-  height: 606px !important; */
-  display: block !important;
-  background-color: rgb(176, 182, 182);
-  padding: 2px;
-  margin: 2px;
-  /* margin-top: 10px; */
-  margin-left: 10px;
-  padding-left: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  display: block;
+  object-fit: cover;
+
   border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  z-index: 100;
+  background-color: #e0e0e0;
 }
+
+/* === LARGE IMAGE SECTIONS === */
+.cardBigImages,
 .cardImagesFigure {
-  width: 1440px;
-  height: 217px;
-  margin: 0px;
-  margin-top: 60px;
-  padding: 0px;
+  width: 100%;
 }
+
+.bigImages,
 .imagFigure {
+  width: 100%;
+  height: auto;
+
   display: block;
-  width: 1440px;
-  height: 217px;
-  margin: 5px;
+  border-radius: 24px;
 }
-.cardTopImages {
-  width: 1440px;
-  height: 667px;
-  margin: 0px;
-  margin-top: -110px;
-  margin-bottom: 100px;
-  padding: 0px;
-}
-.cardBigImages {
-  width: 1440px;
-  height: 623px;
-  margin: 0px;
-  padding: 0px;
-}
-.bigImages {
-  display: block;
-  width: 1440px;
-  height: 623px;
-  margin: 5px;
-}
+
+/* === PRODUCER CARD === */
 .cardProducer {
-  width: 1312px;
-  height: 149px;
-  margin: 30px;
-  margin-left: 60px;
-  padding: 0px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
+
 .cardProdText {
-  width: 1242px;
-  height: 117px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  margin-left: 35px;
-  margin-right: 35px;
-  padding-left: 35px;
-  padding-right: 35px;
-  background: var(--orange-50, #fbb00780);
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0%;
+  max-width: 1200px;
+  width: 100%;
+
+  padding: clamp(16px, 4vw, 32px);
+
+  background: rgba(251, 176, 7, 0.5);
   border-radius: 20px;
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: start;
-  align-items: center;
+
+  font-size: clamp(18px, 3vw, 32px);
+  line-height: 1.3;
+
   text-align: left;
-  /* text-align: center; */
+}
+
+/* === MOBILE TWEAKS === */
+@media (max-width: 767px) {
+  .titleBlock {
+    align-self: center;
+    text-align: center;
+  }
 }

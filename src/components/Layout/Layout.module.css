@@ -1,13 +1,14 @@
 /* Layout.module.css */
+
+/* === БАЗА (280px+) === */
 .layout {
   width: 100%;
   min-height: 100vh;
+
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,4 +16,38 @@
 
 .main {
   flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* 🔥 центр по горизонталі */
+}
+
+/* === МОБІЛКИ === */
+@media (max-width: 767px) {
+  .layout {
+    padding: 12px;
+  }
+}
+
+/* === ПЛАНШЕТИ === */
+@media (min-width: 768px) {
+  .layout {
+    padding: 20px;
+  }
+}
+
+/* === DESKTOP === */
+@media (min-width: 1280px) {
+  .layout {
+    padding: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+/* === ВЕЛИКІ ЕКРАНИ (1441+) — опціонально === */
+@media (min-width: 1441px) {
+  .layout {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }

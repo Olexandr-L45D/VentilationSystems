@@ -8,6 +8,7 @@
     z-index: 1000;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
   }
 
   /* Лінійна форма */
@@ -31,6 +32,7 @@
     position: relative;
     /* width: 100%; */
     width: 200px;
+    border-radius: 20px;
   }
 
   /* === НОВЕ: Іконка в інпуті === */
@@ -38,7 +40,7 @@
     position: absolute;
     top: 30%;
     /* left: 12px; */
-    right: 20px;
+    right: 10px;
     transform: translateY(-10%);
     transform: translateX(-30%);
     font-size: 18px;
@@ -52,7 +54,7 @@
     /* border: 1px solid rgba(18, 17, 17, 0.4); */
     border-radius: 20px;
     border-width: 1px;
-    width: 220px;
+    width: 230px;
     height: 40px;
     padding-right: 12px;
     font-size: 15px;
@@ -242,27 +244,35 @@
 
   .dropdown {
     position: absolute;
-    margin: 100px;
+    margin: 50px;
+    margin-top: 100px;
     background: #fbb00780;
     left: 0;
     right: 0;
     background: white;
     border: 1px solid #ddd;
+    border-radius: 20px;
     z-index: 1000;
-    max-width: 220px;
-    max-height: 500px;
+    width: 200px;
+    margin-left: 100px;
+
     overflow-y: auto;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
     text-align: center;
+
     /* justify-content: center; */
   }
 
   .dropdown li {
     background: #fbb00780;
-    padding: 8px 10px;
-    margin: 2px;
+    padding: 3px;
+    margin: 4px;
+    margin-left: -30px;
     cursor: pointer;
+    border-radius: 20px;
   }
 
   .dropdown li:hover,
