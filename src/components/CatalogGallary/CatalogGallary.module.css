@@ -349,3 +349,196 @@ left: 38px; */
   letter-spacing: 0%;
   text-align: center;
 }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .containerCatalog {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: top;
+    text-align: center;
+  }
+  .titleLeftBlock {
+    width: 200px;
+  }
+  .containerList {
+    position: static !important;
+    /* width: 888px; */
+    width: 400px;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .list {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 1 картки в ряд */
+    gap: 20px;
+
+    list-style: none;
+  }
+  .cardTopBlock {
+    margin-top: 150px;
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagesTopBlock {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .containerCatalog {
+    position: static !important;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .containerLeftBlock {
+    /* width: 386px; */
+    width: 220px;
+    height: auto;
+    margin: 5px;
+    margin-top: 150px;
+    margin-left: 50px;
+    background: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0.480769) 0%,
+      rgba(156, 117, 29, 0.355954) 83.15%,
+      rgba(251, 176, 7, 0.240385) 100%
+    );
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    /* gap: 10px; */
+  }
+  .titleLeftBlock {
+    position: absolute;
+    width: 180px;
+    height: 66px;
+    opacity: 1;
+    margin-top: 60px;
+    /* top: 60px;
+left: 38px; */
+    border-radius: 20px;
+    background-color: #fafafa;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .titleLeft {
+    font-family: Montserrat Alternates;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+  }
+  .listBlLeft {
+    width: 250px;
+    height: auto;
+    /* height: 1500px; */
+    gap: 12px;
+    opacity: 1;
+    margin-top: 157px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    border-radius: 20px;
+  }
+  .itemBlock {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    text-align: left;
+    gap: 10px;
+  }
+  .containerList {
+    position: static !important;
+    /* width: 888px; */
+    width: 600px;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .list {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 картки в ряд */
+    gap: 20px;
+
+    list-style: none;
+  }
+  .cardTopBlock {
+    margin-top: 150px;
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagesTopBlock {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* 🔥 ДАЄ ПЕРЕНІС НА НОВИЙ РЯДОК */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}

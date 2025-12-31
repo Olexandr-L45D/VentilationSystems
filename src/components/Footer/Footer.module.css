@@ -292,3 +292,53 @@ a:focus {
   margin: 0px;
   color: #ffffff;
 }
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .footer {
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* max-width: 1400px; */
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .container {
+    width: 100%;
+    min-height: 349px;
+    padding: 24px 64px;
+
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2000px) {
+  /* === FOOTER WRAPPER — завжди 100% === */
+  .footer {
+    width: 105%;
+    margin: 0;
+    margin-left: 20px;
+    padding: 25px 0;
+    background-color: #222222;
+  }
+
+  /* === CONTENT CONTAINER — центрує контент === */
+  .container {
+    width: 100%;
+    /* max-width: 1440px; */
+    margin: 0 auto;
+
+    padding-inline: clamp(16px, 4vw, 64px);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
