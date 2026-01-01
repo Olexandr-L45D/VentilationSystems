@@ -11,7 +11,7 @@ export default function DeliveryPage() {
   return (
     <>
       <section className={css.container}>
-        <section className={css.container}>
+        <section className={css.containerSecond}>
           <div className={css.titleBlock}>
             <h2 className={css.cartTitleText}>
               {/* Payment */}
@@ -26,7 +26,7 @@ export default function DeliveryPage() {
             </p>
           </figure>
         </section>
-        <section className={css.container}>
+        <section className={css.containerSecond}>
           <div className={css.titleBlockSecond}>
             <h2 className={css.cartTitleText}>
               {/* Delivery  */}

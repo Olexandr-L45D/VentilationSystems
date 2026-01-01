@@ -62,6 +62,15 @@
 .active {
   color: #d84343;
 }
+@media (min-width: 500px) {
+  .container {
+    width: calc(100% - 20px);
+    max-width: 100%; /*  ОБОВʼЯЗКОВО */
+    height: 59px;
+    padding: 0 20px;
+    border-radius: 20px;
+  }
+}
 
 /* =====================
    TABLETS (768+)
@@ -123,5 +132,70 @@
 
   .link {
     font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .container {
+    position: absolute;
+    top: 190px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .card {
+    width: 90%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container {
+    position: absolute;
+    top: 140px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .card {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    position: absolute;
+    top: 80px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-bottom: 5px;
   }
 }

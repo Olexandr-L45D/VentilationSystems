@@ -4,7 +4,7 @@
 .overlay {
   position: fixed;
   inset: 0;
-  /* background: rgba(0, 0, 0, 0.55); */
+  background: rgba(249, 240, 240, 0.55);
   display: flex;
   justify-content: center;
   align-items: flex-start; /* 👈 НЕ center */
@@ -13,16 +13,16 @@
 }
 
 /* ===== Modal ===== */
+
 .modal {
   width: 95%;
-  max-width: 670px;
-  height: 600px;
-  /* max-height: 800px; */
+  min-width: 200px; /* ⬅️ важливо для дуже малих екранів */
+  max-width: 800px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto; /* ⬅️ скрол всередині */
   background: white;
-  border-radius: 16px;
+  border-radius: 20px;
   position: relative;
-  overflow: hidden;
-  max-height: calc(100vh - 120px); /* ✅ не вилізає за екран */
 }
 
 /* ===== Close button ===== */
@@ -64,98 +64,33 @@
   .modal {
     width: 95%;
     max-width: 600px;
-    /* max-height: 700px; */
     background: white;
     border-radius: 16px;
     position: relative;
     overflow: hidden;
-    max-height: calc(100vh - 40px); /* ✅ не вилізає за екран */
+    max-height: calc(100vh - 40px);
   }
 }
-
-/* 
-@media screen and (min-width: 200px) and (max-width: 678px) {
-  .overlay {
-    max-width: 500px;
-    max-height: 500px;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-    background-color: aqua;
-  }
-}
-@media screen and (min-width: 679px) and (max-width: 1020px) {
-  .overlay {
-    max-width: 500px;
-    max-height: 500px;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2000;
-    background-color: aqua;
-  }
-}
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-}
-
-.modal {
-  width: 95%;
-  height: 95%;
-  background: white;
-  border-radius: 15px;
-  position: relative;
-  overflow: hidden;
-}
-
-.closeBtn {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  background: #000a;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 18px;
-  z-index: 500;
-}
-
-.mapBox {
-  width: 600px;
-  height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-@media screen and (min-width: 1021px) and (max-width: 2000px) {
-  .overlay {
+/* @media (min-width: 768px) and (max-width: 1279px) {} */
+@media (min-width: 1021px) and (max-width: 1439px) {
+  .modal {
+    width: 95%;
     max-width: 600px;
-    max-height: 600px;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.55);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    z-index: 2000;
-    background-color: aqua;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 60px);
   }
-}  */
+}
+@media (min-width: 1440px) {
+  .modal {
+    width: 95%;
+    max-width: 800px;
+    background: white;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    max-height: calc(100vh - 80px); /* ✅ не вилізає за екран */
+  }
+}

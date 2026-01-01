@@ -550,3 +550,56 @@
     border-radius: 2px;
   }
 }
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+  }
+  .header {
+    height: 150px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* 🔥 ДАЄ ПЕРЕНІС НА НОВИЙ РЯДОК */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .iconPhone {
+    width: 100px;
+  }
+  .titleImg {
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+  }
+  .activeButton {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+    padding: 2px;
+  }
+  .languageSwitcher {
+    /* background: rgba(255, 255, 255, 0.6); */
+    display: flex;
+    gap: 10px;
+    padding: 1px;
+    margin: 5px;
+    margin-left: 10px;
+  }
+  .iconPhone {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
