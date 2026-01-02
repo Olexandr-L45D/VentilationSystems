@@ -1,3 +1,36 @@
 /* ConditionsMenu */
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 200px) and (max-width: 767px) {
+  .buttonHead {
+    min-width: 200px;
+    width: 95%;
+    margin: 2px;
+    padding: 6px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: SemiBold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: black;
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .buttonHead {
+    position: absolute;
+    min-width: 220px;
+    width: 95%;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: SemiBold;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
 }

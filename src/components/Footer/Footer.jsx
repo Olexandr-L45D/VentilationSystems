@@ -53,71 +53,72 @@ export const Footer = () => {
             {t("navigation.contactsFo")}
           </NavLink>
         </nav>
-
-        <section className={css.cardTextBl}>
-          <h2 className={css.titleBlok}>{t("navigation.contactTitle")}</h2>
-
-          <ul className={css.titleText}>
-            <li className={css.text}>
-              <AiFillPhone className={css.iconb} /> +3904451716513
-            </li>
-            <li className={css.text}>
-              <MdEmail className={css.iconb} /> lyubov@blackicon.it
-              <a className={css.text} href="mailto:info@example.com">
-                {/* info@example.com */}
-              </a>
-            </li>
-
-            <li className={css.text}>Via Santa Maria, nr 84</li>
-            <li className={css.text}>36030-Sarcedo-Vcenza-Italia</li>
-            <li className={css.text}>© 2025 Назва компанії?</li>
-          </ul>
-        </section>
-        <section className={css.rightSection}>
+        <section className={css.rightAllSection}>
           <section className={css.cardTextBl}>
-            <h2 className={css.titleBlokRi}>
-              <FeedbackMenu />
-            </h2>
+            <h2 className={css.titleBlok}>{t("navigation.contactTitle")}</h2>
 
-            <ul className={css.iconBlocFooter}>
+            <ul className={css.titleText}>
               <li className={css.text}>
-                <FaLinkedin className={css.icon} />
+                <AiFillPhone className={css.iconb} /> +3904451716513
               </li>
               <li className={css.text}>
-                <IoLogoInstagram className={css.icon} />
+                <MdEmail className={css.iconb} /> lyubov@blackicon.it
+                <a className={css.text} href="mailto:info@example.com">
+                  {/* info@example.com */}
+                </a>
               </li>
-              <li className={css.text}>
-                <FaTelegramPlane className={css.icon} />
-              </li>
-              <li className={css.text}>
-                <FaViber className={css.icon} />
-              </li>
-              <li className={css.text}>
-                <FaWhatsapp className={css.icon} />
-              </li>
+
+              <li className={css.text}>Via Santa Maria, nr 84</li>
+              <li className={css.text}>36030-Sarcedo-Vcenza-Italia</li>
+              <li className={css.text}>© 2025 Назва компанії?</li>
             </ul>
           </section>
+          <section className={css.rightSection}>
+            <section className={css.cardTextBlIcons}>
+              <h2 className={css.titleBlokRi}>
+                <FeedbackMenu />
+              </h2>
 
-          <section className={css.buttonIconBlok}>
-            <div className={css.buttonIcon}>
-              {/* модалка умови співпраці */}
-              <PdfActionsCondition
-                viewUrl="/pdfs/mnItalvent_1.pdf"
-                viewUrlDelivery="/pdfs/mnItalvent_1.pdf"
-                downloadUrl="/pdfs/mnItalvent_1.pdf"
-              />
-            </div>
-            {/* модалка написати відгук на месенджери */}
-            <section className={css.card}>
-              <nav className={css.nav}>
-                <NavLink to="/feedbackEmail" className={newLinkClass}>
-                  <p className={css.navEmail}>
-                    <MdEmail className={css.icon} />
-                    {/* Написати */}
-                    {t("footernav.footerWri")}
-                  </p>
-                </NavLink>
-              </nav>
+              <ul className={css.iconBlocFooter}>
+                <li className={css.text}>
+                  <FaLinkedin className={css.icon} />
+                </li>
+                <li className={css.text}>
+                  <IoLogoInstagram className={css.icon} />
+                </li>
+                <li className={css.text}>
+                  <FaTelegramPlane className={css.icon} />
+                </li>
+                <li className={css.text}>
+                  <FaViber className={css.icon} />
+                </li>
+                <li className={css.text}>
+                  <FaWhatsapp className={css.icon} />
+                </li>
+              </ul>
+            </section>
+
+            <section className={css.buttonIconBlok}>
+              <div className={css.buttonIcon}>
+                {/* модалка умови співпраці */}
+                <PdfActionsCondition
+                  viewUrl="/pdfs/mnItalvent_1.pdf"
+                  viewUrlDelivery="/pdfs/mnItalvent_1.pdf"
+                  downloadUrl="/pdfs/mnItalvent_1.pdf"
+                />
+              </div>
+              {/* модалка написати відгук на месенджери */}
+              <section className={css.card}>
+                <nav className={css.nav}>
+                  <NavLink to="/feedbackEmail" className={newLinkClass}>
+                    <p className={css.navEmail}>
+                      <MdEmail className={css.icon} />
+                      {/* Написати */}
+                      {t("footernav.footerWri")}
+                    </p>
+                  </NavLink>
+                </nav>
+              </section>
             </section>
           </section>
         </section>

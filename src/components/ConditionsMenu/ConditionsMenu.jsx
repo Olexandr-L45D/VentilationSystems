@@ -2,6 +2,7 @@
 // ButtonExportPdf
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import css from "./ConditionsMenu.module.css";
 
 const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
   const [open, setOpen] = useState(false);
@@ -13,19 +14,7 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
       {/* ГОЛОВНА КНОПКА */}
-      <button
-        onClick={toggleMenu}
-        style={{
-          padding: "8px 8px",
-          background: "rgba(255, 255, 255, 0.6);",
-          color: "#100e0eff",
-          border: "none",
-          borderRadius: "20px",
-          cursor: "pointer",
-          fontWeight: "800",
-          minWidth: "220px",
-        }}
-      >
+      <button className={css.buttonHead} onClick={toggleMenu}>
         {/* Умови співпраці */}
         {t("footernav.footerTerms")}
       </button>

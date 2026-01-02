@@ -45,7 +45,7 @@ export const Header = () => {
         </article>
         <NavLink to="/feedbackPhone" className={newLinkClass}>
           {/* {t("navigation.feedbackPhone")} */}
-          <p className={css.iconPhone}>
+          <p className={css.iconPhoneBlock}>
             <AiFillPhone className={css.iconPhon} />
             {/* Зворотній дзвінок */}
             {t("navigation.callback")}
