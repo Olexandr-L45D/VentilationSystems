@@ -487,6 +487,9 @@ a:focus {
     align-items: center;
     text-align: center;
   }
+  .rightSection {
+    margin-right: 120px;
+  }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
   .footer {
@@ -791,6 +794,10 @@ a:focus {
     margin: 0px;
     color: #ffffff;
   }
+  .cardLink {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
 }
 
 @media (min-width: 1440px) and (max-width: 2000px) {
@@ -812,7 +819,27 @@ a:focus {
     padding-inline: clamp(16px, 4vw, 64px);
 
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-between;
+    align-items: flex-start; */
+  }
+  .rightAllSection {
+    width: 95%;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .titleText {
+    margin-top: 30px;
+  }
+  .cardLink {
+    margin-top: 50px;
+    margin-left: 50px;
   }
 }

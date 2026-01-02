@@ -26,7 +26,8 @@
   gap: 10px;
 }
 .moreDescrip {
-  width: 1400px;
+  /* width: 1400px; */
+  width: 90%;
   height: auto;
   margin: 2px;
   padding: 2px;
@@ -461,4 +462,39 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--gray);
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .containerList {
+    width: 90%;
+  }
+  .imgCard {
+    width: 90%;
+  }
+  .cartContainer {
+    width: 90%;
+  }
+  .cartItem {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .containerSecind {
+    width: 90%;
+  }
+  .cartComent {
+    width: 90%;
+  }
+  .descrip {
+    width: 90%;
+    height: auto;
+  }
+  .moreDescrip {
+    width: 90%;
+  }
+  .imgCheme {
+    width: 90%;
+  }
+  .imag {
+    width: 90%;
+  }
 }
