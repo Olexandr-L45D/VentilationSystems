@@ -220,13 +220,19 @@ a:focus {
 
 @media screen and (min-width: 200px) and (max-width: 678px) {
   /* Вікно модалки */
+  .feedbackModalOverlay {
+    max-height: calc(100vh - 20px);
+  }
   .feedbackModal {
-    margin-top: 40px;
+    margin-top: 20px;
     background: #fff;
     width: 90%;
     max-width: 280px;
+    max-height: calc(100vh - 20px);
   }
-
+  .modalButtons {
+    max-height: calc(100vh - 20px);
+  }
   .modalClose {
     margin: 2px;
     margin-top: 10px;
@@ -258,5 +264,33 @@ a:focus {
     font-weight: 400;
     cursor: pointer;
     transition: 0.2s ease;
+  }
+  .modalTitle {
+    margin: 5px;
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: 600;
+  }
+
+  /* Сітка кнопок */
+  .modalButtons {
+    display: grid;
+    gap: 8px;
+    color: #222222;
+  }
+
+  .modalBtn {
+    background: #f8f3ff;
+    border: 1px solid #e3d9ff;
+    padding: 4px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #222222;
+    text-decoration: none;
+    font-weight: 400;
+    transition: all 0.25s ease;
   }
 }

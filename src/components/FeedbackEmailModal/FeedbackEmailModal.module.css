@@ -8,8 +8,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start; /* 👈 НЕ center */
-  padding-top: 90px; /* ✅ відступ від хедера */
+  padding-top: 50px; /* ✅ відступ від хедера в низ на великих екранах щоб не перекривало хедер з навігацієй*/
   z-index: 2000;
+  max-height: calc(100vh - 20px);
 }
 
 /* ===== Modal ===== */
@@ -17,7 +18,7 @@
 .modal {
   width: 95%;
   min-width: 200px; /* ⬅️ важливо для дуже малих екранів */
-  max-width: 800px;
+  max-width: 650px;
   max-height: calc(100vh - 80px);
   overflow-y: auto; /* ⬅️ скрол всередині */
   background: white;
@@ -46,9 +47,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: calc(100vh - 20px);
 }
 
 @media screen and (min-width: 200px) and (max-width: 678px) {
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(249, 240, 240, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 👈 НЕ center а з верху */
+    padding-top: 2px;
+    margin: 2px;
+    z-index: 2000;
+    max-height: calc(100vh - 20px); /* ✅ не вилізає за екран */
+  }
   .modal {
     width: 95%;
     max-width: 320px;
@@ -58,12 +72,15 @@
     overflow: hidden;
     max-height: calc(100vh - 20px); /* ✅ не вилізає за екран */
   }
+  .mapBox {
+    max-height: calc(100vh - 20px);
+  }
 }
 
 @media screen and (min-width: 679px) and (max-width: 1020px) {
   .modal {
     width: 95%;
-    max-width: 600px;
+    max-width: 650px;
     background: white;
     border-radius: 16px;
     position: relative;
@@ -75,7 +92,7 @@
 @media (min-width: 1021px) and (max-width: 1439px) {
   .modal {
     width: 95%;
-    max-width: 600px;
+    max-width: 650px;
     background: white;
     border-radius: 16px;
     position: relative;
@@ -86,7 +103,7 @@
 @media (min-width: 1440px) {
   .modal {
     width: 95%;
-    max-width: 800px;
+    max-width: 650px;
     background: white;
     border-radius: 16px;
     position: relative;
