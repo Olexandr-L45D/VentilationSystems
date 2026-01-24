@@ -9,6 +9,19 @@ Currently, two official plugins are available:
   uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
   uses [SWC](https://swc.rs/) for Fast Refresh
+    <!-- запуск проекту -->
+    <!-- перед запуском перевірити версію ноди командою в терміналі
+    (= nvm list) бо має бути 22 га -->
+    <!-- маю активну з зірочкою :
+      
+  <!-- * 22.22.0 (Currently using 64-bit executable)
+         20.20.0
+     -->
+   <!-- переключаюсь на 22 гу скриптом -->
+   <!-- якщо має не 22 гу то переключаюсь через нвм команду:
+   nvm install 22.22.0
+   nvm use 22.22.0
+    -->
 
 # стуркутра папок та фалів проекту
 
