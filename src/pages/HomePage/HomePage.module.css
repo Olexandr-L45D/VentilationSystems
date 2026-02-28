@@ -21,35 +21,82 @@
 .background {
   width: 100%;
   min-height: clamp(420px, 60vw, 680px);
-
   display: flex;
   justify-content: center;
   align-items: center;
   background: url("../../images/homrectangle.png") center / contain no-repeat;
-  border-radius: 24px;
-
-  /* background: url("../../images/homrectangle.png") center / contain no-repeat,
-    url("../../assets/images/startHomePage.png") center / cover no-repeat;
-
-  border-radius: 24px; */
+  position: relative; /* 🔥 ОБОВʼЯЗКОВО */
+  overflow: hidden;
+  /* border-radius: 24px; */
 }
 
-/* === HERO CARD === */
 .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cardTopImages {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.bigImagesTop {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heroContent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 24px;
-
-  margin-top: clamp(80px, 12vw, 180px);
+  padding: 20px;
 }
+.cartTitleTop {
+  position: absolute;
+  width: 1000px;
+  margin: 0px;
+  margin-bottom: 220px;
+  padding: 0px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #ffffff;
+  z-index: 500;
+}
+.cartTextTop {
+  position: absolute;
+  /* width: 100%; */
+  width: 800px;
+  padding: 20px;
+  margin: 50px;
+  margin-bottom: 130px;
+  color: #ffffff;
+  padding: 0px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
 
+  z-index: 500;
+}
 /* === BUTTONS === */
 .containerButtons {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-
+  margin-top: 270px;
   justify-content: center;
   align-items: center;
 }
@@ -58,7 +105,6 @@
 .buttonViewsSecond {
   width: clamp(180px, 40vw, 220px);
   height: 58px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +114,6 @@
 .btnVieSecond {
   width: 100%;
   height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,18 +166,26 @@
 }
 
 /* === BEST SELLERS GRID === */
+
 .ulCard {
   width: 100%;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 24px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; /* важливо! */
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
+.liImgCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .imgCard,
 .images {
   width: 100%;
@@ -145,13 +198,35 @@
   background-color: #e0e0e0;
 }
 
+.cartImagesText {
+  margin-top: -160px;
+  width: 300px;
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 500;
+  line-height: 1;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 /* === LARGE IMAGE SECTIONS === */
-.cardBigImages,
+.containerAdvantages {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.cartTitleTextAdvantages {
+  display: flex;
+  justify-content: start;
+  font-size: clamp(24px, 4vw, 40px);
+  font-weight: 600;
+  line-height: 1;
+}
 .cardImagesFigure {
   width: 100%;
 }
 
-.bigImages,
 .imagFigure {
   width: 100%;
   height: auto;
@@ -159,12 +234,62 @@
   display: block;
   border-radius: 24px;
 }
+.cardBigImages {
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+}
 
+.bigImages {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  display: block;
+}
+.labelTop,
+.labelLeft,
+.labelRight,
+.labelBotton {
+  position: absolute;
+  max-width: 300px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.labelTop {
+  top: 90px;
+  left: 40%;
+  transform: translateX(-50%);
+}
+.labelLeft {
+  top: 45%;
+  left: 35px;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.labelRight {
+  top: 50%;
+  right: 140px;
+  transform: translateY(-50%);
+  text-align: left;
+}
+.labelBotton {
+  max-width: 400px;
+  bottom: 40px;
+  left: 70%;
+  transform: translateX(-50%);
+}
 /* === PRODUCER CARD === */
 .cardProducer {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .cardProdText {
@@ -181,7 +306,48 @@
 
   text-align: left;
 }
-
+/* === Reviews CARD === */
+.reviewsBlock {
+  width: 548px;
+  height: 256px;
+  opacity: 1;
+  top: 19px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border-width: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.reviewsTitle {
+  width: 490;
+  height: 144;
+  opacity: 1;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.reviewsText {
+  margin: 10px;
+  padding: 10px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  justify-content: start;
+  align-items: left;
+  text-align: left;
+}
 /* === MOBILE TWEAKS === */
 @media (max-width: 767px) {
   .titleBlock {
