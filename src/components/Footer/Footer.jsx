@@ -59,18 +59,20 @@ export const Footer = () => {
 
             <ul className={css.titleText}>
               <li className={css.text}>
-                <AiFillPhone className={css.iconb} /> +3904451716513
+                <AiFillPhone className={css.iconb} /> +393663883621
               </li>
               <li className={css.text}>
-                <MdEmail className={css.iconb} /> lyubov@blackicon.it
-                <a className={css.text} href="mailto:info@example.com">
-                  {/* info@example.com */}
+                <a className={css.emailLink} href="mailto:lyubov@blackicon.it">
+                  <MdEmail className={css.iconb} />
+                  lyubov@blackicon.it
                 </a>
               </li>
 
               <li className={css.text}>Via Santa Maria, nr 84</li>
               <li className={css.text}>36030-Sarcedo-Vcenza-Italia</li>
-              <li className={css.text}>© 2025 Назва компанії?</li>
+              <li className={css.text}>
+                © 2025 Haria Black Icon Srl. All rights reserved
+              </li>
             </ul>
           </section>
           <section className={css.rightSection}>

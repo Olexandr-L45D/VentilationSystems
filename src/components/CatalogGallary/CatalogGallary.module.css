@@ -11,7 +11,7 @@
 }
 .containerLeftBlock {
   width: 386px;
-  height: auto;
+  height: 1460px;
   margin: 5px;
   margin-top: 150px;
   margin-left: 50px;
@@ -29,7 +29,6 @@
   text-align: center;
   border: 2px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  /* gap: 10px; */
 }
 .titleLeftBlock {
   position: absolute;
@@ -40,7 +39,6 @@
   border-radius: 20px;
   background-color: #fafafa;
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -245,7 +243,6 @@
   margin: 10px;
   margin-right: 20px;
   margin-top: 20px;
-
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -256,8 +253,6 @@
   margin-top: 15px;
   width: 320px;
   height: 330px;
-  /* padding: 1px;
-  margin: 1px; */
   margin: 5px;
   padding: 5px;
   display: flex;
@@ -289,8 +284,8 @@
   gap: 12px;
 }
 .imagesBlock {
-  width: 310px;
-  height: 66px;
+  width: 230px;
+  height: 80px;
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -318,9 +313,17 @@
   width: 54px;
   height: 55px;
   opacity: 1;
-
   border-radius: 10px;
   margin: 10px;
+  margin-bottom: 10px;
+}
+.imgLogoMix {
+  width: 90px;
+  height: 90px;
+  opacity: 1;
+  border-radius: 10px;
+  margin: 10px;
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 .textImg {
@@ -331,9 +334,7 @@
   font-style: SemiBold;
   font-size: 16px;
   line-height: 100%;
-
   text-align: center;
-
   margin: 2px;
   padding: 2px;
 }
@@ -342,7 +343,6 @@
   font-weight: 600;
   font-style: SemiBold;
   font-size: 16px;
-
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
@@ -509,7 +509,6 @@
     gap: 10px;
   }
   .containerLeftBlock {
-    /* width: 386px; */
     width: 220px;
     height: auto;
     margin: 5px;

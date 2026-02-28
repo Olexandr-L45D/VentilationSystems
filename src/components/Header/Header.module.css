@@ -6,24 +6,16 @@
     right: 0;
     margin: 0px;
     padding: 0px;
-
     z-index: 1000;
     background-image: url("../../images/headerBlend.png");
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top center;
-
-    /* 🔹 ПРОЗОРИЙ ФОН */
-    /* background: rgba(255, 255, 255, 0.6); */
-
-    /* 🔹 BLUR ЕФЕКТ (glassmorphism) */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     width: 100%;
     height: 87px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,28 +24,16 @@
   .header {
     position: fixed;
     top: 0;
-    /* left: 0;
-  right: 0; */
     margin-left: 100px;
     margin-right: 100px;
-
     z-index: 1000;
-
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top center;
-
-    /* 🔹 ПРОЗОРИЙ ФОН */
-    /* background: rgba(255, 255, 255, 0.6); */
-
-    /* 🔹 BLUR ЕФЕКТ (glassmorphism) */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-
     height: 87px;
-    /* width: 1224px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -159,9 +139,10 @@
     border-color: #d84343;
   }
   .iconPhoneBlock {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-bottom: 10px;
-    gap: 15px;
+    /* gap: 15px; */
+    padding: 10px;
   }
   .iconPhone {
     width: 160px;
@@ -171,8 +152,8 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* margin-right: 15px; */
-    /* padding-right: 20px; */
+    margin-right: 15px;
+    padding-right: 20px;
   }
   .titleImg {
     display: flex;
@@ -187,6 +168,10 @@
     margin-bottom: 10px;
     border-radius: 2px;
   }
+  .iconPhoneNumb {
+    padding: 2px;
+    margin: 2px;
+  }
 } /* планшети */
 
 @media (min-width: 1280px) and (max-width: 1440px) {
@@ -197,24 +182,16 @@
     right: 0;
     margin: 0px;
     padding: 0px;
-
     z-index: 1000;
     background-image: url("../../images/headerBlend.png");
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top center;
-
-    /* 🔹 ПРОЗОРИЙ ФОН */
-    /* background: rgba(255, 255, 255, 0.6); */
-
-    /* 🔹 BLUR ЕФЕКТ (glassmorphism) */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     width: 100%;
     height: 87px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,29 +200,17 @@
   .header {
     position: fixed;
     top: 0;
-    /* left: 0;
-  right: 0; */
     margin-left: 100px;
     margin-right: 100px;
-
     z-index: 1000;
-
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top center;
-
-    /* 🔹 ПРОЗОРИЙ ФОН */
-    /* background: rgba(255, 255, 255, 0.6); */
-
-    /* 🔹 BLUR ЕФЕКТ (glassmorphism) */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-
     height: 87px;
     width: 1224px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +238,10 @@
     font-weight: 700;
     margin: 0;
   }
-
+  .iconPhoneNumb {
+    padding: 2px;
+    margin: 2px;
+  }
   .link {
     padding: 8px 10px;
     margin: 20px;
@@ -349,14 +317,22 @@
     font-weight: bold;
     border-color: #d84343;
   }
+  .iconPhoneBlock {
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+    /* gap: 15px; */
+    padding: 10px;
+  }
   .iconPhone {
-    width: 200px;
+    width: 220px;
     display: flex;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-right: 15px;
+    padding-right: 20px;
   }
   .titleImg {
     display: flex;
@@ -386,18 +362,11 @@
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top center;
-
-    /* 🔹 ПРОЗОРИЙ ФОН */
-    /* background: rgba(255, 255, 255, 0.6); */
-
-    /* 🔹 BLUR ЕФЕКТ (glassmorphism) */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
     width: 100%;
     height: 87px;
-    /* width: 90%; */
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -409,26 +378,14 @@
     top: 0;
     left: 0;
     right: 0;
-    /* margin-left: 100px;
-    margin-right: 100px; */
-
     z-index: 1000;
-
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top center;
-
-    /* 🔹 ПРОЗОРИЙ ФОН */
-    /* background: rgba(255, 255, 255, 0.6); */
-
-    /* 🔹 BLUR ЕФЕКТ (glassmorphism) */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-
     height: 87px;
-    /* width: 1400px; */
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -598,7 +555,7 @@
     margin-left: 10px;
   }
   .iconPhoneBlock {
-    margin-top: 5px;
+    margin: 0px;
     margin-bottom: 10px;
     gap: 15px;
   }
@@ -610,5 +567,6 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    margin-right: 15px;
   }
 }

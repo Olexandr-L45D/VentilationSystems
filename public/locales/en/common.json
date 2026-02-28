@@ -1,4 +1,18 @@
 {
+  "homepage": {
+    "bestSelImagesLeft": "BMN 602 – Forward-Curved Centrifugal Fan for Industrial Ventilation",
+    "bestSelImagesCenter": " BMN 402 – Forward-Curved Centrifugal Fan for Industrial Ventilation",
+    "bestSelImagesRight": "Axial fan Top model",
+    "advantagesHight": "High quality",
+    "advantageFlexibility": "Flexibility on service and customization",
+    "bestSelFast": "Fast delivery",
+    "bestSelEvery": "Every model of fans can be made in stainless steel",
+    "titleReviews": "Reviews",
+    "bestReviews": "Oleh H., Production Facility Owner",
+    "bestReviewsLeft": "We ordered ventilation systems for our paint booth. The equipment operates quietly, efficiently, and without interruptions. Delivery was fast, and the team helped us choose the right model. Very satisfied with the cooperation.",
+    "bestReviewsRight": "Maria L., Procurement Manager",
+    "bestTextRight": " We purchased HARIA industrial fans for our company. The quality is excellent — you can immediately see the European manufacturing standards. We especially appreciated the ability to customize the units to our needs. Highly recommended."
+  },
   "navigation": {
     "home": "home",
     "aboutnav": "about us",
@@ -115,6 +129,9 @@
     "rotation": "Rotation direction",
     "impelle": "Impeller material",
     "power": "Motor ",
-    "noiseLeve": "Noise "
+    "noiseLeve": "Noise ",
+    "fanValves": "Valves",
+    "fanTypeMaterial": "Material",
+    "fanProductivity": "Productivity"
   }
 }

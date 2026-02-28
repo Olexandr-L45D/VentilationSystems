@@ -6,11 +6,10 @@ import cardCenter from "../../assets/images/fanHomeCenter.png";
 import cardRight from "../../assets/images/fanHomeRight.png";
 import VectorHomeCenter from "../../assets/images/VectorHomeCenter.png";
 import Advantages from "../../assets/images/Advantages.png";
-// import aboutUsPage from "../../assets/images/aboutUsPage.png";
 import startHomePage from "../../assets/images/startHomePage.png";
-// startHomePage
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
-// aboutUsPage
+import { BiSolidUser } from "react-icons/bi";
+
 export default function HomePage() {
   const { t, ready } = useTranslation();
   if (!ready) {
@@ -64,9 +63,9 @@ export default function HomePage() {
                 <img className={css.images} src={cardLeft} alt="" />
               </figure>
               <h3 className={css.cartImagesText}>
-                BMN 602 – Forward-Curved Centrifugal Fan for Industrial
-                Ventilation
-                {/* {t("navigation.bestSel")} */}
+                {/* BMN 602 – Forward-Curved Centrifugal Fan for Industrial
+                Ventilation */}
+                {t("homepage.bestSelImagesLeft")}
               </h3>
             </li>
             <li className={css.liImgCard}>
@@ -74,9 +73,8 @@ export default function HomePage() {
                 <img className={css.images} src={cardCenter} alt="" />
               </figure>
               <h3 className={css.cartImagesText}>
-                BMN 402 – Forward-Curved Centrifugal Fan for Industrial
-                Ventilation
-                {/* {t("navigation.bestSel")} */}
+                {/* BMN 402 – Forward-Curved Centrifugal Fan for Industrial Ventilation */}
+                {t("homepage.bestSelImagesCenter")}
               </h3>
             </li>
             <li className={css.liImgCard}>
@@ -84,8 +82,8 @@ export default function HomePage() {
                 <img className={css.images} src={cardRight} alt="" />
               </figure>
               <h3 className={css.cartImagesText}>
-                Axial fan Top model
-                {/* {t("navigation.bestSel")} */}
+                {/* Axial fan Top model */}
+                {t("homepage.bestSelImagesRight")}
               </h3>
             </li>
           </ul>
@@ -101,23 +99,23 @@ export default function HomePage() {
             </h2>
           </div>
           <h3 className={css.labelTop}>
-            High quality
-            {/* {t("navigation.bestSel")} */}
+            {/* High quality */}
+            {t("homepage.advantagesHight")}
           </h3>
           <h3 className={css.labelLeft}>
-            Flexibility on service and customization
-            {/* {t("navigation.bestSel")} */}
+            {/* Flexibility on service and customization */}
+            {t("homepage.advantageFlexibility")}
           </h3>
           <figure className={css.cardBigImages}>
             <img className={css.bigImages} src={Advantages} alt="" />
           </figure>
           <h3 className={css.labelRight}>
-            Fast delivery
-            {/* {t("navigation.bestSel")} */}
+            {/* Fast delivery */}
+            {t("homepage.bestSelFast")}
           </h3>
           <h3 className={css.labelBotton}>
-            Every model of fans can be made in stainless steel
-            {/* {t("navigation.bestSel")} */}
+            {/* Every model of fans can be made in stainless steel */}
+            {t("homepage.bestSelEvery")}
           </h3>
         </section>
 
@@ -139,37 +137,29 @@ export default function HomePage() {
           </figure>
         </section>
 
-        <section className={css.container}>
+        <section className={css.containerReviews}>
           <div className={css.titleBlock}>
             <h2 className={css.cartTitleText}>
-              Reviews
-              {/* {t("navigation.aboutUs")} */}
+              {/* Reviews */}
+              {t("homepage.titleReviews")}
             </h2>
           </div>
           <ul className={css.ulCard}>
             <li className={css.reviewsBlock}>
               <h3 className={css.reviewsTitle}>
-                Oleh H., Production Facility Owner
-                {/* {t("navigation.bestSel")} */}
+                <BiSolidUser />
+                {/* Oleh H., Production Facility Owner */}
+                {t("homepage.bestReviews")}
               </h3>
-              <p className={css.reviewsText}>
-                We ordered ventilation systems for our paint booth. The
-                equipment operates quietly, efficiently, and without
-                interruptions. Delivery was fast, and the team helped us choose
-                the right model. Very satisfied with the cooperation.
-              </p>
+              <p className={css.reviewsText}>{t("homepage.bestReviewsLeft")}</p>
             </li>
             <li className={css.reviewsBlock}>
               <h3 className={css.reviewsTitle}>
-                Maria L., Procurement Manager
-                {/* {t("navigation.bestSel")} */}
+                <BiSolidUser />
+                {/* Maria L., Procurement Manager */}
+                {t("homepage.bestReviewsRight")}
               </h3>
-              <p className={css.reviewsText}>
-                We purchased HARIA industrial fans for our company. The quality
-                is excellent — you can immediately see the European
-                manufacturing standards. We especially appreciated the ability
-                to customize the units to our needs. Highly recommended.
-              </p>
+              <p className={css.reviewsText}>{t("homepage.bestTextRight")}</p>
             </li>
           </ul>
         </section>

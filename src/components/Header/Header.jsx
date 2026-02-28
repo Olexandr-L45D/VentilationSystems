@@ -44,7 +44,7 @@ export const Header = () => {
           </button>
         </article>
         <NavLink to="/feedbackPhone" className={newLinkClass}>
-          {/* {t("navigation.feedbackPhone")} */}
+          <p className={css.iconPhoneNumb}>+393663883621</p>
           <p className={css.iconPhoneBlock}>
             <AiFillPhone className={css.iconPhon} />
             {/* Зворотній дзвінок */}
