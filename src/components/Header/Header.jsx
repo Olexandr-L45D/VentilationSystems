@@ -2,18 +2,17 @@ import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import css from "./Header.module.css";
 import { useTranslation } from "react-i18next";
-// import CartIconHeder from "../CartIconHeder/CartIconHeder";
 import { AiFillPhone } from "react-icons/ai";
 import SearchBoxFiltr from "../SearchBoxFiltr/SearchBoxFiltr";
-import LogoVent from "../../assets/images/logoheader.png";
+import LogoVent from "../../assets/images/LogoBlackital.png";
 
 const newLinkClass = ({ isActive }) => {
   return clsx(css.link, isActive && css.active);
 };
 
 export const Header = () => {
-  const { i18n } = useTranslation(); // Додано хук
-  // Функція для зміни мови
+  const { i18n } = useTranslation();
+
   const changeLanguage = language => {
     i18n.changeLanguage(language);
   };
@@ -42,6 +41,12 @@ export const Header = () => {
           >
             IT
           </button>
+          <button
+            className={css.activeButton}
+            onClick={() => changeLanguage("it")}
+          >
+            PL
+          </button>
         </article>
         <NavLink to="/feedbackPhone" className={newLinkClass}>
           <p className={css.iconPhoneNumb}>+393663883621</p>
@@ -51,7 +56,6 @@ export const Header = () => {
             {t("navigation.callback")}
           </p>
         </NavLink>
-        <div>{/* <CartIconHeder /> */}</div>
       </header>
     </section>
   );

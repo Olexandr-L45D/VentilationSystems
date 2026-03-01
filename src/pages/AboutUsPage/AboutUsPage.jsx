@@ -1,7 +1,9 @@
 import css from "./AboutUsPage.module.css";
-import aboutUsDesctop from "../../assets/images/aboutUsDesctop.png";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import aboutUsDesctop from "../../assets/images/aboutUsDesctop.png";
+import aboutUsTablet from "../../assets/images/aboutUsTablet.png";
+import aboutUsMobile from "../../assets/images/aboutUsMobile.png";
 
 export default function AboutUsPage() {
   const { t } = useTranslation();
@@ -16,7 +18,20 @@ export default function AboutUsPage() {
       <section className={css.background}>
         <section className={css.card}>
           <figure className={css.cardTopImages}>
-            <img className={css.bigImagesTop} src={aboutUsDesctop} alt="img" />
+            <picture>
+              {/* Mobile */}
+              <source media="(max-width: 599px)" srcSet={aboutUsMobile} />
+
+              {/* Tablet */}
+              <source media="(max-width: 1099px)" srcSet={aboutUsTablet} />
+
+              {/* Desktop */}
+              <img
+                className={css.bigImagesTop}
+                src={aboutUsDesctop}
+                alt="About us"
+              />
+            </picture>
           </figure>
           <ul className={css.usContent}>
             <li className={css.carttextUs}>
