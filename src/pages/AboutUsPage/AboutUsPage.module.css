@@ -1,31 +1,89 @@
-/* AboutUsPage */
+/* === PAGE CONTAINER === */
 
-.background {
-  background-image: url("../../images/aboutUsPage.png");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, 280px 210px;
-  width: 1440px;
-  height: 652px;
-}
 .container {
-  padding: 0px;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 140px;
-  height: auto;
-  /* top: 150; */
   width: 100%;
+  max-width: 1440px;
+  max-height: 800px;
+  margin-inline: auto;
+  padding-inline: clamp(12px, 4vw, 32px);
+  padding-top: clamp(24px, 6vw, 64px);
+  display: flex;
+  flex-direction: column;
+}
+/* === HERO SECTION === */
+.background {
+  width: 100%;
+  min-height: clamp(420px, 60vw, 680px);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+
+  position: relative;
+  overflow: visible; /* не обрізає */
 }
-.sectionVideo {
-  width: 90%;
-  height: 90%;
-  padding: 10px;
-  margin: 10px;
+/* === IMAGE CARD === */
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: 110px;
 }
+
+.cardTopImages {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.bigImagesTop {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* не обрізає */
+}
+/* === TEXT BLOCK === */
+.usContent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: clamp(24px, 6vw, 120px);
+  max-width: 700px;
+  gap: 24px;
+}
+
+.carttextUs {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.carttextUs strong {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  text-align: left;
+}
+
+.carttextUs p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+/* === VIDEO OVERLAY === */
 .videoOverlay {
   position: fixed;
   inset: 0;
@@ -34,105 +92,15 @@
 }
 
 .video {
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.card {
-  display: flex;
-  margin: 0px;
-  margin-top: 300px;
-
-  /* margin-left: 64px; */
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-}
-.cartTitle {
-  padding: 2px;
-  margin: 2px;
-  color: #fff;
-  font-size: 2em;
-  font-weight: 900;
-  line-height: 2;
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-}
-
-.cartText {
-  padding: 2px;
-  margin: 2px;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-  display: flex;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-}
-
-.cartBtn {
-  padding: 2px;
-  margin: 2px;
-  font-size: 1em;
-  font-weight: 700;
-  line-height: 1;
-}
-.cartIcon {
-  width: 80px;
-  height: 80px;
-  margin: 5px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-
-.buttonViews {
-  width: 166px;
-  height: 56px;
-  padding: 0px;
-  margin: 10px;
-  margin-left: 5px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  border-radius: 40px;
-}
-
-.btnVie {
-  width: 207px;
-  height: 59px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #222222;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  color: #fff;
-}
-@media screen and (min-width: 200px) and (max-width: 599px) {
-  .container {
-    width: 100%;
-    height: auto;
-    /* padding: 16px;
-    padding-bottom: 24px; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .background {
-    background-image: url("../../images/aboutUsPage.png");
-    background-repeat: no-repeat, no-repeat;
-    background-size: 100%, 280px 210px;
-    width: 100%;
-    height: 652px;
+/* === MOBILE === */
+@media (max-width: 599px) {
+  .usContent {
+    padding-inline: 16px;
+    max-width: 100%;
   }
 }

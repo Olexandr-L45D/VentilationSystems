@@ -1,6 +1,7 @@
 .container {
   width: 100%;
-  height: auto;
+  /* height: auto; */
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -8,6 +9,17 @@
   text-align: left;
   /* align-items: center;
   text-align: center; */
+}
+.containerSecond {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 120px;
 }
 
 @media (min-width: 220px) and (max-width: 479px) {
@@ -39,7 +51,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 120px;
   }
   .cardProdText {
     width: 80%;

@@ -23,11 +23,7 @@ export const Navigation = () => {
               {t("navigation.catalog")}
             </NavLink>
           </div>
-          {/* experiment Go to Not Found Page */}
-          {/* <NavLink to="/notFound" className={newLinkClass}>
-            {t("navigation.home")}
-          </NavLink> */}
-          {/* experiment */}
+
           <NavLink to="/" className={newLinkClass}>
             {t("navigation.home")}
           </NavLink>
@@ -36,10 +32,6 @@ export const Navigation = () => {
           </NavLink>
           <NavLink to="/delivery" className={newLinkClass}>
             {t("navigation.delivery")}
-          </NavLink>
-          <NavLink to="/factory" className={newLinkClass}>
-            {/* Виробництво */}
-            {t("navigation.factory")}
           </NavLink>
 
           <NavLink to="/contacts" className={newLinkClass}>

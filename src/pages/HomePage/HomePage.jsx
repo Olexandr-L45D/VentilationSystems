@@ -49,6 +49,7 @@ export default function HomePage() {
             </div>
           </section>
         </section>
+
         <section className={css.container}>
           <div className={css.titleBlock}>
             <h2 className={css.cartTitleText}>

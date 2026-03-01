@@ -17,9 +17,6 @@ import DeliveryPage from "../../pages/DeliveryPage/DeliveryPage";
 const ContactsPage = lazy(() =>
   import("../../pages/ContactsPage/ContactsPage")
 );
-const AboutFactoryPage = lazy(() =>
-  import("../../pages/AboutFactoryPage/AboutFactoryPage")
-);
 
 const FeedbackEmailModal = lazy(() =>
   import("../FeedbackEmailModal/FeedbackEmailModal")
@@ -39,7 +36,6 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/catalog" element={<VentPageFilters />} />
-            <Route path="/factory" element={<AboutFactoryPage />} />
             <Route path="/contacts" element={<ContactsPage />} />
             <Route path="/delivery" element={<DeliveryPage />} />
             <Route path="/feedbackEmail" element={<FeedbackEmailModal />} />

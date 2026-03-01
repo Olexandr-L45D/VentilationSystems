@@ -1,12 +1,10 @@
-// import { Link } from "react-router-dom";
 import css from "./AboutUsPage.module.css";
-import Bakground from "../../assets/images/blendBakground.png";
+import aboutUsDesctop from "../../assets/images/aboutUsDesctop.png";
 import { useEffect, useState } from "react";
-// import { useTranslation } from "react-i18next";
-// import introVideo from "../../public/video/videoUs.MP4";
+import { useTranslation } from "react-i18next";
 
 export default function AboutUsPage() {
-  // const { t, ready } = useTranslation();
+  const { t } = useTranslation();
   const [showVideo, setShowVideo] = useState(false);
 
   useEffect(() => {
@@ -14,14 +12,30 @@ export default function AboutUsPage() {
   }, []);
 
   return (
-    <section
-      className={css.container}
-      style={{ backgroundImage: `url(${Bakground})` }}
-    >
+    <section className={css.container}>
       <section className={css.background}>
-        {/* <h1>About Us Page</h1> */}
+        <section className={css.card}>
+          <figure className={css.cardTopImages}>
+            <img className={css.bigImagesTop} src={aboutUsDesctop} alt="img" />
+          </figure>
+          <ul className={css.usContent}>
+            <li className={css.carttextUs}>
+              <strong>{t("aboutus.carttextUsTop")}</strong>
+            </li>
+            <li className={css.carttextUs}>
+              <strong>{t("aboutus.carttextUsSecond")}</strong>
+            </li>
+            <li className={css.carttextUs}>
+              <strong>{t("aboutus.carttextUsMidle")}</strong>
+            </li>
+            <li className={css.carttextUs}>
+              <strong>{t("aboutus.carttextUsBotton")}</strong>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section className={css.background}>
         <section className={css.sectionVideo}>
-          {/* ВІДЕО ІНТРО */}
           {showVideo && (
             <div className={css.videoOverlay}>
               <video
@@ -39,9 +53,3 @@ export default function AboutUsPage() {
     </section>
   );
 }
-
-// useEffect(() => {
-//   // блокуємо скрол під час відео
-//   document.body.style.overflow = "hidden";
-//   return () => (document.body.style.overflow = "auto");
-// }, []);
