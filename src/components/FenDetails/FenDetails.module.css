@@ -51,7 +51,7 @@
 }
 
 .cartItem {
-  width: 1400px;
+  width: 100%;
   height: auto;
   margin: 20px;
   padding: 20px;
@@ -124,9 +124,8 @@
 }
 
 .cartContainer {
-  width: 650px;
-  height: 600px;
-  /* height: auto; */
+  width: 630px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,16 +136,16 @@
   padding: 0px;
 }
 .cartComent {
-  width: 640px;
-  height: 400px;
+  width: 630px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   align-items: center;
   gap: 5px;
-  margin: 0px;
-  padding: 0px;
+  margin: 5px;
+  padding: 5px;
 }
 
 .textPrice {
@@ -409,8 +408,11 @@
 }
 
 .cartContainer {
+  margin: 5px;
   margin-top: 48px;
-  width: 1312px;
+  width: 650px;
+  height: 450px;
+  padding: 5px;
   height: auto;
   display: flex;
   flex-direction: row;
