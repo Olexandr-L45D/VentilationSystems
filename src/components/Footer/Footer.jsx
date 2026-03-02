@@ -49,10 +49,11 @@ export const Footer = () => {
             {t("navigation.catalogFo")}
           </NavLink>
 
-          <NavLink to="/contacts" className={newLinkClassSecond}>
-            {t("navigation.contactsFo")}
+          <NavLink to="/companyTerms" className={newLinkClassSecond}>
+            {t("navigation.deliveryTerms")}
           </NavLink>
         </nav>
+
         <section className={css.rightAllSection}>
           <section className={css.cardTextBl}>
             <h2 className={css.titleBlok}>{t("navigation.contactTitle")}</h2>

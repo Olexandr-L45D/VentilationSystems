@@ -1,0 +1,147 @@
+/* CompanyTermsPage.module.css */
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 56px; /* було 80px → -30% */
+  padding: 120px 0 80px;
+}
+
+/* HERO */
+.hero {
+  max-width: 1100px;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* компактніше */
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 24px;
+  max-width: 600px;
+}
+
+.heroActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  padding: 14px 28px;
+  border-radius: 30px;
+  background: #222;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: left;
+  align-items: start;
+  gap: 12px; /* було 16px */
+}
+
+/* ЖОВТА ЛІНІЯ — ПРИТИСНУТА ДО КРАЮ */
+.titleParagraf {
+  width: 100%;
+  border-left: 4px solid #fbb007;
+  padding-left: 16px;
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* ВНУТРІШНІЙ КОНТЕНТ */
+.section > p,
+.section > ul,
+.section > .contacts,
+.section > .docActions {
+  max-width: 1100px;
+  padding: 0 24px;
+}
+
+/* TEXT */
+.section p {
+  line-height: 1.6;
+  margin-top: 4px; /* компактніше */
+}
+
+/* LISTS */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.note {
+  font-style: italic;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+/* DOCUMENTS */
+.docActions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* CONTACTS */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .titleParagraf {
+    font-size: 32px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .page {
+    padding: 100px 0 60px;
+    gap: 42px;
+  }
+
+  .hero {
+    padding: 0 16px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .titleParagraf {
+    font-size: 26px;
+    padding-left: 12px;
+  }
+
+  .section > p,
+  .section > ul,
+  .section > .contacts,
+  .section > .docActions {
+    padding: 0 16px;
+  }
+}

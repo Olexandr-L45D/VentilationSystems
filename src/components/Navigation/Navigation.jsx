@@ -19,24 +19,24 @@ export const Navigation = () => {
         <nav className={css.nav}>
           <div className={css.iconBlok}>
             <img src={IconButtonCatalog} alt="" className={css.imgLogo} />
-            <NavLink to="/catalog" className={newLinkClass}>
-              {t("navigation.catalog")}
+            <NavLink to="/" className={newLinkClass}>
+              {t("navigation.home")}
             </NavLink>
           </div>
-
-          <NavLink to="/" className={newLinkClass}>
-            {t("navigation.home")}
+          <NavLink to="/catalog" className={newLinkClass}>
+            {t("navigation.catalog")}
           </NavLink>
+
           <NavLink to="/aboutus" className={newLinkClass}>
             {t("navigation.aboutnav")}
           </NavLink>
-          <NavLink to="/delivery" className={newLinkClass}>
-            {t("navigation.delivery")}
+          <NavLink to="/companyTerms" className={newLinkClass}>
+            {t("navigation.deliveryTerms")}
           </NavLink>
 
-          <NavLink to="/contacts" className={newLinkClass}>
+          {/* <NavLink to="/contacts" className={newLinkClass}>
             {t("navigation.contacts")}
-          </NavLink>
+          </NavLink> */}
         </nav>
       </section>
     </section>

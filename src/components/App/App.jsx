@@ -12,11 +12,11 @@ const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 import { Layout } from "../Layout/Layout";
 import { CartProvider } from "../CartProvider";
-import DeliveryPage from "../../pages/DeliveryPage/DeliveryPage";
+import CompanyTermsPage from "../../pages/CompanyTermsPage/CompanyTermsPage";
 
-const ContactsPage = lazy(() =>
-  import("../../pages/ContactsPage/ContactsPage")
-);
+// const ContactsPage = lazy(() =>
+//   import("../../pages/ContactsPage/ContactsPage")
+// );
 
 const FeedbackEmailModal = lazy(() =>
   import("../FeedbackEmailModal/FeedbackEmailModal")
@@ -36,8 +36,8 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/catalog" element={<VentPageFilters />} />
-            <Route path="/contacts" element={<ContactsPage />} />
-            <Route path="/delivery" element={<DeliveryPage />} />
+            {/* <Route path="/contacts" element={<ContactsPage />} /> */}
+            <Route path="/companyTerms" element={<CompanyTermsPage />} />
             <Route path="/feedbackEmail" element={<FeedbackEmailModal />} />
             <Route path="/feedbackPhone" element={<FeedbackModalPhone />} />
             <Route path="/fen/:id" element={<FenDetails />} />
