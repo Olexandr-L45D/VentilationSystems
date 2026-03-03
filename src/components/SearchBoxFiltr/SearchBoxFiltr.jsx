@@ -7,7 +7,7 @@ import { selectFilters } from "../../redux/filters/selectors";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
 
-const ALL_CATEGORIES = ["centrifugal", "radial", "dnp", "axial", "valves"];
+const ALL_CATEGORIES = ["centrifugal", "radial", "flow-control", "axial"];
 
 export default function SearchBoxFiltr() {
   const dispatch = useDispatch();

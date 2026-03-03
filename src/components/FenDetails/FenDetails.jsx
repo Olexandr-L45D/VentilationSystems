@@ -20,7 +20,6 @@ const FenDetails = () => {
     <container className={css.containerList}>
       <h1 className={css.titles}>{fen.name}</h1>
       <section key={fen.id} className={css.cartItem}>
-        {/* <h1 className={css.titles}>{fen.name}</h1> */}
         <figure className={css.imgCard}>
           <img className={css.images} src={fen.photo} alt={fen.name} />
         </figure>

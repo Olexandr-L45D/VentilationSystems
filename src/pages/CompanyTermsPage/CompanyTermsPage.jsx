@@ -13,16 +13,19 @@ export default function CompanyTermsPage() {
         <p>
           Everything you need to know about our company and cooperation terms
         </p>
-
-        <div className={css.heroActions}>
-          <a href="mailto:lyubov@blackicon.it" className={css.primaryBtn}>
-            Contact Us
-          </a>
-          <PdfActionsCondition
-            viewUrl="/pdfs/mnItalvent_1.pdf"
-            downloadUrl="/pdfs/mnItalvent_1.pdf"
-          />
-        </div>
+        <section className={css.heroActionsBlock}>
+          <div className={css.heroActions}>
+            <a href="mailto:lyubov@blackicon.it" className={css.primaryBtn}>
+              Contact Us
+            </a>
+          </div>
+          <div className={css.heroActionsDownload}>
+            <PdfActionsCondition
+              viewUrl="/pdfs/mnItalvent_1.pdf"
+              downloadUrl="/pdfs/mnItalvent_1.pdf"
+            />
+          </div>
+        </section>
       </section>
 
       {/* 2. ABOUT COMPANY */}
