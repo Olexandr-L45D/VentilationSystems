@@ -8,6 +8,8 @@ import CentrifStainless from "../../assets/images/CentrifStainless.png";
 import CentrifCarbon from "../../assets/images/CentrifCarbon.png";
 import AxialFan from "../../assets/images/AxialFan.png";
 import imagesValveMix from "../../assets/images/imagesValveMix.png";
+import imagesValveM from "../../assets/images/imagesValveM.png";
+import imagesValves from "../../assets/images/imagesValves.png";
 
 export default function CatalogGallary() {
   const { t } = useTranslation();
@@ -200,9 +202,28 @@ export default function CatalogGallary() {
                 {t("catalog.fanTypeAxial")}
               </p>
             </li>
+
             <li className={css.imagesBlock}>
               <figure className={css.titleImg}>
                 <img src={imagesValveMix} alt="" className={css.imgLogoMix} />
+              </figure>
+              <p className={css.textImg}>
+                {/* Different valves*/}
+                {t("catalog.fanValves")}
+              </p>
+            </li>
+            <li className={css.imagesBlock}>
+              <figure className={css.titleImg}>
+                <img src={imagesValveM} alt="" className={css.imgLogoMix} />
+              </figure>
+              <p className={css.textImg}>
+                {/* Valves*/}
+                {t("catalog.fanValves")}
+              </p>
+            </li>
+            <li className={css.imagesBlock}>
+              <figure className={css.titleImg}>
+                <img src={imagesValves} alt="" className={css.imgLogoMix} />
               </figure>
               <p className={css.textImg}>
                 {/* Valves*/}

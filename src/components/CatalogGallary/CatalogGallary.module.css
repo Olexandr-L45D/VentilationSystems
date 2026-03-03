@@ -1,7 +1,7 @@
 /* CatalogGallary */
 .containerCatalog {
   position: static !important;
-  width: 1440px;
+  width: 100%;
   height: auto;
   margin: 0px;
   padding: 0px;
@@ -56,11 +56,9 @@
 .listBlLeft {
   width: 279px;
   height: auto;
-  /* height: 1500px; */
   gap: 12px;
   opacity: 1;
   margin-top: 157px;
-  /* border: 1px solid rgba(0, 0, 0, 0.1); */
   border-radius: 20px;
 }
 .itemBlock {
@@ -121,7 +119,6 @@
 }
 .containerList {
   position: static !important;
-  /* width: 888px; */
   width: 960px;
   height: auto;
   margin: 5px;
@@ -145,6 +142,40 @@
   gap: 20px;
 
   list-style: none;
+}
+@media (max-width: 1600px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1440px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .imagesTopBlock {
+    width: 900px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .imagesBlock {
+    width: 270px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
 }
 @media (max-width: 1024px) {
   .list {
@@ -197,9 +228,6 @@
   margin: 0px;
   margin-left: 60px;
   margin-bottom: 26px;
-  /* margin-top: 100px;
-  margin-left: 15px;
-  margin-bottom: 0px; */
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -278,13 +306,14 @@
   height: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
 .imagesBlock {
-  width: 230px;
+  width: 270px;
   height: 80px;
   display: flex;
   flex-direction: row;
@@ -318,13 +347,16 @@
   margin-bottom: 10px;
 }
 .imgLogoMix {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   opacity: 1;
   border-radius: 10px;
   margin: 10px;
-  margin-left: 20px;
+  margin-left: 40px;
   margin-bottom: 10px;
+  padding: 2px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 .textImg {
   width: 202px;
@@ -435,6 +467,43 @@
     width: 200px;
   }
 }
+@media (min-width: 768px) and (max-width: 990px) {
+  .containerList {
+    position: static !important;
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .cardTopBlock {
+    margin-top: 150px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* ⬅️ зліва */
+    align-items: flex-start; /* ⬆️ зверху */
+    text-align: left;
+  }
+  .imagesTopBlock {
+    margin-left: 2px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .containerCatalog {
@@ -442,7 +511,7 @@
     display: flex;
     flex-direction: row;
     justify-content: start;
-    align-items: top;
+    align-items: flex-start; /* ⬆️ зверху */
     text-align: center;
   }
   .titleLeftBlock {
@@ -450,8 +519,7 @@
   }
   .containerList {
     position: static !important;
-    /* width: 888px; */
-    width: 400px;
+    width: 100%;
     height: auto;
     margin: 5px;
     padding: 0px;
@@ -477,23 +545,30 @@
   }
   .cardTopBlock {
     margin-top: 150px;
-    width: 500px;
+    width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
   .imagesTopBlock {
-    width: 500px;
+    margin-left: 2px;
+    width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
     align-items: center;
     gap: 12px;
+  }
+  .imagesBlock {
+    margin-left: 0px;
+    width: 230px;
   }
 }
 
@@ -506,6 +581,9 @@
     padding: 0px;
     display: flex;
     flex-direction: row;
+    align-items: flex-start; /* ⬆️ зверху */
+    justify-content: center;
+    align-items: top;
     gap: 10px;
   }
   .containerLeftBlock {
@@ -528,7 +606,6 @@
     text-align: center;
     border: 2px solid rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    /* gap: 10px; */
   }
   .titleLeftBlock {
     position: absolute;
@@ -536,12 +613,9 @@
     height: 66px;
     opacity: 1;
     margin-top: 60px;
-    /* top: 60px;
-left: 38px; */
     border-radius: 20px;
     background-color: #fafafa;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -559,11 +633,9 @@ left: 38px; */
   .listBlLeft {
     width: 250px;
     height: auto;
-    /* height: 1500px; */
     gap: 12px;
     opacity: 1;
     margin-top: 157px;
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
     border-radius: 20px;
   }
   .itemBlock {
@@ -580,8 +652,7 @@ left: 38px; */
   }
   .containerList {
     position: static !important;
-    /* width: 888px; */
-    width: 600px;
+    width: 100%;
     height: auto;
     margin: 5px;
     padding: 0px;
@@ -595,19 +666,16 @@ left: 38px; */
 
   .list {
     width: 100%;
-    max-width: 600px;
     margin: 0 auto;
     padding: 0;
-
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 картки в ряд */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-
     list-style: none;
   }
   .cardTopBlock {
     margin-top: 150px;
-    width: 600px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -616,11 +684,11 @@ left: 38px; */
     align-items: center;
   }
   .imagesTopBlock {
-    width: 500px;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* 🔥 ДАЄ ПЕРЕНІС НА НОВИЙ РЯДОК */
+    flex-wrap: wrap; /*  ДАЄ ПЕРЕНІС НА НОВИЙ РЯДОК */
     text-align: center;
     justify-content: center;
     align-items: center;
