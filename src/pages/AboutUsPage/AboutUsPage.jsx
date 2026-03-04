@@ -20,7 +20,7 @@ export default function AboutUsPage() {
           <figure className={css.cardTopImages}>
             <picture>
               {/* Mobile */}
-              <source media="(max-width: 599px)" srcSet={aboutUsMobile} />
+              <source media="(max-width: 699px)" srcSet={aboutUsMobile} />
 
               {/* Tablet */}
               <source media="(max-width: 1099px)" srcSet={aboutUsTablet} />
@@ -54,7 +54,7 @@ export default function AboutUsPage() {
           {showVideo && (
             <div className={css.videoOverlay}>
               <video
-                src="/video/videoUs.MP4"
+                src="/video/videAboutUs.MP4"
                 autoPlay
                 muted
                 playsInline
