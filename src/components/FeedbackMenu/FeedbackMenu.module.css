@@ -1,6 +1,6 @@
 /* Кнопка у футері */
 .feedbackEntryBtn {
-  background: linear-gradient(135deg, #f7f5f7, #a6a6a8);
+  background: linear-gradient(135deg, #f5f1e8, #a6a6a8);
   padding: 8px 16px;
   border-radius: 10px;
   color: #fff;
@@ -28,6 +28,11 @@
   z-index: 50;
   animation: fadeIn 0.35s ease;
 }
+.feedbackModalOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* Вікно модалки */
 .feedbackModal {
@@ -40,6 +45,10 @@
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.6);
   animation: slideUp 0.35s ease;
   text-align: center;
+}
+.feedbackModal {
+  margin: 0 auto;
+  transform: translateZ(0); /* анти-зсув на мобілках */
 }
 
 .modalTitle {
@@ -72,7 +81,7 @@
 }
 
 .modalBtn:hover {
-  background: #ece5ff;
+  background: #f5f1e8;
   transform: translateY(-2px);
 }
 
@@ -172,7 +181,7 @@
 }
 
 .modalBtn:hover {
-  background: #ece5ff;
+  background: #f5f1e8;
   transform: translateY(-2px);
 }
 
@@ -193,50 +202,29 @@
   text-align: center;
 }
 
-a:hover {
-  color: #d84343;
-}
-
-.link:hover {
-  color: #d84343;
-}
-
-a:focus {
-  color: #d84343;
-}
-
-.link:focus {
-  color: #d84343;
-}
-
-.active {
-  color: #d84343;
-}
-
 .iconText {
   margin: 0px;
   padding: 0px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 678px) {
-  /* Вікно модалки */
   .feedbackModalOverlay {
-    max-height: calc(100vh - 20px);
+    padding: 10px; /* щоб не торкалась країв */
   }
+
   .feedbackModal {
-    margin-top: 20px;
-    background: #fff;
-    width: 90%;
+    margin: 0 auto; /*  головне */
+    width: 100%;
     max-width: 280px;
     max-height: calc(100vh - 20px);
   }
+
   .modalButtons {
     max-height: calc(100vh - 20px);
   }
   .modalClose {
     margin: 2px;
     margin-top: 10px;
-    /* margin-left: 20px; */
     width: 120px;
     max-width: 140px;
     height: 40px;

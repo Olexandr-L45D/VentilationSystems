@@ -19,159 +19,6 @@ export default function CatalogGallary() {
   }
   return (
     <container className={css.containerCatalog}>
-      <section className={css.containerLeftBlock}>
-        <div className={css.titleLeftBlock}>
-          <h2 className={css.titleLeft}>{t("catalog.parameters")}</h2>
-        </div>
-        <ol className={css.listBlLeft}>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.fan_Model")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN302</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN402</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN502</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN552</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>BMN602</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.fanTypeMaterial")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Galvanized steel</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Aluminium</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Plastic</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.fanType")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Radial</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Centrifugal</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.fanProductivity")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>5 - 10</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>20</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>40</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.airflow")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Up to 300</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.motorPower")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>3</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>3.5</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>5</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>10</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.noiseLevel")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>60 dB</p>
-            </li>
-          </ul>
-
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.rotationDirection")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Clockwise (CW)</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Counterclockwise (CCW)</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.overallDiameter")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>Ø 60–110 mm</p>
-            </li>
-          </ul>
-          <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.fanWeight")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>14 kg</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>15 kg</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>20 kg</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>30 kg</p>
-            </li>
-          </ul>
-          {/* <ul className={css.itemBlock}>
-            <h3 className={css.itemTitle}>{t("catalog.motorPoles")}</h3>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>2 poles</p>
-            </li>
-            <li className={css.itemSelect}>
-              <p className={css.itemIcons}></p>
-              <p className={css.itemText}>4 poles</p>
-            </li>
-          </ul> */}
-        </ol>
-      </section>
       <section className={css.containerList}>
         <section className={css.cardTopBlock}>
           <ul className={css.imagesTopBlock}>
@@ -285,3 +132,157 @@ export default function CatalogGallary() {
 //     "material": "plastic",
 //     "IP_class": "IP44"
 // }
+
+// <section className={css.containerLeftBlock}>
+//   <div className={css.titleLeftBlock}>
+//     <h2 className={css.titleLeft}>{t("catalog.parameters")}</h2>
+//   </div>
+// </section>;
+// <ol className={css.listBlLeft}>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.fan_Model")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>BMN302</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>BMN402</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>BMN502</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>BMN552</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>BMN602</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.fanTypeMaterial")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Galvanized steel</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Aluminium</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Plastic</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.fanType")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Radial</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Centrifugal</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.fanProductivity")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>5 - 10</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>20</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>40</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.airflow")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Up to 300</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.motorPower")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>3</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>3.5</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>5</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>10</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.noiseLevel")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>60 dB</p>
+//     </li>
+//   </ul>
+
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.rotationDirection")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Clockwise (CW)</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Counterclockwise (CCW)</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.overallDiameter")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>Ø 60–110 mm</p>
+//     </li>
+//   </ul>
+//   <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.fanWeight")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>14 kg</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>15 kg</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>20 kg</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>30 kg</p>
+//     </li>
+//   </ul>
+//   {/* <ul className={css.itemBlock}>
+//     <h3 className={css.itemTitle}>{t("catalog.motorPoles")}</h3>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>2 poles</p>
+//     </li>
+//     <li className={css.itemSelect}>
+//       <p className={css.itemIcons}></p>
+//       <p className={css.itemText}>4 poles</p>
+//     </li>
+//   </ul> */}
+// </ol>;

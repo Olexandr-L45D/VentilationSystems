@@ -53,7 +53,7 @@ export default function HomePage() {
         <section className={css.container}>
           <div className={css.titleBlock}>
             <h2 className={css.cartTitleText}>
-              {/* Best sellers */}
+              {/* Product categories */}
               {t("navigation.bestSel")}
             </h2>
           </div>
@@ -64,28 +64,49 @@ export default function HomePage() {
                 <img className={css.images} src={cardLeft} alt="" />
               </figure>
               <h3 className={css.cartImagesText}>
-                {/* BMN 602 – Forward-Curved Centrifugal Fan for Industrial
-                Ventilation */}
-                {t("homepage.bestSelImagesLeft")}
+                {/* 
+                Fans */}
+                {t("homepage.bestSelFans")}
               </h3>
+              <Link to="/catalog?category=centrifugal">
+                <div className={css.buttonViewsSecond}>
+                  <button className={css.btnVieSecond} type="submit">
+                    {t("navigation.buttonLernMore")}
+                  </button>
+                </div>
+              </Link>
             </li>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
                 <img className={css.images} src={cardCenter} alt="" />
               </figure>
               <h3 className={css.cartImagesText}>
-                {/* BMN 402 – Forward-Curved Centrifugal Fan for Industrial Ventilation */}
-                {t("homepage.bestSelImagesCenter")}
+                {/* Valves */}
+                {t("homepage.bestSelValves")}
               </h3>
+              <Link to="/catalog?category=valves">
+                <div className={css.buttonViewsSecond}>
+                  <button className={css.btnVieSecond} type="submit">
+                    {t("navigation.buttonLernMore")}
+                  </button>
+                </div>
+              </Link>
             </li>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
                 <img className={css.images} src={cardRight} alt="" />
               </figure>
               <h3 className={css.cartImagesText}>
-                {/* Axial fan Top model */}
+                {/* Heat exchangers (axial) */}
                 {t("homepage.bestSelImagesRight")}
               </h3>
+              <Link to="/catalog?category=axial">
+                <div className={css.buttonViewsSecond}>
+                  <button className={css.btnVieSecond} type="submit">
+                    {t("navigation.buttonLernMore")}
+                  </button>
+                </div>
+              </Link>
             </li>
           </ul>
         </section>

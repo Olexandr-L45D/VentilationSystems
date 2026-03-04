@@ -2,14 +2,17 @@
 import { useState } from "react";
 import css from "./ContactMapModal.module.css";
 import ContactMap from "../ContactMap/ContactMap";
+import { useTranslation } from "react-i18next";
 
 export default function ContactMapModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <>
-      <button className={css.openBtn} onClick={() => setIsOpen(true)}>
-        Open Full Map
+      <button className={css.buttonHead} onClick={() => setIsOpen(true)}>
+        {/*button in the Modal - Open Full Map */}
+        {t("aboutus.openMap")}
       </button>
 
       {isOpen && (

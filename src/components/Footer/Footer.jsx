@@ -4,11 +4,8 @@ import css from "./Footer.module.css";
 import { AiFillPhone } from "react-icons/ai";
 import FeedbackMenu from "../FeedbackMenu/FeedbackMenu";
 import { MdEmail } from "react-icons/md";
-// import PdfActions from "../ButtonExportPdf/ButtonExportPdf";
-import PdfActionsCondition from "../ConditionsMenu/ConditionsMenu";
 import { useTranslation } from "react-i18next";
 import FooterLogo from "../../assets/images/Footerlogo.png";
-// EllipseLeft;
 import footerBg from "../../assets/images/FooterBlend.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
@@ -102,14 +99,6 @@ export const Footer = () => {
             </section>
 
             <section className={css.buttonIconBlok}>
-              <div className={css.buttonIcon}>
-                {/* модалка умови співпраці */}
-                <PdfActionsCondition
-                  viewUrl="/pdfs/mnItalvent_1.pdf"
-                  viewUrlDelivery="/pdfs/mnItalvent_1.pdf"
-                  downloadUrl="/pdfs/mnItalvent_1.pdf"
-                />
-              </div>
               {/* модалка написати відгук на месенджери */}
               <section className={css.card}>
                 <nav className={css.nav}>

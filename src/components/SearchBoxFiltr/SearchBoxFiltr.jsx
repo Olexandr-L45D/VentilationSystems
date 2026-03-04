@@ -6,8 +6,9 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import { selectFilters } from "../../redux/filters/selectors";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
+import { useEffect } from "react";
 
-const ALL_CATEGORIES = ["centrifugal", "radial", "flow-control", "axial"];
+const ALL_CATEGORIES = ["centrifugal", "radial", "valves", "axial"];
 
 export default function SearchBoxFiltr() {
   const dispatch = useDispatch();
@@ -21,6 +22,25 @@ export default function SearchBoxFiltr() {
     category: filters.category || "",
   };
 
+  useEffect(() => {
+    const categoryFromUrl = params.get("category");
+
+    if (!categoryFromUrl) return;
+
+    const isValid = ALL_CATEGORIES.includes(categoryFromUrl);
+
+    if (!isValid) return;
+
+    if (categoryFromUrl !== filters.category) {
+      dispatch(
+        setFilter({
+          filterName: "category",
+          value: categoryFromUrl,
+        })
+      );
+    }
+  }, [params, dispatch, filters.category]);
+  // Юзефект для переброски на підкатегорію
   return (
     <div className={css.searchBarWrapper}>
       <Formik

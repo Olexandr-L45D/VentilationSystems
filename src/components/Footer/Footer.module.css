@@ -1,11 +1,12 @@
 /*  "./Footer.module.css"; */
 .footer {
   display: flex;
+  padding: 0px;
   padding-top: 25px;
   padding-bottom: 25px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+  /* padding-left: 15px;
+  padding-right: 15px; */
+  margin: 0px;
   /* max-width: 1400px; */
   width: 100%;
   align-items: flex-start;
@@ -14,12 +15,14 @@
 .container {
   width: 100%;
   min-height: 349px;
-  padding: 24px 64px;
-
+  /* padding: 24px 64px; */
+  /* padding: 12px 64px; */
   background-color: #222222;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
   margin-top: auto;
   z-index: 10;
   /* border-top: 1px solid #f2f4f7; */
@@ -199,6 +202,27 @@
   line-height: 1.5;
   text-align: center;
 }
+/* === Footer navigation links === */
+
+.linkSecond {
+  color: #ffffff;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.linkSecond:hover {
+  color: #fbb007;
+}
+
+.linkSecond:focus-visible {
+  color: #fbb007;
+  outline: none;
+  text-shadow: 0 0 6px rgba(251, 176, 7, 0.6);
+}
+
+.linkSecond.active {
+  color: #fbb007;
+  font-weight: 600;
+}
 .link {
   padding: 8px 10px;
   margin: 20px;
@@ -226,24 +250,25 @@
   justify-content: center;
   align-items: center;
 }
+
 a:hover {
-  color: #d84343;
+  color: #fbb007;
 }
 
 .link:hover {
-  color: #d84343;
+  color: #fbb007;
 }
 
 a:focus {
-  color: #d84343;
+  color: #fbb007;
 }
 
 .link:focus {
-  color: #d84343;
+  color: #fbb007;
 }
 
 .active {
-  color: #d84343;
+  color: #fbb007;
 }
 
 .navEmail {
@@ -474,7 +499,6 @@ a:focus {
   .titleBlok {
     width: 95%;
     margin: 5px;
-    /* margin-top: 30px; */
   }
 }
 @media (min-width: 700px) and (max-width: 1279px) {
@@ -490,7 +514,6 @@ a:focus {
     z-index: 10;
   }
   .rightAllSection {
-    /* width: 95%; */
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -508,10 +531,9 @@ a:focus {
     display: flex;
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     margin: 0 auto;
-    /* max-width: 1400px; */
     width: 100%;
     align-items: flex-start;
   }
@@ -520,7 +542,6 @@ a:focus {
     width: 100%;
     min-height: 349px;
     padding: 24px 64px;
-
     background-color: #222222;
     display: flex;
     flex-direction: row;
@@ -528,7 +549,6 @@ a:focus {
     align-items: center;
     margin-top: auto;
     z-index: 10;
-    /* border-top: 1px solid #f2f4f7; */
   }
   .rightAllSection {
     width: 95%;
@@ -713,6 +733,18 @@ a:focus {
     line-height: 1.5;
     text-align: center;
   }
+
+  .link:hover {
+    color: #fbb007;
+  }
+
+  a:focus {
+    color: #fbb007;
+  }
+
+  .link:focus {
+    color: #fbb007;
+  }
   .link {
     padding: 8px 10px;
     margin: 20px;
@@ -740,24 +772,25 @@ a:focus {
     justify-content: center;
     align-items: center;
   }
+
   a:hover {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .link:hover {
-    color: #d84343;
+    color: #fbb007;
   }
 
   a:focus {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .link:focus {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .active {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .navEmail {
@@ -825,17 +858,12 @@ a:focus {
   /* === CONTENT CONTAINER — центрує контент === */
   .container {
     width: 100%;
-    /* max-width: 1440px; */
     margin: 0 auto;
-
     padding-inline: clamp(16px, 4vw, 64px);
-
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* justify-content: space-between;
-    align-items: flex-start; */
   }
   .rightAllSection {
     width: 95%;

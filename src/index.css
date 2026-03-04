@@ -24,7 +24,23 @@ a {
 }
 
 a:hover {
-  color: #080808;
+  color: #fbb007;
+}
+
+.link:hover {
+  color: #fbb007;
+}
+
+a:focus {
+  color: #fbb007;
+}
+
+.link:focus {
+  color: #fbb007;
+}
+
+.active {
+  color: #fbb007;
 }
 
 header {

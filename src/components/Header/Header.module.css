@@ -76,27 +76,26 @@
   }
 
   a:hover {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .link:hover {
-    color: #d84343;
+    color: #fbb007;
   }
 
   a:focus {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .link:focus {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .active {
-    color: #d84343;
+    color: #fbb007;
   }
 
   .languageSwitcher {
-    /* background: rgba(255, 255, 255, 0.6); */
     display: flex;
     gap: 10px;
     padding: 1px;
@@ -134,9 +133,9 @@
 
   .activeButton:hover,
   .activeButton:focus {
-    color: #d84343 !important;
+    color: #fbb007 !important;
     font-weight: bold;
-    border-color: #d84343;
+    border-color: #fbb007;
   }
   .iconPhoneBlock {
     margin: 0px;
@@ -160,13 +159,22 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 180px;
     height: 80px;
     background-repeat: no-repeat;
     padding: 2px;
     margin: 2px;
     margin-bottom: 10px;
     border-radius: 2px;
+  }
+  .titleImg {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .titleImg:hover,
+  .titleImg:focus-visible {
+    background: rgba(251, 176, 7, 0.15);
+    border-color: #fbb007;
   }
   .iconPhoneNumb {
     padding: 0px;
@@ -255,26 +263,6 @@
     text-align: center;
   }
 
-  a:hover {
-    color: #d84343;
-  }
-
-  .link:hover {
-    color: #d84343;
-  }
-
-  a:focus {
-    color: #d84343;
-  }
-
-  .link:focus {
-    color: #d84343;
-  }
-
-  .active {
-    color: #d84343;
-  }
-
   .languageSwitcher {
     /* background: rgba(255, 255, 255, 0.6); */
     display: flex;
@@ -314,9 +302,18 @@
 
   .activeButton:hover,
   .activeButton:focus {
-    color: #d84343 !important;
+    color: #fbb007 !important;
     font-weight: bold;
-    border-color: #d84343;
+    border-color: #fbb007;
+  }
+  .titleImg {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .titleImg:hover,
+  .titleImg:focus-visible {
+    background: rgba(251, 176, 7, 0.15);
+    border-color: #fbb007;
   }
   .iconPhoneBlock {
     /* margin-top: 5px; */
@@ -340,13 +337,42 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 180px;
     height: 80px;
     background-repeat: no-repeat;
     padding: 2px;
     margin: 2px;
     margin-bottom: 10px;
     border-radius: 2px;
+  }
+  .titleImg {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .titleImg:hover,
+  .titleImg:focus-visible {
+    background: rgba(251, 176, 7, 0.15);
+    border-color: #fbb007;
+  }
+
+  a:hover {
+    color: #fbb007;
+  }
+
+  .link:hover {
+    color: #fbb007;
+  }
+
+  a:focus {
+    color: #fbb007;
+  }
+
+  .link:focus {
+    color: #fbb007;
+  }
+
+  .active {
+    color: #fbb007;
   }
 }
 @media (min-width: 1441px) and (max-width: 2000px) {
@@ -429,28 +455,7 @@
     text-align: center;
   }
 
-  a:hover {
-    color: #d84343;
-  }
-
-  .link:hover {
-    color: #d84343;
-  }
-
-  a:focus {
-    color: #d84343;
-  }
-
-  .link:focus {
-    color: #d84343;
-  }
-
-  .active {
-    color: #d84343;
-  }
-
   .languageSwitcher {
-    /* background: rgba(255, 255, 255, 0.6); */
     display: flex;
     gap: 10px;
     padding: 1px;
@@ -488,9 +493,18 @@
 
   .activeButton:hover,
   .activeButton:focus {
-    color: #d84343 !important;
+    color: #fbb007 !important;
     font-weight: bold;
-    border-color: #d84343;
+    border-color: #fbb007;
+  }
+  .titleImg {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .titleImg:hover,
+  .titleImg:focus-visible {
+    background: rgba(251, 176, 7, 0.15);
+    border-color: #fbb007;
   }
   .iconPhone {
     width: 200px;
@@ -506,13 +520,33 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 180px;
     height: 80px;
     background-repeat: no-repeat;
     padding: 2px;
     margin: 2px;
     margin-bottom: 10px;
     border-radius: 2px;
+  }
+
+  a:hover {
+    color: #fbb007;
+  }
+
+  .link:hover {
+    color: #fbb007;
+  }
+
+  a:focus {
+    color: #fbb007;
+  }
+
+  .link:focus {
+    color: #fbb007;
+  }
+
+  .active {
+    color: #fbb007;
   }
 }
 @media screen and (min-width: 200px) and (max-width: 699px) {
@@ -526,7 +560,7 @@
     width: 90%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* 🔥 ДАЄ ПЕРЕНІС НА НОВИЙ РЯДОК */
+    flex-wrap: wrap; /*  ДАЄ ПЕРЕНІС НА НОВИЙ РЯДОК */
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -540,6 +574,16 @@
     margin-right: 20px;
     margin-bottom: 15px;
     border-radius: 20px;
+  }
+
+  .titleImg {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .titleImg:hover,
+  .titleImg:focus-visible {
+    background: rgba(251, 176, 7, 0.15);
+    border-color: #fbb007;
   }
   .activeButton {
     width: 35px;
@@ -569,5 +613,25 @@
     align-items: center;
     gap: 15px;
     margin-right: 15px;
+  }
+
+  a:hover {
+    color: #fbb007;
+  }
+
+  .link:hover {
+    color: #fbb007;
+  }
+
+  a:focus {
+    color: #fbb007;
+  }
+
+  .link:focus {
+    color: #fbb007;
+  }
+
+  .active {
+    color: #fbb007;
   }
 }

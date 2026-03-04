@@ -60,7 +60,7 @@
 .link:hover,
 .link:focus,
 .active {
-  color: #d84343;
+  color: #fbb007;
 }
 @media (min-width: 500px) {
   .container {

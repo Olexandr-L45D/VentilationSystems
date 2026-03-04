@@ -13,28 +13,15 @@ export default function CompanyTermsPage() {
         <p>
           Everything you need to know about our company and cooperation terms
         </p>
-        <section className={css.heroActionsBlock}>
-          <div className={css.heroActions}>
-            <a href="mailto:lyubov@blackicon.it" className={css.primaryBtn}>
-              Contact Us
-            </a>
-          </div>
-          <div className={css.heroActionsDownload}>
-            <PdfActionsCondition
-              viewUrl="/pdfs/mnItalvent_1.pdf"
-              downloadUrl="/pdfs/mnItalvent_1.pdf"
-            />
-          </div>
-        </section>
       </section>
 
       {/* 2. ABOUT COMPANY */}
       <section className={css.section}>
         <h2 className={css.titleParagraf}>About the Company</h2>
         <p>
-          We are a B2B supplier of industrial ventilation and air handling
-          solutions for factories, production plants, bakeries, hospitals, paint
-          shops and industrial facilities.
+          We are a B2B supplier of industrial ventilation, valves and heat
+          exchangers for factories, production plants, bakeries, paint shops and
+          industrial facilities.
         </p>
         <p>
           Our expertise includes air cooling, dust extraction, vapor exhaust
@@ -82,7 +69,6 @@ export default function CompanyTermsPage() {
       <section className={css.section}>
         <h2 className={css.titleParagraf}>Delivery Terms</h2>
         <ul className={css.list}>
-          <li>Delivery across EU countries</li>
           <li>EXW / FCA / courier services</li>
           <li>Delivery time depends on destination</li>
           <li>Responsibility according to Incoterms</li>
@@ -118,7 +104,9 @@ export default function CompanyTermsPage() {
           <p>
             <AiFillPhone /> +39 366 388 3621
           </p>
-
+          <p>
+            <AiFillPhone /> +39 338 65 28 541
+          </p>
           <p>
             <MdEmail /> lyubov@blackicon.it
           </p>

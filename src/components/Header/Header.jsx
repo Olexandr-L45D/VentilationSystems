@@ -23,9 +23,9 @@ export const Header = () => {
   return (
     <section className={css.container}>
       <header className={css.header}>
-        <figure className={css.titleImg}>
-          <img src={LogoVent} alt="" className={css.imgLogo} />
-        </figure>
+        <NavLink to="/" className={css.titleImg}>
+          <img src={LogoVent} alt="Company logo" className={css.imgLogo} />
+        </NavLink>
 
         <SearchBoxFiltr />
         <article className={css.languageSwitcher}>

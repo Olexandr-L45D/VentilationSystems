@@ -1,8 +1,8 @@
 {
   "homepage": {
-    "bestSelImagesLeft": "BMN 602 – Forward-Curved Centrifugal Fan for Industrial Ventilation",
-    "bestSelImagesCenter": " BMN 402 – Forward-Curved Centrifugal Fan for Industrial Ventilation",
-    "bestSelImagesRight": "Axial fan Top model",
+    "bestSelFans": "Fans",
+    "bestSelValves": "Valves",
+    "bestSelImagesRight": "Heat exchangers",
     "advantagesHight": "High quality",
     "advantageFlexibility": "Flexibility on service and customization",
     "bestSelFast": "Fast delivery",
@@ -14,6 +14,7 @@
     "bestTextRight": " We purchased HARIA industrial fans for our company. The quality is excellent — you can immediately see the European manufacturing standards. We especially appreciated the ability to customize the units to our needs. Highly recommended."
   },
   "navigation": {
+    "buttonLernMore": "Learn more",
     "home": "Home",
     "aboutnav": "AboutUs",
     "about": "About us",
@@ -55,7 +56,7 @@
     "feedbackSend": "order a call",
     "navigatTitle": "Navigation",
     "contactTitle": "Contact information",
-    "bestSel": "Best sellers",
+    "bestSel": "Product categories",
     "advantages": "Advantages",
     "aboutUs": "About us",
     "producer": "Producer",
@@ -98,7 +99,7 @@
     "footerWriWr": "Write a letter",
     "footerWriLetter": "Your letter has been sent!",
     "footerWriSend": "Send",
-    "totaltextForm": "Our customers share their impressions of the quality of our ventilation systems and service. We are grateful for every review — ithelps us become even better."
+    "totaltextForm": "Our customers share their impressions of the quality of our  service. We are grateful for every review — it helps us become even better."
   },
   "catalog": {
     "parameters": "Parameters",
@@ -138,6 +139,7 @@
     "carttextUsTop": "Black Icon Srl is a young company, but its founders have twenty years of experience in the industrial sector. Located in the heart of the Veneto region, the company has grown as a trusted partner to the artisanal and industrial sectors,",
     "carttextUsSecond": "leveraging automation, development, and engineering of drying, ventilation, and air conditioning systems. It then expanded to its own production of key components, such as industrial fans.",
     "carttextUsMidle": "After an in-depth analysis, the company identified the main obstacles users faced, such as delivery times for certain models, and, even more importantly, the creation of special machines, such as models made of stainless steel or with customized architectures, while maintaining affordable costs and delivering on average.",
-    "carttextUsBotton": " Our production of the HARIA series and our collaboration with leading companies in the sector make Black Icon Srl a flexible and reliable company, focused on service and customization."
+    "carttextUsBotton": " Our production of the HARIA series and our collaboration with leading companies in the sector make Black Icon Srl a flexible and reliable company, focused on service and customization.",
+    "openMap": "Open Full Map"
   }
 }
