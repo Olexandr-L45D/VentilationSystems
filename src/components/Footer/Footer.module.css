@@ -15,8 +15,11 @@
 .container {
   width: 100%;
   min-height: 349px;
-  /* padding: 24px 64px; */
-  /* padding: 12px 64px; */
+  background-image: var(--footer-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   background-color: #222222;
   display: flex;
   justify-content: center;
@@ -25,7 +28,6 @@
   padding: 0px;
   margin-top: auto;
   z-index: 10;
-  /* border-top: 1px solid #f2f4f7; */
 }
 
 .cardLink {
@@ -848,9 +850,9 @@ a:focus {
 @media (min-width: 1440px) and (max-width: 2000px) {
   /* === FOOTER WRAPPER — завжди 100% === */
   .footer {
-    width: 105%;
+    width: 100%;
     margin: 0;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     padding: 25px 0;
     background-color: #222222;
   }

@@ -1,5 +1,5 @@
 .dropdown {
-  position: fixed; /* ⬅️ ТІЛЬКИ fixed */
+  position: fixed; /* ⬅ ТІЛЬКИ fixed */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -55,11 +55,13 @@
   /* opacity: 1; */
   border-radius: 20px;
   /* border-width: 1px; */
-  border: 1px solid rgba(18, 17, 17, 0.4);
+  border: 1px solid #fbb007;
   width: 160px;
   height: 40px;
 }
-
+.formRow {
+  border: 1px solid #fbb007;
+}
 /* === НОВЕ: Контейнер для інпута === */
 .inputWrapper {
   position: relative;
@@ -92,11 +94,17 @@
   padding-right: 12px;
   font-size: 15px;
   background-color: #f7f7f7;
-  border: none;
+  /* border: none; */
+  border: 1px solid #fbb007;
   display: flex;
   align-items: center;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+.input:focus {
+  outline: none;
+  border: 2px solid #fbb007;
+  box-shadow: 0 0 8px rgba(251, 176, 7, 0.6);
 }
 
 /* Кнопка */
@@ -104,10 +112,9 @@
   width: 0px;
   height: 0px;
   /* border-radius: 12px; */
-  border: none;
+  /* border: none; */
+  border: 1px solid #fbb007;
   cursor: pointer;
-
-  /* background: #37058d; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,17 +125,18 @@
 
 .iconButton:hover {
   opacity: 0.85;
-  background: #469adf;
+  background: #fbb007;
 }
 .iconButton:focus {
   opacity: 0.85;
-  background: #68b1ed;
+  background: #fbb007;
 }
 @media screen and (min-width: 200px) and (max-width: 399px) {
   .dropdown {
     position: fixed;
     top: 50%;
     left: 50%;
+    border: 1px solid #fbb007;
   }
   .searchBarWrapper {
     width: 200px;
@@ -148,11 +156,8 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-
-    /* opacity: 1; */
     border-radius: 20px;
-    /* border-width: 1px; */
-    border: 1px solid rgba(18, 17, 17, 0.4);
+    border: 1px solid #fbb007;
     width: 200px;
     height: 40px;
   }
@@ -203,8 +208,6 @@
     /* border-radius: 12px; */
     border: none;
     cursor: pointer;
-
-    /* background: #37058d; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,11 +218,11 @@
 
   .iconButton:hover {
     opacity: 0.85;
-    background: #469adf;
+    background: #fbb007;
   }
   .iconButton:focus {
     opacity: 0.85;
-    background: #68b1ed;
+    background: #fbb007;
   }
   .container {
     /* position: absolute; */
@@ -248,7 +251,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 20px;
-    border: 1px solid rgba(18, 17, 17, 0.4);
+    border: 1px solid #fbb007;
     width: 150px;
     height: 40px;
   }
@@ -305,11 +308,11 @@
 
   .iconButton:hover {
     opacity: 0.85;
-    background: #469adf;
+    background: #fbb007;
   }
   .iconButton:focus {
     opacity: 0.85;
-    background: #68b1ed;
+    background: #fbb007;
   }
 
   /* Помилка */
@@ -327,6 +330,7 @@
     position: fixed;
     top: 45%;
     left: 50%;
+    border: 1px solid #fbb007;
   }
 }
 
@@ -358,7 +362,7 @@
     align-items: center;
     gap: 10px;
     border-radius: 20px;
-    border: 1px solid rgba(18, 17, 17, 0.4);
+    border: 1px solid #fbb007;
     width: 150px;
     height: 40px;
   }
@@ -415,11 +419,11 @@
 
   .iconButton:hover {
     opacity: 0.85;
-    background: #469adf;
+    background: #fbb007;
   }
   .iconButton:focus {
     opacity: 0.85;
-    background: #68b1ed;
+    background: #fbb007;
   }
 
   /* Помилка */
@@ -432,7 +436,7 @@
     color: red;
   }
   .dropdown {
-    position: fixed; /* ⬅️ ТІЛЬКИ fixed */
+    position: fixed; /*  ТІЛЬКИ fixed */
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -443,7 +447,7 @@
     border-radius: 20px;
     z-index: 9999;
     background: white;
-    border: 1px solid #ddd;
+    border: 1px solid #fbb007;
     border-radius: 20px;
     width: 200px;
     overflow-y: auto;
@@ -491,7 +495,7 @@
     /* opacity: 1; */
     border-radius: 20px;
     /* border-width: 1px; */
-    border: 1px solid rgba(18, 17, 17, 0.4);
+    border: 1px solid #fbb007;
     width: 200px;
     height: 40px;
   }
@@ -539,11 +543,8 @@
   .iconButton {
     width: 0px;
     height: 0px;
-    /* border-radius: 12px; */
     border: none;
     cursor: pointer;
-
-    /* background: #37058d; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -554,11 +555,11 @@
 
   .iconButton:hover {
     opacity: 0.85;
-    background: #469adf;
+    background: #fbb007;
   }
   .iconButton:focus {
     opacity: 0.85;
-    background: #68b1ed;
+    background: #fbb007;
   }
 
   /* Помилка */
@@ -612,7 +613,7 @@
     /* opacity: 1; */
     border-radius: 20px;
     /* border-width: 1px; */
-    border: 1px solid rgba(18, 17, 17, 0.4);
+    border: 1px solid #fbb007;
     width: 479px;
     height: 40px;
   }
@@ -647,7 +648,8 @@
     padding-right: 12px;
     font-size: 15px;
     background-color: #f7f7f7;
-    border: none;
+    /* border: none; */
+    border: 1px solid #fbb007;
     display: flex;
     align-items: center;
     text-align: center;
@@ -658,26 +660,23 @@
   .iconButton {
     width: 0px;
     height: 0px;
-    /* border-radius: 12px; */
     border: none;
     cursor: pointer;
-
-    /* background: #37058d; */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-
     transition: opacity 0.2s;
+    border: 1px solid #fbb007;
   }
 
   .iconButton:hover {
     opacity: 0.85;
-    background: #469adf;
+    background: #fbb007;
   }
   .iconButton:focus {
     opacity: 0.85;
-    background: #68b1ed;
+    background: #fbb007;
   }
 
   /* Помилка */
@@ -710,6 +709,7 @@
 @media (min-width: 1441px) and (max-width: 2000px) {
   .dropdown {
     top: 240%;
+    border: 1px solid #fbb007;
   }
   .searchBarWrapper {
     width: 350px;
@@ -728,11 +728,8 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-
-    /* opacity: 1; */
     border-radius: 20px;
-    /* border-width: 1px; */
-    border: 1px solid rgba(18, 17, 17, 0.4);
+    border: 1px solid #fbb007;
     width: 479px;
     height: 40px;
   }
@@ -747,7 +744,6 @@
   .inputIcon {
     position: absolute;
     top: 30%;
-    /* left: 12px; */
     right: 20px;
     transform: translateY(-10%);
     transform: translateX(-30%);
@@ -767,7 +763,8 @@
     padding-right: 12px;
     font-size: 15px;
     background-color: #f7f7f7;
-    border: none;
+    /* border: none; */
+    border: 1px solid #fbb007;
     display: flex;
     align-items: center;
     text-align: center;
@@ -778,26 +775,14 @@
   .iconButton {
     width: 0px;
     height: 0px;
-    /* border-radius: 12px; */
     border: none;
     cursor: pointer;
-
-    /* background: #37058d; */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 
     transition: opacity 0.2s;
-  }
-
-  .iconButton:hover {
-    opacity: 0.85;
-    background: #469adf;
-  }
-  .iconButton:focus {
-    opacity: 0.85;
-    background: #68b1ed;
   }
 
   /* Помилка */

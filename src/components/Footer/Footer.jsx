@@ -26,7 +26,7 @@ export const Footer = () => {
     <footer className={css.footer}>
       <section
         className={css.container}
-        style={{ backgroundImage: `url(${footerBg})` }}
+        style={{ "--footer-bg": `url(${footerBg})` }}
       >
         <div className={css.titleText}>
           <figure className={css.titleImg}>

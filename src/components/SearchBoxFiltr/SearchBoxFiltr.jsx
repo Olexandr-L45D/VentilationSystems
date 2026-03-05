@@ -40,22 +40,7 @@ export default function SearchBoxFiltr() {
       );
     }
   }, [params, dispatch, filters.category]);
-  // useEffect(() => {
-  //   const categoryFromUrl = params.get("category");
 
-  //   if (!categoryFromUrl) return;
-
-  //   const isValid = ALL_CATEGORIES.includes(categoryFromUrl);
-
-  //   if (!isValid) return;
-
-  //   dispatch(
-  //     setFilter({
-  //       filterName: "category",
-  //       value: categoryFromUrl,
-  //     })
-  //   );
-  // }, [params, dispatch]);
   // Юзефект для переброски на підкатегорію
   return (
     <div className={css.searchBarWrapper}>
