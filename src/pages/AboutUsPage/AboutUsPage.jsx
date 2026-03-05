@@ -1,9 +1,12 @@
 import css from "./AboutUsPage.module.css";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import aboutUsDesctop from "../../assets/images/aboutUsDesctop.png";
-import aboutUsTablet from "../../assets/images/aboutUsTablet.png";
-import aboutUsMobile from "../../assets/images/aboutUsMobile.png";
+import backgroundGrid from "../../assets/images/backgroundGrid.png";
+import elevator from "../../assets/images/elevator.png";
+import laboratory from "../../assets/images/laboratory.png";
+import carWash from "../../assets/images/carWash.png";
+import Haria from "../../assets/images/Haria.png";
+import bakery from "../../assets/images/bakery.png";
 
 export default function AboutUsPage() {
   const { t } = useTranslation();
@@ -17,22 +20,16 @@ export default function AboutUsPage() {
     <section className={css.container}>
       <section className={css.background}>
         <section className={css.card}>
-          <figure className={css.cardTopImages}>
-            <picture>
-              {/* Mobile */}
-              <source media="(max-width: 699px)" srcSet={aboutUsMobile} />
-
-              {/* Tablet */}
-              <source media="(max-width: 1099px)" srcSet={aboutUsTablet} />
-
-              {/* Desktop */}
-              <img
-                className={css.bigImagesTop}
-                src={aboutUsDesctop}
-                alt="About us"
-              />
-            </picture>
+          {/* жовта сітка */}
+          <figure className={css.imgCard}>
+            <img
+              className={css.images}
+              src={backgroundGrid}
+              alt="backgroundGrid"
+            />
           </figure>
+
+          {/* текст */}
           <ul className={css.usContent}>
             <li className={css.carttextUs}>
               <strong>{t("aboutus.carttextUsTop")}</strong>
@@ -47,6 +44,33 @@ export default function AboutUsPage() {
               <strong>{t("aboutus.carttextUsBotton")}</strong>
             </li>
           </ul>
+
+          {/* картинки */}
+          <ol className={css.ulCard}>
+            <ul className={css.topBlokImgCard}>
+              <li className={css.liImgCard}>
+                <img className={css.images} src={elevator} alt="elevator" />
+              </li>
+
+              <li className={css.liImgCard}>
+                <img className={css.images} src={laboratory} alt="laboratory" />
+              </li>
+            </ul>
+
+            <li className={css.liImgCard}>
+              <img className={css.images} src={Haria} alt="Haria" />
+            </li>
+
+            <ul className={css.bottomBlokImgCard}>
+              <li className={css.liImgCard}>
+                <img className={css.images} src={carWash} alt="carWash" />
+              </li>
+
+              <li className={css.liImgCard}>
+                <img className={css.images} src={bakery} alt="bakery" />
+              </li>
+            </ul>
+          </ol>
         </section>
       </section>
       <section className={css.background}>
