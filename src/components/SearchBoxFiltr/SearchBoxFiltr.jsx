@@ -16,12 +16,12 @@ export default function SearchBoxFiltr() {
   const [params, setParams] = useSearchParams();
   const [suggestions, setSuggestions] = useState(ALL_CATEGORIES);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(-1); // ⬅️ для ↑ ↓
+  const [activeIndex, setActiveIndex] = useState(-1); // ⬅️ для sorts = ↑ ↓
 
   const initialValues = {
     category: filters.category || "",
   };
-
+  // useSearchParams() повертає новий params object при кожному navigation.
   useEffect(() => {
     const categoryFromUrl = params.get("category");
 
@@ -40,6 +40,22 @@ export default function SearchBoxFiltr() {
       );
     }
   }, [params, dispatch, filters.category]);
+  // useEffect(() => {
+  //   const categoryFromUrl = params.get("category");
+
+  //   if (!categoryFromUrl) return;
+
+  //   const isValid = ALL_CATEGORIES.includes(categoryFromUrl);
+
+  //   if (!isValid) return;
+
+  //   dispatch(
+  //     setFilter({
+  //       filterName: "category",
+  //       value: categoryFromUrl,
+  //     })
+  //   );
+  // }, [params, dispatch]);
   // Юзефект для переброски на підкатегорію
   return (
     <div className={css.searchBarWrapper}>

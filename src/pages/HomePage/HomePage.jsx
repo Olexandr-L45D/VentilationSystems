@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import css from "./HomePage.module.css";
+import { setFilter } from "../../redux/filters/slice";
 import { useTranslation } from "react-i18next";
 import cardLeft from "../../assets/images/fanHomeLeft.png";
 import cardCenter from "../../assets/images/fanHomeCenter.png";
@@ -9,9 +10,24 @@ import Advantages from "../../assets/images/Advantages.png";
 import startHomePage from "../../assets/images/startHomePage.png";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { BiSolidUser } from "react-icons/bi";
+import { useDispatch } from "react-redux";
 
 export default function HomePage() {
+  // const [params, setParams] = useSearchParams();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { t, ready } = useTranslation();
+  //тут просто навігація тому useSearchParams() не потрібен
+  const handleCategoryClick = category => {
+    dispatch(
+      setFilter({
+        filterName: "category",
+        value: category,
+      })
+    );
+
+    navigate(`/catalog?category=${category}`);
+  };
   if (!ready) {
     return <div>Loading translations...</div>;
   }
@@ -30,7 +46,7 @@ export default function HomePage() {
                 <section className={css.cartBtn}>
                   <Link to="/catalog">
                     <div className={css.buttonViews}>
-                      <button className={css.btnVie} type="submit">
+                      <button className={css.btnVie} type="button">
                         {t("navigation.View")}
                       </button>
                     </div>
@@ -39,7 +55,7 @@ export default function HomePage() {
                 <section className={css.cartBtnSecond}>
                   <Link to="/feedbackPhone">
                     <div className={css.buttonViewsSecond}>
-                      <button className={css.btnVieSecond} type="submit">
+                      <button className={css.btnVieSecond} type="button">
                         {t("navigation.orderCallback")}
                       </button>
                     </div>
@@ -65,48 +81,57 @@ export default function HomePage() {
               </figure>
               <h3 className={css.cartImagesText}>
                 {/* 
-                Fans */}
+                Fans, category=centrifugal */}
                 {t("homepage.bestSelFans")}
               </h3>
-              <Link to="/catalog?category=centrifugal">
-                <div className={css.buttonViewsSecond}>
-                  <button className={css.btnVieSecond} type="submit">
-                    {t("navigation.buttonLernMore")}
-                  </button>
-                </div>
-              </Link>
+              <div className={css.buttonViewsSecond}>
+                <button
+                  className={css.btnVieSecond}
+                  type="button"
+                  onClick={() => handleCategoryClick("centrifugal")}
+                >
+                  {t("navigation.buttonLernMore")}
+                </button>
+              </div>
             </li>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
                 <img className={css.images} src={cardCenter} alt="" />
               </figure>
               <h3 className={css.cartImagesText}>
-                {/* Valves */}
+                {/* Valves, category=valves */}
                 {t("homepage.bestSelValves")}
               </h3>
-              <Link to="/catalog?category=valves">
-                <div className={css.buttonViewsSecond}>
-                  <button className={css.btnVieSecond} type="submit">
-                    {t("navigation.buttonLernMore")}
-                  </button>
-                </div>
-              </Link>
+              <div className={css.buttonViewsSecond}>
+                <button
+                  className={css.btnVieSecond}
+                  type="button"
+                  onClick={() => handleCategoryClick("valves")}
+                >
+                  {t("navigation.buttonLernMore")}
+                </button>
+              </div>
             </li>
+
+            {/* Heat exchangers (axial) */}
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
                 <img className={css.images} src={cardRight} alt="" />
               </figure>
+
               <h3 className={css.cartImagesText}>
-                {/* Heat exchangers (axial) */}
                 {t("homepage.bestSelImagesRight")}
               </h3>
-              <Link to="/catalog?category=axial">
-                <div className={css.buttonViewsSecond}>
-                  <button className={css.btnVieSecond} type="submit">
-                    {t("navigation.buttonLernMore")}
-                  </button>
-                </div>
-              </Link>
+
+              <div className={css.buttonViewsSecond}>
+                <button
+                  className={css.btnVieSecond}
+                  type="button"
+                  onClick={() => handleCategoryClick("axial")}
+                >
+                  {t("navigation.buttonLernMore")}
+                </button>
+              </div>
             </li>
           </ul>
         </section>

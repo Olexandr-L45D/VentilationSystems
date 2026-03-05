@@ -1,260 +1,76 @@
 /* CatalogGallary */
+
 .containerCatalog {
-  position: static !important;
   width: 100%;
-  height: auto;
-  margin: 0px;
-  padding: 0px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
-}
-.containerLeftBlock {
-  width: 365px;
-  height: 1460px;
-  margin: 5px;
-  margin-top: 150px;
-  margin-left: 50px;
-  background: linear-gradient(
-    180deg,
-    rgba(53, 53, 53, 0.480769) 0%,
-    rgba(156, 117, 29, 0.355954) 83.15%,
-    rgba(251, 176, 7, 0.240385) 100%
-  );
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-}
-.titleLeftBlock {
-  position: absolute;
-  width: 310px;
-  height: 66px;
-  opacity: 1;
-  margin-top: 60px;
-  border-radius: 20px;
-  background-color: #fafafa;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.titleLeft {
-  font-family: Montserrat Alternates;
-  font-weight: 700;
-  font-style: Bold;
-  font-size: 24px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: center;
-  color: #000000;
-}
-.listBlLeft {
-  width: 279px;
-  height: auto;
-  gap: 12px;
-  opacity: 1;
-  margin-top: 157px;
-  border-radius: 20px;
-}
-.itemBlock {
-  width: 250px;
-  height: auto;
-  margin: 5px;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: left;
-  text-align: left;
-  gap: 10px;
-}
-.itemTitle {
-  margin: 5px;
-  padding: 0px;
-  font-family: Montserrat;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #fafafa;
-}
-.itemSelect {
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-}
-.itemIcons {
-  margin: 0px;
-  padding: 0px;
-  width: 20px;
-  height: 20px;
-  opacity: 1;
-  border-radius: 5px;
-  background: #d9d9d9;
-}
-.itemText {
-  margin: 0px;
-  margin-left: 12px;
-  padding: 0px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-}
-.containerList {
-  position: static !important;
-  /* width: 960px; */
-  width: 100%;
-  height: auto;
-  margin: 5px;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
+  gap: 20px;
 }
 
-.list {
+/* ============================= */
+/* RIGHT SIDE */
+/* ============================= */
+
+.containerList {
   width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ============================= */
+/* TOP CATEGORY BLOCK */
+/* ============================= */
+
+.cardTopBlock {
+  margin: 10px;
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagesTopBlock {
+  width: 100%;
+  max-width: 1200px;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 картки в ряд */
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 
+  gap: 14px;
   list-style: none;
-}
-@media (max-width: 1600px) {
-  .list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 1440px) {
-  .list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .imagesTopBlock {
-    width: 900px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-  .imagesBlock {
-    width: 270px;
-    height: 80px;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-}
-@media (max-width: 1024px) {
-  .list {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  padding: 0;
 }
 
-@media (max-width: 600px) {
-  .list {
-    grid-template-columns: 1fr;
-  }
-}
+/* CATEGORY BUTTON-Top-Card*/
 
-.cartItem {
-  width: 100%;
+.imagesBlock {
+  height: 100px;
+  /* width: 350px; */
   display: flex;
-  justify-content: center;
-}
-
-.cartContainer {
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-  max-width: 320px;
-  background: #e4e5e988;
-  height: auto;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 
-.text {
-  margin: 5px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  font-size: 12px;
-  line-height: 1.4;
-  color: #555;
-}
+  text-decoration: none;
+  color: inherit;
 
-.buttonIconShowe {
-  width: 182px;
-  height: 54px;
-  padding: 0px;
-  margin: 0px;
-  margin-left: 60px;
-  margin-bottom: 26px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-  border-radius: 40px;
-}
-
-.btnShowe {
-  margin-left: 20px;
-  width: 182px;
-  height: 54px;
-  padding: 15px;
-  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  background: #fbb007;
 
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
+  background: white;
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
   cursor: pointer;
-  transition: 0.2s ease;
+
+  transition: all 0.25s ease;
 }
 
-.btnShowe:hover,
-.btnShowe:focus {
-  color: #0f0707;
+.imagesBlock:hover {
+  transform: translateY(-2px);
+
   background: linear-gradient(
     180.68deg,
     #fbb007 0.58%,
@@ -263,436 +79,190 @@
   );
 }
 
-.images {
-  width: 270px !important;
-  height: 260px !important;
-  display: block !important;
-  background-color: rgb(176, 182, 182);
-  padding: 2px;
-  margin: 10px;
-  margin-right: 20px;
-  margin-top: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  z-index: 100;
-}
+/* ============================= */
+/* ICONS */
+/* ============================= */
 
-.imgCard {
-  margin-top: 15px;
-  width: 320px;
-  height: 330px;
-  margin: 5px;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  list-style: none;
-}
-.cardTopBlock {
-  margin-top: 150px;
-  width: 900px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
-.imagesTopBlock {
-  width: 900px;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-.imagesBlock {
-  width: 270px;
-  height: 80px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  opacity: 1;
-  border: 2px solid rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
 .titleImg {
   display: flex;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  width: 54px;
-  height: 55px;
-  background-repeat: no-repeat;
-  padding: 2px;
-  margin: 2px;
-  margin-bottom: 10px;
-  border-radius: 2px;
+  justify-content: center;
 }
+
 .imgLogo {
   width: 54px;
   height: 55px;
-  opacity: 1;
   border-radius: 10px;
-  margin: 10px;
-  margin-bottom: 10px;
 }
-.imgLogoMix {
-  width: 80px;
-  height: 80px;
-  opacity: 1;
-  border-radius: 10px;
-  margin: 10px;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  padding: 2px;
-  padding-top: 5px;
-  padding-left: 5px;
-}
+
 .textImg {
-  width: 202px;
-  height: 40px;
+  width: 200px;
+
   font-family: Montserrat;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 16px;
-  line-height: 100%;
   text-align: center;
-  margin: 2px;
-  padding: 2px;
 }
+
+/* ============================= */
+/* PRODUCT GRID */
+/* ============================= */
+
+.list {
+  width: 100%;
+  max-width: 1600px;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 24px;
+
+  list-style: none;
+  padding: 0;
+}
+
+/* ============================= */
+/* PRODUCT CARD */
+/* ============================= */
+
+.cartItem {
+  display: flex;
+  justify-content: center;
+}
+
+.cartContainer {
+  width: 100%;
+  max-width: 320px;
+
+  background: #e4e5e988;
+
+  border-radius: 14px;
+
+  border: 2px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 20px;
+
+  transition: transform 0.2s ease;
+}
+
+.cartContainer:hover {
+  transform: translateY(-4px);
+}
+
+/* ============================= */
+/* IMAGE */
+/* ============================= */
+
+.imgCard {
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.images {
+  width: 260px;
+  height: 240px;
+
+  margin-top: 20px;
+
+  border-radius: 20px;
+
+  object-fit: cover;
+
+  border: 2px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
 .titles {
+  margin: 10px;
   font-family: Montserrat Alternates;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
+
   text-align: center;
 }
-@media (min-width: 320px) and (max-width: 767px) {
-  .containerCatalog {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: top;
-    text-align: center;
-  }
-  .listBlLeft {
-    width: 100px;
-    margin-left: 0px;
-    padding-left: 0px;
-  }
-  .containerLeftBlock {
-    width: 150px;
-    margin-left: 2px;
-  }
-  .titleLeftBlock {
-    width: 130px;
-    margin-left: 0px;
-  }
-  .itemBlock {
-    width: 90%;
-    margin-left: 0px;
-  }
-  .itemSelect {
-    width: 100px;
-    margin-left: 0px;
-    padding-left: 0px;
-  }
-  .itemIcons {
-    margin-left: 0px;
-    padding-left: 0px;
-  }
-  .containerList {
-    position: static !important;
-    width: 90%;
-    height: auto;
-    margin: 5px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
 
-  .list {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-    padding: 0;
-    margin-left: 0px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 1 картки в ряд */
-    gap: 20px;
+/* ============================= */
+/* BUTTON */
+/* ============================= */
 
-    list-style: none;
-  }
-  .cardTopBlock {
-    margin-top: 150px;
-    margin-left: 0px;
-    width: 90%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .imagesTopBlock {
-    width: 90%;
-    height: auto;
-    margin-left: 0px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-  .imagesBlock {
-    margin-left: 0px;
-    width: 200px;
-  }
+.buttonIconShowe {
+  margin-top: 12px;
 }
-@media (min-width: 768px) and (max-width: 990px) {
-  .containerList {
-    position: static !important;
-    width: 100%;
-    height: auto;
-    margin: 5px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-  .cardTopBlock {
-    margin-top: 150px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* ⬅️ зліва */
-    align-items: flex-start; /* ⬆️ зверху */
-    text-align: left;
-  }
-  .imagesTopBlock {
-    margin-left: 2px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+
+.btnShowe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 46px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #fbb007;
+  color: black;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btnShowe:hover {
+  background: linear-gradient(
+    180.68deg,
+    #fbb007 0.58%,
+    #fbd581 23.39%,
+    #fafafa 99.42%
+  );
+}
+
+/* ============================= */
+/* RESPONSIVE GRID */
+/* ============================= */
+
+/* mobile */
+
+@media (max-width: 480px) {
+  .list {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1279px) {
-  .containerCatalog {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: flex-start; /* ⬆️ зверху */
-    text-align: center;
-  }
-  .titleLeftBlock {
-    width: 200px;
-  }
-  .containerList {
-    position: static !important;
-    width: 100%;
-    height: auto;
-    margin: 5px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
+/* large mobile */
 
+@media (min-width: 481px) and (max-width: 767px) {
   .list {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 0;
-
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* 1 картки в ряд */
-    gap: 20px;
-
-    list-style: none;
-  }
-  .cardTopBlock {
-    margin-top: 150px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .imagesTopBlock {
-    margin-left: 2px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-  .imagesBlock {
-    margin-left: 0px;
-    width: 230px;
-  }
-}
-
-@media (min-width: 1280px) and (max-width: 1439px) {
-  .containerCatalog {
-    position: static !important;
-    width: 100%;
-    height: auto;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start; /* ⬆️ зверху */
-    justify-content: center;
-    align-items: top;
-    gap: 10px;
-  }
-  .containerLeftBlock {
-    width: 220px;
-    height: auto;
-    margin: 5px;
-    margin-top: 150px;
-    margin-left: 50px;
-    background: linear-gradient(
-      180deg,
-      rgba(53, 53, 53, 0.480769) 0%,
-      rgba(156, 117, 29, 0.355954) 83.15%,
-      rgba(251, 176, 7, 0.240385) 100%
-    );
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-  }
-  .titleLeftBlock {
-    position: absolute;
-    width: 180px;
-    height: 66px;
-    opacity: 1;
-    margin-top: 60px;
-    border-radius: 20px;
-    background-color: #fafafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  .titleLeft {
-    font-family: Montserrat Alternates;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #000000;
-  }
-  .listBlLeft {
-    width: 250px;
-    height: auto;
-    gap: 12px;
-    opacity: 1;
-    margin-top: 157px;
-    border-radius: 20px;
-  }
-  .itemBlock {
-    width: 200px;
-    height: auto;
-    margin: 5px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: left;
-    text-align: left;
-    gap: 10px;
-  }
-  .containerList {
-    position: static !important;
-    width: 100%;
-    height: auto;
-    margin: 5px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .list {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    list-style: none;
-  }
-  .cardTopBlock {
-    margin-top: 150px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .imagesTopBlock {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /*  ДАЄ ПЕРЕНІС НА НОВИЙ РЯДОК */
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
   }
 }
+
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* desktop */
+
+@media (min-width: 1200px) {
+  .list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* big desktop */
+
+/* @media (min-width: 1600px) {
+  .list {
+    grid-template-columns: repeat(5, 1fr);
+  }
+} */

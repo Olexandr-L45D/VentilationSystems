@@ -1,19 +1,38 @@
 // CatalogGallary
-import { NavLink } from "react-router-dom";
+import { NavLink, useSearchParams } from "react-router-dom";
+import { setFilter } from "../../redux/filters/slice";
 import css from "./CatalogGallary.module.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { selectFilteredByCategory } from "../../redux/filters/selectors";
 import { useTranslation } from "react-i18next";
 import CentrifStainless from "../../assets/images/CentrifStainless.png";
 import CentrifCarbon from "../../assets/images/CentrifCarbon.png";
-import AxialFan from "../../assets/images/AxialFan.png";
+// import AxialFan from "../../assets/images/AxialFan.png";
 import imagesValveMix from "../../assets/images/imagesValveMix.png";
 import imagesValveM from "../../assets/images/imagesValveM.png";
 import imagesValves from "../../assets/images/imagesValves.png";
+import newHeatMod from "../../assets/images/newHeatMod.png";
 
 export default function CatalogGallary() {
+  const [params, setParams] = useSearchParams();
+  const dispatch = useDispatch();
   const { t } = useTranslation();
   const trucks = useSelector(selectFilteredByCategory);
+  // useSearchParams() повертає новий params object при кожному navigation.
+  const handleCategoryClick = category => {
+    const newParams = new URLSearchParams(params);
+
+    newParams.set("category", category);
+
+    setParams(newParams);
+
+    dispatch(
+      setFilter({
+        filterName: "category",
+        value: category,
+      })
+    );
+  };
   if (!trucks || trucks.length === 0) {
     return <div>No Ventilation available</div>;
   }
@@ -22,60 +41,96 @@ export default function CatalogGallary() {
       <section className={css.containerList}>
         <section className={css.cardTopBlock}>
           <ul className={css.imagesTopBlock}>
-            <li className={css.imagesBlock}>
-              <figure className={css.titleImg}>
-                <img src={CentrifStainless} alt="" className={css.imgLogo} />
-              </figure>
-              <p className={css.textImg}>
-                {/* Industrial centrifugal fan stainless steel */}
-                {t("catalog.fanTypeSteel")}
-              </p>
-            </li>
-            <li className={css.imagesBlock}>
-              <figure className={css.titleImg}>
-                <img src={CentrifCarbon} alt="" className={css.imgLogo} />
-              </figure>
-              <p className={css.textImg}>
-                {/* Industrial centrifugal fan carbon steel */}
-                {t("catalog.fanTypeCarbon")}
-              </p>
-            </li>
-            <li className={css.imagesBlock}>
-              <figure className={css.titleImg}>
-                <img src={AxialFan} alt="" className={css.imgLogo} />
-              </figure>
-              <p className={css.textImg}>
-                {/* Axial fan */}
-                {t("catalog.fanTypeAxial")}
-              </p>
-            </li>
+            {/* Industrial centrifugal fan stainless steel */}
+            <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("centrifugal")}
+              >
+                <figure className={css.titleImg}>
+                  <img src={CentrifStainless} alt="" className={css.imgLogo} />
+                </figure>
 
-            <li className={css.imagesBlock}>
-              <figure className={css.titleImg}>
-                <img src={imagesValveMix} alt="" className={css.imgLogoMix} />
-              </figure>
-              <p className={css.textImg}>
-                {/* Different valves*/}
-                {t("catalog.fanValves")}
-              </p>
+                <p className={css.textImg}>{t("catalog.fanTypeSteel")}</p>
+              </div>
             </li>
-            <li className={css.imagesBlock}>
-              <figure className={css.titleImg}>
-                <img src={imagesValveM} alt="" className={css.imgLogoMix} />
-              </figure>
-              <p className={css.textImg}>
-                {/* Valves*/}
-                {t("catalog.fanValves")}
-              </p>
+            <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("centrifugal")}
+              >
+                <figure className={css.titleImg}>
+                  <img src={CentrifCarbon} alt="" className={css.imgLogo} />
+                </figure>
+
+                <p className={css.textImg}>{t("catalog.fanTypeCarbon")}</p>
+              </div>
             </li>
-            <li className={css.imagesBlock}>
-              <figure className={css.titleImg}>
-                <img src={imagesValves} alt="" className={css.imgLogoMix} />
-              </figure>
-              <p className={css.textImg}>
-                {/* Valves*/}
-                {t("catalog.fanValves")}
-              </p>
+            {/* Axial fan  */}
+
+            {/* <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("centrifugal")}
+              >
+                <figure className={css.titleImg}>
+                  <img src={AxialFan} alt="" className={css.imgLogo} />
+                </figure>
+
+                <p className={css.textImg}>{t("catalog.fanTypeAxial")}</p>
+              </div>
+            </li> */}
+
+            <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("valves")}
+              >
+                <figure className={css.titleImg}>
+                  <img src={imagesValveMix} alt="" className={css.imgLogo} />
+                </figure>
+
+                <p className={css.textImg}>{t("catalog.fanValves")}</p>
+              </div>
+            </li>
+            {/* Different valves2*/}
+            <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("valves")}
+              >
+                <figure className={css.titleImg}>
+                  <img src={imagesValveM} alt="" className={css.imgLogo} />
+                </figure>
+
+                <p className={css.textImg}>{t("catalog.fanValves")}</p>
+              </div>
+            </li>
+            {/* Different valves3*/}
+            <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("valves")}
+              >
+                <figure className={css.titleImg}>
+                  <img src={imagesValves} alt="" className={css.imgLogo} />
+                </figure>
+
+                <p className={css.textImg}>{t("catalog.fanValves")}</p>
+              </div>
+            </li>
+            {/* Heat exchangers1*/}
+            <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("valves")}
+              >
+                <figure className={css.titleImg}>
+                  <img src={newHeatMod} alt="" className={css.imgLogo} />
+                </figure>
+
+                <p className={css.textImg}>{t("catalog.newHeat")}</p>
+              </div>
             </li>
           </ul>
         </section>
