@@ -71,8 +71,8 @@
 }
 
 .buttonHead {
-  width: 250px;
-  min-width: 250px;
+  width: 270px;
+  min-width: 270px;
   height: 60px;
   width: 95%;
   margin: 2px;
@@ -87,6 +87,20 @@
   background: rgba(239, 223, 7, 0.6);
   cursor: pointer;
   border-radius: 20px;
+}
+.buttonHead {
+  background-color: #fbb007;
+  color: #fff;
+  font-size: clamp(16px, 2.5vw, 24px);
+}
+
+.buttonHead:hover,
+.buttonHead:focus {
+  background: linear-gradient(
+    268.5deg,
+    rgba(251, 176, 7, 0.5) 2.63%,
+    rgba(0, 0, 0, 0.5) 97.7%
+  );
 }
 
 @media (max-width: 767px) {

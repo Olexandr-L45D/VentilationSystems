@@ -13,11 +13,10 @@ import { BiSolidUser } from "react-icons/bi";
 import { useDispatch } from "react-redux";
 
 export default function HomePage() {
-  // const [params, setParams] = useSearchParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { t, ready } = useTranslation();
-  //тут просто навігація тому useSearchParams() не потрібен
+
   const handleCategoryClick = category => {
     dispatch(
       setFilter({
@@ -37,7 +36,11 @@ export default function HomePage() {
         <section className={css.background}>
           <section className={css.card}>
             <figure className={css.cardTopImages}>
-              <img className={css.bigImagesTop} src={startHomePage} alt="img" />
+              <img
+                className={css.bigImagesTop}
+                src={startHomePage}
+                alt="Home Page"
+              />
             </figure>
             <div className={css.heroContent}>
               <h1 className={css.cartTitleTop}>{t("navigation.titleHome")}</h1>
@@ -77,7 +80,7 @@ export default function HomePage() {
           <ul className={css.ulCard}>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
-                <img className={css.images} src={cardLeft} alt="" />
+                <img className={css.images} src={cardLeft} alt="Fans" />
               </figure>
               <h3 className={css.cartImagesText}>
                 {/* 
@@ -96,7 +99,7 @@ export default function HomePage() {
             </li>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
-                <img className={css.images} src={cardCenter} alt="" />
+                <img className={css.images} src={cardCenter} alt="Valves" />
               </figure>
               <h3 className={css.cartImagesText}>
                 {/* Valves, category=valves */}
@@ -113,10 +116,14 @@ export default function HomePage() {
               </div>
             </li>
 
-            {/* Heat exchangers (axial) */}
+            {/* Heat exchangers (category=heatExchanger) */}
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
-                <img className={css.images} src={cardRight} alt="" />
+                <img
+                  className={css.images}
+                  src={cardRight}
+                  alt="Heat exchangers"
+                />
               </figure>
 
               <h3 className={css.cartImagesText}>
@@ -127,7 +134,7 @@ export default function HomePage() {
                 <button
                   className={css.btnVieSecond}
                   type="button"
-                  onClick={() => handleCategoryClick("axial")}
+                  onClick={() => handleCategoryClick("heatExchanger")}
                 >
                   {t("navigation.buttonLernMore")}
                 </button>
@@ -136,15 +143,19 @@ export default function HomePage() {
           </ul>
         </section>
         <figure className={css.cardImagesFigure}>
-          <img className={css.imagFigure} src={VectorHomeCenter} alt="" />
+          <img
+            className={css.imagFigure}
+            src={VectorHomeCenter}
+            alt="Figured background image"
+          />
         </figure>
+        <div className={css.titleBlockAdvantages}>
+          <h2 className={css.cartTitleTextAdvantages}>
+            {/*Title Advantages */}
+            {t("navigation.advantages")}
+          </h2>
+        </div>
         <section className={css.containerAdvantages}>
-          <div className={css.titleBlock}>
-            <h2 className={css.cartTitleTextAdvantages}>
-              {/* Advantages */}
-              {t("navigation.advantages")}
-            </h2>
-          </div>
           <h3 className={css.labelTop}>
             {/* High quality */}
             {t("homepage.advantagesHight")}
@@ -166,10 +177,10 @@ export default function HomePage() {
           </h3>
         </section>
 
-        <section className={css.container}>
-          <div className={css.titleBlock}>
+        <section className={`${css.container} ${css.containerMobil}`}>
+          <div className={`${css.titleBlock} ${css.titleBlockMobile}`}>
             <h2 className={css.cartTitleText}>
-              {/* Producer */}
+              {/*Title Producer */}
               {t("navigation.producer")}
             </h2>
           </div>
@@ -185,7 +196,7 @@ export default function HomePage() {
         </section>
 
         <section className={css.containerReviews}>
-          <div className={css.titleBlock}>
+          <div className={css.titleBlockReviews}>
             <h2 className={css.cartTitleText}>
               {/* Reviews */}
               {t("homepage.titleReviews")}

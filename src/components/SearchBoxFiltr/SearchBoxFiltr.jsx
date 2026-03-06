@@ -8,7 +8,13 @@ import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const ALL_CATEGORIES = ["centrifugal", "radial", "valves", "axial"];
+const ALL_CATEGORIES = [
+  "centrifugal",
+  "heatExchanger",
+  "radial",
+  "valves",
+  "axial",
+];
 
 export default function SearchBoxFiltr() {
   const dispatch = useDispatch();

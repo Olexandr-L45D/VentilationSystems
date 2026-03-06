@@ -881,3 +881,246 @@
 //     width: 140px;
 //   }
 // }
+
+//  {/* жовта сітка */}
+//           <figure className={css.imgCardGrid}>
+//             <img
+//               className={css.imagesGrid}
+//               src={backgroundGrid}
+//               alt="backgroundGrid"
+//             />
+//           </figure>
+// гарантовано все ставе по центру і вертикально!!!
+// .container {
+//   display: flex;
+//   flex-direction: column; /* елементи один під одним */
+//   justify-content: center; /* центр по вертикалі */
+//   align-items: center; /* центр по горизонталі */
+//   text-align: center; /* центрує текст */
+//     width: 100 %;
+//     min-height: 100vh; /* займає висоту екрана */
+// }
+
+//
+// //
+// .page {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   gap: 56px;
+//   padding: 120px 0 80px;
+//   background-color: #f5f1e8;
+// }
+
+// /* HERO */
+// .hero {
+//   max-width: 1100px;
+//   padding: 0 24px;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px; /* компактніше */
+// }
+
+// .hero h1 {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   font-size: 48px;
+//   font-weight: 700;
+// }
+
+// .hero p {
+//   font-family: Montserrat;
+//   font-weight: 500;
+//   font-style: SemiBold;
+//   font-size: 38px;
+//   line-height: 100%;
+//   letter-spacing: 0%;
+//   color: #090909;
+//   max-width: 600px;
+// }
+
+// .heroActionsBlock {
+//   width: 300px;
+//   height: 50px;
+//   margin: 5px;
+//   padding: 5px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   gap: 16px;
+//   /* flex-wrap: wrap; */
+// }
+// .heroActions {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   gap: 16px;
+//   flex-wrap: wrap;
+// }
+// .heroActionsDownload {
+//   width: 100px;
+//   height: 50px;
+//   margin-top: -30px;
+//   margin-left: 20px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   gap: 16px;
+//   flex-wrap: wrap;
+//   /* background: #bcc815; */
+// }
+
+// .primaryBtn {
+//   padding: 12px 30px;
+//   border-radius: 30px;
+//   background: #bcc815;
+//   color: #fff;
+//   font-weight: 600;
+// }
+
+// /* ===== SECTIONS ===== */
+// .section {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: start;
+//   text-align: left;
+//   align-items: start;
+//   gap: 12px; /* було 16px */
+// }
+
+// /* ЖОВТА ЛІНІЯ — ПРИТИСНУТА ДО КРАЮ */
+// .titleParagraf {
+//   width: 100%;
+//   border-left: 4px solid #fbb007;
+//   padding-left: 16px;
+//   font-size: 40px;
+//   font-weight: 700;
+//   margin: 0;
+// }
+
+// /* ВНУТРІШНІЙ КОНТЕНТ */
+// .section > p,
+// .section > ul,
+// .section > .contacts,
+// .section > .docActions {
+//   font-family: Montserrat;
+//   font-weight: 400;
+//   font-style: SemiBold;
+//   font-size: 24px;
+//   line-height: 100%;
+//   letter-spacing: 0%;
+//   color: #090909;
+//   /* max-width: 800px; */
+//   max-width: 1100px;
+//   padding: 0 24px;
+// }
+
+// /* TEXT */
+// .section p {
+//   font-family: Montserrat;
+//   font-weight: 400;
+//   font-style: SemiBold;
+//   font-size: 24px;
+//   line-height: 100%;
+//   letter-spacing: 0%;
+//   color: #090909;
+//   max-width: 800px;
+//   margin-top: 4px; /* компактніше */
+// }
+
+// /* LISTS */
+// .list {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 6px;
+// }
+
+// .note {
+//   font-style: italic;
+//   opacity: 0.8;
+//   margin-top: 6px;
+// }
+
+// /* DOCUMENTS */
+// .docActions {
+//   display: flex;
+//   gap: 16px;
+//   flex-wrap: wrap;
+// }
+
+// /* CONTACTS */
+// .contacts {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 10px;
+// }
+
+// /* ===== TABLET ===== */
+// @media (max-width: 1024px) {
+//   .hero h1 {
+//     font-size: 40px;
+//   }
+
+//   .titleParagraf {
+//     font-size: 32px;
+//   }
+//   .titleHaria {
+//     width: 100%;
+//   }
+//   .imagesHaria {
+//     width: 500px;
+//     height: 80px;
+//   }
+// }
+
+// /* ===== MOBILE ===== */
+// @media (max-width: 600px) {
+//   .page {
+//     padding: 100px 0 60px;
+//     gap: 42px;
+//   }
+
+//   .hero {
+//     padding: 0 16px;
+//   }
+
+//   .hero h1 {
+//     font-size: 32px;
+//   }
+
+//   .hero p {
+//     font-size: 18px;
+//   }
+
+//   .titleParagraf {
+//     font-size: 26px;
+//     padding-left: 12px;
+//   }
+
+//   .section > p,
+//   .section > ul,
+//   .section > .contacts,
+//   .section > .docActions {
+//     padding: 0 16px;
+//   }
+//   .titleHaria {
+//     width: 100%;
+//   }
+//   .imagesHaria {
+//     width: 400px;
+//     height: 60px;
+//   }
+// }

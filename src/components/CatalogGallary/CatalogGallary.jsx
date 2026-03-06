@@ -123,7 +123,7 @@ export default function CatalogGallary() {
             <li>
               <div
                 className={css.imagesBlock}
-                onClick={() => handleCategoryClick("valves")}
+                onClick={() => handleCategoryClick("heatExchanger")}
               >
                 <figure className={css.titleImg}>
                   <img src={newHeatMod} alt="" className={css.imgLogo} />

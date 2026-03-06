@@ -1,7 +1,7 @@
 import css from "./AboutUsPage.module.css";
 // import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import backgroundGrid from "../../assets/images/backgroundGrid.png";
+import BlendBottom from "../../assets/images/BlendBottom.png";
 import elevator from "../../assets/images/elevator.png";
 import laboratory from "../../assets/images/laboratory.png";
 import carWash from "../../assets/images/carWash.png";
@@ -20,15 +20,6 @@ export default function AboutUsPage() {
     <section className={css.container}>
       <section className={css.background}>
         <section className={css.card}>
-          {/* жовта сітка */}
-          <figure className={css.imgCardGrid}>
-            <img
-              className={css.imagesGrid}
-              src={backgroundGrid}
-              alt="backgroundGrid"
-            />
-          </figure>
-
           {/* текст та ІМЯ компанії HARIA*/}
           <ul className={css.usContent}>
             <li className={css.titleHaria}>
@@ -71,6 +62,13 @@ export default function AboutUsPage() {
             </ul>
           </section>
         </section>
+        <div className={css.blockBlendBottom}>
+          <img
+            className={css.imagesBlendBottom}
+            src={BlendBottom}
+            alt="BlendBottom"
+          />
+        </div>
       </section>
     </section>
   );

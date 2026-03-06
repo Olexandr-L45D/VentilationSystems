@@ -15,6 +15,8 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   gap: 20px;
 }
@@ -29,15 +31,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .imagesTopBlock {
   width: 100%;
   max-width: 1200px;
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-
   gap: 14px;
   list-style: none;
   padding: 0;
@@ -47,30 +49,22 @@
 
 .imagesBlock {
   height: 100px;
-  /* width: 350px; */
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-
   text-decoration: none;
   color: inherit;
-
   border: 2px solid rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-
   background: white;
-
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-
   cursor: pointer;
-
   transition: all 0.25s ease;
 }
 
 .imagesBlock:hover {
   transform: translateY(-2px);
-
   background: linear-gradient(
     180.68deg,
     #fbb007 0.58%,
@@ -145,8 +139,9 @@
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
   align-items: center;
-
   padding-bottom: 20px;
 
   transition: transform 0.2s ease;
@@ -161,7 +156,8 @@
 /* ============================= */
 
 .imgCard {
-  width: 100%;
+  width: 300px;
+  height: 360px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -170,7 +166,7 @@
 
 .images {
   width: 260px;
-  height: 240px;
+  height: 280px;
 
   margin-top: 20px;
 
@@ -230,8 +226,21 @@
 /* mobile */
 
 @media (max-width: 480px) {
+  .imagesTopBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
   .list {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -239,7 +248,21 @@
 
 @media (min-width: 481px) and (max-width: 767px) {
   .list {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .imagesTopBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -247,7 +270,21 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .list {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .imagesTopBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -255,14 +292,42 @@
 
 @media (min-width: 1200px) {
   .list {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .imagesTopBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 
 /* big desktop */
 
-/* @media (min-width: 1600px) {
+@media (min-width: 1600px) {
   .list {
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
-} */
+  .imagesTopBlock {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
