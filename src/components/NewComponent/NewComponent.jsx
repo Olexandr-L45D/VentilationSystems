@@ -697,3 +697,187 @@
 //     </section>
 //   );
 // }
+/* === AboutUsPage CONTAINER === */
+// .container {
+//   width: 100%;
+//   padding-top: clamp(40px, 6vw, 120px);
+// }
+
+// .background {
+//   width: 100%;
+//   background: #222;
+//   display: flex;
+//   justify-content: center;
+// }
+
+// /* головний блок */
+// .card {
+//   width: 100%;
+//   max-width: 1440px;
+
+//   display: grid;
+//   grid-template-columns: 260px 1fr 420px;
+//   align-items: center;
+
+//   gap: 60px;
+//   padding: 0 40px;
+// }
+
+// /* жовта сітка */
+// .imgCard {
+//   width: 260px;
+// }
+
+// .images {
+//   width: 100%;
+//   height: auto;
+//   display: block;
+// }
+
+// /* текст */
+// .usContent {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: center;
+//   gap: 24px;
+
+//   max-width: 800px;
+// }
+
+// .carttextUs strong {
+//   color: white;
+//   font-family: Montserrat;
+//   font-weight: 500;
+//   font-size: clamp(16px, 1.1vw, 20px);
+//   line-height: 1.5;
+// }
+
+// /* сітка картинок */
+
+// .ulCard {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
+// }
+
+// .topBlokImgCard,
+// .bottomBlokImgCard {
+//   display: flex;
+//   gap: 16px;
+// }
+
+// .liImgCard {
+//   width: 200px;
+// }
+
+// .liImgCard img {
+//   width: 100%;
+//   border-radius: 4px;
+// }
+// .card {
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+//   width: 1550px;
+//   max-width: 1600px;
+//   grid-template-columns: 300px 1fr 460px;
+//   gap: 80px;
+// }
+
+// .liImgCard {
+//   margin-top: 5px;
+//   width: 400px;
+// }
+
+// .titleHaria {
+//   padding: 2px;
+//   margin-top: 5px;
+//   width: 400px;
+// }
+
+// /* ================= */
+// /* 1440+ екрани */
+// /* ================= */
+
+// @media (min-width: 1440px) {
+//   .background {
+//     margin-top: 30px;
+//     width: 100%;
+//     background: #222;
+//     display: flex;
+//     justify-content: center;
+//   }
+//   .card {
+//     margin-top: 20px;
+//     margin-bottom: 20px;
+//     width: 1550px;
+//     max-width: 1600px;
+//     grid-template-columns: 300px 1fr 460px;
+//     gap: 80px;
+//   }
+
+//   .liImgCard {
+//     margin-top: 5px;
+//     width: 400px;
+//   }
+//   .usContent {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     align-items: center;
+//     gap: 24px;
+
+//     max-width: 600px;
+//   }
+//   .titleHaria {
+//     padding: 2px;
+//     margin-top: 5px;
+//     width: 400px;
+//   }
+// }
+
+// /* ================= */
+// /* планшет */
+// /* ================= */
+
+// @media (max-width: 1100px) {
+//   .card {
+//     grid-template-columns: 1fr;
+//     text-align: center;
+//     justify-items: center;
+//     gap: 40px;
+//   }
+
+//   .usContent {
+//     align-items: center;
+//   }
+// }
+
+// /* ================= */
+// /* мобілка */
+// /* ================= */
+
+// @media (max-width: 600px) {
+//   .topBlokImgCard,
+//   .bottomBlokImgCard {
+//     justify-content: center;
+//   }
+
+//   .liImgCard {
+//     width: 140px;
+//   }
+// }

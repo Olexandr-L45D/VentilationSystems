@@ -1,5 +1,5 @@
 import css from "./AboutUsPage.module.css";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import backgroundGrid from "../../assets/images/backgroundGrid.png";
 import elevator from "../../assets/images/elevator.png";
@@ -10,27 +10,30 @@ import bakery from "../../assets/images/bakery.png";
 
 export default function AboutUsPage() {
   const { t } = useTranslation();
-  const [showVideo, setShowVideo] = useState(false);
-
-  useEffect(() => {
-    setShowVideo(true);
-  }, []);
+  // const [showVideo, setShowVideo] = useState(false);
+  // цей ефект якщо застосувати відео на старті при переході на сторінку
+  // useEffect(() => {
+  //   setShowVideo(true);
+  // }, []);
 
   return (
     <section className={css.container}>
       <section className={css.background}>
         <section className={css.card}>
           {/* жовта сітка */}
-          <figure className={css.imgCard}>
+          <figure className={css.imgCardGrid}>
             <img
-              className={css.images}
+              className={css.imagesGrid}
               src={backgroundGrid}
               alt="backgroundGrid"
             />
           </figure>
 
-          {/* текст */}
+          {/* текст та ІМЯ компанії HARIA*/}
           <ul className={css.usContent}>
+            <li className={css.titleHaria}>
+              <img className={css.imagesHaria} src={Haria} alt="Haria" />
+            </li>
             <li className={css.carttextUs}>
               <strong>{t("aboutus.carttextUsTop")}</strong>
             </li>
@@ -45,8 +48,8 @@ export default function AboutUsPage() {
             </li>
           </ul>
 
-          {/* картинки */}
-          <ol className={css.ulCard}>
+          {/* картинки images */}
+          <section className={css.ulCard}>
             <ul className={css.topBlokImgCard}>
               <li className={css.liImgCard}>
                 <img className={css.images} src={elevator} alt="elevator" />
@@ -57,10 +60,6 @@ export default function AboutUsPage() {
               </li>
             </ul>
 
-            <li className={css.liImgCard}>
-              <img className={css.images} src={Haria} alt="Haria" />
-            </li>
-
             <ul className={css.bottomBlokImgCard}>
               <li className={css.liImgCard}>
                 <img className={css.images} src={carWash} alt="carWash" />
@@ -70,9 +69,14 @@ export default function AboutUsPage() {
                 <img className={css.images} src={bakery} alt="bakery" />
               </li>
             </ul>
-          </ol>
+          </section>
         </section>
       </section>
+    </section>
+  );
+}
+
+/* 
       <section className={css.background}>
         <section className={css.sectionVideo}>
           {showVideo && (
@@ -89,6 +93,4 @@ export default function AboutUsPage() {
           )}
         </section>
       </section>
-    </section>
-  );
-}
+       */
