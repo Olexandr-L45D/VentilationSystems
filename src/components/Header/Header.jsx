@@ -24,7 +24,11 @@ export const Header = () => {
     <section className={css.container}>
       <header className={css.header}>
         <NavLink to="/" className={css.titleImg}>
-          <img src={LogoVent} alt="Company logo" className={css.imgLogo} />
+          <img
+            src={LogoVent}
+            alt="HARIA Company logo"
+            className={css.imgLogo}
+          />
         </NavLink>
 
         <SearchBoxFiltr />

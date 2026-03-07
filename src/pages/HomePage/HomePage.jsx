@@ -156,18 +156,18 @@ export default function HomePage() {
           </h2>
         </div>
         <section className={css.containerAdvantages}>
-          <h3 className={css.labelTop}>
-            {/* High quality */}
-            {t("homepage.advantagesHight")}
-          </h3>
-          <h3 className={css.labelLeft}>
-            {/* Flexibility on service and customization */}
+          <h3 className={`${css.labelTop} ${css.labelTopMobile}`}>
+            {/* High quality =.advantagesHight */}
             {t("homepage.advantageFlexibility")}
+          </h3>
+          <h3 className={`${css.labelLeft} ${css.labelLeftTopMobile}`}>
+            {/* Flexibility on service and customization */}
+            {t("homepage.advantagesHight")}
           </h3>
           <figure className={css.cardBigImages}>
             <img className={css.bigImages} src={Advantages} alt="" />
           </figure>
-          <h3 className={css.labelRight}>
+          <h3 className={`${css.labelRight} ${css.labelRightTopMobile}`}>
             {/* Fast delivery */}
             {t("homepage.bestSelFast")}
           </h3>

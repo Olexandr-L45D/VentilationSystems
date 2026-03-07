@@ -5,7 +5,7 @@ import { AiFillPhone } from "react-icons/ai";
 import FeedbackMenu from "../FeedbackMenu/FeedbackMenu";
 import { MdEmail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
-import FooterLogo from "../../assets/images/Footerlogo.png";
+import FooterLogo from "../../assets/images/footerlogo.png";
 import footerBg from "../../assets/images/FooterBlend.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
@@ -30,7 +30,11 @@ export const Footer = () => {
       >
         <div className={css.titleText}>
           <figure className={css.titleImg}>
-            <img src={FooterLogo} alt="" className={css.imgLogo} />
+            <img
+              src={FooterLogo}
+              alt="HARIA Company logo"
+              className={css.imgLogo}
+            />
           </figure>
           <p className={css.textLogo}>{t("navigation.textLogoFooter")}</p>
         </div>

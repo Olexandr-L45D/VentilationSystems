@@ -293,7 +293,6 @@
   top: 30%;
   left: -10px;
   transform: translateY(-60%);
-  /* transform: translateX(-0%); */
   text-align: right;
 }
 .labelRight {
@@ -408,7 +407,7 @@
    MOBILE
    ===================================================== */
 
-@media (max-width: 767px) {
+@media (min-width: 400px) and (max-width: 580px) {
   .container {
     padding-inline: 16px;
     gap: 48px;
@@ -463,8 +462,11 @@
   }
 
   /* ADVANTAGES */
-
+  .cardImagesFigure {
+    width: 95%;
+  }
   .containerAdvantages {
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -481,36 +483,28 @@
     right: auto;
     bottom: auto;
     transform: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
   }
-  /*   
-  .labelTop {
-    top: -10px;
-    left: 20%;
-    transform: translateX(-10%);
-  } */
+  .labelTopMobile {
+    margin-top: -250px;
+  }
+  .labelLeftTopMobile {
+    margin-left: -250px;
+    margin-top: 50px;
+  }
+  .labelRightTopMobile {
+    margin-right: -250px;
+    margin-top: -20px;
+  }
 
-  /*   
-  .labelLeft {
-    top: 30%;
-    left: -10px;
-    transform: translateY(-60%);
-    text-align: right;
-  } */
-
-  /* .labelRight {
-    top: 30%;
-    right: 70px;
-    transform: translateY(-60%);
-    text-align: left;
-  } */
-
-  /* .labelBotton {
-    max-width: 500px;
-    bottom: 10px;
-    left: 80%;
-    right: 5px;
-    transform: translateX(-50%);
-  } */
+  .labelBotton {
+    margin-bottom: 50px;
+  }
 
   .cardBigImages {
     order: -1;
@@ -526,11 +520,18 @@
   /* REVIEWS */
 
   .containerReviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ulCard {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
   .reviewsBlock {
-    width: 100%;
+    width: 95%;
     height: auto;
     padding: 20px;
   }
@@ -547,6 +548,7 @@
     margin-left: 0px;
   }
   .containerMobile {
+    width: 95%;
     margin-left: 0px;
   }
   .titleBlock {
@@ -566,8 +568,176 @@
     width: 90%;
     height: 90%;
   }
+  .imagFigure {
+    width: 95%;
+  }
 }
 
+@media (min-width: 581px) and (max-width: 767px) {
+  .container {
+    padding-inline: 16px;
+    gap: 48px;
+  }
+  .background {
+    margin-top: 50px;
+  }
+
+  /* HERO */
+  .heroContent {
+    margin-top: 70px;
+  }
+  .cartTitleTop {
+    position: relative;
+    width: 100%;
+    font-size: 28px;
+    margin: 0;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .cartTextTop {
+    position: relative;
+    width: 100%;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .containerButtons {
+    margin-top: 0px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cartBtn,
+  .cartBtnSecond {
+    margin: 0;
+  }
+
+  /* BEST SELLERS */
+
+  .ulCard {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .cartImagesText {
+    margin-top: -120px;
+    width: 100%;
+    font-size: 20px;
+  }
+
+  /* ADVANTAGES */
+  .cardImagesFigure {
+    width: 95%;
+  }
+  .containerAdvantages {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .labelTop,
+  .labelLeft,
+  .labelRight,
+  .labelBotton {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .labelTopMobile {
+    margin-top: -250px;
+  }
+  .labelLeftTopMobile {
+    margin-left: -400px;
+    margin-top: 30px;
+  }
+  .labelRightTopMobile {
+    margin-right: -400px;
+    margin-top: -30px;
+  }
+
+  .labelBotton {
+    margin-bottom: 0px;
+  }
+
+  .cardBigImages {
+    order: -1;
+  }
+
+  /* PRODUCER */
+
+  .cardProdText {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* REVIEWS */
+
+  .containerReviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ulCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviewsBlock {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .reviewsTitle {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .reviewsText {
+    text-align: center;
+  }
+  .titleBlock {
+    margin-left: 0px;
+  }
+  .containerMobile {
+    width: 95%;
+    margin-left: 0px;
+  }
+  .titleBlock {
+    align-self: flex-start;
+    border-left: 3px solid #fbb007;
+    padding-left: 12px;
+    margin-bottom: 32px;
+  }
+  .titleBlockMobile {
+    align-self: flex-start;
+    border-left: 3px solid #fbb007;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-bottom: 32px;
+  }
+  .imgCard {
+    width: 90%;
+    height: 90%;
+  }
+  .imagFigure {
+    width: 95%;
+  }
+}
 /* =====================================================
    TABLET
    ===================================================== */

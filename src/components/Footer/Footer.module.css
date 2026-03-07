@@ -43,7 +43,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 183px;
   height: 80px;
   background-repeat: no-repeat;
   padding: 2px;
@@ -105,7 +105,7 @@
   align-items: center;
 }
 .imgLogo {
-  width: 121;
+  width: 183px;
   height: 87px;
   opacity: 1;
   top: 69px;
@@ -574,7 +574,7 @@ a:focus {
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 183px;
     height: 80px;
     background-repeat: no-repeat;
     padding: 2px;
@@ -636,7 +636,7 @@ a:focus {
     align-items: center;
   }
   .imgLogo {
-    width: 121;
+    width: 183px;
     height: 87px;
     opacity: 1;
     top: 69px;

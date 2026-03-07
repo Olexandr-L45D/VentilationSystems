@@ -159,7 +159,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 180px;
+    width: 185px;
     height: 80px;
     background-repeat: no-repeat;
     padding: 2px;
@@ -337,7 +337,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 180px;
+    width: 185px;
     height: 80px;
     background-repeat: no-repeat;
     padding: 2px;
@@ -567,8 +567,8 @@
   }
 
   .titleImg {
-    width: 100px;
-    height: 60px;
+    width: 185px;
+    height: 80px;
     margin: 5px;
     margin-left: 20px;
     margin-right: 20px;
