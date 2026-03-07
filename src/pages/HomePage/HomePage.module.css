@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* !!! ОБОВʼЯЗКОВО */
+  position: relative; /* !!! ОБОВʼЯЗКОВО для роботи зсуву по осям Х та ігрик*/
   overflow: hidden;
 }
 
@@ -225,7 +225,7 @@
   text-align: center;
 }
 .imagFigure {
-  width: 100%;
+  width: 95%;
   height: auto;
   display: block;
   border-radius: 24px;
@@ -285,9 +285,9 @@
   text-align: center;
 }
 .labelTop {
-  top: -10px;
-  left: 20%;
-  transform: translateX(-10%);
+  top: -30px;
+  left: 0%;
+  transform: translateX(-5%);
 }
 .labelLeft {
   top: 30%;
@@ -297,13 +297,13 @@
 }
 .labelRight {
   top: 40%;
-  right: 70px;
+  right: 30px;
   transform: translateY(-60%);
   text-align: left;
 }
 .labelBotton {
   max-width: 500px;
-  bottom: 45px;
+  bottom: 25px;
   left: 80%;
   right: 5px;
   transform: translateX(-50%);
@@ -650,9 +650,9 @@
     bottom: auto;
     transform: none;
     font-family: Montserrat;
-    font-weight: 500;
+    font-weight: 550;
     font-style: Medium;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 100%;
     letter-spacing: 0%;
   }
@@ -789,6 +789,30 @@
   .labelRight,
   .labelBotton {
     font-size: 22px;
+  }
+  .labelTop {
+    top: -30px;
+    left: 0%;
+    transform: translateX(-0%);
+  }
+  .labelLeft {
+    top: 30%;
+    left: 40px;
+    transform: translateY(-20%);
+    text-align: right;
+  }
+  .labelRight {
+    top: 30%;
+    right: 30px;
+    transform: translateY(-60%);
+    text-align: left;
+  }
+  .labelBotton {
+    max-width: 500px;
+    bottom: 0px;
+    left: 80%;
+    right: 5px;
+    transform: translateX(-50%);
   }
 
   /* REVIEWS */
