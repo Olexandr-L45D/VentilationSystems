@@ -1124,3 +1124,661 @@
 //     height: 60px;
 //   }
 // }
+
+/* FenDetails */
+
+// .containerList {
+//   position: static !important;
+//   top: 110;
+//   width: 1440px;
+//   height: auto;
+//   margin: 0px;
+//   padding: 0px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: center;
+//   gap: 10px;
+// }
+// .containerSecind {
+//   width: 1440px;
+//   height: auto;
+//   margin: 0px;
+//   padding: 0px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: center;
+//   gap: 10px;
+// }
+// .moreDescrip {
+//   /* width: 1400px; */
+//   width: 90%;
+//   height: auto;
+//   margin: 2px;
+//   padding: 2px;
+//   display: flex;
+//   flex-direction: column;
+//   /* justify-content: center; */
+//   justify-content: start;
+//   text-align: center;
+//   align-items: center;
+//   gap: 5px;
+// }
+// .titles {
+//   width: 70%;
+//   font-weight: 800;
+//   font-size: 32px;
+//   line-height: 1.5;
+//   color: black;
+//   margin: 20px;
+//   margin-top: 180px;
+//   margin-left: 100px;
+//   padding: 5px;
+// }
+
+// .cartItem {
+//   width: 100%;
+//   height: auto;
+//   margin: 20px;
+//   padding: 20px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: center;
+//   gap: 10px;
+//   list-style: none;
+// }
+// .imgCard {
+//   width: 80%;
+//   /* height: 80%; */
+//   padding: 10px;
+//   margin-left: 10px;
+// }
+// .images {
+//   opacity: 1;
+//   width: 80%;
+//   height: auto;
+//   display: block !important;
+//   background-color: rgb(176, 182, 182);
+//   padding: 2px;
+//   margin: 2px;
+//   margin-left: 10px;
+//   padding-left: 5px;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 20px;
+//   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+//   z-index: 100;
+// }
+// .titlesblok {
+//   margin: 0px;
+//   margin-top: 10px;
+//   padding: 0px;
+//   width: 100%;
+//   height: auto;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: start;
+//   text-align: center;
+//   align-items: center;
+// }
+
+// .featuresList {
+//   margin: 1px;
+//   padding: 1px;
+//   width: 100%;
+//   height: 10px;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: start;
+// }
+
+// .cardWrapper a {
+//   text-decoration: none;
+// }
+
+// .productName {
+//   padding: 4px;
+//   margin-top: 8px;
+//   margin-bottom: 0;
+//   color: black;
+// }
+
+// .cartContainer {
+//   width: 90%;
+//   height: 450px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: center;
+//   /* gap: 5px; */
+//   margin: 0px;
+//   padding: 0px;
+// }
+// .cartComent {
+//   width: 90%;
+//   height: 450px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: center;
+//   gap: 5px;
+//   margin: 5px;
+//   padding: 5px;
+// }
+
+// .textPrice {
+//   font-weight: 500;
+//   font-size: 20px;
+//   line-height: 1.2;
+//   margin: 0px;
+//   padding: 0px;
+//   padding-right: 0px;
+//   margin-left: 50px;
+// }
+// .textTitle {
+//   margin: 5px;
+//   display: flex;
+//   justify-content: start;
+//   align-items: center;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   color: #555;
+// }
+// .titleDescr {
+//   margin: 5px;
+//   padding: 5px;
+//   display: flex;
+//   justify-content: start;
+//   align-items: center;
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 1.5;
+//   color: #0f0e0e;
+// }
+// .schemeTitle {
+//   margin: 5px;
+//   padding: 1px;
+//   display: flex;
+//   justify-content: start;
+//   align-items: center;
+//   font-weight: 600;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   color: #131212;
+// }
+
+// .textTitles {
+//   margin: 5px;
+//   margin-left: 20px;
+//   padding: 0px;
+//   display: flex;
+//   justify-content: start;
+//   align-items: center;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   color: #555;
+// }
+// .text {
+//   margin: 5px;
+//   display: flex;
+//   justify-content: start;
+//   align-items: center;
+//   font-size: 12px;
+//   line-height: 1.4;
+//   color: #555;
+// }
+// .textDescr {
+//   width: 520px;
+//   height: 24px;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   margin: 5px;
+//   color: #475467;
+//   white-space: nowrap;
+//   /* Забороняє перенесення тексту на новий рядок */
+//   overflow: hidden;
+//   /* Обрізає текст, що не вміщується */
+//   text-overflow: ellipsis;
+//   /* Додає три крапки (...) в кінці обрізаного тексту */
+// }
+
+// .descrip {
+//   width: 550px;
+//   height: 40px;
+//   margin-left: 15px;
+//   display: flex;
+//   justify-content: start;
+//   font-family: Montserrat;
+//   font-weight: 500;
+//   font-style: Medium;
+//   font-size: 20px;
+//   line-height: 100%;
+//   letter-spacing: 0%;
+// }
+
+// .comIte {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 92px;
+//   height: 138px;
+//   background-color: gray;
+// }
+
+// .icon {
+//   width: 22px;
+//   height: 22px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transform: translateY(5px);
+// }
+
+// .error {
+//   font-size: 18px;
+//   font-weight: 600;
+// }
+
+// .icons {
+//   width: 50px;
+//   height: 25px;
+//   padding: 0px;
+//   margin: 0px;
+//   color: rgb(255, 0, 34);
+//   display: flex;
+//   flex-direction: row;
+//   text-align: right;
+//   align-items: right;
+// }
+// .buttonIconShowe {
+//   width: 166px;
+//   height: 56px;
+//   padding: 0px;
+//   margin: 0px;
+//   margin-top: 100px;
+//   margin-left: 15px;
+//   margin-bottom: 0px;
+//   display: flex;
+//   flex-direction: row;
+//   text-align: center;
+//   align-items: center;
+//   border-radius: 40px;
+// }
+// .btnShowe {
+//   width: 166px;
+//   height: 56px;
+//   font-size: 18px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: #0d1ad6;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 40px;
+//   color: #ffffff;
+// }
+
+// .btnShowe:hover,
+// .btnShowe:focus {
+//   color: #0f0707;
+// }
+
+// .textTitleL {
+//   width: 200px;
+//   height: 30px;
+//   margin: 0px;
+//   padding: 0px;
+//   margin-left: 30px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+// }
+
+// .descripBloc {
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: center;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .descripList {
+//   display: flex;
+//   flex-direction: row;
+//   gap: 2px;
+//   margin-right: 5px;
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+//   /* Прибираємо маркери списку */
+// }
+
+// .descripItem {
+//   display: flex;
+//   align-items: center;
+//   margin: 5;
+//   margin-right: 10px;
+//   padding: 0;
+//   font-size: 14px;
+//   line-height: 1.2;
+//   color: #555;
+// }
+
+// .iconhed {
+//   width: 20px;
+//   height: 20px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transform: translateY(5px);
+//   /* Зміщення вниз */
+// }
+
+// .loched {
+//   display: flex;
+//   align-items: center;
+//   margin-right: 5px;
+//   font-weight: 500;
+//   font-size: 14px;
+//   color: #333;
+// }
+// .containerButtons {
+//   width: 100%;
+//   height: auto;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+// }
+
+// .buttonIconBlok {
+//   margin-bottom: 0px;
+//   margin-left: 20px;
+// }
+// .buttonIcon {
+//   width: 180px;
+//   height: 40px;
+//   padding: 0px;
+//   margin: 0px;
+//   display: flex;
+//   flex-direction: row;
+//   text-align: center;
+//   align-items: center;
+//   /* border-radius: 40%; */
+// }
+
+// .container {
+//   /* width: 1440px; */
+//   width: 100%;
+//   height: auto;
+//   margin: 10px;
+//   padding: 10px;
+//   gap: 10px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: start;
+//   text-align: center;
+//   align-items: center;
+//   background-color: aqua;
+// }
+
+// .cartContainer {
+//   margin: 5px;
+//   margin-top: 48px;
+//   width: 650px;
+//   height: 450px;
+//   padding: 5px;
+//   height: auto;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: start;
+//   gap: 10px;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   border-radius: 10px;
+//   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+// }
+// .buttonIcon {
+//   width: 200px;
+//   height: 40px;
+//   padding: 2px;
+//   margin: 2px;
+//   display: flex;
+//   flex-direction: row;
+//   text-align: center;
+//   align-items: center;
+//   border-radius: 20px;
+//   background: #fbb007;
+//   color: black;
+// }
+
+// .buttonIcon:hover,
+// .buttonIcon:focus {
+//   /* color: #0f0707; */
+//   background: linear-gradient(
+//     180.68deg,
+//     #fbb007 0.58%,
+//     #fbd581 23.39%,
+//     #fafafa 99.42%
+//   );
+// }
+// .icons {
+//   width: 50px;
+//   height: 25px;
+//   padding: 0px;
+//   margin: 0px;
+//   color: rgb(255, 0, 34);
+//   display: flex;
+//   flex-direction: row;
+//   text-align: right;
+//   align-items: right;
+// }
+// .itemText {
+//   margin: 1px;
+//   padding: 1px;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.5;
+//   color: var(--gray);
+// }
+// @media (min-width: 768px) and (max-width: 1279px) {
+//   .containerList {
+//     width: 90%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//   }
+//   .cartItem {
+//     width: 100%;
+//     margin: 5px;
+//     padding: 5px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//   }
+//   .titles {
+//     /* width: 90%; */
+//     margin: 2px;
+//     margin-top: 180px;
+
+//     padding: 5px;
+//   }
+//   .imgCard {
+//     width: 90%;
+//     padding: 10px;
+//     margin: 10px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//   }
+//   .images {
+//     opacity: 1;
+//     width: 80%;
+//     padding: 10px;
+//     margin: 10px;
+//     display: block !important;
+//     background-color: rgb(176, 182, 182);
+//     /* padding: 2px;
+//     margin: 2px; */
+//     /* margin-top: 10px; */
+//     /* margin-left: 10px;
+//     padding-left: 5px; */
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     border-radius: 20px;
+//     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+//     z-index: 100;
+//   }
+//   .cartContainer {
+//     width: 90%;
+//   }
+//   .containerSecind {
+//     width: 90%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     margin: 5px;
+//     padding: 5px;
+//   }
+//   .cartComent {
+//     width: 90%;
+//     margin: 5px;
+//     padding: 5px;
+//     border-radius: 20px;
+//   }
+//   .descrip {
+//     width: 90%;
+//     height: auto;
+//   }
+//   .moreDescrip {
+//     width: 90%;
+//   }
+//   .imgCheme {
+//     width: 90%;
+//   }
+//   .imag {
+//     width: 90%;
+//   }
+// }
+
+// @media (min-width: 1280px) and (max-width: 1440px) {
+//   .containerList {
+//     width: 90%;
+//     margin: 5px;
+//     padding: 5px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//   }
+//   .containerSecind {
+//     margin: 10px;
+//     padding: 10px;
+//   }
+//   .cartItem {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//   }
+//   .imgCard {
+//     width: 80%;
+//     margin-left: 10px;
+//   }
+//   .images {
+//     width: 80%;
+//   }
+//   .cartContainer {
+//     width: 90%;
+//     height: 450px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     align-items: center;
+//     /* gap: 5px; */
+//     margin: 0px;
+//     padding: 0px;
+//   }
+//   .cartComent {
+//     width: 90%;
+//     height: 450px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     align-items: center;
+//     gap: 5px;
+//     margin: 5px;
+//     padding: 5px;
+//   }
+// }
+
+// @media (min-width: 1441px) and (max-width: 1800px) {
+//   .containerList {
+//     width: 90%;
+//     margin: 5px;
+//     padding: 5px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//   }
+//   .containerSecind {
+//     margin: 10px;
+//     padding: 10px;
+//   }
+//   .cartItem {
+//     margin-left: 10px;
+//   }
+//   .imgCard {
+//     width: 80%;
+//     margin-left: 10px;
+//   }
+//   .images {
+//     width: 85%;
+//   }
+//   .cartContainer {
+//     width: 90%;
+//     height: 500px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     align-items: center;
+//     /* gap: 5px; */
+//     margin: 0px;
+//     padding: 0px;
+//   }
+//   .cartComent {
+//     width: 90%;
+//     height: 500px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     text-align: center;
+//     align-items: center;
+//     gap: 8px;
+//     margin: 10px;
+//     padding: 10px;
+//   }
+// }

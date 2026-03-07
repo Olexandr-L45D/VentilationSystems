@@ -279,9 +279,11 @@
   font-family: Montserrat;
   font-weight: 500;
   font-style: Medium;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: 0%;
+  text-align: center;
+
   text-align: center;
 }
 .labelTop {
@@ -492,18 +494,42 @@
   }
   .labelTopMobile {
     margin-top: -250px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
   }
   .labelLeftTopMobile {
     margin-left: -250px;
     margin-top: 50px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
   }
   .labelRightTopMobile {
     margin-right: -250px;
     margin-top: -20px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
   }
 
   .labelBotton {
     margin-bottom: 50px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
   }
 
   .cardBigImages {
@@ -788,24 +814,51 @@
   .labelLeft,
   .labelRight,
   .labelBotton {
-    font-size: 22px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .labelTop {
     top: -30px;
     left: 0%;
     transform: translateX(-0%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .labelLeft {
     top: 30%;
     left: 40px;
     transform: translateY(-20%);
     text-align: right;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .labelRight {
     top: 30%;
     right: 30px;
     transform: translateY(-60%);
     text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
   }
   .labelBotton {
     max-width: 500px;
@@ -813,6 +866,92 @@
     left: 80%;
     right: 5px;
     transform: translateX(-50%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  /* REVIEWS */
+
+  .reviewsBlock {
+    width: calc(50% - 20px);
+  }
+}
+
+/* =====================================================
+   DESCTOP
+   ===================================================== */
+
+@media (min-width: 1280px) and (max-width: 1800px) {
+  /* ADVANTAGES */
+
+  .labelTop,
+  .labelLeft,
+  .labelRight,
+  .labelBotton {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelTop {
+    top: -30px;
+    left: 0%;
+    transform: translateX(-0%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelLeft {
+    top: 30%;
+    left: 40px;
+    transform: translateY(-20%);
+    text-align: right;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelRight {
+    top: 30%;
+    right: 30px;
+    transform: translateY(-60%);
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .labelBotton {
+    max-width: 500px;
+    bottom: 0px;
+    left: 80%;
+    right: 5px;
+    transform: translateX(-50%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
   }
 
   /* REVIEWS */

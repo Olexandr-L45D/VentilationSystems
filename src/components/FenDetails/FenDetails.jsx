@@ -92,12 +92,3 @@ const FenDetails = () => {
 };
 
 export default FenDetails;
-
-{
-  /* <li className={css.featuresItem}>
-  <strong>Motor type :&nbsp; </strong>
-  <strong>
-    {fen.motor_type.charAt(0).toUpperCase() + fen.motor_type.slice(1)}
-  </strong>
-</li>; */
-}
