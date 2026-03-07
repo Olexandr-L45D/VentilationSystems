@@ -10,10 +10,7 @@ export default function ModalBasket() {
     <>
       {isOpen && (
         <div className={css.overlay} onClick={() => setIsOpen(false)}>
-          <div
-            className={css.modal}
-            onClick={e => e.stopPropagation()} // щоб не закривалось при кліку всередину
-          >
+          <div className={css.modal} onClick={e => e.stopPropagation()}>
             <button className={css.closeBtn} onClick={() => setIsOpen(false)}>
               ✕
             </button>

@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "translate:it": "node scripts/translate-it.js"
+    "translate:it": "node scripts/translate-it.js",
+    "translate:pl": "node scripts/translate-pl.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

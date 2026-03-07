@@ -11,16 +11,12 @@ export default function ContactMapModal() {
   return (
     <>
       <button className={css.buttonHead} onClick={() => setIsOpen(true)}>
-        {/*button in the Modal - Open Full Map */}
         {t("aboutus.openMap")}
       </button>
 
       {isOpen && (
         <div className={css.overlay} onClick={() => setIsOpen(false)}>
-          <div
-            className={css.modal}
-            onClick={e => e.stopPropagation()} // щоб не закривалось при кліку всередину
-          >
+          <div className={css.modal} onClick={e => e.stopPropagation()}>
             <button className={css.closeBtn} onClick={() => setIsOpen(false)}>
               ✕
             </button>

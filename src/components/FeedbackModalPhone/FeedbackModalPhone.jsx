@@ -10,17 +10,14 @@ export default function FeedbackModalPhone() {
 
   const closeModal = () => {
     setIsOpen(false);
-    navigate("/"); // ⬅️ ПЕРЕХІД НА HOME
+    navigate("/");
   };
 
   return (
     <>
       {isOpen && (
         <div className={css.overlay} onClick={closeModal}>
-          <div
-            className={css.modal}
-            onClick={e => e.stopPropagation()} // щоб не закривалось при кліку всередину
-          >
+          <div className={css.modal} onClick={e => e.stopPropagation()}>
             <button className={css.closeBtn} onClick={closeModal}>
               ✕
             </button>

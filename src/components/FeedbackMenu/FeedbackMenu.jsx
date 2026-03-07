@@ -12,9 +12,7 @@ const FeedbackMenu = () => {
 
   return (
     <>
-      {/* Кнопка відкриття модалки */}
       <div className={css.feedbackEntryBtn} onClick={() => setOpenModal(true)}>
-        {/* Відгукнутись */}
         {t("footernav.footerResp")}
       </div>
 
@@ -25,28 +23,20 @@ const FeedbackMenu = () => {
             setOpenModal(false);
           }}
         >
-          <div
-            className={css.feedbackModal}
-            onClick={e => e.stopPropagation()} // Не закривати при кліку всередині модалки
-          >
-            <h2 className={css.modalTitle}>
-              {/* Зв’язатися з нами */}
-              {t("footernav.footCallUs")}
-            </h2>
+          <div className={css.feedbackModal} onClick={e => e.stopPropagation()}>
+            <h2 className={css.modalTitle}>{t("footernav.footCallUs")}</h2>
 
             <div className={css.modalButtons}>
-              {/* Viber */}
               <a
-                href="viber://chat?number=%2B380631705885" // ← вставити номер ЗАМОВНИКА
+                href="viber://chat?number=%2B393663883621"
                 className={css.modalBtn}
               >
                 <FaViber className={css.icon} />
                 Viber
               </a>
-              {/* Instagram */}
+
               <a
                 href="https://instagram.com/alex970076" // ← вставити НІК ЗАМОВНИКА
-                // href="https://instagram.com/alex970076?igshid=YmMyMTA2M2Y="
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
@@ -54,9 +44,8 @@ const FeedbackMenu = () => {
                 <IoLogoInstagram className={css.icon} />
                 Instagram
               </a>
-              {/* Telegram */}
               <a
-                href="https://t.me/OlexandrDnUkrTelegram" // ← вставити НІК ЗАМОВНИКА
+                href="https://t.me/lyubovshybunka"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
@@ -64,10 +53,8 @@ const FeedbackMenu = () => {
                 <FaTelegramPlane className={css.icon} />
                 Telegram
               </a>
-
-              {/* ✔ WhatsApp */}
               <a
-                href="https://wa.me/380631705885" // ← номер БЕЗ +
+                href="https://wa.me/393663883621" // ← номер БЕЗ +
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
@@ -78,7 +65,7 @@ const FeedbackMenu = () => {
 
               {/* ✔ LinkedIn */}
               <a
-                href="https://www.linkedin.com/in/ВАШ_ПРОФІЛЬ" // ← вставити лінк
+                href="https://www.linkedin.com/in/your_Profle" // ← вставити лінк-?
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
@@ -94,7 +81,6 @@ const FeedbackMenu = () => {
                 setOpenModal(false);
               }}
             >
-              {/* Закрити */}
               {t("footernav.footFeedbClose")}
             </button>
           </div>

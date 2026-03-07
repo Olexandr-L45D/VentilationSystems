@@ -1,4 +1,3 @@
-// ScrollToTopButton.module.css
 import { useEffect, useState } from "react";
 import css from "./ScrollToTopButton.module.css";
 import { FaArrowUp } from "react-icons/fa";

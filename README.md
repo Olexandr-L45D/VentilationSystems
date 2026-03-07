@@ -36,6 +36,10 @@ VentilationSystems/ ├── public/ ├── src/ ├── scripts/ 👈 С�
 public/locales/ ├── en/ │ └── common.json ← SOURCE OF TRUTH ├── it/ │ └──
 common.json ← AUTO-GENERATED
 
+## стуркутра start comand
+
+-`npm run lint` end after -`npm run build`
+
 <!-- if wont translate in the tarminal up start: npm run translate:it
  -->
 <!-- Якщо не білдиться видаляю кеш -->
@@ -90,169 +94,28 @@ globals.css │ └── index.tsx
 
   <!-- SKIP LINK (a11y must-have) -->
 
-<a href="#main-content">Перейти до основного контенту</a>
+<a href="#main-content">Перейти до основного контенту</a> // // Пояснення під
+капотом
 
-  <!-- ================= HEADER ================= -->
-  <header>
-    <div>
-      <a href="/" aria-label="Головна сторінка">
-        <img src="/logo.svg" alt="Назва бренду" />
-      </a>
-    </div>
+// TileLayer — компонент з react-leaflet, що підключає тайловий шар карти
+(мозаїку з маленьких зображень — «тайлів»). Саме цей шар показує карту (дороги,
+рельєф і т.д.).
 
-    <nav aria-label="Основна навігація">
-      <ul>
-        <li><a href="/">Головна</a></li>
-        <li><a href="/services">Послуги</a></li>
-        <li><a href="/blog">Блог</a></li>
-        <li><a href="/contacts">Контакти</a></li>
-      </ul>
-    </nav>
+// url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" // Це шаблон URL для
+тайлів:
 
-    <div>
-      <button type="button">Увійти</button>
-    </div>
+// {z} — zoom level (0 — світ, 1..n — детальніше)
 
-  </header>
+// {x}, {y} — координати тайла в тайловій системі
 
-  <!-- ================= MAIN ================= -->
-  <main id="main-content">
+// {s} — subdomain (зазвичай a, b, c) — браузер одночасно робить кілька
+паралельних запитів, тому субдомени прискорюють підвантаження. // OpenStreetMap
+офіційний тайл-сервер підтримує a, b, c.
 
-    <!-- H1 ТІЛЬКИ ОДИН -->
-    <h1>Головний заголовок сторінки</h1>
-
-    <!-- ===== HERO SECTION ===== -->
-    <section aria-labelledby="hero-title">
-      <h2 id="hero-title">Ключова пропозиція</h2>
-
-      <p>
-        Короткий опис основної цінності продукту або сервісу.
-      </p>
-
-      <ul>
-        <li>Перевага №1</li>
-        <li>Перевага №2</li>
-        <li>Перевага №3</li>
-      </ul>
-
-      <button type="button">Почати</button>
-      <a href="/details">Детальніше</a>
-    </section>
-
-    <!-- ===== FEATURES ===== -->
-    <section aria-labelledby="features-title">
-      <h2 id="features-title">Можливості</h2>
-
-      <article>
-        <h3>Функція 1</h3>
-        <p>Опис функції</p>
-      </article>
-
-      <article>
-        <h3>Функція 2</h3>
-        <p>Опис функції</p>
-      </article>
-
-      <article>
-        <h3>Функція 3</h3>
-        <p>Опис функції</p>
-      </article>
-    </section>
-
-    <!-- ===== CONTENT WITH LISTS ===== -->
-    <section aria-labelledby="lists-title">
-      <h2 id="lists-title">Приклади списків</h2>
-
-      <!-- Маркований -->
-      <ul>
-        <li>Елемент списку</li>
-        <li>Елемент списку</li>
-      </ul>
-
-      <!-- Нумерований -->
-      <ol>
-        <li>Крок перший</li>
-        <li>Крок другий</li>
-      </ol>
-
-      <!-- Описовий -->
-      <dl>
-        <dt>Термін</dt>
-        <dd>Пояснення терміну</dd>
-      </dl>
-    </section>
-
-    <!-- ===== MEDIA ===== -->
-    <section aria-labelledby="media-title">
-      <h2 id="media-title">Медіа</h2>
-
-      <figure>
-        <img src="/image.jpg" alt="Опис зображення" />
-        <figcaption>Пояснення до зображення</figcaption>
-      </figure>
-
-      <video controls>
-        <source src="/video.mp4" type="video/mp4" />
-        Ваш браузер не підтримує відео.
-      </video>
-    </section>
-
-    <!-- ===== FORM ===== -->
-    <section aria-labelledby="form-title">
-      <h2 id="form-title">Форма зворотного звʼязку</h2>
-
-      <form>
-        <fieldset>
-          <legend>Ваші дані</legend>
-
-          <label for="name">Імʼя</label>
-          <input id="name" name="name" type="text" required />
-
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required />
-
-          <label for="message">Повідомлення</label>
-          <textarea id="message" name="message"></textarea>
-
-          <button type="submit">Надіслати</button>
-        </fieldset>
-      </form>
-    </section>
-
-    <!-- ===== ASIDE ===== -->
-    <aside aria-labelledby="aside-title">
-      <h2 id="aside-title">Додаткова інформація</h2>
-
-      <nav aria-label="Додаткові посилання">
-        <ul>
-          <li><a href="#">Посилання 1</a></li>
-          <li><a href="#">Посилання 2</a></li>
-        </ul>
-      </nav>
-    </aside>
-
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer>
-    <nav aria-label="Футер навігація">
-      <ul>
-        <li><a href="/privacy">Політика конфіденційності</a></li>
-        <li><a href="/terms">Умови використання</a></li>
-      </ul>
-    </nav>
-
-    <address>
-      <p>Контакти:</p>
-      <a href="mailto:info@example.com">info@example.com</a>
-    </address>
-
-    <p>© 2025 Назва компанії ?? (уточнити?!!!)</p>
-
-  </footer>
-
-</body>
-</html>
+// attribution="&copy; OpenStreetMap" // Пара метаданих, яка відображається у
+лівому/правому нижньому куті карти — обов’язкова для більшості публічних
+тайл-провайдерів (OSM вимагає коректного атрибуту). Можна використовувати HTML,
+наприклад:
 
 <!-- ✅ BEST PRACTICE РІШЕННЯ пр закритті модалок -->
 <!-- const navigate = useNavigate();

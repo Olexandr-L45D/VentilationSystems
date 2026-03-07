@@ -1,5 +1,5 @@
 // ConditionsMenu
-// ButtonExportPdf
+
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import css from "./ConditionsMenu.module.css";
@@ -13,13 +13,10 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
 
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
-      {/* ГОЛОВНА КНОПКА */}
       <button className={css.buttonHead} onClick={toggleMenu}>
-        {/* Умови співпраці */}
         {t("footernav.footerTerms")}
       </button>
 
-      {/* ВИПАДАЮЧЕ МЕНЮ */}
       {open && (
         <div
           style={{
@@ -36,7 +33,6 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
             zIndex: 100,
           }}
         >
-          {/* Кнопка перегляду */}
           <a
             href={viewUrl}
             target="_blank"
@@ -54,11 +50,10 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
                 marginBottom: "8px",
               }}
             >
-              {/* 📄 Переглянути Договір PDF */}
               {t("footernav.footerView")}
             </button>
           </a>
-          {/* Кнопка перегляду умов доставки */}
+
           <a
             href={viewUrlDelivery}
             target="_blank"
@@ -77,12 +72,10 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
               }}
             >
               📄
-              {/* Переглянути умови доставки PDF */}
               {t("footernav.footerViewDel")}
             </button>
           </a>
 
-          {/* Кнопка завантаження */}
           <a href={downloadUrl} download style={{ textDecoration: "none" }}>
             <button
               style={{
@@ -95,7 +88,6 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
               }}
             >
               ⬇️
-              {/* Завантажити Договір PDF */}
               {t("footernav.footerViewDown")}
             </button>
           </a>

@@ -22,12 +22,12 @@ export default function SearchBoxFiltr() {
   const [params, setParams] = useSearchParams();
   const [suggestions, setSuggestions] = useState(ALL_CATEGORIES);
   const [showDropdown, setShowDropdown] = useState(false);
-  const [activeIndex, setActiveIndex] = useState(-1); // ⬅️ для sorts = ↑ ↓
+  const [activeIndex, setActiveIndex] = useState(-1);
 
   const initialValues = {
     category: filters.category || "",
   };
-  // useSearchParams() повертає новий params object при кожному navigation.
+
   useEffect(() => {
     const categoryFromUrl = params.get("category");
 
@@ -47,7 +47,6 @@ export default function SearchBoxFiltr() {
     }
   }, [params, dispatch, filters.category]);
 
-  // Юзефект для переброски на підкатегорію
   return (
     <div className={css.searchBarWrapper}>
       <Formik
@@ -127,7 +126,7 @@ export default function SearchBoxFiltr() {
                     e.preventDefault();
                     setFieldValue("category", suggestions[activeIndex]);
                     setShowDropdown(false);
-                    submitForm(); // ⬅️ ВАЖЛИВО
+                    submitForm();
                   }
                 }}
               />
@@ -142,7 +141,7 @@ export default function SearchBoxFiltr() {
                       onClick={() => {
                         setFieldValue("category", cat);
                         setShowDropdown(false);
-                        submitForm(); // ⬅️ submit по кліку
+                        submitForm();
                       }}
                     >
                       {cat}

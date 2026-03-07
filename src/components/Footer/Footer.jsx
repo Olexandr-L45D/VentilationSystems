@@ -5,7 +5,7 @@ import { AiFillPhone } from "react-icons/ai";
 import FeedbackMenu from "../FeedbackMenu/FeedbackMenu";
 import { MdEmail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
-import FooterLogo from "../../assets/images/footerlogo.png";
+import newFooterLogo from "../../assets/images/newFooterLogo.png";
 import footerBg from "../../assets/images/FooterBlend.png";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
@@ -31,7 +31,7 @@ export const Footer = () => {
         <div className={css.titleText}>
           <figure className={css.titleImg}>
             <img
-              src={FooterLogo}
+              src={newFooterLogo}
               alt="HARIA Company logo"
               className={css.imgLogo}
             />
@@ -103,13 +103,11 @@ export const Footer = () => {
             </section>
 
             <section className={css.buttonIconBlok}>
-              {/* модалка написати відгук на месенджери */}
               <section className={css.card}>
                 <nav className={css.nav}>
                   <NavLink to="/feedbackEmail" className={newLinkClass}>
                     <p className={css.navEmail}>
                       <MdEmail className={css.icon} />
-                      {/* Написати */}
                       {t("footernav.footerWri")}
                     </p>
                   </NavLink>

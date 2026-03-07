@@ -20,7 +20,6 @@ export default function AboutUsPage() {
     <section className={css.container}>
       <section className={css.background}>
         <section className={css.card}>
-          {/* текст та ІМЯ компанії HARIA*/}
           <ul className={css.usContent}>
             <li className={css.titleHaria}>
               <img className={css.imagesHaria} src={Haria} alt="Haria" />
@@ -38,8 +37,6 @@ export default function AboutUsPage() {
               <strong>{t("aboutus.carttextUsBotton")}</strong>
             </li>
           </ul>
-
-          {/* картинки images */}
           <section className={css.ulCard}>
             <ul className={css.topBlokImgCard}>
               <li className={css.liImgCard}>

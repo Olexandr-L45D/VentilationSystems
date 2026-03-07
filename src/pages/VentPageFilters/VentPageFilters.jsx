@@ -4,12 +4,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchAllTruck } from "../../redux/campers/operations";
 import { selectPage } from "../../redux/campers/selectors";
 import Loader from "../../components/Loader/Loader";
-// import SearchBoxFiltr from "../../components/SearchBoxFiltr/SearchBoxFiltr";
 import { selectFilters } from "../../redux/filters/selectors";
 import { useSearchParams } from "react-router-dom";
-// import ButtonLoadMore from "../../components/ButtonLoadMore/ButtonLoadMore";
 import { setChangeFilter } from "../../redux/filters/slice";
-// import AllVentList from "../../components/AllVentList/AllVentList";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import CatalogGallary from "../../components/CatalogGallary/CatalogGallary";
 
@@ -53,8 +50,6 @@ export default function VentPageFilters() {
 
   return (
     <section className={css.cartAll}>
-      {/* <SearchBoxFiltr /> */}
-      {/* {isLoading ? <Loader /> : <AllVentList />} */}
       {isLoading ? <Loader /> : <CatalogGallary />}
       <ScrollToTopButton />
     </section>

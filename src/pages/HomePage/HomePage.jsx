@@ -83,8 +83,6 @@ export default function HomePage() {
                 <img className={css.images} src={cardLeft} alt="Fans" />
               </figure>
               <h3 className={css.cartImagesText}>
-                {/* 
-                Fans, category=centrifugal */}
                 {t("homepage.bestSelFans")}
               </h3>
               <div className={css.buttonViewsSecond}>
@@ -102,7 +100,6 @@ export default function HomePage() {
                 <img className={css.images} src={cardCenter} alt="Valves" />
               </figure>
               <h3 className={css.cartImagesText}>
-                {/* Valves, category=valves */}
                 {t("homepage.bestSelValves")}
               </h3>
               <div className={css.buttonViewsSecond}>
@@ -116,7 +113,6 @@ export default function HomePage() {
               </div>
             </li>
 
-            {/* Heat exchangers (category=heatExchanger) */}
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
                 <img

@@ -11,7 +11,7 @@ const VentPageFilters = lazy(() =>
 const NotFoundPage = lazy(() => import("../../pages/NotFoundPage"));
 
 import { Layout } from "../Layout/Layout";
-import { CartProvider } from "../CartProvider";
+
 import CompanyTermsPage from "../../pages/CompanyTermsPage/CompanyTermsPage";
 
 const FeedbackEmailModal = lazy(() =>
@@ -25,21 +25,19 @@ const FenDetails = lazy(() => import("../FenDetails/FenDetails"));
 
 export default function App() {
   return (
-    <CartProvider>
-      <Layout>
-        <Suspense fallback={null}>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/aboutus" element={<AboutUsPage />} />
-            <Route path="/catalog" element={<VentPageFilters />} />
-            <Route path="/companyTerms" element={<CompanyTermsPage />} />
-            <Route path="/feedbackEmail" element={<FeedbackEmailModal />} />
-            <Route path="/feedbackPhone" element={<FeedbackModalPhone />} />
-            <Route path="/fen/:id" element={<FenDetails />} />
-            <Route path="*" element={<NotFoundPage />} />
-          </Routes>
-        </Suspense>
-      </Layout>
-    </CartProvider>
+    <Layout>
+      <Suspense fallback={null}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutus" element={<AboutUsPage />} />
+          <Route path="/catalog" element={<VentPageFilters />} />
+          <Route path="/companyTerms" element={<CompanyTermsPage />} />
+          <Route path="/feedbackEmail" element={<FeedbackEmailModal />} />
+          <Route path="/feedbackPhone" element={<FeedbackModalPhone />} />
+          <Route path="/fen/:id" element={<FenDetails />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
+      </Suspense>
+    </Layout>
   );
 }

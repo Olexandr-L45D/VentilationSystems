@@ -73,7 +73,7 @@ const FenDetails = () => {
       <section className={css.containerSecind}>
         <h2 className={css.titleDescr}>{t("catalog.description")}</h2>
         <h3 className={css.schemeTitle}>
-          <strong className={css.schemeTitle}>{/* Subtitle :&nbsp; */}</strong>
+          <strong className={css.schemeTitle}></strong>
           {fen.subtitle}
         </h3>
         <p className={css.moreDescrip}>{fen.description}</p>

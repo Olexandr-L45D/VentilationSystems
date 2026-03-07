@@ -2,7 +2,6 @@
 .page {
   width: 100%;
   background-color: #f5f1e8;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,13 +74,10 @@
 
 .titleParagraf {
   width: 100%;
-
   border-left: 4px solid #fbb007;
   padding-left: 16px;
-
   font-size: 38px;
   font-weight: 700;
-
   text-align: left;
 }
 
@@ -99,7 +95,6 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-
   font-size: 22px;
   max-width: 800px;
 }
@@ -125,7 +120,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-
   font-size: 22px;
 }
 .blockBlendBottom {
@@ -134,14 +128,16 @@
 .imagesBlendBottom {
   width: 100%;
 }
-
+.wrapper {
+  margin-bottom: 20px;
+  padding: 5px;
+}
 /* ================= */
 /* TABLET */
 /* ================= */
 
 @media (max-width: 1024px) {
   .page {
-    /* padding: 100px 0 60px; */
     padding-top: 100px;
     gap: 50px;
   }
@@ -163,7 +159,8 @@
   }
 
   .imagesHaria {
-    width: 420px;
+    width: 280px;
+    height: 35px;
   }
 }
 
@@ -173,7 +170,6 @@
 
 @media (max-width: 600px) {
   .page {
-    /* padding: 100px 0 60px; */
     padding-top: 100px;
     gap: 50px;
   }
@@ -205,7 +201,7 @@
   }
 
   .imagesHaria {
-    width: 250px;
-    height: 30px;
+    width: 220px;
+    height: 25px;
   }
 }

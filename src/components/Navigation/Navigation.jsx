@@ -33,10 +33,6 @@ export const Navigation = () => {
           <NavLink to="/companyTerms" className={newLinkClass}>
             {t("navigation.deliveryTerms")}
           </NavLink>
-
-          {/* <NavLink to="/contacts" className={newLinkClass}>
-            {t("navigation.contacts")}
-          </NavLink> */}
         </nav>
       </section>
     </section>

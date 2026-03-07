@@ -47,10 +47,7 @@ export default function FeedbackForm() {
     <section className={css.formContainer}>
       <form className={css.form} onSubmit={handleSubmit}>
         <p className={css.totaltext}>{t("footernav.totaltextForm")}</p>
-        <h2 className={css.title}>
-          {/* Напишіть листа */}
-          {t("footernav.footerWriWr")}
-        </h2>
+        <h2 className={css.title}>{t("footernav.footerWriWr")}</h2>
 
         <input
           className={css.input}
@@ -86,10 +83,7 @@ export default function FeedbackForm() {
         </button>
 
         {success && (
-          <p className={css.success}>
-            {/* Ваш лист надіслано ! */}
-            {t("footernav.footerWriLetter")}
-          </p>
+          <p className={css.success}>{t("footernav.footerWriLetter")}</p>
         )}
       </form>
     </section>

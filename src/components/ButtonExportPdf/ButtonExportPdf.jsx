@@ -10,7 +10,6 @@ const PdfActions = ({ viewUrl, downloadUrl }) => {
 
   return (
     <div style={{ position: "relative", display: "inline-block" }}>
-      {/* ГОЛОВНА КНОПКА */}
       <button
         onClick={toggleMenu}
         style={{

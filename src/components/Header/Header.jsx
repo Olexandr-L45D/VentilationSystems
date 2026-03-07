@@ -47,7 +47,7 @@ export const Header = () => {
           </button>
           <button
             className={css.activeButton}
-            onClick={() => changeLanguage("it")}
+            onClick={() => changeLanguage("pl")}
           >
             PL
           </button>
@@ -56,7 +56,6 @@ export const Header = () => {
           <p className={css.iconPhoneNumb}>+393663883621</p>
           <p className={css.iconPhoneBlock}>
             <AiFillPhone className={css.iconPhon} />
-            {/* Зворотній дзвінок */}
             {t("navigation.callback")}
           </p>
         </NavLink>
