@@ -449,7 +449,13 @@
   .cartTitleTop {
     position: relative;
     width: 100%;
-    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
     margin: 0;
     margin-top: 40px;
     text-align: center;
@@ -458,7 +464,12 @@
   .cartTextTop {
     position: relative;
     width: 100%;
-    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
     margin: 0;
     text-align: center;
   }
@@ -622,9 +633,48 @@
     margin-left: 0px;
     margin-bottom: 32px;
   }
+  .ulCardCategories {
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .liImgCard {
+    margin: 5px;
+    padding: 2px;
+    padding-top: 20px;
+  }
   .imgCard {
-    width: 90%;
-    height: 90%;
+    margin: 4px;
+    padding: 2px;
+    margin-top: 2px;
+    padding-top: 2px;
+  }
+  .imgCard,
+  .images {
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
+  .images {
+    width: 100%;
+    max-width: 400px;
+    height: 460px;
+    margin-top: 2px;
+    padding-top: 2px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
   }
   .imagFigure {
     width: 95%;
@@ -756,11 +806,6 @@
     justify-content: center;
     align-items: center;
   }
-  /* .ulCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 
   .reviewsBlock {
     width: 95%;
@@ -803,6 +848,36 @@
   .imagFigure {
     width: 95%;
   }
+  .ulCardCategories {
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .liImgCard {
+    margin: 5px;
+    padding: 2px;
+    padding-top: 20px;
+  }
+  .imgCard {
+    margin: 4px;
+    padding: 2px;
+  }
+  .imgCard,
+  .images {
+    width: 100%;
+    max-width: 400px;
+    height: 480px;
+    display: block;
+    object-fit: cover;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+  }
 }
 /* =====================================================
    TABLET
@@ -838,23 +913,29 @@
     width: 100%;
     display: flex;
   }
-  /* .ulCardCategories {
-    width: 100%;
+  .ulCardCategories {
+    /* width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
-  } */
+    /* margin-top: 10px; */
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 
   .liImgCard {
-    margin: 2px;
+    margin: 5px;
     padding: 2px;
+    padding-top: 20px;
   }
   .imgCard {
     margin: 4px;
@@ -862,7 +943,8 @@
   }
   .imgCard,
   .images {
-    width: 330px;
+    width: 100%;
+    max-width: 330px;
     height: 440px;
     display: block;
     object-fit: cover;
