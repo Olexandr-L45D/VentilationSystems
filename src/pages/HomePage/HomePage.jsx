@@ -69,7 +69,7 @@ export default function HomePage() {
           </section>
         </section>
 
-        <section className={css.container}>
+        <section className={css.containerCategories}>
           <div className={css.titleBlock}>
             <h2 className={css.cartTitleText}>
               {/* Product categories */}
@@ -77,7 +77,7 @@ export default function HomePage() {
             </h2>
           </div>
 
-          <ul className={css.ulCard}>
+          <ul className={css.ulCardCategories}>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
                 <img className={css.images} src={cardLeft} alt="Fans" />
@@ -182,12 +182,7 @@ export default function HomePage() {
           </div>
 
           <figure className={css.cardProducer}>
-            <p className={css.cardProdText}>
-              {/* Black Icon Srl (Italy) — Italian manufacturer of industrial
-              ventilation and drying systems. In-house engineering development
-              and full-cycle production. */}
-              {t("navigation.cardProdText")}
-            </p>
+            <p className={css.cardProdText}>{t("navigation.cardProdText")}</p>
           </figure>
         </section>
 
@@ -198,7 +193,7 @@ export default function HomePage() {
               {t("homepage.titleReviews")}
             </h2>
           </div>
-          <ul className={css.ulCard}>
+          <ul className={css.ulCardReviews}>
             <li className={css.reviewsBlock}>
               <h3 className={css.reviewsTitle}>
                 <BiSolidUser />
