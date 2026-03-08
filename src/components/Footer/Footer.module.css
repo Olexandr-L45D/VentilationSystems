@@ -474,7 +474,7 @@ a:focus {
     margin-bottom: 15px;
   }
 }
-@media screen and (min-width: 600px) and (max-width: 1279px) {
+@media screen and (min-width: 600px) and (max-width: 1099px) {
   .container {
     width: 100%;
     height: auto;
@@ -500,17 +500,50 @@ a:focus {
     margin: 5px;
   }
 }
-@media (min-width: 700px) and (max-width: 1279px) {
+@media (min-width: 700px) and (max-width: 1099px) {
+  .footer {
+    display: flex;
+    padding-top: 25px;
+    /* padding-bottom: 25px; */
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    margin: 0 auto;
+    width: 100%;
+    align-items: flex-start;
+  }
   .container {
     width: 100%;
+    /* height: auto; */
+    height: 500px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: auto;
     z-index: 10;
+  }
+  .titleText {
+    margin-left: 5px;
+    /* margin-right: 20px; */
+  }
+  .textLogo {
+    margin-left: 5px;
+  }
+  .cardLink {
+    margin-left: 120px;
+    margin-right: 20px;
+  }
+  .leftAllSection {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 5px;
   }
   .rightAllSection {
     margin: 0px;
@@ -520,12 +553,13 @@ a:focus {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 20px;
   }
   .rightSection {
-    margin-right: 120px;
+    margin-right: 100px;
   }
 }
-@media (min-width: 1280px) and (max-width: 1439px) {
+@media (min-width: 1100px) and (max-width: 1439px) {
   .footer {
     display: flex;
     padding-top: 25px;
@@ -547,8 +581,20 @@ a:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: auto;
     z-index: 10;
+  }
+  .leftAllSection {
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 1px;
   }
   .rightAllSection {
     width: 95%;
@@ -558,6 +604,7 @@ a:focus {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .cardLink {
     width: 160px;
@@ -568,8 +615,21 @@ a:focus {
     text-align: center;
     justify-content: start;
     align-items: center;
+    margin: 5px;
   }
-
+  .titleText {
+    margin: 5px;
+    margin-left: 40px;
+    padding: 5px;
+  }
+  .cardLink {
+    margin: 5px;
+    padding: 5px;
+  }
+  .rightAllSection {
+    margin: 5px;
+    padding: 5px;
+  }
   .titleImg {
     display: flex;
     text-align: center;
@@ -866,6 +926,17 @@ a:focus {
     justify-content: center;
     align-items: center;
     padding-bottom: 0px;
+  }
+  .leftAllSection {
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    gap: 1px;
   }
   .rightAllSection {
     width: 95%;

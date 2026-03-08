@@ -568,11 +568,123 @@
     margin: 0px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 699px) {
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
   .container {
     width: 100%;
-    height: 150px;
+    height: 230px;
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    margin-bottom: 5px;
+  }
+  .languageSwitcher {
+    margin: 1px;
+    padding: 1px;
+  }
+  .titleImg {
+    width: 200px;
+    height: 80px;
+    margin: 5px;
+    /* margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 20px; */
+  }
+  .titleImg {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    border: 2px solid transparent;
+  }
+  .titleImg:hover,
+  .titleImg:focus-visible {
+    background: rgba(251, 176, 7, 0.15);
+    border-color: #fbb007;
+  }
+  .activeButton {
+    width: 35px;
+    height: 35px;
+    margin: 2px;
+    padding: 2px;
+  }
+  .languageSwitcher {
+    display: flex;
+    gap: 10px;
+    padding: 1px;
+    margin: 5px;
+    /* margin-left: 10px; */
+  }
+  .iconPhoneBlock {
+    margin: 2px;
+    /* margin-bottom: 10px; */
+    gap: 10px;
+  }
+  .iconPhone {
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2px;
+    /* margin-right: 15px; */
+  }
+
+  a:hover {
+    color: #fbb007;
+  }
+
+  .link:hover {
+    color: #fbb007;
+  }
+
+  a:focus {
+    color: #fbb007;
+  }
+
+  .link:focus {
+    color: #fbb007;
+  }
+
+  .active {
+    color: #fbb007;
+  }
+  .iconPhoneNumb {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+  }
+  .iconPhoneBlock {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 699px) {
+  .container {
+    width: 100%;
+    height: 190px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .header {
     height: 150px;
@@ -586,7 +698,7 @@
   }
 
   .titleImg {
-    width: 100px;
+    width: 180px;
     height: 80px;
     margin: 5px;
     margin-left: 20px;

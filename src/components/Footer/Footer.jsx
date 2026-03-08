@@ -28,33 +28,34 @@ export const Footer = () => {
         className={css.container}
         style={{ "--footer-bg": `url(${footerBg})` }}
       >
-        <div className={css.titleText}>
-          <figure className={css.titleImg}>
-            <img
-              src={newFooterLogo}
-              alt="HARIA Company logo"
-              className={css.imgLogo}
-            />
-          </figure>
-          <p className={css.textLogo}>{t("navigation.textLogoFooter")}</p>
-        </div>
+        <section className={css.leftAllSection}>
+          <div className={css.titleText}>
+            <figure className={css.titleImg}>
+              <img
+                src={newFooterLogo}
+                alt="HARIA Company logo"
+                className={css.imgLogo}
+              />
+            </figure>
+            <p className={css.textLogo}>{t("navigation.textLogoFooter")}</p>
+          </div>
 
-        <nav className={css.cardLink}>
-          <h2 className={css.titleBlok}>{t("navigation.navigatTitle")}</h2>
+          <nav className={css.cardLink}>
+            <h2 className={css.titleBlok}>{t("navigation.navigatTitle")}</h2>
 
-          <NavLink to="/aboutus" className={newLinkClassSecond}>
-            {t("navigation.about")}
-          </NavLink>
+            <NavLink to="/aboutus" className={newLinkClassSecond}>
+              {t("navigation.about")}
+            </NavLink>
 
-          <NavLink to="/catalog" className={newLinkClassSecond}>
-            {t("navigation.catalogFo")}
-          </NavLink>
+            <NavLink to="/catalog" className={newLinkClassSecond}>
+              {t("navigation.catalogFo")}
+            </NavLink>
 
-          <NavLink to="/companyTerms" className={newLinkClassSecond}>
-            {t("navigation.deliveryTerms")}
-          </NavLink>
-        </nav>
-
+            <NavLink to="/companyTerms" className={newLinkClassSecond}>
+              {t("navigation.deliveryTerms")}
+            </NavLink>
+          </nav>
+        </section>
         <section className={css.rightAllSection}>
           <section className={css.cardTextBl}>
             <h2 className={css.titleBlok}>{t("navigation.contactTitle")}</h2>

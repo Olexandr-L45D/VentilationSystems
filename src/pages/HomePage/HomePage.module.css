@@ -34,19 +34,24 @@
   margin: 0px;
   padding: 0px;
 }
+
 .cardTopImages {
-  margin: 0px;
-  padding: 0px;
-  margin-top: 60px;
+  margin-top: 80px;
   position: absolute;
   inset: 0;
   z-index: 1;
+  margin: 2px;
+  padding: 2px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .bigImagesTop {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .heroContent {
   position: absolute;
@@ -61,47 +66,11 @@
   padding: 20px;
 }
 .cartTitleTop {
-  position: absolute;
-  width: 1100px;
-  padding: 10px;
-  margin: 10px;
-  margin-bottom: 200px;
-  padding: 0px;
-  font-family: Montserrat;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 48px;
-  line-height: 100%;
-  letter-spacing: 0%;
   color: #ffffff;
-  z-index: 500;
 }
 .cartTextTop {
-  position: absolute;
-  width: 800px;
-  padding: 10px;
-  margin: 40px;
-  margin-bottom: 50px;
   color: #ffffff;
   padding: 0px;
-  font-family: Montserrat;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  z-index: 500;
-  display: flex;
-  justify-content: start;
-}
-.cartTitleTop {
-  max-width: 1100px;
-  width: 100%;
-}
-
-.cartTextTop {
-  max-width: 800px;
-  width: 100%;
 }
 
 .reviewsBlock {
@@ -445,25 +414,30 @@
   /* HERO */
   .heroContent {
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
   .cartTitleTop {
     position: relative;
-    width: 100%;
+    width: 90%;
     font-family: Montserrat;
     font-weight: 500;
     font-style: Medium;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 100%;
     letter-spacing: 0%;
-
     margin: 0;
     margin-top: 40px;
     text-align: center;
+    color: #ffffff;
   }
 
   .cartTextTop {
     position: relative;
-    width: 100%;
+    width: 90%;
     font-family: Montserrat;
     font-weight: 500;
     font-style: Medium;
@@ -472,11 +446,16 @@
     letter-spacing: 0%;
     margin: 0;
     text-align: center;
+    color: #ffffff;
   }
 
   .containerButtons {
     margin-top: 0px;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     gap: 12px;
   }
 
@@ -696,7 +675,7 @@
   }
   .cartTitleTop {
     position: relative;
-    width: 100%;
+    width: 90%;
     font-size: 28px;
     margin: 0;
     margin-top: 40px;
@@ -705,7 +684,7 @@
 
   .cartTextTop {
     position: relative;
-    width: 100%;
+    width: 90%;
     font-size: 18px;
     margin: 0;
     text-align: center;
@@ -878,6 +857,15 @@
     border-radius: 20px;
     background-color: #e0e0e0;
   }
+  .containerButtons {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+  }
 }
 /* =====================================================
    TABLET
@@ -894,18 +882,22 @@
   /* HERO */
 
   .cartTitleTop {
-    width: 90%;
-    font-size: 36px;
-    margin-bottom: 140px;
+    width: 80%;
+    font-size: 34px;
+    margin-top: 110px;
+    margin-bottom: 10px;
+    /* margin-bottom: 140px; */
   }
 
   .cartTextTop {
     width: 80%;
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 0px;
   }
 
   .containerButtons {
-    margin-top: 220px;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 
   /* BEST SELLERS */
@@ -1074,6 +1066,42 @@
   }
 }
 @media (min-width: 1341px) and (max-width: 1440px) {
+  .cartTitleTop {
+    position: absolute;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    z-index: 500;
+  }
+  .cartTextTop {
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    z-index: 500;
+    display: flex;
+    justify-content: start;
+  }
   .ulCardCategories {
     width: 95%;
     display: flex;
@@ -1196,6 +1224,42 @@
     margin: 10px;
     padding: 3px;
   }
+  .cartTitleTop {
+    position: absolute;
+    max-width: 1100px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    z-index: 500;
+  }
+  .cartTextTop {
+    position: absolute;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    z-index: 500;
+    display: flex;
+    justify-content: start;
+  }
 }
 
 @media (min-width: 1441px) and (max-width: 1800px) {
@@ -1304,5 +1368,41 @@
     object-fit: cover;
     border-radius: 20px;
     background-color: #e0e0e0;
+  }
+  .cartTitleTop {
+    position: absolute;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+    z-index: 500;
+  }
+  .cartTextTop {
+    position: absolute;
+    max-width: 1200px;
+    width: 100%;
+    padding: 10px;
+    margin: 40px;
+    margin-bottom: 50px;
+    color: #ffffff;
+    padding: 0px;
+    font-family: Montserrat;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    z-index: 500;
+    display: flex;
+    justify-content: start;
   }
 }
