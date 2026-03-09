@@ -23,7 +23,7 @@ export default function VentPageFilters() {
     // Якщо URL містить параметри, а Redux-параметри порожні
     if (!Object.keys(filteres).length && Object.keys(existingFilters).length) {
       console.log("Initializing Redux with existing filters:", existingFilters);
-      // dispatch(setChangeFilter(existingFilters)); // Синхронізація Redux з URL
+
       dispatch(setChangeFilter({ category: "" })); // Синхронізація Redux з URL { category: "" }
       return;
     }

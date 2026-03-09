@@ -1,24 +1,12 @@
-/* ================= */
-/* CONTAINER */
-/* ================= */
-
 .container {
   width: 100%;
   padding-top: 80px;
 }
 
-/* ================= */
-/* BACKGROUND */
-/* ================= */
-
 .background {
   width: 100%;
   background: #222;
 }
-
-/* ================= */
-/* MAIN GRID */
-/* ================= */
 
 .card {
   /* position: relative; */

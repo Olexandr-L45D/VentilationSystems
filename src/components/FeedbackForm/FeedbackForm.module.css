@@ -6,13 +6,11 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  /* Жовта вертикальна смуга зліва — як у макеті */
   border-left: 2px solid #fbb007;
-  padding-left: 10px; /* відступ, щоб форма не "липла" до смуги */
+  padding-left: 10px;
 }
 
 .form {
-  /* width: 100%; */
   max-width: 500px;
   margin: 0 auto;
   padding: 10px;
@@ -134,19 +132,17 @@
 @media screen and (min-width: 200px) and (max-width: 399px) {
   .totaltext {
     width: 180px;
-    /* height: auto; */
     height: 64px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* ⬅️ кількість рядків */
+    -webkit-line-clamp: 3;
+    /* обмежує кількість рядків на малому екрані мобілки */
     overflow: hidden;
   }
   .formContainer {
     margin-top: 20px;
     width: 220px;
     height: 300px;
-    /* height: 360px; */
-    /* max-height: 360px; */
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -220,11 +216,10 @@
     height: 64px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3; /* ⬅️ кількість рядків */
+    -webkit-line-clamp: 3;
     overflow: hidden;
   }
   .formContainer {
-    /* padding: 5px; */
     margin: 10px;
     margin-top: 20px;
     width: 220px;

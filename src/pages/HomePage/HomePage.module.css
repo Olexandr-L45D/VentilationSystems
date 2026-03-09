@@ -402,13 +402,15 @@
    MOBILE
    ===================================================== */
 
-@media (min-width: 400px) and (max-width: 580px) {
+@media (min-width: 380px) and (max-width: 580px) {
   .container {
-    padding-inline: 16px;
+    /* padding-inline: 16px; */
+    padding: 8px;
     gap: 48px;
   }
   .background {
     margin-top: 50px;
+    padding: 8px;
   }
 
   /* HERO */
@@ -451,6 +453,7 @@
 
   .containerButtons {
     margin-top: 0px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -490,7 +493,7 @@
     width: 95%;
   }
   .containerAdvantages {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -515,7 +518,7 @@
     letter-spacing: 0%;
   }
   .labelTopMobile {
-    margin-top: -250px;
+    margin-top: -200px;
     font-family: Montserrat;
     font-weight: 500;
     font-style: Medium;
@@ -524,7 +527,7 @@
     letter-spacing: 0%;
   }
   .labelLeftTopMobile {
-    margin-left: -250px;
+    margin-left: -200px;
     margin-top: 50px;
     font-family: Montserrat;
     font-weight: 500;
@@ -534,7 +537,7 @@
     letter-spacing: 0%;
   }
   .labelRightTopMobile {
-    margin-right: -250px;
+    margin-right: -200px;
     margin-top: -20px;
     font-family: Montserrat;
     font-weight: 500;
@@ -545,7 +548,7 @@
   }
 
   .labelBotton {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     font-family: Montserrat;
     font-weight: 500;
     font-style: Medium;
@@ -579,11 +582,24 @@
   }
 
   .reviewsBlock {
-    width: 95%;
-    height: auto;
-    padding: 20px;
+    max-width: 548px;
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+    top: 19px;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
-
   .reviewsTitle {
     margin-left: 0;
     justify-content: center;
@@ -609,7 +625,7 @@
     align-self: flex-start;
     border-left: 3px solid #fbb007;
     padding-left: 0px;
-    margin-left: 0px;
+    margin-left: 25px;
     margin-bottom: 32px;
   }
   .ulCardCategories {
@@ -657,6 +673,9 @@
   }
   .imagFigure {
     width: 95%;
+  }
+  .buttonViewsSecond {
+    margin-bottom: 20px;
   }
 }
 

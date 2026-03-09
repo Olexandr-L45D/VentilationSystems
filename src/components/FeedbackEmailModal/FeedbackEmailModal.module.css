@@ -1,23 +1,18 @@
-/* ContactMapModal.module.css
-
-/* ===== Overlay ===== */
 .overlay {
   position: fixed;
   inset: 0;
   background: rgba(249, 240, 240, 0.55);
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* 👈 НЕ center */
-  padding-top: 50px; /* ✅ відступ від хедера в низ на великих екранах щоб не перекривало хедер з навігацієй*/
+  align-items: flex-start;
+  padding-top: 50px;
   z-index: 2000;
   max-height: calc(100vh - 20px);
 }
 
-/* ===== Modal ===== */
-
 .modal {
   width: 95%;
-  min-width: 200px; /* ⬅️ важливо для дуже малих екранів */
+  min-width: 200px;
   max-width: 650px;
   max-height: calc(100vh - 80px);
   overflow-y: auto; /* ⬅️ скрол всередині */
@@ -70,7 +65,7 @@
     border-radius: 16px;
     position: relative;
     overflow: hidden;
-    max-height: calc(100vh - 20px); /* ✅ не вилізає за екран */
+    max-height: calc(100vh - 20px);
   }
   .mapBox {
     max-height: calc(100vh - 20px);
@@ -88,7 +83,7 @@
     max-height: calc(100vh - 40px);
   }
 }
-/* @media (min-width: 768px) and (max-width: 1279px) {} */
+
 @media (min-width: 1021px) and (max-width: 1439px) {
   .modal {
     width: 95%;
@@ -108,6 +103,6 @@
     border-radius: 16px;
     position: relative;
     overflow: hidden;
-    max-height: calc(100vh - 80px); /* ✅ не вилізає за екран */
+    max-height: calc(100vh - 80px);
   }
 }

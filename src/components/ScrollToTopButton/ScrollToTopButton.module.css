@@ -1,7 +1,6 @@
 /* ScrollToTopButton.module.css */
 .button {
   position: fixed;
-  /* bottom: 250px;  */
   bottom: 100px; /*с права в низу  футера */
   right: 40px;
   width: 50px;

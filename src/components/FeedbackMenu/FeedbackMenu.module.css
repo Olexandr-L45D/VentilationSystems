@@ -173,8 +173,6 @@
   }
 }
 
-/* ...всі твої існуючі стилі залишаються... */
-
 .modalBtn {
   background: #f8f3ff;
   border: 1px solid #e3d9ff;
@@ -190,7 +188,7 @@
   text-decoration: none;
   font-weight: 500;
   transition: all 0.25s ease;
-  cursor: pointer; /* додано для кнопки Email */
+  cursor: pointer;
 }
 
 .modalBtn:hover {
@@ -222,11 +220,11 @@
 
 @media screen and (min-width: 200px) and (max-width: 678px) {
   .feedbackModalOverlay {
-    padding: 10px; /* щоб не торкалась країв */
+    padding: 10px;
   }
 
   .feedbackModal {
-    margin: 0 auto; /*  головне */
+    margin: 0 auto;
     width: 100%;
     max-width: 280px;
     max-height: calc(100vh - 20px);
@@ -273,7 +271,7 @@
     font-weight: 600;
   }
 
-  /* Сітка кнопок */
+  /* buttons grid */
   .modalButtons {
     display: grid;
     gap: 8px;

@@ -4,11 +4,10 @@
 .overlay {
   position: fixed;
   inset: 0;
-  /* background: rgba(0, 0, 0, 0.55); */
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* 👈 НЕ center */
-  padding-top: 90px; /* ✅ відступ від хедера */
+  align-items: flex-start; /*this is  not center */
+  padding-top: 90px; /* top with header */
   z-index: 2000;
 }
 

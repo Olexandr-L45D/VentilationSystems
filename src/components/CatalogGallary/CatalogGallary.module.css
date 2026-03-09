@@ -7,10 +7,6 @@
   gap: 20px;
 }
 
-/* ============================= */
-/* RIGHT SIDE */
-/* ============================= */
-
 .containerList {
   width: 100%;
   display: flex;
@@ -20,10 +16,6 @@
   align-items: center;
   gap: 20px;
 }
-
-/* ============================= */
-/* TOP CATEGORY BLOCK */
-/* ============================= */
 
 .cardTopBlock {
   margin: 10px;
@@ -36,7 +28,7 @@
 }
 
 .imagesTopBlock {
-  width: 100%;
+  width: 95%;
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -48,6 +40,7 @@
 /* CATEGORY BUTTON-Top-Card*/
 
 .imagesBlock {
+  width: 95%;
   height: 100px;
   display: flex;
   align-items: center;

@@ -1,11 +1,10 @@
 .dropdown {
-  position: fixed; /* ⬅ ТІЛЬКИ fixed */
+  position: fixed; /* ⬅ ТІЛЬКИ fixed для інпута пошуку */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-height: 60vh;
   overflow-y: auto;
-
   border: 1px solid #ddd;
   border-radius: 20px;
   z-index: 9999;
@@ -35,7 +34,7 @@
 }
 .searchBarWrapper {
   width: 160px;
-  margin-left: 50px;
+  margin-left: 10px;
   margin-right: 10px;
   background: rgba(255, 255, 255, 0.6);
   z-index: 1000;
@@ -51,10 +50,7 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-
-  /* opacity: 1; */
   border-radius: 20px;
-  /* border-width: 1px; */
   border: 1px solid #fbb007;
   width: 160px;
   height: 40px;
@@ -65,8 +61,6 @@
 /* === НОВЕ: Контейнер для інпута === */
 .inputWrapper {
   position: relative;
-  /* width: 100%; */
-  width: 160px;
   border-radius: 20px;
 }
 
@@ -74,7 +68,6 @@
 .inputIcon {
   position: absolute;
   top: 30%;
-  /* left: 12px; */
   right: 10px;
   transform: translateY(-10%);
   transform: translateX(-30%);
@@ -86,7 +79,6 @@
 
 /* === Оновлений інпут під іконку === */
 .input {
-  /* border: 1px solid rgba(18, 17, 17, 0.4); */
   border-radius: 20px;
   border-width: 1px;
   width: 170px;
@@ -94,7 +86,6 @@
   padding-right: 12px;
   font-size: 15px;
   background-color: #f7f7f7;
-  /* border: none; */
   border: 1px solid #fbb007;
   display: flex;
   align-items: center;
@@ -111,8 +102,6 @@
 .iconButton {
   width: 0px;
   height: 0px;
-  /* border-radius: 12px; */
-  /* border: none; */
   border: 1px solid #fbb007;
   cursor: pointer;
   display: flex;
@@ -140,7 +129,7 @@
   }
   .searchBarWrapper {
     width: 200px;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-right: 10px;
     background: rgba(255, 255, 255, 0.6);
     z-index: 1000;
@@ -166,7 +155,7 @@
   .inputWrapper {
     position: relative;
     /* width: 100%; */
-    width: 200px;
+    /* width: 220px; */
     border-radius: 20px;
   }
 
@@ -235,7 +224,7 @@
   .searchBarWrapper {
     width: 150px;
     margin: 1px;
-    margin-left: 20px;
+    margin-left: 10px;
     background: rgba(255, 255, 255, 0.6);
     z-index: 1000;
     display: flex;
@@ -259,7 +248,6 @@
   /* === НОВЕ: Контейнер для інпута === */
   .inputWrapper {
     position: relative;
-    width: 150px;
     border-radius: 20px;
   }
 
@@ -302,7 +290,6 @@
     align-items: center;
     justify-content: center;
     color: white;
-
     transition: opacity 0.2s;
   }
 
@@ -332,18 +319,34 @@
     left: 50%;
     border: 1px solid #fbb007;
   }
+  .inputWrapper {
+    position: relative;
+    width: 150px;
+    border-radius: 20px;
+  }
+  .searchBarWrapper {
+    width: 150px;
+    margin: 1px;
+    margin-left: 1px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
   .container {
     /* position: absolute; */
     top: 190px;
-    width: 150px;
+    width: 160px;
     height: auto;
     display: flex;
     margin-bottom: 5px;
   }
-  .searchBarWrapper {
+  /* .searchBarWrapper {
     width: 150px;
     margin: 1px;
     margin-left: 20px;
@@ -352,7 +355,7 @@
     display: flex;
     justify-content: center;
     border-radius: 20px;
-  }
+  } */
 
   /* Лінійна форма */
   .formRow {
@@ -363,14 +366,14 @@
     gap: 10px;
     border-radius: 20px;
     border: 1px solid #fbb007;
-    width: 150px;
+    width: 160px;
     height: 40px;
   }
 
   /* === НОВЕ: Контейнер для інпута === */
   .inputWrapper {
     position: relative;
-    width: 150px;
+    width: 160px;
     border-radius: 20px;
   }
 
@@ -391,7 +394,7 @@
   .input {
     border-radius: 20px;
     border-width: 1px;
-    width: 150px;
+    width: 160px;
     height: 40px;
     padding-right: 12px;
     font-size: 15px;
@@ -469,6 +472,22 @@
   .dropdown li:hover,
   .activeOption {
     background: #f0f0f0;
+  }
+  .inputWrapper {
+    position: relative;
+    width: 160px;
+    border-radius: 20px;
+  }
+  .searchBarWrapper {
+    width: 160px;
+    margin: 1px;
+    margin-left: 1px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
   }
 }
 

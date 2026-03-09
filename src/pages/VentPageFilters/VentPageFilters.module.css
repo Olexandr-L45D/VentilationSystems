@@ -1,5 +1,4 @@
 .cartAll {
-  /* position: static !important; */
   width: 100%;
   height: auto;
   min-height: 100%;
@@ -11,11 +10,4 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* background-image: url("../../images/catalogdesctop.png"); */
 }
-/* 
-#root {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-} */
