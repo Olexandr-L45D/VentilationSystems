@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import CentrifStainless from "../../assets/images/CentrifStainless.png";
 import CentrifCarbon from "../../assets/images/CentrifCarbon.png";
 import imagesValveMix from "../../assets/images/imagesValveMix.png";
-import imagesValveM from "../../assets/images/imagesValveM.png";
+import hetMod from "../../assets/images/hetMod.png";
 import imagesValves from "../../assets/images/imagesValves.png";
 import newHeatMod from "../../assets/images/newHeatMod.png";
 
@@ -42,33 +42,29 @@ export default function CatalogGallary() {
             <li>
               <div
                 className={css.imagesBlock}
-                onClick={() => handleCategoryClick("centrifugal")}
+                onClick={() => handleCategoryClick("heatExchanger")}
               >
                 <figure className={css.titleImg}>
                   <img
-                    src={CentrifStainless}
-                    alt="Images Fan"
+                    src={newHeatMod}
+                    alt="Images Heat"
                     className={css.imgLogo}
                   />
                 </figure>
 
-                <p className={css.textImg}>{t("catalog.fanTypeSteel")}</p>
+                <p className={css.textImg}>{t("catalog.newHeat")}</p>
               </div>
             </li>
             <li>
               <div
                 className={css.imagesBlock}
-                onClick={() => handleCategoryClick("centrifugal")}
+                onClick={() => handleCategoryClick("heatExchanger")}
               >
                 <figure className={css.titleImg}>
-                  <img
-                    src={CentrifCarbon}
-                    alt="Images Fan"
-                    className={css.imgLogo}
-                  />
+                  <img src={hetMod} alt="Images Heat" className={css.imgLogo} />
                 </figure>
 
-                <p className={css.textImg}>{t("catalog.fanTypeCarbon")}</p>
+                <p className={css.textImg}>{t("catalog.newHeat")}</p>
               </div>
             </li>
 
@@ -96,23 +92,6 @@ export default function CatalogGallary() {
               >
                 <figure className={css.titleImg}>
                   <img
-                    src={imagesValveM}
-                    alt="Images Valve"
-                    className={css.imgLogo}
-                  />
-                </figure>
-
-                <p className={css.textImg}>{t("catalog.fanValves")}</p>
-              </div>
-            </li>
-
-            <li>
-              <div
-                className={css.imagesBlock}
-                onClick={() => handleCategoryClick("valves")}
-              >
-                <figure className={css.titleImg}>
-                  <img
                     src={imagesValves}
                     alt="Images Valve"
                     className={css.imgLogo}
@@ -122,21 +101,36 @@ export default function CatalogGallary() {
                 <p className={css.textImg}>{t("catalog.fanValves")}</p>
               </div>
             </li>
-
             <li>
               <div
                 className={css.imagesBlock}
-                onClick={() => handleCategoryClick("heatExchanger")}
+                onClick={() => handleCategoryClick("centrifugal")}
               >
                 <figure className={css.titleImg}>
                   <img
-                    src={newHeatMod}
-                    alt="Images Heat"
+                    src={CentrifStainless}
+                    alt="Images Fan"
                     className={css.imgLogo}
                   />
                 </figure>
 
-                <p className={css.textImg}>{t("catalog.newHeat")}</p>
+                <p className={css.textImg}>{t("catalog.fanTypeSteel")}</p>
+              </div>
+            </li>
+            <li>
+              <div
+                className={css.imagesBlock}
+                onClick={() => handleCategoryClick("centrifugal")}
+              >
+                <figure className={css.titleImg}>
+                  <img
+                    src={CentrifCarbon}
+                    alt="Images Fan"
+                    className={css.imgLogo}
+                  />
+                </figure>
+
+                <p className={css.textImg}>{t("catalog.fanTypeCarbon")}</p>
               </div>
             </li>
           </ul>

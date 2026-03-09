@@ -45,6 +45,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 10px;
   text-decoration: none;
   color: inherit;
@@ -83,8 +84,10 @@
 }
 
 .textImg {
-  width: 200px;
-
+  width: 180px;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-right: 20px;
   font-family: Montserrat;
   font-weight: 600;
   font-size: 16px;

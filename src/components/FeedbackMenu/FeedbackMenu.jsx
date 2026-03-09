@@ -36,7 +36,7 @@ const FeedbackMenu = () => {
               </a>
 
               <a
-                href="https://instagram.com/alex970076" // ← вставити НІК ЗАМОВНИКА
+                href="https://instagram.com/hariablackicon/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
@@ -54,7 +54,7 @@ const FeedbackMenu = () => {
                 Telegram
               </a>
               <a
-                href="https://wa.me/393663883621" // ← номер БЕЗ +
+                href="https://wa.me/393663883621"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
@@ -63,9 +63,9 @@ const FeedbackMenu = () => {
                 WhatsApp
               </a>
 
-              {/* ✔ LinkedIn */}
+              {/* ✔ LinkedIn  ← вставити лінк-?*/}
               <a
-                href="https://www.linkedin.com/in/your_Profle" // ← вставити лінк-?
+                href="https://www.linkedin.com/in/your_Prof"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={css.modalBtn}
