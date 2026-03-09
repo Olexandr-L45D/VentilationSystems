@@ -577,7 +577,7 @@
   .reviewsBlock {
     max-width: 548px;
     width: 100%;
-    height: 330px;
+    height: 350px;
     opacity: 1;
     top: 19px;
     margin: 10px;
@@ -595,7 +595,7 @@
   }
   .reviewsTitle {
     margin-left: 0;
-    margin-top: 2px;
+    margin-top: 5px;
     justify-content: center;
   }
 
@@ -657,7 +657,6 @@
     height: 400px;
     margin-top: 2px;
     margin-bottom: 10px;
-    /* padding-top: 2px; */
     display: block;
     object-fit: cover;
     border-radius: 20px;
@@ -675,6 +674,42 @@
     padding: 5px;
     margin-top: 60px;
     margin-bottom: 10px;
+  }
+  .buttonViewsSecondMobil {
+    width: clamp(180px, 40vw, 220px);
+    padding: 2px;
+    margin: 4px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnVieSecond {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(16px, 2.5vw, 24px);
+    font-weight: 500;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .btnVieSecond {
+    background-color: #fbb007;
+    color: #fff;
+  }
+
+  .btnVieSecond:hover,
+  .btnVieSecond:focus {
+    background: linear-gradient(
+      268.5deg,
+      rgba(251, 176, 7, 0.5) 2.63%,
+      rgba(0, 0, 0, 0.5) 97.7%
+    );
   }
 }
 
@@ -924,18 +959,10 @@
     display: flex;
   }
   .ulCardCategories {
-    /* width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
-    align-items: center;
-    text-align: center; */
     gap: 20px;
     list-style: none;
     padding: 0;
     margin: 0;
-    /* margin-top: 10px; */
     width: 95%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

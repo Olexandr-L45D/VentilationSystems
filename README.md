@@ -25,7 +25,7 @@ Currently, two official plugins are available:
 
 # стуркутра папок та фалів проекту
 
-VentilationSystems/ ├── public/ ├── src/ ├── scripts/ 👈 СТВОРИ ├── package.json
+VentilationSystems/ ├── public/ ├── src/ ├── scripts/
 
 # стуркутра фалів для скачування юзеру собі на компютер
 

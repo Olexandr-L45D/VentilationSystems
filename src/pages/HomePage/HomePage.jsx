@@ -57,7 +57,9 @@ export default function HomePage() {
                 </section>
                 <section className={css.cartBtnSecond}>
                   <Link to="/feedbackPhone">
-                    <div className={css.buttonViewsSecond}>
+                    <div
+                      className={`${css.buttonViewsSecond} ${css.buttonViewsSecondMobil}`}
+                    >
                       <button className={css.btnVieSecond} type="button">
                         {t("navigation.orderCallback")}
                       </button>
@@ -80,16 +82,22 @@ export default function HomePage() {
           <ul className={css.ulCardCategories}>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
-                <img className={css.images} src={cardLeft} alt="Fans" />
+                <img
+                  className={css.images}
+                  src={cardRight}
+                  alt="Heat exchangers"
+                />
               </figure>
+
               <h3 className={css.cartImagesText}>
-                {t("homepage.bestSelFans")}
+                {t("homepage.bestSelImagesRight")}
               </h3>
+
               <div className={css.buttonViewsSecond}>
                 <button
                   className={css.btnVieSecond}
                   type="button"
-                  onClick={() => handleCategoryClick("centrifugal")}
+                  onClick={() => handleCategoryClick("heatExchanger")}
                 >
                   {t("navigation.buttonLernMore")}
                 </button>
@@ -112,25 +120,18 @@ export default function HomePage() {
                 </button>
               </div>
             </li>
-
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
-                <img
-                  className={css.images}
-                  src={cardRight}
-                  alt="Heat exchangers"
-                />
+                <img className={css.images} src={cardLeft} alt="Fans" />
               </figure>
-
               <h3 className={css.cartImagesText}>
-                {t("homepage.bestSelImagesRight")}
+                {t("homepage.bestSelFans")}
               </h3>
-
               <div className={css.buttonViewsSecond}>
                 <button
                   className={css.btnVieSecond}
                   type="button"
-                  onClick={() => handleCategoryClick("heatExchanger")}
+                  onClick={() => handleCategoryClick("centrifugal")}
                 >
                   {t("navigation.buttonLernMore")}
                 </button>

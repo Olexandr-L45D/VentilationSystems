@@ -3,8 +3,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import css from "./ConditionsMenu.module.css";
-
-const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
+// viewUrlDelivery,
+const PdfActionsCondition = ({ viewUrl, downloadUrl }) => {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
   const toggleMenu = () => {
@@ -54,7 +54,7 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
             </button>
           </a>
 
-          <a
+          {/* <a
             href={viewUrlDelivery}
             target="_blank"
             rel="noopener noreferrer"
@@ -74,7 +74,7 @@ const PdfActionsCondition = ({ viewUrl, viewUrlDelivery, downloadUrl }) => {
               📄
               {t("footernav.footerViewDel")}
             </button>
-          </a>
+          </a> */}
 
           <a href={downloadUrl} download style={{ textDecoration: "none" }}>
             <button
