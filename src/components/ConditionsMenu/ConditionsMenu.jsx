@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import css from "./ConditionsMenu.module.css";
-// viewUrlDelivery,
+import { AiOutlineDownload } from "react-icons/ai";
+
 const PdfActionsCondition = ({ viewUrl, downloadUrl }) => {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
@@ -87,7 +88,8 @@ const PdfActionsCondition = ({ viewUrl, downloadUrl }) => {
                 cursor: "pointer",
               }}
             >
-              ⬇️
+              {/* ⬇️ */}
+              <AiOutlineDownload color="#fbb007" size={22} />
               {t("footernav.footerViewDown")}
             </button>
           </a>

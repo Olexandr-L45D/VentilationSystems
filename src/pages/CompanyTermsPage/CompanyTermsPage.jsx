@@ -45,8 +45,8 @@ export default function CompanyTermsPage() {
               <li>{t("companyterms.textSales")}</li>
               <li>{t("companyterms.textLogistics")}</li>
               <li>{t("companyterms.textAccounting")}</li>
+              <li>{t("companyterms.youAlwaysResponsible")}</li>
             </ul>
-            <p className={css.note}>{t("companyterms.youAlwaysResponsible")}</p>
           </article>
         </div>
       </section>

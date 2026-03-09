@@ -37,6 +37,7 @@ export default function HomePage() {
           <section className={css.card}>
             <figure className={css.cardTopImages}>
               <img
+                loading="lazy"
                 className={css.bigImagesTop}
                 src={startHomePage}
                 alt="Home Page"
@@ -83,6 +84,7 @@ export default function HomePage() {
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
                 <img
+                  loading="lazy"
                   className={css.images}
                   src={cardRight}
                   alt="Heat exchangers"
@@ -105,7 +107,12 @@ export default function HomePage() {
             </li>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
-                <img className={css.images} src={cardCenter} alt="Valves" />
+                <img
+                  loading="lazy"
+                  className={css.images}
+                  src={cardCenter}
+                  alt="Valves"
+                />
               </figure>
               <h3 className={css.cartImagesText}>
                 {t("homepage.bestSelValves")}
@@ -122,7 +129,12 @@ export default function HomePage() {
             </li>
             <li className={css.liImgCard}>
               <figure className={css.imgCard}>
-                <img className={css.images} src={cardLeft} alt="Fans" />
+                <img
+                  loading="lazy"
+                  className={css.images}
+                  src={cardLeft}
+                  alt="Fans"
+                />
               </figure>
               <h3 className={css.cartImagesText}>
                 {t("homepage.bestSelFans")}
@@ -141,6 +153,7 @@ export default function HomePage() {
         </section>
         <figure className={css.cardImagesFigure}>
           <img
+            loading="lazy"
             className={css.imagFigure}
             src={VectorHomeCenter}
             alt="Figured background image"
@@ -162,7 +175,12 @@ export default function HomePage() {
             {t("homepage.advantagesHight")}
           </h3>
           <figure className={css.cardBigImages}>
-            <img className={css.bigImages} src={Advantages} alt="" />
+            <img
+              loading="lazy"
+              className={css.bigImages}
+              src={Advantages}
+              alt=""
+            />
           </figure>
           <h3 className={`${css.labelRight} ${css.labelRightTopMobile}`}>
             {/* Fast delivery */}

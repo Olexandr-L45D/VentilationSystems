@@ -1,5 +1,4 @@
 import css from "./AboutUsPage.module.css";
-// import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import BlendBottom from "../../assets/images/BlendBottom.png";
 import elevator from "../../assets/images/elevator.png";
@@ -10,11 +9,6 @@ import bakery from "../../assets/images/bakery.png";
 
 export default function AboutUsPage() {
   const { t } = useTranslation();
-  // const [showVideo, setShowVideo] = useState(false);
-  // цей ефект якщо застосувати відео на старті при переході на сторінку
-  // useEffect(() => {
-  //   setShowVideo(true);
-  // }, []);
 
   return (
     <section className={css.container}>

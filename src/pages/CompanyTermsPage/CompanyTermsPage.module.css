@@ -131,6 +131,11 @@
 .wrapper {
   margin-bottom: 20px;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left;
 }
 /* ================= */
 /* TABLET */
