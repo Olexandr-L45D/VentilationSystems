@@ -9,7 +9,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 const ALL_CATEGORIES = [
-  "heatExchanger",
+  "heat-exchanger",
   "valves",
   "centrifugal",
   "radial",

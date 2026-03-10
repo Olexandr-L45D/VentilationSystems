@@ -1,6 +1,7 @@
 .dropdown {
   position: fixed; /* ⬅ ТІЛЬКИ fixed для інпута пошуку */
   top: 50%;
+  /* top: calc(50% + 100px); */
   left: 50%;
   transform: translate(-50%, -50%);
   max-height: 60vh;
@@ -36,6 +37,7 @@
   width: 160px;
   margin-left: 10px;
   margin-right: 10px;
+  /* margin-top: 40px; */
   background: rgba(255, 255, 255, 0.6);
   z-index: 1000;
   display: flex;
@@ -123,19 +125,9 @@
 @media screen and (min-width: 200px) and (max-width: 399px) {
   .dropdown {
     position: fixed;
-    top: 50%;
+    top: 450px;
     left: 50%;
     border: 1px solid #fbb007;
-  }
-  .searchBarWrapper {
-    width: 200px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
   }
 
   /* Лінійна форма */
@@ -147,15 +139,13 @@
     gap: 10px;
     border-radius: 20px;
     border: 1px solid #fbb007;
-    width: 200px;
+    width: 170px;
     height: 40px;
   }
 
   /* === НОВЕ: Контейнер для інпута === */
   .inputWrapper {
     position: relative;
-    /* width: 100%; */
-    /* width: 220px; */
     border-radius: 20px;
   }
 
@@ -163,7 +153,6 @@
   .inputIcon {
     position: absolute;
     top: 30%;
-    /* left: 12px; */
     right: 10px;
     transform: translateY(-10%);
     transform: translateX(-30%);
@@ -175,10 +164,9 @@
 
   /* === Оновлений інпут під іконку === */
   .input {
-    /* border: 1px solid rgba(18, 17, 17, 0.4); */
     border-radius: 20px;
     border-width: 1px;
-    width: 230px;
+    width: 170px;
     height: 40px;
     padding-right: 12px;
     font-size: 15px;
@@ -194,14 +182,12 @@
   .iconButton {
     width: 0px;
     height: 0px;
-    /* border-radius: 12px; */
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-
     transition: opacity 0.2s;
   }
 
@@ -214,15 +200,14 @@
     background: #fbb007;
   }
   .container {
-    /* position: absolute; */
     top: 190px;
-    width: 150px;
+    width: 170px;
     height: auto;
     display: flex;
     margin-bottom: 5px;
   }
   .searchBarWrapper {
-    width: 150px;
+    width: 170px;
     margin: 1px;
     margin-left: 10px;
     background: rgba(255, 255, 255, 0.6);
@@ -241,7 +226,7 @@
     gap: 10px;
     border-radius: 20px;
     border: 1px solid #fbb007;
-    width: 150px;
+    width: 170px;
     height: 40px;
   }
 
@@ -255,7 +240,7 @@
   .inputIcon {
     position: absolute;
     top: 30%;
-    right: 10px;
+    right: 6px;
     transform: translateY(-10%);
     transform: translateX(-30%);
     font-size: 18px;
@@ -268,7 +253,7 @@
   .input {
     border-radius: 20px;
     border-width: 1px;
-    width: 150px;
+    width: 170px;
     height: 40px;
     padding-right: 12px;
     font-size: 15px;
@@ -315,47 +300,10 @@
 @media screen and (min-width: 400px) and (max-width: 499px) {
   .dropdown {
     position: fixed;
-    top: 45%;
+    top: 450px;
     left: 50%;
     border: 1px solid #fbb007;
   }
-  .inputWrapper {
-    position: relative;
-    width: 150px;
-    border-radius: 20px;
-  }
-  .searchBarWrapper {
-    width: 150px;
-    margin: 1px;
-    margin-left: 1px;
-    margin-right: 10px;
-    background: rgba(255, 255, 255, 0.6);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 767px) {
-  .container {
-    /* position: absolute; */
-    top: 190px;
-    width: 160px;
-    height: auto;
-    display: flex;
-    margin-bottom: 5px;
-  }
-  /* .searchBarWrapper {
-    width: 150px;
-    margin: 1px;
-    margin-left: 20px;
-    background: rgba(255, 255, 255, 0.6);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-  } */
 
   /* Лінійна форма */
   .formRow {
@@ -366,14 +314,13 @@
     gap: 10px;
     border-radius: 20px;
     border: 1px solid #fbb007;
-    width: 160px;
+    width: 170px;
     height: 40px;
   }
 
   /* === НОВЕ: Контейнер для інпута === */
   .inputWrapper {
     position: relative;
-    width: 160px;
     border-radius: 20px;
   }
 
@@ -394,7 +341,7 @@
   .input {
     border-radius: 20px;
     border-width: 1px;
-    width: 160px;
+    width: 170px;
     height: 40px;
     padding-right: 12px;
     font-size: 15px;
@@ -416,7 +363,93 @@
     align-items: center;
     justify-content: center;
     color: white;
+    transition: opacity 0.2s;
+  }
 
+  .iconButton:hover {
+    opacity: 0.85;
+    background: #fbb007;
+  }
+  .iconButton:focus {
+    opacity: 0.85;
+    background: #fbb007;
+  }
+  .container {
+    top: 190px;
+    width: 170px;
+    height: auto;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  .searchBarWrapper {
+    width: 170px;
+    margin: 1px;
+    margin-left: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+  }
+
+  /* Лінійна форма */
+  .formRow {
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #fbb007;
+    width: 170px;
+    height: 40px;
+  }
+
+  /* === НОВЕ: Контейнер для інпута === */
+  .inputWrapper {
+    position: relative;
+    border-radius: 20px;
+  }
+
+  /* === НОВЕ: Іконка в інпуті === */
+  .inputIcon {
+    position: absolute;
+    top: 30%;
+    right: 6px;
+    transform: translateY(-10%);
+    transform: translateX(-30%);
+    font-size: 18px;
+    color: #0f0f0f;
+    pointer-events: none;
+    margin-bottom: 20px;
+  }
+
+  /* === Оновлений інпут під іконку === */
+  .input {
+    border-radius: 20px;
+    border-width: 1px;
+    width: 170px;
+    height: 40px;
+    padding-right: 12px;
+    font-size: 15px;
+    background-color: #f7f7f7;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Кнопка */
+  .iconButton {
+    width: 0px;
+    height: 0px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
     transition: opacity 0.2s;
   }
 
@@ -438,56 +471,181 @@
     font-size: 12px;
     color: red;
   }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
   .dropdown {
-    position: fixed; /*  ТІЛЬКИ fixed */
-    top: 45%;
+    position: fixed;
+    top: 450px;
     left: 50%;
-    transform: translate(-50%, -50%);
-    max-height: 60vh;
-    overflow-y: auto;
-
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    z-index: 9999;
-    background: white;
     border: 1px solid #fbb007;
-    border-radius: 20px;
-    width: 200px;
-    overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: left;
-    text-align: center;
-  }
-  .dropdown li {
-    background: #fbb00780;
-    padding: 3px;
-    margin: 4px;
-    margin-left: -30px;
-    cursor: pointer;
-    border-radius: 20px;
   }
 
-  .dropdown li:hover,
-  .activeOption {
-    background: #f0f0f0;
+  /* Лінійна форма */
+  .formRow {
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #fbb007;
+    width: 170px;
+    height: 40px;
   }
+
+  /* === НОВЕ: Контейнер для інпута === */
   .inputWrapper {
     position: relative;
-    width: 160px;
     border-radius: 20px;
   }
+
+  /* === НОВЕ: Іконка в інпуті === */
+  .inputIcon {
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    transform: translateY(-10%);
+    transform: translateX(-30%);
+    font-size: 18px;
+    color: #0f0f0f;
+    pointer-events: none;
+    margin-bottom: 20px;
+  }
+
+  /* === Оновлений інпут під іконку === */
+  .input {
+    border-radius: 20px;
+    border-width: 1px;
+    width: 170px;
+    height: 40px;
+    padding-right: 12px;
+    font-size: 15px;
+    background-color: #f7f7f7;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Кнопка */
+  .iconButton {
+    width: 0px;
+    height: 0px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: opacity 0.2s;
+  }
+
+  .iconButton:hover {
+    opacity: 0.85;
+    background: #fbb007;
+  }
+  .iconButton:focus {
+    opacity: 0.85;
+    background: #fbb007;
+  }
+  .container {
+    top: 190px;
+    width: 170px;
+    height: auto;
+    display: flex;
+    margin-bottom: 5px;
+  }
   .searchBarWrapper {
-    width: 160px;
+    width: 170px;
     margin: 1px;
-    margin-left: 1px;
-    margin-right: 10px;
+    margin-left: 10px;
     background: rgba(255, 255, 255, 0.6);
     z-index: 1000;
     display: flex;
     justify-content: center;
     border-radius: 20px;
+  }
+
+  /* Лінійна форма */
+  .formRow {
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #fbb007;
+    width: 170px;
+    height: 40px;
+  }
+
+  /* === НОВЕ: Контейнер для інпута === */
+  .inputWrapper {
+    position: relative;
+    border-radius: 20px;
+  }
+
+  /* === НОВЕ: Іконка в інпуті === */
+  .inputIcon {
+    position: absolute;
+    top: 30%;
+    right: 6px;
+    transform: translateY(-10%);
+    transform: translateX(-30%);
+    font-size: 18px;
+    color: #0f0f0f;
+    pointer-events: none;
+    margin-bottom: 20px;
+  }
+
+  /* === Оновлений інпут під іконку === */
+  .input {
+    border-radius: 20px;
+    border-width: 1px;
+    width: 170px;
+    height: 40px;
+    padding-right: 12px;
+    font-size: 15px;
+    background-color: #f7f7f7;
+    border: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  /* Кнопка */
+  .iconButton {
+    width: 0px;
+    height: 0px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: opacity 0.2s;
+  }
+
+  .iconButton:hover {
+    opacity: 0.85;
+    background: #fbb007;
+  }
+  .iconButton:focus {
+    opacity: 0.85;
+    background: #fbb007;
+  }
+
+  /* Помилка */
+  .error {
+    position: absolute;
+    top: 48px;
+    width: 320px;
+    left: 60;
+    font-size: 12px;
+    color: red;
   }
 }
 
@@ -531,7 +689,6 @@
   .inputIcon {
     position: absolute;
     top: 30%;
-    /* left: 12px; */
     right: 10px;
     transform: translateY(-10%);
     transform: translateX(-30%);
@@ -543,7 +700,6 @@
 
   /* === Оновлений інпут під іконку === */
   .input {
-    /* border: 1px solid rgba(18, 17, 17, 0.4); */
     border-radius: 20px;
     border-width: 1px;
     width: 230px;
@@ -592,7 +748,8 @@
   }
 
   .dropdown {
-    top: 240%;
+    position: fixed;
+    top: 250px;
     left: 50%;
   }
   .dropdown li {
@@ -615,6 +772,7 @@
     width: 350px;
     margin-left: 150px;
     margin-right: 10px;
+    /* margin-top: 40px; */
     background: rgba(255, 255, 255, 0.6);
     z-index: 1000;
     display: flex;
@@ -709,7 +867,7 @@
   }
 
   .dropdown {
-    top: 240%;
+    top: 280%;
   }
   .dropdown li {
     background: #fbb00780;
@@ -727,7 +885,7 @@
 }
 @media (min-width: 1441px) and (max-width: 2000px) {
   .dropdown {
-    top: 240%;
+    top: 280%;
     border: 1px solid #fbb007;
   }
   .searchBarWrapper {

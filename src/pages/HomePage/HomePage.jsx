@@ -99,7 +99,7 @@ export default function HomePage() {
                 <button
                   className={css.btnVieSecond}
                   type="button"
-                  onClick={() => handleCategoryClick("heatExchanger")}
+                  onClick={() => handleCategoryClick("heat-exchanger")}
                 >
                   {t("navigation.buttonLernMore")}
                 </button>

@@ -42,7 +42,7 @@ export default function CatalogGallary() {
             <li>
               <div
                 className={css.imagesBlock}
-                onClick={() => handleCategoryClick("heatExchanger")}
+                onClick={() => handleCategoryClick("heat-exchanger")}
               >
                 <figure className={css.titleImg}>
                   <img
@@ -58,7 +58,7 @@ export default function CatalogGallary() {
             <li>
               <div
                 className={css.imagesBlock}
-                onClick={() => handleCategoryClick("heatExchanger")}
+                onClick={() => handleCategoryClick("heat-exchanger")}
               >
                 <figure className={css.titleImg}>
                   <img src={hetMod} alt="Images Heat" className={css.imgLogo} />
