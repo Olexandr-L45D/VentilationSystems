@@ -1,7 +1,6 @@
 import { AiFillPhone } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import ContactMapModal from "../../components/ContactMapModal/ContactMapModal";
-import PdfActionsCondition from "../../components/ConditionsMenu/ConditionsMenu";
 import css from "./CompanyTermsPage.module.css";
 import Haria from "../../assets/images/Haria.png";
 import { useTranslation } from "react-i18next";
@@ -91,19 +90,6 @@ export default function CompanyTermsPage() {
       <section className={css.section}>
         <div className={css.wrapper}>
           <h2 className={css.titleParagraf}>
-            {t("companyterms.subtitleDocuments")}
-          </h2>
-          <div className={css.docActions}>
-            <PdfActionsCondition
-              viewUrl="/pdfs/mnItalvent_1.pdf"
-              downloadUrl="/pdfs/mnItalvent_1.pdf"
-            />
-          </div>
-        </div>
-      </section>
-      <section className={css.section}>
-        <div className={css.wrapper}>
-          <h2 className={css.titleParagraf}>
             {t("companyterms.subtitleContacts")}
           </h2>
           <address className={css.contacts}>
@@ -127,3 +113,19 @@ export default function CompanyTermsPage() {
     </main>
   );
 }
+
+// ця секція щоб завантажити чи скачати договір чи інший документ
+// import PdfActionsCondition from "../../components/ConditionsMenu/ConditionsMenu";
+/* <section className={css.section}>
+        <div className={css.wrapper}>
+          <h2 className={css.titleParagraf}>
+            {t("companyterms.subtitleDocuments")}
+          </h2>
+          <div className={css.docActions}>
+            <PdfActionsCondition
+              viewUrl="/pdfs/mnItalvent_1.pdf"
+              downloadUrl="/pdfs/mnItalvent_1.pdf"
+            />
+          </div>
+        </div>
+      </section> */

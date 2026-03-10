@@ -1,9 +1,9 @@
 import css from "./AboutUsPage.module.css";
 import { useTranslation } from "react-i18next";
 import BlendBottom from "../../assets/images/BlendBottom.png";
-import elevator from "../../assets/images/elevator.png";
-import laboratory from "../../assets/images/laboratory.png";
-import carWash from "../../assets/images/carWash.png";
+import elevator from "../../assets/images/elevatorbig.png";
+import laboratory from "../../assets/images/woodworking.png";
+import carWash from "../../assets/images/carWashs.png";
 import Haria from "../../assets/images/Haria.png";
 import bakery from "../../assets/images/bakery.png";
 

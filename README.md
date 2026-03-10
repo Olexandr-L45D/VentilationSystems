@@ -23,6 +23,32 @@ Currently, two official plugins are available:
    nvm use 22.22.0
     -->
 
+# Project Structure (Modern Scalable Architecture)
+
+src/ │ ├── app/ # App-level configuration │ ├── App.jsx │ ├── Providers.jsx #
+Router / i18n / Redux / Theme │ └── routes.jsx │ ├── pages/ # Route-level pages
+│ ├── HomePage/ │ │ ├── HomePage.jsx │ │ └── HomePage.module.css │ │ │ ├──
+AboutUsPage/ │ │ ├── AboutUsPage.jsx │ │ └── AboutUsPage.module.css │ │ │ ├──
+CompanyTermsPage/ │ │ ├── CompanyTermsPage.jsx │ │ └──
+CompanyTermsPage.module.css │ │ │ ├── VentPageFilters/ │ │ ├──
+VentPageFilters.jsx │ │ └── VentPageFilters.module.css │ │ │ └── NotFoundPage/ │
+└── NotFoundPage.jsx │ ├── components/ # Reusable UI components │ ├── App/ │ ├──
+Layout/ │ ├── Header/ │ ├── Footer/ │ ├── Navigation/ │ │ │ ├── CatalogGallary/
+│ ├── FenDetails/ │ ├── Loader/ │ ├── ScrollToTopButton/ │ ├── SearchBoxFiltr/ │
+│ │ ├── ConditionsMenu/ │ │ │ ├── ContactMap/ │ │ ├── ContactMap.jsx │ │ └──
+ContactMapModal.jsx │ │ │ ├── Feedback/ │ │ ├── FeedbackMenu.jsx │ │ ├──
+FeedbackForm.jsx │ │ ├── FeedbackFormPhone.jsx │ │ ├── FeedbackModalPhone.jsx │
+│ └── FeedbackEmailModal.jsx │ │ │ └── ModalBasket/ │ ├── redux/ # Global state
+management │ ├── store.js │ │ │ ├── campers/ │ │ ├── slice.js │ │ ├──
+operations.js │ │ └── selectors.js │ │ │ ├── filters/ │ │ ├── slice.js │ │ └──
+selectors.js │ │ │ └── basket/ │ ├── slice.js │ └── selectors.js │ ├──
+locales/ # Internationalization │ ├── en/ │ │ └── translation.json │ │ │ ├── it/
+│ │ └── translation.json │ │ │ └── pl/ │ └── translation.json │ ├── assets/ #
+Static assets │ ├── images/ │ ├── icons/ │ └── fonts/ │ ├── hooks/ # Custom
+React hooks │ ├── utils/ # Helper functions │ ├── constants/ # Global constants
+│ ├── styles/ # Global styles │ ├── variables.css │ ├── reset.css │ └──
+globals.css │ └── main.jsx # Application entry point
+
 # стуркутра папок та фалів проекту
 
 VentilationSystems/ ├── public/ ├── src/ ├── scripts/
@@ -52,23 +78,6 @@ rm -rf .vite -->
  -->
 
 # стуркутра всього проекту (сучасний підхід)
-
-src/ │ ├── app/ # App-level логіка (entry point) │ ├── App.tsx │ ├──
-Providers.tsx # Context / Theme / i18n / Router │ └── routes.tsx │ ├── pages/ #
-Сторінки (route-level) │ ├── Home/ │ │ ├── Home.page.tsx │ │ └── Home.module.css
-│ ├── Home/ │ │ ├── Home.page.tsx │ │ └── Home.module.css │ ├── Home/ │ │ ├──
-Home.page.tsx │ │ └── Home.module.css │ ├── Home/ │ │ ├── Home.page.tsx │ │ └──
-Home.module.css │ ├── Home/ │ │ ├── Home.page.tsx │ │ └── Home.module.css │ ├──
-Home/ │ │ ├── Home.page.tsx │ │ └── Home.module.css │ ├── Profile/ │ └──
-NotFound/ │ ├── widgets/ # Великі UI-блоки (sections) │ ├── Header/ │ │ ├──
-Header.tsx │ │ └── Header.module.css │ ├── Footer/ │ ├── Sidebar/ │ └── Modal/ │
-├── features/ # Бізнес-логіка / сценарії │ ├── Auth/ │ │ ├── LoginForm.tsx │ │
-└── auth.model.ts │ ├── Search/ │ └── ThemeToggle/ │ ├── entities/ # Сутності
-(domain) │ ├── User/ │ │ ├── UserCard.tsx │ │ └── user.types.ts │ ├── Product/ │
-├── shared/ # Повторно використовуване │ ├── ui/ # Дрібні UI-компоненти │ │ ├──
-Button/ │ │ ├── Input/ │ │ ├── Icon/ │ │ └── Typography/ │ ├── hooks/ │ ├──
-utils/ │ ├── constants/ │ └── styles/ │ ├── variables.css │ ├── reset.css │ └──
-globals.css │ └── index.tsx
 
 <!-- SEO -->
 
@@ -155,3 +164,8 @@ Email Templates → обери свій template
 @media (min-width: 768px) and (max-width: 991px) {} /* малі планшети */
 @media (min-width: 992px) and (max-width: 1279px) {} /* планшети */
  -->
+
+# в випадку якщо додав нові елементи і якщо хочу оновити переклади запускаю команди (прописані в скриптах)
+
+- `npm run translate:it`
+- `npm run translate:pl`
