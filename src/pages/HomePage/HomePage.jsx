@@ -7,6 +7,7 @@ import cardCenter from "../../assets/images/fanHomeCenter.png";
 import cardRight from "../../assets/images/fanHomeRight.png";
 import VectorHomeCenter from "../../assets/images/VectorHomeCenter.png";
 import Advantages from "../../assets/images/Advantages.png";
+import Advantagestablet from "../../assets/images/Advantagestablet.png";
 import startHomePage from "../../assets/images/startHomePage.png";
 import ScrollToTopButton from "../../components/ScrollToTopButton/ScrollToTopButton";
 import { BiSolidUser } from "react-icons/bi";
@@ -74,10 +75,7 @@ export default function HomePage() {
 
         <section className={css.containerCategories}>
           <div className={css.titleBlock}>
-            <h2 className={css.cartTitleText}>
-              {/* Product categories */}
-              {t("navigation.bestSel")}
-            </h2>
+            <h2 className={css.cartTitleText}>{t("navigation.bestSel")}</h2>
           </div>
 
           <ul className={css.ulCardCategories}>
@@ -161,17 +159,14 @@ export default function HomePage() {
         </figure>
         <div className={css.titleBlockAdvantages}>
           <h2 className={css.cartTitleTextAdvantages}>
-            {/*Title Advantages */}
             {t("navigation.advantages")}
           </h2>
         </div>
         <section className={css.containerAdvantages}>
           <h3 className={`${css.labelTop} ${css.labelTopMobile}`}>
-            {/* High quality =.advantagesHight */}
             {t("homepage.advantageFlexibility")}
           </h3>
           <h3 className={`${css.labelLeft} ${css.labelLeftTopMobile}`}>
-            {/* Flexibility on service and customization */}
             {t("homepage.advantagesHight")}
           </h3>
           <figure className={css.cardBigImages}>
@@ -179,25 +174,27 @@ export default function HomePage() {
               loading="lazy"
               className={css.bigImages}
               src={Advantages}
-              alt=""
+              alt="AdvantagesImages"
             />
           </figure>
           <h3 className={`${css.labelRight} ${css.labelRightTopMobile}`}>
-            {/* Fast delivery */}
             {t("homepage.bestSelFast")}
           </h3>
-          <h3 className={css.labelBotton}>
-            {/* Every model of fans can be made in stainless steel */}
-            {t("homepage.bestSelEvery")}
-          </h3>
+          <h3 className={css.labelBotton}>{t("homepage.bestSelEvery")}</h3>
+        </section>
+        {/* mibile version to 799 width */}
+        <section className={css.containerAdvantagesMobile}>
+          <img
+            loading="lazy"
+            className={css.advantagesMobileImage}
+            src={Advantagestablet}
+            alt="Advantagestablet"
+          />
         </section>
 
         <section className={`${css.container} ${css.containerMobil}`}>
           <div className={`${css.titleBlock} ${css.titleBlockMobile}`}>
-            <h2 className={css.cartTitleText}>
-              {/*Title Producer */}
-              {t("navigation.producer")}
-            </h2>
+            <h2 className={css.cartTitleText}>{t("navigation.producer")}</h2>
           </div>
 
           <figure className={css.cardProducer}>
@@ -207,16 +204,13 @@ export default function HomePage() {
 
         <section className={css.containerReviews}>
           <div className={css.titleBlockReviews}>
-            <h2 className={css.cartTitleText}>
-              {/* Reviews */}
-              {t("homepage.titleReviews")}
-            </h2>
+            <h2 className={css.cartTitleText}>{t("homepage.titleReviews")}</h2>
           </div>
           <ul className={css.ulCardReviews}>
             <li className={css.reviewsBlock}>
               <h3 className={css.reviewsTitle}>
                 <BiSolidUser />
-                {/* Oleh H., Production Facility Owner */}
+
                 {t("homepage.bestReviews")}
               </h3>
               <p className={css.reviewsText}>{t("homepage.bestReviewsLeft")}</p>
@@ -224,7 +218,7 @@ export default function HomePage() {
             <li className={css.reviewsBlock}>
               <h3 className={css.reviewsTitle}>
                 <BiSolidUser />
-                {/* Maria L., Procurement Manager */}
+
                 {t("homepage.bestReviewsRight")}
               </h3>
               <p className={css.reviewsText}>{t("homepage.bestTextRight")}</p>

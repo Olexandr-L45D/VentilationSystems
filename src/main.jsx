@@ -2,9 +2,9 @@ import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "modern-normalize";
 import "./index.css";
-import "../i18n"; // Імпорт налаштувань i18next для перекладу мови
+import "../i18n";
 import App from "./components/App/App";
-// 1. Імпортуємо провайдер
+
 import { Provider } from "react-redux";
 import { store } from "../src/redux/store";
 import { BrowserRouter } from "react-router-dom";

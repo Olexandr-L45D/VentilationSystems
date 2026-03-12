@@ -1,8 +1,3 @@
-/* =========================================================
-   HomePage.module.css
-   Best Practices | Mobile-first | Fluid Layout
-   ========================================================= */
-
 /* === Parent container === */
 .container {
   width: 100%;
@@ -78,7 +73,7 @@
   max-width: 548px;
   width: 100%;
 }
-/* === BUTTONS === */
+
 .containerButtons {
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +133,7 @@
   );
 }
 
-/* == SECTION Categories for Images === */
+/* == SECTION Categories  === */
 .containerCategories {
   width: 100%;
   max-width: 1600px;
@@ -231,6 +226,7 @@
   margin-left: 32px;
   margin-bottom: 32px;
 }
+
 .cartTitleTextAdvantages {
   display: flex;
   justify-content: start;
@@ -240,7 +236,32 @@
   margin-left: 0px;
   padding-left: 0px;
 }
-/* === Advantages IMAGE and Labels SECTIONS  === */
+.containerAdvantages {
+  display: block;
+}
+
+.containerAdvantagesMobile {
+  display: none;
+}
+@media (max-width: 799px) {
+  .containerAdvantages {
+    display: none;
+  }
+
+  .containerAdvantagesMobile {
+    display: block;
+    width: 98%;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .advantagesMobileImage {
+    width: 98%;
+    height: auto;
+  }
+}
+
+/* === Advantages   === */
 .containerAdvantages {
   position: relative;
   width: 100%;
@@ -398,145 +419,11 @@
   }
 }
 
-/* =====================================================
-   MOBILE min 350-430-580
-   ===================================================== */
-@media (min-width: 350px) and (max-width: 430px) {
+@media (min-width: 280px) and (max-width: 579px) {
   .containerAdvantages {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
+    display: none;
   }
-
-  .labelTop,
-  .labelLeft,
-  .labelRight,
-  .labelBotton {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    transform: none;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  .labelTopMobile {
-    margin-top: -180px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  .labelLeftTopMobile {
-    margin-left: -200px;
-    margin-top: 0px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  .labelRightTopMobile {
-    margin-right: -200px;
-    margin-top: -20px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-
-  .labelBotton {
-    margin-bottom: 40px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-}
-@media (min-width: 431px) and (max-width: 579px) {
-  .containerAdvantages {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .labelTop,
-  .labelLeft,
-  .labelRight,
-  .labelBotton {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    transform: none;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  .labelTopMobile {
-    margin-top: -220px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  .labelLeftTopMobile {
-    margin-left: -220px;
-    margin-top: 0px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  .labelRightTopMobile {
-    margin-right: -230px;
-    margin-top: -20px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-
-  .labelBotton {
-    margin-bottom: 40px;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-}
-
-@media (min-width: 360px) and (max-width: 579px) {
   .container {
-    /* padding-inline: 16px; */
     padding: 8px;
     gap: 48px;
   }
@@ -545,7 +432,6 @@
     padding: 8px;
   }
 
-  /* HERO */
   .heroContent {
     margin-top: 70px;
     display: flex;
@@ -784,6 +670,9 @@
 }
 
 @media (min-width: 580px) and (max-width: 767px) {
+  .containerAdvantages {
+    display: none;
+  }
   .container {
     padding-inline: 16px;
     gap: 48px;
@@ -845,49 +734,8 @@
     font-size: 20px;
   }
 
-  /* ADVANTAGES */
   .cardImagesFigure {
     width: 95%;
-  }
-  .containerAdvantages {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .labelTop,
-  .labelLeft,
-  .labelRight,
-  .labelBotton {
-    position: relative;
-    top: auto;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    transform: none;
-    font-family: Montserrat;
-    font-weight: 550;
-    font-style: Medium;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
-  }
-  .labelTopMobile {
-    margin-top: -260px;
-  }
-  .labelLeftTopMobile {
-    margin-left: -400px;
-    margin-top: 30px;
-  }
-  .labelRightTopMobile {
-    margin-right: -400px;
-    margin-top: -30px;
-  }
-
-  .labelBotton {
-    margin-bottom: 0px;
   }
 
   .cardBigImages {
@@ -990,9 +838,6 @@
     gap: 12px;
   }
 }
-/* =====================================================
-   TABLET
-   ===================================================== */
 
 @media (min-width: 768px) and (max-width: 1279px) {
   .container {
@@ -1009,7 +854,6 @@
     font-size: 34px;
     margin-top: 110px;
     margin-bottom: 10px;
-    /* margin-bottom: 140px; */
   }
 
   .cartTextTop {
@@ -1153,11 +997,9 @@
     width: 90%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* gap: 1px; */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -1221,7 +1063,6 @@
     width: 95%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1246,8 +1087,6 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
-  /* ADVANTAGES */
-
   .labelTop,
   .labelLeft,
   .labelRight,
@@ -1326,7 +1165,6 @@
     width: 95%;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -1378,8 +1216,6 @@
 }
 
 @media (min-width: 1441px) and (max-width: 1800px) {
-  /* ADVANTAGES */
-
   .labelTop,
   .labelLeft,
   .labelRight,

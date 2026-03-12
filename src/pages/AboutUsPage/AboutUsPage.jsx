@@ -64,22 +64,3 @@ export default function AboutUsPage() {
     </section>
   );
 }
-
-/* 
-      <section className={css.background}>
-        <section className={css.sectionVideo}>
-          {showVideo && (
-            <div className={css.videoOverlay}>
-              <video
-                src="/video/videAboutUs.MP4"
-                autoPlay
-                muted
-                playsInline
-                onEnded={() => setShowVideo(false)}
-                className={css.video}
-              />
-            </div>
-          )}
-        </section>
-      </section>
-       */

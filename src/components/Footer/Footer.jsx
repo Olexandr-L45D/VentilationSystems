@@ -76,6 +76,12 @@ export const Footer = () => {
               <li className={css.text}>
                 © 2025 Haria Black Icon Srl. All rights reserved
               </li>
+              <li className={css.textDoman}>
+                Website:{" "}
+                <a href="https://your-domain?" className={css.textlinck}>
+                  your-domain?
+                </a>
+              </li>
             </ul>
           </section>
           <section className={css.rightSection}>

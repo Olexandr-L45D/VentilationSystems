@@ -3,7 +3,7 @@ import { IoLogoInstagram } from "react-icons/io5";
 import { FaTelegramPlane, FaViber } from "react-icons/fa";
 import css from "./FeedbackMenu.module.css";
 import { FaWhatsapp } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+// import { FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const FeedbackMenu = () => {
@@ -63,8 +63,8 @@ const FeedbackMenu = () => {
                 WhatsApp
               </a>
 
-              {/* ✔ LinkedIn  ← вставити лінк-?*/}
-              <a
+              {/* ✔ LinkedIn  ← вставити лінк-? якщо скине якщо ні то видалити (можливо  замінити на фейсбук?*/}
+              {/* <a
                 href="https://www.linkedin.com/in/your_Prof"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -72,7 +72,7 @@ const FeedbackMenu = () => {
               >
                 <FaLinkedin className={css.icon} />
                 LinkedIn
-              </a>
+              </a> */}
             </div>
 
             <button

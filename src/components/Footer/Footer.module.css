@@ -10,7 +10,7 @@
 
 .container {
   width: 100%;
-  min-height: 349px;
+  min-height: 380px;
   background-image: var(--footer-bg);
   background-size: cover;
   background-position: center;
@@ -125,7 +125,7 @@
 }
 .cardTextBl {
   width: 241px;
-  height: 167px;
+  height: 190px;
   padding: 0px;
   margin: 0px;
   display: flex;
@@ -155,6 +155,40 @@
 .text {
   padding: 2px;
   margin: 5px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.textDoman {
+  padding: 2px;
+  padding-bottom: 10px;
+  margin: 2px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.textlinck {
+  padding: 2px;
+  margin: 2px;
   color: #ffffff;
   font-family: Montserrat;
   font-weight: 400;
@@ -368,10 +402,21 @@ a:focus {
     margin: 5px;
     margin-top: 20px;
   }
+
   .cardTextBl {
-    width: 95%;
+    width: 241px;
+    height: 200px;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
     margin: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
   }
   .rightSection {
     width: 95%;
@@ -456,9 +501,19 @@ a:focus {
     margin-top: 20px;
   }
   .cardTextBl {
-    width: 95%;
+    width: 241px;
+    height: 200px;
+    padding: 0px;
+    padding-bottom: 10px;
+    margin: 0px;
     margin: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+    align-items: center;
   }
   .rightSection {
     width: 95%;
@@ -487,16 +542,6 @@ a:focus {
     justify-content: center;
     align-items: center;
   }
-  /* .cardLink {
-    width: 160px;
-    height: 130px;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  } */
 }
 @media screen and (min-width: 600px) and (max-width: 1099px) {
   .container {
@@ -512,11 +557,12 @@ a:focus {
     margin-top: auto;
     z-index: 10;
   }
+
   .cardTextBl {
     width: 95%;
     margin: 5px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
   .titleBlok {
     width: 95%;
